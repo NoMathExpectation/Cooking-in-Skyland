@@ -1,0 +1,386 @@
+{
+	id: "14FC9DBB46E1BC74"
+	group: "0A9230109B4C8FE3"
+	order_index: 6
+	filename: "14FC9DBB46E1BC74"
+	title: "厨房的终点：蛋糕"
+	icon: "minecraft:cake"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 3.5d
+		y: 0.0d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "custom:textures/003.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "702E11E9752CC0FB"
+	}]
+	quests: [
+		{
+			title: "为什么做蛋糕？"
+			x: -9.0d
+			y: -3.0d
+			subtitle: "因为它就在这里！"
+			description: ["接下来要做的蛋糕不是普通的蛋糕了，星光沐浴在蛋糕上，这使得我们每一步都十分艰难"]
+			dependencies: ["243BD0C2A518C3B3"]
+			hide: false
+			id: "702E11E9752CC0FB"
+			tasks: [{
+				id: "5A8F7EDFB473E330"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			dependencies: ["702E11E9752CC0FB"]
+			id: "6AC2161B6E3218F3"
+			tasks: [{
+				id: "191D623AB7C677D9"
+				type: "item"
+				item: "kubejs:step1"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			dependencies: ["6AC2161B6E3218F3"]
+			id: "21C339470B6AC9FD"
+			tasks: [{
+				id: "3C37270F746EDACD"
+				type: "item"
+				item: "kubejs:step2"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.5d
+			dependencies: ["21C339470B6AC9FD"]
+			id: "52018E9F3D2AF99F"
+			tasks: [{
+				id: "719BC682B4B73D44"
+				type: "item"
+				item: "kubejs:step3-1"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["52018E9F3D2AF99F"]
+			id: "5AF7611FB953A6DA"
+			tasks: [{
+				id: "326F6CA068818B24"
+				type: "item"
+				item: "kubejs:step3-2"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: ["5AF7611FB953A6DA"]
+			id: "77B4A0AF91BD7824"
+			tasks: [{
+				id: "267920DF3E847302"
+				type: "item"
+				item: "kubejs:step4"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["77B4A0AF91BD7824"]
+			id: "21C038B52A4733AD"
+			tasks: [{
+				id: "27C41D3591405CAF"
+				type: "item"
+				item: "kubejs:step5"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["21C038B52A4733AD"]
+			id: "1179B67111383078"
+			tasks: [{
+				id: "7131283ED4FFDBF0"
+				type: "item"
+				item: "kubejs:step6"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["1179B67111383078"]
+			id: "599F9D212D22A65A"
+			tasks: [{
+				id: "0BFF433EBA428351"
+				type: "item"
+				item: "kubejs:step7"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["599F9D212D22A65A"]
+			id: "4C804F4A74A7D247"
+			tasks: [{
+				id: "0FB6268CCE0984E7"
+				type: "item"
+				item: "kubejs:step8-1"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["4C804F4A74A7D247"]
+			id: "172AA783C5CD4653"
+			tasks: [{
+				id: "1A9E580C43072A4D"
+				type: "item"
+				item: "kubejs:step8-2"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			dependencies: ["172AA783C5CD4653"]
+			id: "6ECCB88F8802BAED"
+			tasks: [{
+				id: "2E48D329BC5124C9"
+				type: "item"
+				item: "kubejs:step8-3"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["6ECCB88F8802BAED"]
+			id: "25B2A4ED119C6EDD"
+			tasks: [{
+				id: "26C8D4E4E8658FE7"
+				type: "item"
+				item: "kubejs:step9"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["25B2A4ED119C6EDD"]
+			id: "024A01ACC28EA9F1"
+			tasks: [{
+				id: "0F332DC062828399"
+				type: "item"
+				item: "kubejs:step10"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["024A01ACC28EA9F1"]
+			id: "477832968521A103"
+			tasks: [{
+				id: "19BEA5B2AB82EEB5"
+				type: "item"
+				item: "kubejs:step11"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"恭喜！你通关了这个整合包！"
+				"是时候开派对了！"
+			]
+			dependencies: ["477832968521A103"]
+			size: 3.0d
+			id: "47C40B8B1D26D756"
+			tasks: [{
+				id: "30DEEAF071B4A44C"
+				type: "item"
+				item: "minecraft:cake"
+			}]
+		}
+		{
+			title: "魔法奶油"
+			x: -4.5d
+			y: -4.5d
+			subtitle: "奶油=奶+油"
+			description: ["制作奶油很简单，但是染色很麻烦"]
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "15809E5144ACD587"
+			tasks: [{
+				id: "6461B513B7F8C22D"
+				type: "item"
+				item: "kubejs:fluid1_bucket"
+			}]
+		}
+		{
+			title: "红色奶油"
+			x: -6.0d
+			y: -4.5d
+			subtitle: "肉类精华"
+			description: ["需要六种熟肉才能把奶油染成红色"]
+			dependencies: ["15809E5144ACD587"]
+			id: "396251C3796FA4F0"
+			tasks: [{
+				id: "1B7AC9EDBB8577F7"
+				type: "item"
+				item: "kubejs:fluid2_bucket"
+			}]
+		}
+		{
+			title: "黄色奶油"
+			x: -4.5d
+			y: -3.0d
+			subtitle: "矿物精华"
+			description: ["需要六种矿物才能把奶油染成黄色"]
+			dependencies: ["15809E5144ACD587"]
+			id: "0FFBFCB7AC414509"
+			tasks: [{
+				id: "4CA719B160EC70AE"
+				type: "item"
+				item: "kubejs:fluid3_bucket"
+			}]
+		}
+		{
+			title: "蓝色奶油"
+			x: -3.0d
+			y: -4.5d
+			subtitle: "海洋精华"
+			description: ["需要六种海产品才能把奶油染成蓝色"]
+			dependencies: ["15809E5144ACD587"]
+			id: "747933EE43F2A96F"
+			tasks: [{
+				id: "5F37B8C3688DE35A"
+				type: "item"
+				item: "kubejs:fluid4_bucket"
+			}]
+		}
+		{
+			title: "绿色奶油"
+			x: -4.5d
+			y: -6.0d
+			subtitle: "植物精华"
+			description: ["需要六种植物才能把奶油染成绿色"]
+			dependencies: ["15809E5144ACD587"]
+			id: "24FFFE8E791D51CA"
+			tasks: [{
+				id: "0EF6A36908421808"
+				type: "item"
+				item: "kubejs:fluid5_bucket"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			subtitle: "一口彩虹，吃定彩虹"
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "2900AF4B3B0627E7"
+			tasks: [{
+				id: "260526A442DA5F87"
+				type: "item"
+				item: "kubejs:item2"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "6859314507ACFA22"
+			tasks: [{
+				id: "0FDDA7B897E432A5"
+				type: "item"
+				item: "kubejs:item3"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "27FF9B39050CEE08"
+			tasks: [{
+				id: "52B0852D75C2A3F7"
+				type: "item"
+				item: "kubejs:fail1"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "616F50B2D3691CEC"
+			tasks: [{
+				id: "72E16B23A6CCC637"
+				type: "item"
+				item: "kubejs:fail2"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "786D302EEB2D4E3E"
+			tasks: [{
+				id: "3537E7D95A8EFACC"
+				type: "item"
+				item: "kubejs:fail3"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.5d
+			subtitle: "你这迷人的小蛋糕~"
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "7E90E089433914C1"
+			tasks: [{
+				id: "401A8FF72B9FE682"
+				type: "item"
+				item: "kubejs:item1-1"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["702E11E9752CC0FB"]
+			id: "4F6CE47EA745EF76"
+			tasks: [{
+				id: "6E31E37DA87F6A59"
+				type: "item"
+				item: "kubejs:item1-2"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			description: [
+				"产品请以实物为准"
+				"（玩家：阿米诺斯）"
+			]
+			hide_dependency_lines: true
+			dependencies: ["47C40B8B1D26D756"]
+			hide: true
+			dependency_requirement: "all_started"
+			id: "12C51142D8E07C34"
+			tasks: [{
+				id: "0BDBA5ECBAAD8876"
+				type: "checkmark"
+				title: "这是你吗？"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

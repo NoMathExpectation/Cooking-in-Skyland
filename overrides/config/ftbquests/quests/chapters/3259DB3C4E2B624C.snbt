@@ -1,0 +1,654 @@
+{
+	id: "3259DB3C4E2B624C"
+	group: "0A9230109B4C8FE3"
+	order_index: 2
+	filename: "3259DB3C4E2B624C"
+	title: "血肉的奇迹：汉堡"
+	icon: "farmersdelight:hamburger"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -1.0d
+			subtitle: "真的不是黑丝啦!"
+			description: ["深板岩强度高硬度好，但是不能耐高温，所以我们应该获取一些适合高温工作的材料了"]
+			dependencies: ["05410B1C359BC87F"]
+			hide: true
+			id: "5F078FBE03B78EAE"
+			tasks: [{
+				id: "25B3D468E796E551"
+				type: "item"
+				item: "minecraft:blackstone"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			description: ["表面镶满了金子的黑石，通过注入岩浆让这些金子渗透出来"]
+			dependencies: ["5F078FBE03B78EAE"]
+			id: "579F8D73D88A5AF3"
+			tasks: [{
+				id: "5650F3994DACBF18"
+				type: "item"
+				item: "minecraft:gilded_blackstone"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["579F8D73D88A5AF3"]
+			id: "43332A2ACD258751"
+			tasks: [{
+				id: "21DD1C572D48600B"
+				type: "item"
+				item: "exnihilosequentia:gold_pieces"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			dependencies: ["43332A2ACD258751"]
+			id: "50ED9E6DA6A87724"
+			tasks: [{
+				id: "7A06EF00A1DF4523"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+		}
+		{
+			title: "漂亮的白色石头"
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["579F8D73D88A5AF3"]
+			id: "6F5403C1915F7AB1"
+			tasks: [{
+				id: "4C6C7FA046C5D869"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			title: "又或者是红石大佬"
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["579F8D73D88A5AF3"]
+			id: "1D26CE6FF1DDE81F"
+			tasks: [{
+				id: "775068C692883376"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			subtitle: "虽然跟玫瑰一点关系没有..."
+			dependencies: [
+				"6F5403C1915F7AB1"
+				"1D26CE6FF1DDE81F"
+			]
+			id: "5ADAE759FEA8676A"
+			tasks: [{
+				id: "514C5AD85E88FC84"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+		}
+		{
+			title: "不是pvp大佬"
+			x: -0.5d
+			y: -4.0d
+			description: [
+				"这是用来切菜的刀，所以不要试着给你兄弟来一下"
+				"（虽然也有伤害就是了）"
+			]
+			dependencies: ["5B09DE829B32B8C8"]
+			id: "763230580B9AFB30"
+			tasks: [{
+				id: "18850FFF1F352F51"
+				type: "item"
+				item: {
+					id: "farmersdelight:iron_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "宙之月面盾反"
+			x: -3.5d
+			y: 0.5d
+			subtitle: "（兔子！坦克！）"
+			description: ["玄武岩(basalt)，洋壳主要组成，属基性火山岩。是地球洋壳和月球月海的最主要组成物质，也是地球陆壳和月球月陆的重要组成物质。"]
+			dependencies: ["579F8D73D88A5AF3"]
+			id: "0ED6318FB1489BBE"
+			tasks: [{
+				id: "5090CEE56A9C6DD7"
+				type: "item"
+				item: "minecraft:basalt"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: ["经过打磨的玫瑰石英，是各种零件的原材料"]
+			dependencies: ["5ADAE759FEA8676A"]
+			id: "5B09DE829B32B8C8"
+			tasks: [{
+				id: "7AD755B9426BCC10"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["玫瑰石英还具有优良的导热性质，所以我们拿来做成燃烧炉"]
+			dependencies: ["5B09DE829B32B8C8"]
+			id: "337F25053FA6397E"
+			tasks: [{
+				id: "155F62C8B97BDB81"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			title: "点——火——"
+			x: -2.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"我相信我们的人一定能完成任务，不计存亡，不论虚实！"
+				"——周喆（流浪地球2）"
+			]
+			dependencies: [
+				"67D2CADE37F04EE4"
+				"0ED6318FB1489BBE"
+			]
+			size: 2.0d
+			id: "33A142C102B29D21"
+			tasks: [{
+				id: "2D5C6F41A4670FBC"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["怎么获取呢？用刀子砍小麦"]
+			dependencies: ["51F43D2369EF7A92"]
+			id: "2F00124C9D1377BB"
+			tasks: [{
+				id: "4944B06F223368A6"
+				type: "item"
+				item: "farmersdelight:straw"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			description: [
+				"“尼加拉瓜大瀑布是世界上最大的瀑布”"
+				"“你家那块大破布是世界上最大的破布”"
+			]
+			dependencies: ["2F00124C9D1377BB"]
+			id: "08FFE58FA6998650"
+			tasks: [{
+				id: "4135E024632BAF34"
+				type: "item"
+				item: "farmersdelight:canvas"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["给烈焰人燃烧室点火时用的，不过以后燃烧室可以用固体或者是液体燃料"]
+			dependencies: ["337F25053FA6397E"]
+			id: "67D2CADE37F04EE4"
+			tasks: [{
+				id: "620C0A4E5174025C"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.0d
+			subtitle: "瓦特改良蒸汽机，不是他发明蒸汽机"
+			description: ["只要烧水就能获得大量应力的机器，如果应力短缺就试试这个"]
+			dependencies: ["50ED9E6DA6A87724"]
+			id: "75921ECFE765D422"
+			tasks: [{
+				id: "67C5F4E08137F19A"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			dependencies: ["50ED9E6DA6A87724"]
+			id: "50D8E60A27D21714"
+			tasks: [{
+				id: "5ABD158952FB7576"
+				type: "item"
+				item: "create:item_vault"
+			}]
+		}
+		{
+			title: "满满一桶蛋白质"
+			x: -2.0d
+			y: 2.0d
+			description: ["燃烧室的高温足以熔炼出流体蛋白质了，为了制成肉类，我们得耍一点小把戏了..."]
+			dependencies: ["33A142C102B29D21"]
+			id: "5C681A91530BE788"
+			tasks: [{
+				id: "60437D8FB7B42B62"
+				type: "item"
+				item: "kubejs:protein_bucket"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			description: ["真·一揽子"]
+			dependencies: ["08FFE58FA6998650"]
+			optional: true
+			id: "388F1EB752437C9D"
+			tasks: [{
+				id: "5BB7A12C571D73E8"
+				type: "item"
+				item: "farmersdelight:basket"
+			}]
+		}
+		{
+			title: "浙江温州！浙江温州！"
+			x: -0.5d
+			y: 2.0d
+			subtitle: "江南皮革厂倒闭了！"
+			description: [
+				"皮革其实是由紧密的蛋白质构成的，所以直接用蛋白质加热加压获取"
+				"很合理吧"
+			]
+			dependencies: ["5C681A91530BE788"]
+			id: "372B8F234C4D9FC1"
+			tasks: [{
+				id: "3ADA5F95C08F86D9"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+		}
+		{
+			title: "神户牛肉"
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"很合理吧"
+				" （玩家：可是你什么都没说啊）"
+			]
+			dependencies: ["372B8F234C4D9FC1"]
+			id: "1082290385362DCD"
+			tasks: [{
+				id: "0C268C81F939B327"
+				type: "item"
+				item: "minecraft:beef"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			description: ["上品的五花肉，肥瘦比例刚刚好"]
+			dependencies: ["54E779EF732AD4DB"]
+			id: "145F8274E08E559D"
+			tasks: [{
+				id: "6D6B86509CE4E59B"
+				type: "item"
+				item: "minecraft:porkchop"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			description: [
+				"牛奶是由代表牛的皮革中用蛋白质和水榨取的"
+				"很合理吧"
+			]
+			dependencies: ["372B8F234C4D9FC1"]
+			id: "79E7446A04BC2E1E"
+			tasks: [{
+				id: "0A9F7C3A824A4C0F"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			description: ["切成条状的猪肉，要是烤一下应该会更好吃"]
+			dependencies: ["145F8274E08E559D"]
+			id: "5A932B1DAEF486CE"
+			tasks: [{
+				id: "6FA20DE0F5C0CABA"
+				type: "item"
+				item: "farmersdelight:bacon"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: ["把牛肉剁成馅，待会煎肉排"]
+			dependencies: ["1082290385362DCD"]
+			id: "75DFA410D05F488B"
+			tasks: [{
+				id: "5634FCE7073915DB"
+				type: "item"
+				item: "farmersdelight:minced_beef"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			description: [
+				"如果没有计算好水和面粉的比例，揉面时面团会黏得到处都是"
+				"好在我们有揉面机"
+			]
+			dependencies: ["79E7446A04BC2E1E"]
+			id: "0C0E4D4B2589EB30"
+			tasks: [{
+				id: "333D741CB080624D"
+				type: "item"
+				item: "farmersdelight:wheat_dough"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			subtitle: "不用50万马克也能买"
+			dependencies: ["0C0E4D4B2589EB30"]
+			id: "22DF666C3E0CB072"
+			tasks: [{
+				id: "282C338B854CBC70"
+				type: "item"
+				item: "minecraft:bread"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["灰化土挥发会发灰，发灰灰化土会挥发..."]
+			dependencies: ["08FFE58FA6998650"]
+			size: 2.0d
+			id: "25C2BE51892F50CD"
+			tasks: [{
+				id: "6A41402852BB37C4"
+				type: "item"
+				item: "minecraft:podzol"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			dependencies: ["25C2BE51892F50CD"]
+			id: "21C57CAFE8AFD1AB"
+			tasks: [{
+				id: "7C029DD28DA2320A"
+				type: "item"
+				item: "farmersdelight:cabbage_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["25C2BE51892F50CD"]
+			id: "4F7AEAC0451F6E6F"
+			tasks: [{
+				id: "04E3F56CF09024FC"
+				type: "item"
+				item: "farmersdelight:tomato_seeds"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			subtitle: "是你！卷心菜投手！"
+			dependencies: ["21C57CAFE8AFD1AB"]
+			id: "500D1D7EBDA506B8"
+			tasks: [{
+				id: "6B7C53052762866B"
+				type: "item"
+				item: "farmersdelight:cabbage"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			dependencies: ["4F7AEAC0451F6E6F"]
+			id: "2298A2D6CFC9ED12"
+			tasks: [{
+				id: "5963C471D35A0D31"
+				type: "item"
+				item: "farmersdelight:tomato"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			description: ["去薯条整点码头拌着吃（错乱）"]
+			dependencies: ["2298A2D6CFC9ED12"]
+			id: "4B9553373D603F67"
+			tasks: [{
+				id: "2329662BBB1350A9"
+				type: "item"
+				item: "create_central_kitchen:tomato_sauce_bucket"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			description: [
+				"当然要先处理一下再拿去做吃的"
+				"不至于把整个卷心菜拿去做菜吧"
+			]
+			dependencies: ["500D1D7EBDA506B8"]
+			id: "617F56708110B404"
+			tasks: [{
+				id: "71FFF1DB27A89F08"
+				type: "item"
+				item: "farmersdelight:cabbage_leaf"
+			}]
+		}
+		{
+			title: "没有蟹也不黄的蟹黄包"
+			x: 4.0d
+			y: 4.0d
+			shape: "gear"
+			description: [
+				"恭喜！你完成了第三阶段！"
+				"接下来是...下海捞鱼！"
+			]
+			dependencies: [
+				"77D17BC1F7635083"
+				"6C471DBC8D166C6A"
+				"617F56708110B404"
+				"22DF666C3E0CB072"
+			]
+			size: 2.0d
+			id: "7FF252648E61FCB8"
+			tasks: [{
+				id: "10DD664275225E8E"
+				type: "item"
+				item: "farmersdelight:hamburger"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			description: ["海绵宝宝其实是煎肉排大师"]
+			dependencies: ["75DFA410D05F488B"]
+			id: "6C471DBC8D166C6A"
+			tasks: [{
+				id: "1C17C73DDB7D9E98"
+				type: "item"
+				item: "farmersdelight:beef_patty"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			description: ["培根配鸡蛋，一天不白干"]
+			dependencies: ["5A932B1DAEF486CE"]
+			id: "77D17BC1F7635083"
+			tasks: [{
+				id: "2123D7756D193047"
+				type: "item"
+				item: "farmersdelight:cooked_bacon"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			subtitle: "近战武器：火腿棒"
+			description: [
+				"猪肉含脂量高，于是用油和蛋白质进行充分搅拌"
+				"很合理吧"
+			]
+			dependencies: ["5C681A91530BE788"]
+			id: "54E779EF732AD4DB"
+			tasks: [{
+				id: "21E806253F1EAD4F"
+				type: "item"
+				item: "farmersdelight:ham"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["08FFE58FA6998650"]
+			optional: true
+			id: "0C5D8B723B21AC52"
+			tasks: [{
+				id: "518C1C6EBF9434AE"
+				type: "item"
+				item: "minecraft:scaffolding"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			description: ["往砧板里面掺点玫瑰石英，这样砧板就能撑得住菜刀的切（zhe）割（mo）了"]
+			dependencies: ["763230580B9AFB30"]
+			id: "51F43D2369EF7A92"
+			tasks: [{
+				id: "47CA87EBFA3CE74E"
+				type: "item"
+				item: "farmersdelight:cutting_board"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["为什么会从土里面清洗出锌矿呢？"]
+			dependencies: ["25C2BE51892F50CD"]
+			id: "61BB95E3AB7B1384"
+			tasks: [{
+				id: "185EEC4D8F679D8E"
+				type: "item"
+				item: "exnihilosequentia:zinc_pieces"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"这是最后一种基础金属，也是黄铜的必需材料"
+				"一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药也可以..."
+			]
+			dependencies: ["61BB95E3AB7B1384"]
+			id: "0A38B93E781BDE6D"
+			tasks: [{
+				id: "1E75913F95D502C1"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+		}
+		{
+			title: "黄铜"
+			x: 1.0d
+			y: 0.5d
+			subtitle: "铜锌合金"
+			description: [
+				"你知道吗？"
+				"紫铜是纯铜，青铜是铜锡合金，白铜是铜镍合金"
+				"蓝铜？蓝铜是啥？"
+			]
+			dependencies: [
+				"0A38B93E781BDE6D"
+				"67D2CADE37F04EE4"
+			]
+			id: "086522766212231E"
+			tasks: [{
+				id: "1D0C3B523A1B1F7B"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			title: "用手指着"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "给我玩天空厨房.jpg"
+			dependencies: ["086522766212231E"]
+			id: "5A75C07C9FC4F92B"
+			tasks: [{
+				id: "019A6F9997073A81"
+				type: "item"
+				item: "create:brass_hand"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			subtitle: "装配线机器人"
+			description: [
+				"这是一种可以模仿玩家活动的机械，准备两个机械手并对着筛子，塞给其中一个需要筛的物品，就能自动使用筛子了"
+				"同时，机械手也能完成切菜、装配等操作"
+			]
+			dependencies: ["5A75C07C9FC4F92B"]
+			id: "5411361D367EDA90"
+			tasks: [{
+				id: "3DB9C27A1DB8F7F7"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			title: "打火姬"
+			x: -3.5d
+			y: 2.0d
+			subtitle: "兄弟，借个火"
+			description: [
+				"煤气泄露了怎么办？不要紧张，抽根烟冷静一下"
+				"（危险动作请勿模仿）"
+			]
+			dependencies: ["0ED6318FB1489BBE"]
+			id: "538AB19B1076086E"
+			tasks: [{
+				id: "41ABA1E3755EEBFE"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

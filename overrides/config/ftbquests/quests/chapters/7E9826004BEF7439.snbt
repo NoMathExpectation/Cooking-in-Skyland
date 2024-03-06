@@ -1,0 +1,636 @@
+{
+	id: "7E9826004BEF7439"
+	group: "4D81F2802AE7DA76"
+	order_index: 2
+	filename: "7E9826004BEF7439"
+	title: "环境的美化：装饰"
+	icon: "minecraft:azure_bluet"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "又或者是建筑大佬"
+			x: -6.0d
+			y: 0.5d
+			subtitle: "总之不是pvp大佬"
+			description: [
+				"这里提供了一些装饰方块，供你装饰一下你的空岛"
+				"在这个章节中，任务形状为方形的任务是交易型任务，你可以根据任务要求换取一些物资"
+			]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "7002E44FFB94AD50"
+			tasks: [{
+				id: "5115A238DAEE06C7"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "花"
+			icon: "minecraft:dandelion"
+			x: -3.5d
+			y: -2.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "44605E32616E6D98"
+			tasks: [{
+				id: "3B311AD051B7A032"
+				type: "item"
+				item: "create:tree_fertilizer"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4B773710FD60B872"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5019194028131084911L
+			}]
+		}
+		{
+			title: "树苗"
+			icon: "minecraft:oak_sapling"
+			x: -2.0d
+			y: -2.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "40C3AC4B9E7B1457"
+			tasks: [
+				{
+					id: "66CF6E0F02C0BE11"
+					type: "item"
+					item: "create:tree_fertilizer"
+					consume_items: true
+				}
+				{
+					id: "0D2D831271F9E2BA"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "643BF228BA1C3269"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1859286757284857000L
+			}]
+		}
+		{
+			title: "染料"
+			x: -2.0d
+			y: -1.0d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "7D38C6375A571DB5"
+			tasks: [{
+				id: "5EAB4C1A79D32164"
+				type: "item"
+				item: "minecraft:white_dye"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "445D3DF18641D771"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 3153998298479458326L
+			}]
+		}
+		{
+			title: "小型植物"
+			icon: "minecraft:grass"
+			x: -3.5d
+			y: -1.0d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "474C078369CF290A"
+			tasks: [{
+				id: "3A090A1B45E3077A"
+				type: "item"
+				item: "minecraft:bone_meal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "79F6091BCA264D91"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2140518015698774766L
+			}]
+		}
+		{
+			title: "养猫许可证"
+			icon: "minecraft:cooked_cod"
+			x: -3.5d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "5D3159C00C88001A"
+			tasks: [
+				{
+					id: "0F856EA723E29DE0"
+					type: "item"
+					item: "farmersdelight:cooked_cod_slice"
+					count: 8L
+					consume_items: true
+				}
+				{
+					id: "36E9F36DC494CBFC"
+					type: "item"
+					item: "farmersdelight:cooked_salmon_slice"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "1E5E8197BD50212F"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2982513278498790282L
+			}]
+		}
+		{
+			title: "养狗许可证"
+			icon: "minecraft:bone"
+			x: -2.0d
+			y: 0.5d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "4F0094DFEBDE338C"
+			tasks: [
+				{
+					id: "63559659E95BEEC8"
+					type: "item"
+					item: "minecraft:cooked_chicken"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "14EA9FBB2D7BA596"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "1C3B567BCB3D884A"
+					type: "item"
+					item: "minecraft:cooked_mutton"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "1059DEBCAC91CD89"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 4L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "354D8CB62A6EAC96"
+				type: "item"
+				item: "minecraft:wolf_spawn_egg"
+			}]
+		}
+		{
+			title: "美观鱼市场"
+			icon: "minecraft:tropical_fish"
+			x: -3.5d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			id: "568341453DE7CEC3"
+			tasks: [{
+				id: "3745CB2A6A2E85B1"
+				type: "item"
+				item: "kubejs:fishfood"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4F46E272BDA30FA3"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 6742805589228151163L
+			}]
+		}
+		{
+			title: "六角小恐龙"
+			icon: "minecraft:axolotl_bucket"
+			x: -2.0d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			id: "024C4DE2283C8659"
+			tasks: [{
+				id: "408DB9E2B8269DC2"
+				type: "item"
+				item: "minecraft:tropical_fish"
+				count: 8L
+			}]
+			rewards: [{
+				id: "657C680102FC59C9"
+				type: "item"
+				item: "minecraft:axolotl_spawn_egg"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "2DDB7BE96FF11D11"
+			tasks: [{
+				id: "7EC1C6C4B85CF455"
+				type: "item"
+				item: "minecraft:coal_ore"
+			}]
+		}
+		{
+			title: "浅层矿石"
+			icon: "minecraft:stone"
+			x: 1.0d
+			y: -1.0d
+			description: [
+				"提醒一下，所有的矿石挖掘后只会掉落矿石，就不用想着利用这些任务逃课了"
+				"但是允许冶炼矿石，这样做多了可以收回"
+			]
+			dependencies: ["7002E44FFB94AD50"]
+			id: "7AA2D7A0ED4661BB"
+			tasks: [{
+				id: "2A77D3FA73C2C822"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "0A14F38DDFFE393B"
+			tasks: [{
+				id: "550A8CD1DEEA3535"
+				type: "item"
+				item: "minecraft:iron_ore"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "23DDE68EACD04DB3"
+			tasks: [{
+				id: "32013EFD7019C7CC"
+				type: "item"
+				item: "minecraft:copper_ore"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "3025D34B0E92F31C"
+			tasks: [{
+				id: "03C748C5A24BE598"
+				type: "item"
+				item: "minecraft:gold_ore"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "30B12484C83756AB"
+			tasks: [{
+				id: "2BD03F2351F08DD1"
+				type: "item"
+				item: "minecraft:redstone_ore"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "764696DDB1171939"
+			tasks: [{
+				id: "6ED478D842F5ACA8"
+				type: "item"
+				item: "minecraft:emerald_ore"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "6638DBA6504BF90F"
+			tasks: [{
+				id: "3FD97966CD784F50"
+				type: "item"
+				item: "minecraft:lapis_ore"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["7AA2D7A0ED4661BB"]
+			id: "41175DCA2CEF1EAD"
+			tasks: [{
+				id: "4A2DA371F4FE3D23"
+				type: "item"
+				item: "minecraft:diamond_ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "3D51247E76285471"
+			tasks: [{
+				id: "6E1F34D51AB07797"
+				type: "item"
+				item: "minecraft:deepslate_redstone_ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "1AA2E6D91A1D0A59"
+			tasks: [{
+				id: "367E9780C6B9B321"
+				type: "item"
+				item: "minecraft:deepslate_emerald_ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "27FF9593B18E71B0"
+			tasks: [{
+				id: "3A1BA5EBBAE096A0"
+				type: "item"
+				item: "minecraft:deepslate_coal_ore"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "2512C98E92BCE9F4"
+			tasks: [{
+				id: "6A9207446D0613DA"
+				type: "item"
+				item: "minecraft:deepslate_iron_ore"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "60AB260513C95A95"
+			tasks: [{
+				id: "4E537515B9067FAD"
+				type: "item"
+				item: "minecraft:deepslate_copper_ore"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "4AB34C7B216F2AC9"
+			tasks: [{
+				id: "6C10921C2D0D1A3E"
+				type: "item"
+				item: "minecraft:deepslate_gold_ore"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "4A222B8A5D5EE36D"
+			tasks: [{
+				id: "48A8564A85693D80"
+				type: "item"
+				item: "minecraft:deepslate_lapis_ore"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			hide_dependency_lines: false
+			dependencies: ["4E81C4B7087903D6"]
+			id: "74D590E385E61345"
+			tasks: [{
+				id: "5813B8DACAEE7B6F"
+				type: "item"
+				item: "minecraft:deepslate_diamond_ore"
+			}]
+		}
+		{
+			title: "深层矿石"
+			icon: "minecraft:deepslate"
+			x: 5.5d
+			y: -1.0d
+			description: ["这些矿石都是装饰用的，没法用时运附魔逃课获取矿物"]
+			dependencies: ["7002E44FFB94AD50"]
+			id: "4E81C4B7087903D6"
+			tasks: [{
+				id: "6A56D0F17B5D41E8"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "6CF3501E46327E6D"
+			tasks: [{
+				id: "3CC02284FDC5EC66"
+				type: "item"
+				item: "minecraft:calcite"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "30B733E6C957359A"
+			tasks: [{
+				id: "30474548B1F9D20D"
+				type: "item"
+				item: "create:asurine"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "05B6B8645CDE2E22"
+			tasks: [{
+				id: "3BC79D69D2B9A7AA"
+				type: "item"
+				item: "create:crimsite"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "181B04C139F695A3"
+			tasks: [{
+				id: "6D8B983A7EE394F9"
+				type: "item"
+				item: "create:limestone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "59DABDA741673394"
+			tasks: [{
+				id: "4BBA7D9FDBAD409C"
+				type: "item"
+				item: "create:ochrum"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "11DBA4AF11EB794C"
+			tasks: [{
+				id: "4F2DA6B62C732A44"
+				type: "item"
+				item: "create:scoria"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "7A7F3AAD90960764"
+			tasks: [{
+				id: "5FAEFB6CE7C56E3F"
+				type: "item"
+				item: "create:scorchia"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "0046575FFA1C88E7"
+			tasks: [{
+				id: "3F0B63D33417C0EA"
+				type: "item"
+				item: "create:veridium"
+			}]
+		}
+		{
+			title: "旗帜图案"
+			icon: "minecraft:mojang_banner_pattern"
+			x: -3.5d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "70DDC436716A5CF8"
+			tasks: [{
+				id: "6675C4B69E2955C7"
+				type: "item"
+				item: "minecraft:white_wool"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "14876B027552967E"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5362436926700261591L
+			}]
+		}
+		{
+			title: "地狱矿石"
+			icon: "minecraft:netherrack"
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "7E051B4EA7E3BE5D"
+			tasks: [{
+				id: "7AD8A1E1467C4507"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["7E051B4EA7E3BE5D"]
+			id: "29766775503E5423"
+			tasks: [{
+				id: "58E281BFCAEADBB6"
+				type: "item"
+				item: "minecraft:nether_gold_ore"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			hide_dependency_lines: false
+			dependencies: ["7E051B4EA7E3BE5D"]
+			id: "3E10790621AE86CE"
+			tasks: [{
+				id: "64841EA20971E4AC"
+				type: "item"
+				item: "minecraft:nether_quartz_ore"
+			}]
+		}
+		{
+			title: "其他头颅"
+			x: -2.0d
+			y: 3.5d
+			shape: "rsquare"
+			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
+			id: "48028F61AA8FABE6"
+			tasks: [{
+				id: "78DED13A94C4F794"
+				type: "item"
+				item: "minecraft:zombie_head"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "32D7930DCFB4F54C"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1604268204642605904L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

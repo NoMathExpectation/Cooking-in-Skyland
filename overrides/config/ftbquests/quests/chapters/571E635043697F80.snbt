@@ -1,0 +1,765 @@
+{
+	id: "571E635043697F80"
+	group: "4D81F2802AE7DA76"
+	order_index: 0
+	filename: "571E635043697F80"
+	title: "皇帝的晚饭：挑战"
+	icon: "minecraft:totem_of_undying"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: -2.0d
+			subtitle: "能天使探头(/≧▽≦)/"
+			dependencies: ["668163AC1DD313B1"]
+			id: "03331F6185634031"
+			tasks: [{
+				id: "79B14A9306E4CC85"
+				type: "item"
+				item: "farmersdelight:apple_pie"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "668163AC1DD313B1"
+			tasks: [{
+				id: "4388F452265C03FD"
+				type: "item"
+				item: "farmersdelight:pie_crust"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			dependencies: ["668163AC1DD313B1"]
+			id: "2920169A8DD79376"
+			tasks: [{
+				id: "5AFD7F8DA26E5B58"
+				type: "item"
+				item: "farmersdelight:sweet_berry_cheesecake"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["668163AC1DD313B1"]
+			id: "186886F2843F1B6C"
+			tasks: [{
+				id: "1132912F9CD73D9D"
+				type: "item"
+				item: "farmersdelight:chocolate_pie"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "7526E74B825B9DA8"
+			tasks: [{
+				id: "77227D238BE7E904"
+				type: "item"
+				item: "farmersdelight:raw_pasta"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			subtitle: "大碗宽面"
+			dependencies: [
+				"7526E74B825B9DA8"
+				"2C8A0E5AE12EAB82"
+			]
+			id: "34F05B7CEB915AEB"
+			tasks: [{
+				id: "49D904F44077275E"
+				type: "item"
+				item: "farmersdelight:noodle_soup"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["7526E74B825B9DA8"]
+			id: "364FB4B188D3A5B6"
+			tasks: [{
+				id: "1B10C8838402AFEC"
+				type: "item"
+				item: "farmersdelight:pasta_with_meatballs"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["7526E74B825B9DA8"]
+			id: "6156D56670D15210"
+			tasks: [{
+				id: "4F56BDCE4A934B6E"
+				type: "item"
+				item: "farmersdelight:vegetable_noodles"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			dependencies: ["7526E74B825B9DA8"]
+			id: "08571D38FC0B00D3"
+			tasks: [{
+				id: "590C3611BD501454"
+				type: "item"
+				item: "farmersdelight:squid_ink_pasta"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "1DFB7D4C29F5BB98"
+			tasks: [{
+				id: "284803B08056B394"
+				type: "item"
+				item: "farmersdelight:bone_broth"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "41CAA1F66695ED11"
+			tasks: [{
+				id: "0C873195A7E9B425"
+				type: "item"
+				item: "farmersdelight:chicken_soup"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "784F3AE1B1A40F62"
+			tasks: [{
+				id: "274448D176C519C7"
+				type: "item"
+				item: "farmersdelight:vegetable_soup"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "237837BE2725094F"
+			tasks: [{
+				id: "293BDDC536337D8B"
+				type: "item"
+				item: "farmersdelight:pumpkin_soup"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "0FCC7FD348E4B870"
+			tasks: [{
+				id: "57EF241E7DE5D4AC"
+				type: "item"
+				item: "farmersdelight:fish_stew"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "775D0594EBFB3B69"
+			tasks: [{
+				id: "386E4B7585AA035A"
+				type: "item"
+				item: "farmersdelight:baked_cod_stew"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			dependencies: ["2C8A0E5AE12EAB82"]
+			id: "0EA77447DE163C8E"
+			tasks: [{
+				id: "62EC472F68DA65EA"
+				type: "item"
+				item: "farmersdelight:beef_stew"
+			}]
+		}
+		{
+			title: "汤"
+			icon: "minecraft:bowl"
+			x: -0.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "2C8A0E5AE12EAB82"
+			tasks: [{
+				id: "25EE6069D4EBFD04"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "三明治"
+			icon: "kubejs:undo_sandwich"
+			x: -5.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "3D47CA60C5D149D7"
+			tasks: [{
+				id: "6D359D1FD86EF676"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			dependencies: ["3D47CA60C5D149D7"]
+			id: "2EEED1E19018BC3E"
+			tasks: [{
+				id: "2054FC49AD303533"
+				type: "item"
+				item: "farmersdelight:egg_sandwich"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["3D47CA60C5D149D7"]
+			id: "40D981BEA830F42F"
+			tasks: [{
+				id: "256BFC32BFA83DEB"
+				type: "item"
+				item: "farmersdelight:chicken_sandwich"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 1.0d
+			dependencies: ["3D47CA60C5D149D7"]
+			id: "3EFE14F9A10C6385"
+			tasks: [{
+				id: "0A2DA806D4375387"
+				type: "item"
+				item: "farmersdelight:bacon_sandwich"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			subtitle: "这也是三明治？"
+			dependencies: ["3D47CA60C5D149D7"]
+			id: "56E29AFC58D522C8"
+			tasks: [{
+				id: "191509759E179329"
+				type: "item"
+				item: "farmersdelight:mutton_wrap"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "737E41AC79CD88C6"
+			tasks: [{
+				id: "37ADDCF88ADB7555"
+				type: "item"
+				item: "farmersdelight:cabbage_rolls"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "107444D07B4AD260"
+			tasks: [{
+				id: "45FC00C83AA1FD0D"
+				type: "item"
+				item: "create:sweet_roll"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "417EC1968CCB55D1"
+			tasks: [{
+				id: "5E1DF2182DE36475"
+				type: "item"
+				item: "farmersdelight:melon_popsicle"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "2FF64093D2675501"
+			tasks: [{
+				id: "17AC8C074443F490"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "79E04E22F419B4C8"
+			tasks: [{
+				id: "11B93130BE681B29"
+				type: "item"
+				item: "farmersdelight:sweet_berry_cookie"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "19A9BFC030339304"
+			tasks: [{
+				id: "6265BFA04A0953E5"
+				type: "item"
+				item: "farmersdelight:honey_cookie"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "1A7AF56C558609D4"
+			tasks: [{
+				id: "7AAF15C8168A611B"
+				type: "item"
+				item: "farmersdelight:glow_berry_custard"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: ["527C738AFE224BBF"]
+			id: "50DAFACA34965109"
+			tasks: [{
+				id: "34BC1FB7915EBC45"
+				type: "item"
+				item: "farmersdelight:fruit_salad"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			dependencies: ["527C738AFE224BBF"]
+			id: "0297BFBBF90151EC"
+			tasks: [{
+				id: "6E012D7971D7C60B"
+				type: "item"
+				item: "farmersdelight:mixed_salad"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			dependencies: ["527C738AFE224BBF"]
+			id: "013B97A8C0BA8CE2"
+			tasks: [{
+				id: "0E021F9262036E70"
+				type: "item"
+				item: "farmersdelight:nether_salad"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			subtitle: "小哥，买苹果不"
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "3974F6C6B9085822"
+			tasks: [{
+				id: "2556A9A2F05E0FEA"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: ["569B2EFB698AE9E8"]
+			id: "65C0DB6AA4E6098B"
+			tasks: [{
+				id: "67AF00915FF1C2F9"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["65C0DB6AA4E6098B"]
+			id: "02A42CD27F6AFBEE"
+			tasks: [{
+				id: "396DCD64E2A3125F"
+				type: "item"
+				item: "rainbowcompound:enchanted_golden_apple_stew"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			dependencies: ["3974F6C6B9085822"]
+			id: "227BB26195A470BF"
+			tasks: [{
+				id: "662DF0C70E8E87FE"
+				type: "item"
+				item: "rainbowcompound:golden_apple_stew"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["3974F6C6B9085822"]
+			id: "569B2EFB698AE9E8"
+			tasks: [{
+				id: "54F6C9B93A8273D4"
+				type: "item"
+				item: "rainbowcompound:rainbow_apple"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["569B2EFB698AE9E8"]
+			id: "3D09AB50F2DE27F2"
+			tasks: [{
+				id: "7C91EDE4DC2473B1"
+				type: "item"
+				item: "rainbowcompound:rainbow_apple_stew"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.5d
+			dependencies: ["39B26CDBE4FCE1D9"]
+			id: "03AF4B7BE1313C56"
+			tasks: [{
+				id: "77AB36ED693C3ACB"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			dependencies: ["39B26CDBE4FCE1D9"]
+			id: "15C4EEC4BAB65D3F"
+			tasks: [{
+				id: "6DCAD2403A14F56F"
+				type: "item"
+				item: "farmersdelight:apple_cider"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			dependencies: ["39B26CDBE4FCE1D9"]
+			id: "55F7B396712DE3A3"
+			tasks: [{
+				id: "616D8A7DB795C754"
+				type: "item"
+				item: "farmersdelight:melon_juice"
+			}]
+		}
+		{
+			title: "厨师技能考核"
+			x: -9.0d
+			y: -2.0d
+			subtitle: "现在播放考场守则..."
+			description: ["做一个蛋糕不够展示你作为一名厨师的水平，制作更多类型的美食才是"]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "31A8D049A7A47E96"
+			tasks: [{
+				id: "6BBB6EF656F84A0A"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "3647ECC1CE1413C0"
+			tasks: [{
+				id: "4EA04B4C9B947E54"
+				type: "item"
+				item: "farmersdelight:barbecue_stick"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			subtitle: "过年就要包饺子！"
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "2C74A346EE7E7167"
+			tasks: [{
+				id: "05F8EFBD47CBD437"
+				type: "item"
+				item: "farmersdelight:dumplings"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "62907D9BEB301412"
+			tasks: [{
+				id: "426D896F08F635BD"
+				type: "item"
+				item: "farmersdelight:stuffed_potato"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "5F0E2285FB26EA98"
+			tasks: [{
+				id: "7A207A1AA7B7E70A"
+				type: "item"
+				item: "farmersdelight:shepherds_pie_block"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.0d
+			dependencies: ["5F0E2285FB26EA98"]
+			id: "4BE262C04DC3374E"
+			tasks: [{
+				id: "18024523B43410DD"
+				type: "item"
+				item: "farmersdelight:shepherds_pie"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "42F1E4DA04F5DBA8"
+			tasks: [{
+				id: "0022F49C51C0D1FA"
+				type: "item"
+				item: "farmersdelight:roast_chicken_block"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			dependencies: ["42F1E4DA04F5DBA8"]
+			id: "62EA502CEBF5406F"
+			tasks: [{
+				id: "43B1DBCF1A05D190"
+				type: "item"
+				item: "farmersdelight:roast_chicken"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "5EB9A340777C0C1C"
+			tasks: [{
+				id: "44AF696F9FD3BEEE"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin_block"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["5EB9A340777C0C1C"]
+			id: "354CFB7EA2AE2614"
+			tasks: [{
+				id: "5E313039C124B22B"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "6C6F0544F7AC0A10"
+			tasks: [{
+				id: "5A6E8E6108EE430A"
+				type: "item"
+				item: "farmersdelight:bacon_and_eggs"
+			}]
+		}
+		{
+			title: "沙拉"
+			icon: "minecraft:bowl"
+			x: -5.0d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "527C738AFE224BBF"
+			tasks: [{
+				id: "751C92ECB13DA2F5"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "饮料"
+			icon: "minecraft:glass_bottle"
+			x: -3.5d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "39B26CDBE4FCE1D9"
+			tasks: [{
+				id: "1105F20229783A76"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.0d
+			subtitle: "普罗旺斯炖菜"
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "07176635F5E5725C"
+			tasks: [{
+				id: "1253A4ADAF617B20"
+				type: "item"
+				item: "farmersdelight:ratatouille"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "60EABB6430353F6C"
+			tasks: [{
+				id: "23BAF4FDFA32F9B2"
+				type: "item"
+				item: "farmersdelight:roasted_mutton_chops"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "18984024778A8B0A"
+			tasks: [{
+				id: "71D1F43CB22D76AB"
+				type: "item"
+				item: "farmersdelight:steak_and_potatoes"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "3F4170FC93284F50"
+			tasks: [{
+				id: "2E7AECD3E12D2FEA"
+				type: "item"
+				item: "farmersdelight:mushroom_rice"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "465FFBF5B113E02D"
+			tasks: [{
+				id: "2CB0066C768C6F45"
+				type: "item"
+				item: "minecraft:mushroom_stew"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "2139CBF8653CBDE4"
+			tasks: [{
+				id: "6F7E223368017168"
+				type: "item"
+				item: "minecraft:beetroot_soup"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "5F73A721C9CE90EB"
+			tasks: [{
+				id: "4B188B92F89ADD1F"
+				type: "item"
+				item: "minecraft:rabbit_stew"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			subtitle: "三点多嘞饮茶先啦"
+			hide_dependency_lines: true
+			dependencies: ["31A8D049A7A47E96"]
+			id: "75A8A6A2F23E27DC"
+			tasks: [{
+				id: "0B89332B0F39DD4D"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			dependencies: ["75A8A6A2F23E27DC"]
+			id: "386280D013706A2A"
+			tasks: [{
+				id: "1344225F727146C0"
+				type: "item"
+				item: "rainbowcompound:refined_radiance_tea"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["75A8A6A2F23E27DC"]
+			id: "372ACD4FB8B6FF1B"
+			tasks: [{
+				id: "3532667FED7B3A7E"
+				type: "item"
+				item: "rainbowcompound:shadow_steel_tea"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

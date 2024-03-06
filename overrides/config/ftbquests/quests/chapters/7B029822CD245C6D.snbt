@@ -1,0 +1,437 @@
+{
+	id: "7B029822CD245C6D"
+	group: "4D81F2802AE7DA76"
+	order_index: 1
+	filename: "7B029822CD245C6D"
+	title: "实用的玩意：工具"
+	icon: "create:wrench"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 6.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "653095D0CC79AA0A"
+			tasks: [{
+				id: "3C3C29C437C56548"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "551D2C8392D4FD9A"
+			tasks: [{
+				id: "53888A412019F731"
+				type: "item"
+				item: "exnihilosequentia:oak_crucible"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "42FFAE0055FA6642"
+			tasks: [{
+				id: "210EA9F912CCD542"
+				type: "item"
+				item: "trashcans:item_trash_can"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "14D67790C835AEFD"
+			tasks: [{
+				id: "1B371EDCB03A83E8"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			dependencies: ["14D67790C835AEFD"]
+			id: "7FBD2B088CE6D2B0"
+			tasks: [{
+				id: "24772DF5359D44AF"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.0d
+			subtitle: "合成前先清空"
+			description: [
+				"在合成前记得把里面的食物拿出来，不然会消失的"
+				"BUG？不，是特性"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2D19992998164BB7"]
+			id: "095C4C9BB41D6911"
+			tasks: [{
+				id: "3D69EC562625C78F"
+				type: "item"
+				item: {
+					id: "solsweetpotato:lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 9
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			hide_dependency_lines: false
+			dependencies: ["095C4C9BB41D6911"]
+			id: "069B3E1CBD189653"
+			tasks: [{
+				id: "388484DAE7D3D203"
+				type: "item"
+				item: {
+					id: "solsweetpotato:golden_lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 14
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			hide_dependency_lines: false
+			dependencies: ["22D16E5A46B01317"]
+			id: "20C37F1CB3C21172"
+			tasks: [{
+				id: "2066EDC5D789E693"
+				type: "item"
+				item: "create:schematicannon"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "42782D8704BBE7ED"
+			tasks: [{
+				id: "4F1F5A6561556390"
+				type: "item"
+				item: "create:crafting_blueprint"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "22D16E5A46B01317"
+			tasks: [{
+				id: "286E588C05EA1616"
+				type: "item"
+				item: "create:empty_schematic"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "7FE72B6E9A2816BE"
+			tasks: [{
+				id: "7C0FAD3235E58748"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "必要的工具"
+			x: -5.0d
+			y: -4.0d
+			subtitle: "...其实也没那么必要"
+			description: ["这里是你可能会用到的一些小玩意，能帮助你推进主线或者建设空岛"]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "72BFB42105316390"
+			tasks: [{
+				id: "1A216C2A7B9D0B6F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			dependencies: ["42FFAE0055FA6642"]
+			id: "126816FDFD181643"
+			tasks: [{
+				id: "1BE80691783E13EA"
+				type: "item"
+				item: "trashcans:liquid_trash_can"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0220C5A6612C57C1"
+			tasks: [{
+				id: "793E48E9D14DBD6D"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "21490A8EA52FBF66"
+			tasks: [{
+				id: "6B5A40E4B4F29C2E"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "14988C3504573BAB"
+			tasks: [{
+				id: "643132B35038D47D"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1BBF124A4D401C65"
+			tasks: [{
+				id: "582140CC9FD1576B"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1F01F5210A2A05D3"
+			tasks: [{
+				id: "2CED6427931C62F4"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "35DB75D0E5ABD056"
+			tasks: [{
+				id: "23C5156113C65C46"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -7.0d
+			description: [
+				"按下shift并右键打开午餐袋界面"
+				"长按右键吃午餐袋里面的食物"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "2D19992998164BB7"
+			tasks: [{
+				id: "6E209EDE315A282B"
+				type: "item"
+				item: {
+					id: "solsweetpotato:lunchbag"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "333D28582ED41D18"
+			tasks: [{
+				id: "0D016D0EB183D861"
+				type: "item"
+				item: "solsweetpotato:food_book"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0A103788D15F82F8"
+			tasks: [{
+				id: "0439320E4F4B4647"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			title: "抽屉"
+			x: 8.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0426D3F1A7CCE75E"
+			tasks: [{
+				id: "6976C697573DA7AD"
+				type: "item"
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:mod"
+								tag: {
+									value: "storagedrawers"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "storagedrawers:drawers"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "77EE45A69D8985BC"
+			tasks: [{
+				id: "417339BF70B0F914"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "6F9160EA91F0AAA8"
+			tasks: [{
+				id: "44B3C521F7CA09A5"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1BD94672F4B629BA"
+			tasks: [{
+				id: "2CC6DD8F58B250D5"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "6A0038AC2F2E13B6"
+			tasks: [{
+				id: "1A4131DA788C20AB"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "2D4800E350B404BD"
+			tasks: [{
+				id: "38FA08DA79FAEBEC"
+				type: "item"
+				item: {
+					id: "fluiddrawerslegacy:fluiddrawer"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,535 @@
+{
+	id: "5A82323AEAFF407E"
+	group: "0A9230109B4C8FE3"
+	order_index: 1
+	filename: "5A82323AEAFF407E"
+	title: "地下的科技：炒饭"
+	icon: "farmersdelight:fried_rice"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["普通的石头不足以进行工业化，是时候获取更加深层的石头了！"]
+			dependencies: ["2AD382183C74DD42"]
+			hide: true
+			id: "661370AE5906AC1C"
+			tasks: [{
+				id: "3EB2572EA1B26459"
+				type: "item"
+				item: "minecraft:tuff"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			description: [
+				"只有经过煅烧的深板岩才能真正用于工业生产。是时候进入工业时代了！"
+				"（还记得工程力学吗？）"
+			]
+			dependencies: ["69F5A78A79036389"]
+			id: "405B337CC2B29236"
+			tasks: [{
+				id: "3E8875AFCBA570D8"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: [
+				"来自地底的致密圆石，其强度足以支持工程机械使用"
+				"石头里面还混杂了一些奇特的小黑石子，似乎是稻米的化石？"
+			]
+			dependencies: ["661370AE5906AC1C"]
+			id: "69F5A78A79036389"
+			tasks: [{
+				id: "71032C85E6022E3F"
+				type: "item"
+				item: "minecraft:cobbled_deepslate"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["7AE4757D4C5A7952"]
+			id: "3C073D71B1D399AA"
+			tasks: [{
+				id: "63A2F24690AB4B3B"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			title: "水力资源"
+			x: 1.0d
+			y: -1.5d
+			subtitle: "2030碳达峰，2060碳中和"
+			description: ["现在你终于可以抛弃那个手摇握柄了，从流水中获取源源不断的应力"]
+			dependencies: ["405B337CC2B29236"]
+			optional: true
+			id: "3D7B683D0A0E682C"
+			tasks: [{
+				id: "6D8D67768F79C4D2"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			title: "更好的水力资源"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "提问：三峡是哪三个峡？"
+			description: [
+				"...或者更高效地从流水中获取应力"
+				"（瞿塘峡、巫峡和西陵峡）"
+			]
+			dependencies: ["3D7B683D0A0E682C"]
+			optional: true
+			id: "46C8F537F42A7C50"
+			tasks: [{
+				id: "3294E9F4CC31A50E"
+				type: "item"
+				item: "create:large_water_wheel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			subtitle: "要磨碎才能种"
+			description: ["中国是世界上栽培水稻历史悠久的国家。根据考古发现，浙江省河姆渡遗址的考古挖掘证明，早在约六七千年前的新石器时代晚期，水稻已经成为当地居民的重要食物来源。"]
+			dependencies: ["69F5A78A79036389"]
+			id: "24D35E429A63A257"
+			tasks: [{
+				id: "110F4F477B5A33DF"
+				type: "item"
+				item: "farmersdelight:rice_panicle"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			shape: "hexagon"
+			subtitle: "记得种在水里"
+			description: [
+				""
+				"你想往锅里放多少米，就放多少，然后倒水，“要放多少水？”你用指尖探到大米的顶部，然后往里加水直到水碰到这根该死的线，完美的米饭"
+				"——JOKER脱口秀"
+			]
+			dependencies: [
+				"24D35E429A63A257"
+				"3C073D71B1D399AA"
+			]
+			size: 2.0d
+			id: "29E59DE69F9381C6"
+			tasks: [{
+				id: "619F47312FFBB43B"
+				type: "item"
+				item: "farmersdelight:rice"
+			}]
+		}
+		{
+			title: "工业革命!"
+			x: 4.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "机器的轰鸣声！"
+			description: ["这是绝大多数工业配方需要用到的东西，作用是提供工作场所"]
+			dependencies: ["405B337CC2B29236"]
+			size: 2.0d
+			id: "7AE4757D4C5A7952"
+			tasks: [{
+				id: "73688471BB63FBDE"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			description: ["搅拌机？我看像个搅蛋器..."]
+			dependencies: ["7AE4757D4C5A7952"]
+			id: "2B355F43A2C762F5"
+			tasks: [{
+				id: "0A523F00730EDAF0"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.5d
+			description: ["有没有航天飞船和空间站对接的既视感？"]
+			dependencies: ["753C8D45E9126D71"]
+			optional: true
+			id: "691371E0F2D21349"
+			tasks: [{
+				id: "72E1FEEADAD6A188"
+				type: "item"
+				item: "create:portable_storage_interface"
+			}]
+		}
+		{
+			title: "漏斗pro"
+			x: 5.5d
+			y: -3.0d
+			dependencies: ["7AE4757D4C5A7952"]
+			optional: true
+			id: "753C8D45E9126D71"
+			tasks: [{
+				id: "2E72D122D16C3282"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			description: [
+				"运送液体的管道，既可以运油也可以运水"
+				"（现实中运水和运油管道是有差别的）"
+			]
+			dependencies: ["7AE4757D4C5A7952"]
+			id: "6EE74CDC6D292549"
+			tasks: [{
+				id: "03D2C6EB2F42FE22"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["6EE74CDC6D292549"]
+			id: "4DBD60B8C7DB1DC1"
+			tasks: [{
+				id: "5D188F7414AC71B6"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			title: "风力资源"
+			x: -0.5d
+			y: -1.5d
+			subtitle: "今天的风儿，甚是喧嚣"
+			description: [
+				"...或者从风中获取应力"
+				"（超市薯片半价啊(#`O′)）"
+			]
+			dependencies: ["3D7B683D0A0E682C"]
+			optional: true
+			id: "48F81517FA589797"
+			tasks: [{
+				id: "7F148740457D5EF4"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			description: ["嗬...忒！（吐痰的声音）"]
+			dependencies: ["00706BA6E9598D7E"]
+			id: "222E20B1F4F16D9C"
+			tasks: [{
+				id: "307DE901C20F984F"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			title: "变身草方块"
+			x: 8.5d
+			y: 1.5d
+			subtitle: "《我的世界》发布会点亮水立方"
+			description: [
+				"2017年4月7日，网易游戏《我的世界》发布会于北京国际游泳中心（水立方）举办。作为《我的世界》中国版的首次亮相，Mojang、微软和网易三方代表共同出席发布会，还有许多国内知名开发者、视频主、直播主和玩家都参与了此次活动，称得上是《我的世界》中国版的首次盛会。"
+				""
+				"{image:custom:textures/001.png width:150 height:50 align:1}"
+			]
+			dependencies: ["222E20B1F4F16D9C"]
+			id: "42EDF79896994D48"
+			tasks: [{
+				id: "1488F6D62A9867E9"
+				type: "item"
+				item: "minecraft:grass_block"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: ["个人份米饭就这么煮，不过多人份的话还要自己调节水的用量"]
+			dependencies: ["29E59DE69F9381C6"]
+			id: "7D6B6FA05FDA57EB"
+			tasks: [{
+				id: "588732C2078E587D"
+				type: "item"
+				item: "farmersdelight:cooked_rice"
+			}]
+		}
+		{
+			title: "隔夜米饭！"
+			x: 5.5d
+			y: 3.0d
+			subtitle: "只有隔夜米饭炒的饭才好吃！"
+			description: [
+				"实际上隔夜米饭能使米饭里面的水分尽可能蒸发，这样炒饭时水分就不会影响铁锅的温度了"
+				"玩家：所以你小子用洗涤来模拟过夜米饭是吧（敲打）"
+			]
+			dependencies: ["7D6B6FA05FDA57EB"]
+			id: "673D6A756474CE7C"
+			tasks: [{
+				id: "0A701D26D3B8EB85"
+				type: "item"
+				item: "kubejs:cold_rice"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["00706BA6E9598D7E"]
+			optional: true
+			id: "3C34FCE45AC8F91C"
+			tasks: [{
+				id: "3944250B410034C5"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			title: "不开火也能炒？！"
+			x: 7.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "好好好，摩擦生热是吧"
+			description: [
+				"恭喜！你完成了第二阶段！"
+				"接下来是...点燃炉灶！"
+			]
+			dependencies: [
+				"673D6A756474CE7C"
+				"4174F2B98AB66948"
+				"41B12D34AD7922A4"
+				"1FBB477F7A54401A"
+			]
+			size: 2.0d
+			id: "05410B1C359BC87F"
+			tasks: [{
+				id: "5F893587C49BDB18"
+				type: "item"
+				item: "farmersdelight:fried_rice"
+			}]
+		}
+		{
+			title: "食用油"
+			x: 7.0d
+			y: 1.5d
+			description: ["金龙鱼1：1：1调和油..."]
+			dependencies: ["222E20B1F4F16D9C"]
+			id: "4174F2B98AB66948"
+			tasks: [{
+				id: "778195F96200AABF"
+				type: "item"
+				item: "kubejs:oil_bucket"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			description: ["你可以建成2x2或者是3x3占地面积的"]
+			dependencies: ["6EE74CDC6D292549"]
+			id: "00706BA6E9598D7E"
+			tasks: [{
+				id: "5D3970D54E187647"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.5d
+			subtitle: "兔兔在哪里？"
+			description: [
+				"兔兔~"
+				"兔兔~"
+				"兔兔兔~"
+				"兔兔~在哪里~"
+			]
+			dependencies: ["0E61EDB59589FF21"]
+			id: "41B12D34AD7922A4"
+			tasks: [{
+				id: "247420B03A4ABB24"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			dependencies: ["0FDC088A43B9A1C3"]
+			id: "0E61EDB59589FF21"
+			tasks: [{
+				id: "47C416BBCB263B5B"
+				type: "item"
+				item: "exnihilosequentia:carrot_seeds"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.0d
+			subtitle: "走在乡间的小路上~"
+			description: [
+				"世界上本没有路，走的人多了，也就有了路"
+				"——鲁迅（真的）"
+			]
+			dependencies: ["42EDF79896994D48"]
+			id: "0FDC088A43B9A1C3"
+			tasks: [{
+				id: "5ECA44E0B663FA7A"
+				type: "item"
+				item: "minecraft:dirt_path"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			description: ["我更怀疑这是碎掉的铜器文物..."]
+			dependencies: ["69F5A78A79036389"]
+			id: "23C2A302E4AF8E67"
+			tasks: [{
+				id: "5C2CA05DFC697842"
+				type: "item"
+				item: "exnihilosequentia:copper_pieces"
+			}]
+		}
+		{
+			title: "炼铜（确信"
+			x: -0.5d
+			y: 1.5d
+			description: ["实际上炼铁的温度要求比炼铜还高，所以古人首先冶炼出铜器，火焰温度更高了才冶炼出铁器"]
+			dependencies: ["23C2A302E4AF8E67"]
+			id: "0CEEF480AA99CBC1"
+			tasks: [{
+				id: "1CBB29D21306F535"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			description: [
+				"你知道吗？"
+				"要进入传说中的暗网，你需要用洋葱浏览器"
+				"（这里指的是狭义的暗网，广义的暗网包括其他人不大容易进去的网站，比如说一些奇怪的资源网站（欸嘿））"
+			]
+			dependencies: ["0FDC088A43B9A1C3"]
+			id: "1FBB477F7A54401A"
+			tasks: [{
+				id: "1FF48D2E7337ED94"
+				type: "item"
+				item: "farmersdelight:onion"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.5d
+			subtitle: "为什么乡间的泥土里面会有这个啊？"
+			description: [
+				"种子混进泥土里面也就算了，为什么还有竹子啊？"
+				"（也许是竹笋吧...）"
+			]
+			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
+			id: "05902DDA8439DC50"
+			tasks: [{
+				id: "737F643F9A0BCB8F"
+				type: "item"
+				item: "minecraft:bamboo"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 4.5d
+			description: [
+				"南方糖的来源是甘蔗，而北方是甜菜"
+				"（话说咱们扯了好多地理知识点欸）"
+			]
+			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
+			id: "498210FFDBC544BA"
+			tasks: [{
+				id: "299651E19E1306C1"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: 13.0d
+			y: 4.5d
+			dependencies: ["498210FFDBC544BA"]
+			optional: true
+			id: "0A5AFBF4D9898F8A"
+			tasks: [{
+				id: "4C2D4710EE2B9E7B"
+				type: "item"
+				item: "minecraft:sugar"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.5d
+			description: [
+				"如果不出意外的话，这就是你能做出来的最高级的筛网了"
+				"（这里不是通辽，所以不会不出意外的出意外..."
+				"...可能吧）"
+			]
+			dependencies: ["2B355F43A2C762F5"]
+			id: "2DB181CF59ABCB49"
+			tasks: [{
+				id: "4A5A7000B5752078"
+				type: "item"
+				item: "exnihilosequentia:iron_mesh"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.0d
+			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
+			id: "416DD89068B5BFEE"
+			tasks: [{
+				id: "6A9903C9C6595D5B"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
+			id: "5E0F11C67932A13F"
+			tasks: [{
+				id: "5035881AD7995DC1"
+				type: "item"
+				item: "minecraft:pumpkin_seeds"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["48F81517FA589797"]
+			id: "5A35B63D83AFCAB4"
+			tasks: [{
+				id: "09C46184E14AA041"
+				type: "item"
+				item: "create:white_sail"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
