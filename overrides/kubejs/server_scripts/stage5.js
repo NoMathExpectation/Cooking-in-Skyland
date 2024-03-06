@@ -76,6 +76,7 @@ onEvent('recipes',event=>{
         D:'minecraft:obsidian'
     })
     event.remove({output:'minecraft:glowstone_dust',type:'create:filling'})
+    event.recipes.createMixing(Fluid.of('kubejs:happywater',100),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250)]).superheated()
     //谜之火腿
     event.remove({output:'farmersdelight:honey_glazed_ham_block'})
     event.recipes.createSequencedAssembly('farmersdelight:honey_glazed_ham_block','minecraft:bowl',[

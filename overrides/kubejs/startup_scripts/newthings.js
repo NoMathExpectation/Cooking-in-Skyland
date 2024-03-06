@@ -100,5 +100,10 @@ onEvent('item.registry',event=>{
         .texture('rainbowcompound:item/rainbow_knife')
         .displayName('蛋糕切刀')
 
+    event.create('firesword')
+        .glow(true)
+        .texture('kubejs:item/firesword')
+        .displayName('传火螺旋剑')
+
 })
 

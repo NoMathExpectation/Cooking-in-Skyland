@@ -47,6 +47,8 @@ onEvent('recipes',event=>{/*
     event.shapeless('create:limestone',['stone','gray_dye'])
     event.shapeless('create:ochrum',['stone','yellow_dye'])
     event.shapeless('create:veridium',['cobblestone','green_dye'])
+
+    event.replaceInput({output:'#minecraft:candles'},'honeycomb','create:cinder_flour')
 })
 onEvent('lootjs',event=>{
     event.addBlockLootModifier('coal_ore').removeLoot('coal').addLoot('coal_ore')

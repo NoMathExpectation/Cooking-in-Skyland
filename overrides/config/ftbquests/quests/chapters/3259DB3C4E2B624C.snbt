@@ -628,8 +628,8 @@
 		}
 		{
 			title: "打火姬"
-			x: -3.5d
-			y: 2.0d
+			x: -5.0d
+			y: 0.5d
 			subtitle: "兄弟，借个火"
 			description: [
 				"煤气泄露了怎么办？不要紧张，抽根烟冷静一下"
@@ -647,6 +647,22 @@
 						Damage: 0
 					}
 				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			subtitle: "来自黑暗之魂3的传火祭祀场"
+			description: [
+				"有了传火大剑，你可以非常方便地制备烈焰人燃烧室了"
+				"不过可能有些燃烧室承受不住火焰的力量..."
+			]
+			dependencies: ["5C681A91530BE788"]
+			id: "4A408FF631E20594"
+			tasks: [{
+				id: "6B634E788F5DF6CB"
+				type: "item"
+				item: "kubejs:firesword"
 			}]
 		}
 	]

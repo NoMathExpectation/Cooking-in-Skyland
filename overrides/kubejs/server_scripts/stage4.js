@@ -192,9 +192,9 @@ onEvent('recipes',event=>{
     })
     //event.shapeless('farmersdelight:rice_roll_medley_block','kubejs:expensive_sushi')
     event.recipes.createSequencedAssembly([
-        Item.of('kubejs:smart_zombie').withChance(0.4),
-        Item.of('kubejs:stupid_zombie').withChance(0.4),
-        Item.of('minecraft:zombie_head').withChance(0.2),
+        Item.of('kubejs:smart_zombie').withChance(0.6),
+        Item.of('kubejs:stupid_zombie').withChance(0.3),
+        Item.of('minecraft:zombie_head').withChance(0.1),
     ],'kubejs:stupid_zombie',[
         event.recipes.createDeploying('kubejs:incomplete_stupid_zombie',['kubejs:incomplete_stupid_zombie','kubejs:expensive_sushi']).keepHeldItem(),
         event.recipes.createPressing('kubejs:incomplete_stupid_zombie','kubejs:incomplete_stupid_zombie')

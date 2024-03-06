@@ -8,4 +8,10 @@ onEvent('fluid.registry',event=>{
         .displayName('蛋白质液')
         .bucketColor(0xFFE7AF)
         .thinTexture(0xFFE7AF)
+    event.create('happywater')
+        .displayName('烈焰人快乐水')
+        .stillTexture('kubejs:fluid/happy')
+        .flowingTexture('kubejs:fluid/happy')
+        .bucketColor(0xFFA199)
+
 })

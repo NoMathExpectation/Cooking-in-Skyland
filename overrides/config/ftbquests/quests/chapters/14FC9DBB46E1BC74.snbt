@@ -23,8 +23,8 @@
 	quests: [
 		{
 			title: "为什么做蛋糕？"
-			x: -9.0d
-			y: -3.0d
+			x: -7.5d
+			y: -1.5d
 			subtitle: "因为它就在这里！"
 			description: ["接下来要做的蛋糕不是普通的蛋糕了，星光沐浴在蛋糕上，这使得我们每一步都十分艰难"]
 			dependencies: ["243BD0C2A518C3B3"]
@@ -354,6 +354,7 @@
 		{
 			x: -7.5d
 			y: -6.0d
+			subtitle: "屑！bro~"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "4F6CE47EA745EF76"

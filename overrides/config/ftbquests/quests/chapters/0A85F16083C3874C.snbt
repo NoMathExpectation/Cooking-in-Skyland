@@ -477,22 +477,6 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -2.0d
-			subtitle: "实际用处：捕捞网"
-			description: [
-				"如果你发现你没法获取你想要的鱼，用这个给你的工作盆设置合成黑名单或者是白名单"
-				"你可以把JEI里面的物品拖进来，这样你可以在获取某个物品前就设置它的过滤"
-			]
-			dependencies: ["7C0A9BB29F07E1E5"]
-			id: "6329F470B19F93C0"
-			tasks: [{
-				id: "6A97D8CFBC33FD6F"
-				type: "item"
-				item: "create:filter"
-			}]
-		}
-		{
 			x: 6.0d
 			y: -8.0d
 			subtitle: "所以钻石挖出来了没"

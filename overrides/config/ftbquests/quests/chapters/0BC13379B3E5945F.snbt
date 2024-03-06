@@ -751,6 +751,22 @@
 				type: "checkmark"
 			}]
 		}
+		{
+			x: 9.5d
+			y: -7.5d
+			subtitle: "实际用处：捕捞网"
+			description: [
+				"如果你发现你没法获取你想要的产品，用这个给你的工作设备设置合成黑名单或者是白名单"
+				"你可以把JEI里面的物品拖进来，这样你可以在获取某个物品前就设置它的过滤"
+			]
+			dependencies: ["6E0C86D45370DD42"]
+			id: "6329F470B19F93C0"
+			tasks: [{
+				id: "6A97D8CFBC33FD6F"
+				type: "item"
+				item: "create:filter"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
