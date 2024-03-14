@@ -8,7 +8,7 @@ onEvent('recipes',event=>{/*
     event.recipes.createFilling('flowering_azalea',['azalea',Fluid.of('water',100)])
     event.recipes.createFilling('oak_sapling',['flowering_azalea',Fluid.of('water',100)])
 */
-    event.shapeless('create:tree_fertilizer',['2x bone_meal',['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral'],['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral']])
+    event.shapeless('2x create:tree_fertilizer',['2x bone_meal',['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral'],['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral']])
     
     event.remove({output:'globe_banner_pattern'})
     event.remove({output:'skull_banner_pattern'})
@@ -47,6 +47,11 @@ onEvent('recipes',event=>{/*
     event.shapeless('create:limestone',['stone','gray_dye'])
     event.shapeless('create:ochrum',['stone','yellow_dye'])
     event.shapeless('create:veridium',['cobblestone','green_dye'])
+
+    event.remove({output:'create:crushed_raw_zinc'})
+    event.remove({output:'create:crushed_raw_copper'})
+    event.remove({output:'create:crushed_raw_iron'})
+    event.remove({output:'create:crushed_raw_gold'})
 
     event.replaceInput({output:'#minecraft:candles'},'honeycomb','create:cinder_flour')
 })

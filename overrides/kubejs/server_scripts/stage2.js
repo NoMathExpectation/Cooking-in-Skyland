@@ -105,29 +105,32 @@ onEvent("recipes",event=>{
     event.remove({output:'create:windmill_bearing'})
     event.shaped('create:water_wheel',[
         'ABA',
-        'BCB',
+        'DCD',
         'ABA'
     ],{
         A:'#minecraft:planks',
         B:'minecraft:deepslate',
-        C:'create:shaft'
+        C:'create:shaft',
+        D:'cobblestone'
     })
+    
     event.shaped('create:large_water_wheel',[
         'ABA',
         'BCB',
         'ABA'
     ],{
         A:'#minecraft:planks',
-        B:'minecraft:deepslate',
+        B:'cobblestone',
         C:'create:water_wheel'
     })
+
     event.shaped('create:windmill_bearing',[
         'AAA',
         ' B ',
         ' C '
     ],{
         A:'#minecraft:wooden_slabs',
-        B:'minecraft:deepslate',
+        B:'create:water_wheel',
         C:'create:shaft'
     })
     //食用油部分

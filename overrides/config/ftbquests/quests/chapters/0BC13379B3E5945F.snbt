@@ -100,6 +100,7 @@
 			title: "不是桑叶也能吃？"
 			x: -2.5d
 			y: -7.5d
+			subtitle: "你确定这不是蛆？"
 			description: [
 				"把蚕宝宝放到树叶上，让蚕宝宝把树叶吃掉，然后用钩子把树叶打掉，你就可以获得大量的线了"
 				""
@@ -272,8 +273,8 @@
 		}
 		{
 			title: "尘归尘，土归土"
-			x: 0.5d
-			y: -6.0d
+			x: -1.0d
+			y: -7.5d
 			subtitle: "...糊糊归糊糊"
 			description: [
 				"——世界美食officials"
@@ -396,18 +397,6 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -7.5d
-			subtitle: "海的味道，我知道！"
-			dependencies: ["09027B20AF0CFD05"]
-			id: "2663B22581E0ACFD"
-			tasks: [{
-				id: "582D4B7825D32851"
-				type: "item"
-				item: "minecraft:kelp"
-			}]
-		}
-		{
 			x: 2.0d
 			y: -1.5d
 			dependencies: ["02DA276995078432"]
@@ -518,10 +507,10 @@
 			}]
 		}
 		{
-			title: "波力海苔！"
+			title: "海的味道，我知道！"
 			x: 6.5d
 			y: -7.5d
-			description: ["真·海的味道"]
+			subtitle: "波力海苔！"
 			dependencies: ["26510D7ED23E97FC"]
 			id: "292B0B03B89A4DFA"
 			tasks: [{
@@ -765,6 +754,18 @@
 				id: "6A97D8CFBC33FD6F"
 				type: "item"
 				item: "create:filter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			subtitle: "还缺泥土吗？试试这个！"
+			dependencies: ["113C7F997CAD184A"]
+			id: "4DA43D12BF2B587E"
+			tasks: [{
+				id: "220AE34F03E1E82F"
+				type: "item"
+				item: "minecraft:coarse_dirt"
 			}]
 		}
 	]

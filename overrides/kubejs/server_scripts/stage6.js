@@ -2,16 +2,16 @@ onEvent('recipes',event=>{
     //event.recipes.createFilling('minecraft:cobblestone',['minecraft:dirt',Fluid.of('create:potion',100).withNBT({Potion:'minecraft:fire_resistance'})])
     //材料
     event.blasting('minecraft:lime_dye','minecraft:seagrass')
-    event.recipes.createMixing('minecraft:ghast_tear',['minecraft:magma_cream',Fluid.of('minecraft:lava',500)]).superheated()
-    event.recipes.createMixing('minecraft:spider_eye',['minecraft:magma_cream',Fluid.of('exnihilosequentia:witch_water',500)]).superheated()
+    event.recipes.createMixing('minecraft:ghast_tear',['minecraft:magma_cream',Fluid.of('minecraft:lava',200)]).superheated()
+    event.recipes.createMixing('2x minecraft:spider_eye',['minecraft:magma_cream',Fluid.of('exnihilosequentia:witch_water',200)]).superheated()
     event.remove({output:'fermented_spider_eye'})
     event.recipes.createMixing('fermented_spider_eye',['spider_eye','red_mushroom','brown_mushroom','minecraft:sugar']).heated()
     event.remove({output:"nether_wart_block"})
-    event.recipes.createCompacting('nether_wart_block',['9x nether_wart','magma_cream']).heated()
-    event.recipes.createCompacting('warped_wart_block',['4x twisting_vines','4x weeping_vines','magma_cream']).heated()
-    event.recipes.createCompacting(Item.of('minecraft:end_stone').withChance(0.4),['nether_wart_block','warped_wart_block','magma_cream']).superheated()
+    event.recipes.createCompacting('nether_wart_block',['8x nether_wart','fermented_spider_eye']).heated()
+    event.recipes.createCompacting('warped_wart_block',['4x twisting_vines','4x weeping_vines','ghast_tear']).heated()
+    event.recipes.createCompacting(['end_stone',Item.of('minecraft:end_stone').withChance(0.4)],['nether_wart_block','warped_wart_block','magma_cream']).superheated()
     event.recipes.createPressing('exnihilosequentia:crushed_end_stone','end_stone')
-    event.recipes.createMixing([Item.of('ender_pearl').withChance(0.4),Item.of('chorus_fruit').withChance(0.4)],['exnihilosequentia:crushed_end_stone',Fluid.of('water',500)])
+    event.recipes.createMixing(['ender_pearl',Item.of('ender_pearl').withChance(0.4),Item.of('chorus_fruit').withChance(0.4)],['exnihilosequentia:crushed_end_stone',Fluid.of('water',500)])
     event.recipes.createMixing(Fluid.of('create_central_kitchen:dragon_breath',100),[
         'end_crystal','8x end_rod','8x purpur_block'
     ]).superheated()
@@ -56,18 +56,22 @@ onEvent('recipes',event=>{
     //剩下的
     event.remove({output:'create:experience_nugget',type:'create:crushing'})
     event.recipes.createMixing([
+        Item.of('create:experience_nugget').withChance(0.8),
         Item.of('create:experience_nugget').withChance(0.6),
-        Item.of('rainbowcompound:strange_colored_ingot').withChance(0.95),
+        Item.of('rainbowcompound:strange_colored_ingot')//.withChance(0.95),
     ],['create:chromatic_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:sea_water',500)]).superheated()
     event.recipes.createMixing([
+        Item.of('phantom_membrane').withChance(0.8),
         Item.of('phantom_membrane').withChance(0.6),
-        Item.of('rainbowcompound:strange_colored_ingot').withChance(0.95),
+        Item.of('rainbowcompound:strange_colored_ingot')//.withChance(0.95),
     ],['create:chromatic_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:witch_water',500)]).superheated()
     event.recipes.createMixing([
+        Item.of('create:experience_nugget').withChance(0.8),
         Item.of('create:experience_nugget').withChance(0.6),
         'rainbowcompound:rainbow_compound'
     ],['rainbowcompound:rainbow_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:sea_water',500)]).superheated()
     event.recipes.createMixing([
+        Item.of('phantom_membrane').withChance(0.8),
         Item.of('phantom_membrane').withChance(0.6),
         'rainbowcompound:rainbow_compound'
     ],['rainbowcompound:rainbow_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:witch_water',500)]).superheated()
@@ -252,6 +256,194 @@ onEvent('recipes',event=>{
         ],
         "loops": 2
       })
+    event.custom({
+      "type": "create:sequenced_assembly",
+      "ingredient": {
+        "item": "rainbowcompound:shadow_mechanism"
+      },
+      "transitionalItem": {
+        "item": "rainbowcompound:incomplete_resonant_assembly"
+      },
+      "sequence": [
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            },
+            {
+              "item": "create:electron_tube"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_shadow_resonant_assembly"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "item": "rainbowcompound:shadow_resonant_assembly",
+          "chance": 90.0
+        },
+        {
+          "item": "rainbowcompound:shadow_mechanism",
+          "chance": 8.0
+        },
+        {
+          "item": "rainbowcompound:integrated_circuit",
+          "chance": 1.0
+        },
+        {
+          "item": "create:precision_mechanism",
+          "chance": 1.0
+        }
+      ],
+      "loops": 2
+    })
+    event.custom({
+      "type": "create:sequenced_assembly",
+      "ingredient": {
+        "item": "rainbowcompound:radiance_mechanism"
+      },
+      "transitionalItem": {
+        "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+      },
+      "sequence": [
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            },
+            {
+              "item": "minecraft:amethyst_shard"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            },
+            {
+              "item": "create:electron_tube"
+            }
+          ],
+          "results": [
+            {
+              "item": "rainbowcompound:incomplete_radiance_resonant_assembly"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "item": "rainbowcompound:radiance_resonant_assembly",
+          "chance": 90.0
+        },
+        {
+          "item": "rainbowcompound:radiance_mechanism",
+          "chance": 8.0
+        },
+        {
+          "item": "rainbowcompound:integrated_circuit",
+          "chance": 1.0
+        },
+        {
+          "item": "create:precision_mechanism",
+          "chance": 1.0
+        }
+      ],
+      "loops": 2
+    })
     event.remove({output:'golden_apple'})
     event.shaped('golden_apple',[
       'AAA',
@@ -269,7 +461,7 @@ onEvent('recipes',event=>{
       'CBC',
       'AAA'
     ],{
-      A:'netherite_ingot',
+      A:'iron_ingot',
       B:'glowstone_dust',
       C:'redstone'
     })
@@ -279,7 +471,7 @@ onEvent('recipes',event=>{
       'CBC',
       'AAA'
     ],{
-      A:'netherite_ingot',
+      A:'iron_ingot',
       B:'glowstone_dust',
       C:'bucket'
     })
@@ -293,6 +485,6 @@ onEvent('recipes',event=>{
     ],{
       A:'flint',
       B:'magma_cream',
-      C:'blaze_rod'
+      C:'stick'
     })
 })

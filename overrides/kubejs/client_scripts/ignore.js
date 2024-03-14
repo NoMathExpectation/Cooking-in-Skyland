@@ -9,4 +9,7 @@ onEvent('jei.hide.items',event=>{
     event.hide('exnihilosequentia:crafting_doll')
     event.hide('pipez:energy_pipe')
     event.hide('pipez:gas_pipe')
+    event.hide('ironchest:crystal_chest')
+    event.hide('ironchest:trapped_crystal_chest')
+    event.hide('ironchest:diamond_to_crystal_chest_upgrade')
 })

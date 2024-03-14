@@ -7,7 +7,7 @@ B:force_fullscreen = 'false';
 
 ##[customization]
 
-B:show_customization_overlay = 'true';
+B:show_customization_overlay = 'false';
 B:advanced_customization_mode = 'false';
 
 
@@ -25,8 +25,8 @@ B:game_intro_fade_out = 'true';
 
 B:show_custom_window_icon = 'false';
 S:custom_window_icon_macos = '';
-S:custom_window_icon_32 = '';
-S:custom_window_title = '';
+S:custom_window_icon_32 = '/config/fancymenu/assets/2.png';
+S:custom_window_title = '空岛厨房：工业化美食和自动化生产          Chineselulil出品';
 S:custom_window_icon_16 = '';
 
 
@@ -60,7 +60,7 @@ D:anchor_overlay_hover_charging_time_seconds = '2.0';
 
 I:context_menu_hover_open_speed = '1';
 S:ui_theme = 'dark';
-F:ui_scale = '3.0';
+F:ui_scale = '4.0';
 B:play_ui_click_sounds = 'true';
 B:enable_ui_text_shadow = 'false';
 

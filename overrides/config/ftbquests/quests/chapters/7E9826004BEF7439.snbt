@@ -208,6 +208,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
 			id: "568341453DE7CEC3"
 			tasks: [{
 				id: "3745CB2A6A2E85B1"
@@ -230,6 +231,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			dependencies: ["7002E44FFB94AD50"]
+			can_repeat: true
 			id: "024C4DE2283C8659"
 			tasks: [{
 				id: "408DB9E2B8269DC2"

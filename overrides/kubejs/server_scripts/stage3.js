@@ -89,7 +89,7 @@ onEvent('recipes',event=>{
     .transitionalItem('kubejs:incomplete_burner')
     .loops(1)
     //蛋白质
-    event.recipes.createMixing(Fluid.of('kubejs:protein',20),'farmersdelight:fried_egg').heated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').heated()
     event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').superheated()
     event.recipes.createMixing(Fluid.of('kubejs:protein',250),'rotten_flesh').superheated()
     event.recipes.createMixing('minecraft:mutton',[
@@ -177,9 +177,10 @@ onEvent('recipes',event=>{
     })
     event.remove({input:'minecraft:string',output:'minecraft:scaffolding'})
     event.recipes.createCompacting('minecraft:podzol',['minecraft:grass_block','farmersdelight:canvas'])
+    event.recipes.createFilling('podzol',['grass_block',Fluid.of('exnihilosequentia:sea_water',100)])
     event.recipes.exnihilosequentia.sieve('minecraft:podzol','exnihilosequentia:zinc_pieces')
-        .addRoll(0.55,'flint')
-        .addRoll(0.75,'iron')  
+        .addRoll(1,'flint')
+        .addRoll(0.85,'iron')  
     event.recipes.exnihilosequentia.sieve('minecraft:podzol','farmersdelight:tomato_seeds')
         .addRoll(0.55,'flint')
         .addRoll(0.75,'iron')
@@ -229,4 +230,5 @@ onEvent('recipes',event=>{
         A:'leather',
         B:'create:propeller'
     })
+    event.remove({output:'painting',input:'#minecraft:wool'})
 })

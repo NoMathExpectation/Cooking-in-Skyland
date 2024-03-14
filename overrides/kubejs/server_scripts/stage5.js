@@ -77,6 +77,7 @@ onEvent('recipes',event=>{
     })
     event.remove({output:'minecraft:glowstone_dust',type:'create:filling'})
     event.recipes.createMixing(Fluid.of('kubejs:happywater',100),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250)]).superheated()
+    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250),Fluid.of('create_central_kitchen:dragon_breath',200)]).superheated()
     //谜之火腿
     event.remove({output:'farmersdelight:honey_glazed_ham_block'})
     event.recipes.createSequencedAssembly('farmersdelight:honey_glazed_ham_block','minecraft:bowl',[
@@ -134,8 +135,12 @@ onEvent('recipes',event=>{
         G:'netherite_pickaxe'
     })
     event.recipes.createDeploying([
-        Item.of('minecraft:netherite_scrap').withChance(0.1),
-        Item.of('minecraft:netherite_ingot').withChance(0.05),
-        Item.of('minecraft:diamond').withChance(0.4)
+        Item.of('minecraft:netherite_scrap').withChance(0.2),
+        Item.of('minecraft:netherite_ingot').withChance(0.1),
+        Item.of('minecraft:diamond').withChance(0.5)
     ],['obsidian','kubejs:super_driller']).keepHeldItem()
+
+    event.remove({output:'red_nether_bricks'})
+    event.shapeless('red_nether_bricks','4x nether_wart')
+    event.shapeless('4x nether_wart','red_nether_bricks')
 })

@@ -87,7 +87,6 @@
 				"（瞿塘峡、巫峡和西陵峡）"
 			]
 			dependencies: ["3D7B683D0A0E682C"]
-			optional: true
 			id: "46C8F537F42A7C50"
 			tasks: [{
 				id: "3294E9F4CC31A50E"
@@ -220,7 +219,6 @@
 				"（超市薯片半价啊(#`O′)）"
 			]
 			dependencies: ["3D7B683D0A0E682C"]
-			optional: true
 			id: "48F81517FA589797"
 			tasks: [{
 				id: "7F148740457D5EF4"
@@ -443,7 +441,6 @@
 				"（也许是竹笋吧...）"
 			]
 			dependencies: ["0FDC088A43B9A1C3"]
-			optional: true
 			id: "05902DDA8439DC50"
 			tasks: [{
 				id: "737F643F9A0BCB8F"
@@ -459,7 +456,6 @@
 				"（话说咱们扯了好多地理知识点欸）"
 			]
 			dependencies: ["0FDC088A43B9A1C3"]
-			optional: true
 			id: "498210FFDBC544BA"
 			tasks: [{
 				id: "299651E19E1306C1"
@@ -471,7 +467,6 @@
 			x: 13.0d
 			y: 4.5d
 			dependencies: ["498210FFDBC544BA"]
-			optional: true
 			id: "0A5AFBF4D9898F8A"
 			tasks: [{
 				id: "4C2D4710EE2B9E7B"
@@ -499,7 +494,6 @@
 			x: 11.5d
 			y: 3.0d
 			dependencies: ["0FDC088A43B9A1C3"]
-			optional: true
 			id: "416DD89068B5BFEE"
 			tasks: [{
 				id: "6A9903C9C6595D5B"
@@ -511,7 +505,6 @@
 			x: 11.5d
 			y: 1.5d
 			dependencies: ["0FDC088A43B9A1C3"]
-			optional: true
 			id: "5E0F11C67932A13F"
 			tasks: [{
 				id: "5035881AD7995DC1"
@@ -522,6 +515,7 @@
 		{
 			x: -0.5d
 			y: -3.0d
+			description: ["没有风帆，你的风车就转不起来"]
 			dependencies: ["48F81517FA589797"]
 			id: "5A35B63D83AFCAB4"
 			tasks: [{

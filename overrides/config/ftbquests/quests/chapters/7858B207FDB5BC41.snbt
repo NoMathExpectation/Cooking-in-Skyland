@@ -9,8 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "哎呀，我的脚！"
 			x: -2.5d
 			y: -1.0d
+			description: ["混杂了许多珊瑚的石头，十分刺脚"]
 			dependencies: ["042B412D355D862D"]
 			hide: true
 			id: "7D2D03C3F675F876"
@@ -23,6 +25,7 @@
 		{
 			x: -2.5d
 			y: -2.5d
+			description: ["来自地狱的食材..."]
 			dependencies: ["7D2D03C3F675F876"]
 			id: "434A4669677F523B"
 			tasks: [{
@@ -34,6 +37,7 @@
 		{
 			x: -1.0d
 			y: -2.5d
+			description: ["看起来很简单，其实也一点都不复杂"]
 			dependencies: ["434A4669677F523B"]
 			id: "7EE6B282449C1590"
 			tasks: [{
@@ -43,8 +47,10 @@
 			}]
 		}
 		{
+			title: "洗脚水"
 			x: -1.0d
 			y: -1.0d
+			description: ["用水充分洗涤地狱岩，从而获取其中的地狱能量"]
 			dependencies: ["7D2D03C3F675F876"]
 			id: "3F9B43DA6B7C2D86"
 			tasks: [{
@@ -54,6 +60,7 @@
 			}]
 		}
 		{
+			title: "死因是肺部真菌感染..."
 			x: 0.5d
 			y: -1.0d
 			dependencies: ["3F9B43DA6B7C2D86"]
@@ -65,6 +72,7 @@
 			}]
 		}
 		{
+			title: "...生前浏览过二次元脚臭吧..."
 			x: 0.5d
 			y: 0.5d
 			dependencies: ["3F9B43DA6B7C2D86"]
@@ -76,6 +84,7 @@
 			}]
 		}
 		{
+			title: "...不要小看我的情报网！"
 			x: 2.0d
 			y: 0.0d
 			shape: "hexagon"
@@ -95,6 +104,7 @@
 		{
 			x: 2.0d
 			y: -2.5d
+			description: ["沙子：泥土老哥快来陪我"]
 			dependencies: ["55D880952C0D927D"]
 			id: "2E5CABAF7011893F"
 			tasks: [{
@@ -104,15 +114,27 @@
 			}]
 		}
 		{
+			icon: "minecraft:cocoa_beans"
 			x: 3.5d
 			y: 0.5d
+			description: [
+				"精选自阿拉比卡地区..."
+				"（玩家：那个是咖啡豆！还想忽悠我？）"
+			]
 			dependencies: ["4FA3FE37D1DDE7E2"]
 			id: "63FD75A599F5FFCD"
-			tasks: [{
-				id: "3D5E8CAE561D9DCD"
-				type: "item"
-				item: "minecraft:cocoa_beans"
-			}]
+			tasks: [
+				{
+					id: "3D5E8CAE561D9DCD"
+					type: "item"
+					item: "minecraft:cocoa_beans"
+				}
+				{
+					id: "10AF62E35C9A0920"
+					type: "item"
+					item: "minecraft:jungle_log"
+				}
+			]
 		}
 		{
 			x: 3.5d
@@ -128,6 +150,7 @@
 		{
 			x: 3.5d
 			y: -1.0d
+			description: ["是Alan Becker火柴人中小蓝最爱的辣条"]
 			dependencies: ["4FA3FE37D1DDE7E2"]
 			id: "1B1DB46D714CF100"
 			tasks: [{
@@ -139,6 +162,7 @@
 		{
 			x: 3.5d
 			y: 2.0d
+			description: ["威利旺卡的巧克力工厂里面有用液态巧克力做成的瀑布"]
 			dependencies: ["63FD75A599F5FFCD"]
 			id: "33AB0C1641AEDD24"
 			tasks: [{
@@ -162,6 +186,7 @@
 			x: 2.0d
 			y: 3.0d
 			shape: "hexagon"
+			subtitle: "甜甜的，就像爱情一样"
 			dependencies: ["518512E19D6A2346"]
 			size: 2.0d
 			id: "258E9C8D0D0BE775"
@@ -174,9 +199,7 @@
 		{
 			x: 0.5d
 			y: 2.0d
-			description: ["大黄蜂"]
 			dependencies: ["258E9C8D0D0BE775"]
-			hide: true
 			id: "0709806ECE6E58A1"
 			tasks: [{
 				id: "18E938ED52911070"
@@ -252,6 +275,7 @@
 		{
 			x: 5.0d
 			y: 2.0d
+			description: ["士力架，一饿就手软！"]
 			dependencies: ["33AB0C1641AEDD24"]
 			id: "76B463034A8D348C"
 			tasks: [{
@@ -393,6 +417,10 @@
 		{
 			x: 0.5d
 			y: -2.5d
+			description: [
+				"你知道吗？"
+				"晚上坟地会出现的鬼火，实际上是尸体腐烂产生的磷化氢自燃"
+			]
 			dependencies: ["7EE6B282449C1590"]
 			id: "55D880952C0D927D"
 			tasks: [{
@@ -438,8 +466,11 @@
 			}]
 		}
 		{
+			title: "快乐，永不褪色！"
 			x: -1.0d
 			y: 0.5d
+			subtitle: "一杯提神醒脑，两杯永不疲劳，三杯长生不老"
+			description: ["这是能让烈焰人发出尖锐爆鸣的超级燃料"]
 			dependencies: ["0709806ECE6E58A1"]
 			id: "4811EB49D6612083"
 			tasks: [{
