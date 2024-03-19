@@ -462,7 +462,11 @@ onEvent('recipes',event=>{
       'AAA'
     ],{
       A:'iron_ingot',
+<<<<<<< HEAD
       B:'glowstone_dust',
+=======
+      B:'magma_cream',
+>>>>>>> 3c107d1 (0.9.1)
       C:'redstone'
     })
     event.remove({output:'pipez:fluid_pipe'})
@@ -472,7 +476,11 @@ onEvent('recipes',event=>{
       'AAA'
     ],{
       A:'iron_ingot',
+<<<<<<< HEAD
       B:'glowstone_dust',
+=======
+      B:'magma_cream',
+>>>>>>> 3c107d1 (0.9.1)
       C:'bucket'
     })
     event.remove({output:'pipez:universal_pipe'})

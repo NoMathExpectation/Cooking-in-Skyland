@@ -110,7 +110,7 @@ onEvent('recipes',event => {
     event.recipes.createMilling(['2x minecraft:clay_ball',Item.of('minecraft:clay_ball').withChance(0.25)],'exnihilosequentia:dust')
     event.recipes.createPressing('minecraft:sand','minecraft:gravel')
     event.recipes.createPressing('exnihilosequentia:dust','minecraft:sand')
-    event.recipes.createCompacting('create:andesite_alloy',['minecraft:flint','exnihilosequentia:crushed_andesite'])
+    event.recipes.createCompacting('2x create:andesite_alloy',['3x minecraft:flint','exnihilosequentia:crushed_andesite'])
     event.recipes.createCompacting('minecraft:egg',['minecraft:wheat','8x minecraft:bone'])
     event.recipes.createCompacting('minecraft:bone',['2x minecraft:cobblestone','minecraft:rotten_flesh'])
     event.recipes.createCompacting('minecraft:dirt','2x minecraft:cactus')

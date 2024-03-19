@@ -52,10 +52,10 @@ onEvent('recipes',event=>{
         F:'magma_cream'
     })
 
-    event.remove({output:'farmersdelight:egg_sandwich',type:'crafting_shaped'})
-    event.remove({output:'farmersdelight:bacon_sandwich',type:'crafting_shaped'})
-    event.remove({output:'farmersdelight:chicken_sandwich',type:'crafting_shaped'})
-    event.remove({output:'farmersdelight:mutton_warp',type:'crafting_shaped'})
+    event.remove({output:'farmersdelight:egg_sandwich',type:'crafting_shapeless'})
+    event.remove({output:'farmersdelight:bacon_sandwich',type:'crafting_shapeless'})
+    event.remove({output:'farmersdelight:chicken_sandwich',type:'crafting_shapeless'})
+    event.remove({output:'farmersdelight:mutton_wrap',type:'crafting_shapeless'})
 
     event.remove({output:'farmersdelight:dumplings'})
     event.recipes.createMixing([Item.of('farmersdelight:dumplings').withChance(0.95),Fluid.of('water',1000)],['farmersdelight:wheat_dough','farmersdelight:cabbage_leaf','farmersdelight:onion','#farmersdelight:cabbage_roll_ingredients',Fluid.of('water',1000)]).heated()

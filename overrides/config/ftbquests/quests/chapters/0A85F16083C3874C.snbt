@@ -52,6 +52,7 @@
 		{
 			x: -1.5d
 			y: -3.5d
+			description: ["为什么不是冰冻罗非鱼"]
 			dependencies: ["1A1A54001621DB62"]
 			id: "5259FD7E34D048EC"
 			tasks: [{
@@ -489,6 +490,53 @@
 				item: "minecraft:sea_pickle"
 			}]
 		}
+<<<<<<< HEAD
+=======
+		{
+			x: 6.0d
+			y: -1.0d
+			invisible: true
+			id: "3A5290642226CC08"
+			tasks: [
+				{
+					id: "34D0B150091774FF"
+					type: "item"
+					item: "minecraft:tube_coral"
+					consume_items: true
+				}
+				{
+					id: "173F24ACA459EA39"
+					type: "item"
+					item: "minecraft:brain_coral"
+					consume_items: true
+				}
+				{
+					id: "7ADB9E3BBD1CC6A2"
+					type: "item"
+					item: "minecraft:bubble_coral"
+					consume_items: true
+				}
+				{
+					id: "2E978F94EF3863F9"
+					type: "item"
+					item: "minecraft:fire_coral"
+					consume_items: true
+				}
+				{
+					id: "4D69B3BBED677706"
+					type: "item"
+					item: "minecraft:horn_coral"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "15F8CAE45F8A5B8B"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3889821894948755481L
+			}]
+		}
+>>>>>>> 3c107d1 (0.9.1)
 	]
 	quest_links: [ ]
 }

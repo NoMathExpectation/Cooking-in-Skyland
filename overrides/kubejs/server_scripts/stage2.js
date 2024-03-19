@@ -50,7 +50,7 @@ onEvent("recipes",event=>{
         C:'create:shaft'
     })
     event.remove({output:"create:chute"})
-    event.recipes.createCompacting('4x create:chute',"2x create:iron_sheet")  
+    event.recipes.createCompacting('4x create:chute',['create:iron_sheet','iron_ingot'])  
     event.remove({output:'create:mechanical_saw'})
     event.shaped('create:mechanical_saw',[
         ' C ',
@@ -135,15 +135,19 @@ onEvent("recipes",event=>{
     })
     //食用油部分
     event.recipes.createCompacting(Fluid.of('kubejs:oil',100),'#forge:seeds')
+        .id('3:crank')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',400),'#forge:seeds')
         .heated()
+        .id('2:brank')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',1000),'#forge:seeds')
         .superheated()
+        .id('1:arank')
+        /*
     event.recipes.createCompacting(Fluid.of('kubejs:oil',50),'#minecraft:flowers')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',200),'#minecraft:flowers')
             .heated()
     event.recipes.createCompacting(Fluid.of('kubejs:oil',500),'#minecraft:flowers')
-            .superheated()
+            .superheated()*/
     //草方块部分
     event.remove({output:"dirt_path"})
     event.recipes.createPressing('dirt_path','minecraft:grass_block')

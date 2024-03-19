@@ -2,7 +2,7 @@ onEvent('jei.hide.items',event=>{
     event.hide('minecraft:smoker')
     event.hide('minecraft:blast_furnace')
     event.hide('exnihilosequentia:diamond_mesh')
-    event.hide('exnihilosequentia:emerald_mesh')
+    //event.hide('exnihilosequentia:emerald_mesh')
     event.hide('exnihilosequentia:netherite_mesh')
     event.hide('farmersdelight:skillet')
     event.hide('farmersdelight:flint_knife')

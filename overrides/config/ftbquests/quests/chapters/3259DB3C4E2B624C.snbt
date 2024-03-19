@@ -121,7 +121,7 @@
 			title: "宙之月面盾反"
 			x: -3.5d
 			y: 0.5d
-			subtitle: "（兔子！坦克！）"
+			subtitle: "兔子！坦克！Yeah！"
 			description: ["玄武岩(basalt)，洋壳主要组成，属基性火山岩。是地球洋壳和月球月海的最主要组成物质，也是地球陆壳和月球月陆的重要组成物质。"]
 			dependencies: ["579F8D73D88A5AF3"]
 			id: "0ED6318FB1489BBE"
@@ -660,18 +660,36 @@
 		}
 		{
 			x: -3.5d
+<<<<<<< HEAD
 			y: 2.0d
+=======
+			y: 5.0d
+>>>>>>> 3c107d1 (0.9.1)
 			subtitle: "我从古达老师身上拔剑，他还要砍我"
 			description: [
 				"有了传火剑，你可以非常方便地制备烈焰人燃烧室了"
 				"不过可能有些燃烧室承受不住火焰的力量..."
 			]
-			dependencies: ["5C681A91530BE788"]
+			hide_dependency_lines: true
+			dependencies: ["79E7446A04BC2E1E"]
 			id: "4A408FF631E20594"
 			tasks: [{
 				id: "6B634E788F5DF6CB"
 				type: "item"
 				item: "kubejs:firesword"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			subtitle: "筛矿的终极解决方案"
+			description: ["如果不出意外，这就是你能获取到的最高级筛网"]
+			dependencies: ["0ED6318FB1489BBE"]
+			id: "4C949EE85C9DB3EB"
+			tasks: [{
+				id: "1ECD8E28BD80B158"
+				type: "item"
+				item: "exnihilosequentia:emerald_mesh"
 			}]
 		}
 	]

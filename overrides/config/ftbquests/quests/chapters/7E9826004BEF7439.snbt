@@ -238,6 +238,7 @@
 				type: "item"
 				item: "minecraft:tropical_fish"
 				count: 8L
+				consume_items: true
 			}]
 			rewards: [{
 				id: "657C680102FC59C9"

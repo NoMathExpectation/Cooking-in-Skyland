@@ -134,7 +134,6 @@
 			description: [
 				"把树苗、线、小麦等这些有机物塞满桶，过一段时间就能发酵生成泥土"
 				"除此之外，这个桶也能用来装雨水"
-				"（如果急需用水，用木坩埚）"
 			]
 			dependencies: ["3638713CC717D290"]
 			id: "5C924D502232AC94"
@@ -768,6 +767,33 @@
 				item: "minecraft:coarse_dirt"
 			}]
 		}
+<<<<<<< HEAD
+=======
+		{
+			title: "多喝热水"
+			icon: "exnihilosequentia:oak_crucible"
+			x: -2.5d
+			y: -1.5d
+			description: [
+				"如果还没下雨，用这个烧水"
+				"记得坩埚底下要有一个热源"
+			]
+			dependencies: ["33A539AB997A2097"]
+			id: "5935930CE7F0F758"
+			tasks: [{
+				id: "6471E5947B5C24A1"
+				type: "item"
+				title: "Any #exnihilosequentia:crucibles"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:crucibles"
+					}
+				}
+			}]
+		}
+>>>>>>> 3c107d1 (0.9.1)
 	]
 	quest_links: [ ]
 }

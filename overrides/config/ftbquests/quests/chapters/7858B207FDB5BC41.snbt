@@ -174,6 +174,7 @@
 		{
 			x: 3.5d
 			y: 3.5d
+			description: ["烈焰人还挺喜欢吃甜食"]
 			dependencies: ["33AB0C1641AEDD24"]
 			id: "518512E19D6A2346"
 			tasks: [{
@@ -187,6 +188,10 @@
 			y: 3.0d
 			shape: "hexagon"
 			subtitle: "甜甜的，就像爱情一样"
+<<<<<<< HEAD
+=======
+			description: ["吃了这个，烈焰人干活更厉害了"]
+>>>>>>> 3c107d1 (0.9.1)
 			dependencies: ["518512E19D6A2346"]
 			size: 2.0d
 			id: "258E9C8D0D0BE775"
@@ -199,6 +204,10 @@
 		{
 			x: 0.5d
 			y: 2.0d
+<<<<<<< HEAD
+=======
+			subtitle: "哈基米，哈基米，哈基米~"
+>>>>>>> 3c107d1 (0.9.1)
 			dependencies: ["258E9C8D0D0BE775"]
 			id: "0709806ECE6E58A1"
 			tasks: [{
@@ -246,8 +255,8 @@
 			shape: "gear"
 			description: [
 				"恭喜！你完成了第五阶段！"
-				"接下来是...这是什么？羊皮纸？"
-				"（你就假装有个羊皮纸好了qwq）"
+				"接下来是...这是什么？一张纸？"
+				"（你就假装有张纸好了qwq）"
 			]
 			dependencies: [
 				"5827D1BB96F20FF9"
@@ -454,6 +463,10 @@
 		{
 			x: 5.0d
 			y: 6.5d
+			description: [
+				"用你的钻头突破天际啊！！"
+				"お前のドリルで天を突け！！"
+			]
 			dependencies: [
 				"0E6A8F733FC9AAE7"
 				"1F614E988E463D82"
