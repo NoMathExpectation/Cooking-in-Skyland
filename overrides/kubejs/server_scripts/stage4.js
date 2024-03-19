@@ -47,7 +47,9 @@ onEvent('recipes',event=>{
     event.recipes.createCrushing('4x minecraft:brain_coral','minecraft:brain_coral_block')
     event.recipes.createCrushing('4x minecraft:bubble_coral','minecraft:bubble_coral_block')
     event.recipes.createCrushing('4x minecraft:fire_coral','minecraft:fire_coral_block')
-    event.recipes.createCrushing('4x minecraft:horn_coral','minecraft:horn_coral_block')/*
+    event.recipes.createCrushing('4x minecraft:horn_coral','minecraft:horn_coral_block')
+    event.recipes.createCompacting([Item.of('pufferfish').withChance(0.9),'brain_coral_block'],['pufferfish',['tube_coral_block','bubble_coral_block','fire_coral_block','horn_coral_block']])
+    /*
     event.recipes.createCompacting([Item.of('exnihilosequentia:pink_coral_larvae').withChance(0.4)],'tube_coral_block',)
     event.recipes.createCompacting([Item.of('exnihilosequentia:pink_coral_larvae').withChance(0.4)],'bubble_coral_block',)
     event.recipes.createCompacting([Item.of('exnihilosequentia:pink_coral_larvae').withChance(0.4)],'fire_coral_block',)
@@ -204,17 +206,17 @@ onEvent('recipes',event=>{
     //挖矿
     event.recipes.createDeploying([
         Item.of('minecraft:diamond').withChance(0.01),
-        Item.of('minecraft:gold_ingot').withChance(0.05),
-        Item.of('minecraft:copper_ingot').withChance(0.15),
+        Item.of('minecraft:gold_ingot').withChance(0.1),
+        Item.of('minecraft:copper_ingot').withChance(0.3),
         Item.of('minecraft:iron_ingot').withChance(0.4),
-        Item.of('create:zinc_ingot').withChance(0.1),
+        Item.of('create:zinc_ingot').withChance(0.2),
         Item.of('kubejs:smart_zombie').withChance(0.95)
     ],['kubejs:smart_zombie',Item.of('minecraft:iron_pickaxe').ignoreNBT()])
     .damageIngredient(Item.of('minecraft:iron_pickaxe').ignoreNBT())
     event.recipes.createDeploying([
         Item.of('minecraft:netherite_scrap').withChance(0.01),
         Item.of('minecraft:diamond').withChance(0.05),
-        Item.of('minecraft:gold_ingot').withChance(0.1),
+        Item.of('minecraft:gold_ingot').withChance(0.15),
         Item.of('minecraft:copper_ingot').withChance(0.45),
         Item.of('minecraft:iron_ingot').withChance(0.5),
         Item.of('create:zinc_ingot').withChance(0.35),
@@ -225,10 +227,10 @@ onEvent('recipes',event=>{
         Item.of('minecraft:netherite_scrap').withChance(0.05),
         Item.of('minecraft:netherite_ingot').withChance(0.005),
         Item.of('minecraft:diamond').withChance(0.1),
-        Item.of('minecraft:gold_ingot').withChance(0.15),
+        Item.of('minecraft:gold_ingot').withChance(0.2),
         Item.of('minecraft:copper_ingot').withChance(0.5),
-        Item.of('minecraft:iron_ingot').withChance(0.6),
-        Item.of('create:zinc_ingot').withChance(0.4),
+        Item.of('minecraft:iron_ingot').withChance(0.75),
+        Item.of('create:zinc_ingot').withChance(0.5),
         Item.of('kubejs:smart_zombie').withChance(0.8)
     ],['kubejs:smart_zombie',Item.of('minecraft:netherite_pickaxe').ignoreNBT()])
     .damageIngredient(Item.of('minecraft:netherite_pickaxe').ignoreNBT())

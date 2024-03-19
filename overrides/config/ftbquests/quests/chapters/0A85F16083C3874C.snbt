@@ -12,6 +12,7 @@
 			title: "打窝"
 			x: -3.0d
 			y: -2.0d
+			subtitle: "钓鱼佬绝不空军！"
 			description: ["准备一点鱼食，待会钓鱼去"]
 			dependencies: ["7FF252648E61FCB8"]
 			hide: true
@@ -51,6 +52,7 @@
 		{
 			x: -1.5d
 			y: -3.5d
+			description: ["为什么不是冰冻罗非鱼"]
 			dependencies: ["1A1A54001621DB62"]
 			id: "5259FD7E34D048EC"
 			tasks: [{
@@ -75,7 +77,7 @@
 		}
 		{
 			x: 0.0d
-			y: -0.5d
+			y: -2.0d
 			subtitle: "《海底总动员》"
 			description: ["《海底总动员》的英文原名为《寻找尼莫》"]
 			dependencies: ["1A1A54001621DB62"]
@@ -113,7 +115,7 @@
 		}
 		{
 			x: 1.5d
-			y: -0.5d
+			y: -2.0d
 			dependencies: ["4601A5E03C7BA855"]
 			id: "3E496D9E7BF4401A"
 			tasks: [{
@@ -123,8 +125,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -2.0d
+			x: 3.0d
+			y: -1.0d
 			dependencies: ["3E496D9E7BF4401A"]
 			id: "4CB5F662E12F4FF4"
 			tasks: [{
@@ -141,7 +143,7 @@
 			subtitle: "正在接入墨菲特全球共享网络..."
 			description: [
 				"脑纹珊瑚勉强也能当大脑用"
-				"浮冰？浮冰是用来给大脑降温的"
+				"浮冰？浮冰是用来给大脑防腐的"
 			]
 			dependencies: [
 				"4CB5F662E12F4FF4"
@@ -194,8 +196,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: -0.5d
 			description: ["如果海泡菜不够用的话，海草也能煮海水"]
 			dependencies: ["1A1A54001621DB62"]
 			id: "60450D3CCFD63D91"
@@ -299,7 +301,7 @@
 			y: -8.0d
 			description: ["这些小冰块是用来给拼盘提供低温的"]
 			dependencies: ["65ABE195E5248202"]
-			hide: true
+			hide: false
 			id: "54ED4164AA3F4656"
 			tasks: [{
 				id: "28F5D2334A1A7B58"
@@ -359,7 +361,7 @@
 			y: -6.5d
 			description: ["不能只顾着吃饭，也要考虑摆盘"]
 			dependencies: ["65ABE195E5248202"]
-			hide: true
+			hide: false
 			id: "43861DB618E53CB0"
 			tasks: [{
 				id: "6C19A6FEB5C7EED5"
@@ -466,18 +468,6 @@
 		}
 		{
 			x: 6.0d
-			y: -5.0d
-			dependencies: ["090DEC658A82F755"]
-			optional: true
-			id: "0482ACDA464BF828"
-			tasks: [{
-				id: "40C39AE71065FE53"
-				type: "item"
-				item: "create:nixie_tube"
-			}]
-		}
-		{
-			x: 6.0d
 			y: -8.0d
 			subtitle: "所以钻石挖出来了没"
 			dependencies: ["087FC9EF15A60751"]
@@ -486,6 +476,62 @@
 				id: "472B8390DFBFD052"
 				type: "item"
 				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["如果海草不够用的话，海泡菜也能煮海水"]
+			dependencies: ["1A1A54001621DB62"]
+			id: "31D3A7148AF94BCD"
+			tasks: [{
+				id: "1540D2BCF03E83E9"
+				type: "item"
+				item: "minecraft:sea_pickle"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.0d
+			invisible: true
+			id: "3A5290642226CC08"
+			tasks: [
+				{
+					id: "34D0B150091774FF"
+					type: "item"
+					item: "minecraft:tube_coral"
+					consume_items: true
+				}
+				{
+					id: "173F24ACA459EA39"
+					type: "item"
+					item: "minecraft:brain_coral"
+					consume_items: true
+				}
+				{
+					id: "7ADB9E3BBD1CC6A2"
+					type: "item"
+					item: "minecraft:bubble_coral"
+					consume_items: true
+				}
+				{
+					id: "2E978F94EF3863F9"
+					type: "item"
+					item: "minecraft:fire_coral"
+					consume_items: true
+				}
+				{
+					id: "4D69B3BBED677706"
+					type: "item"
+					item: "minecraft:horn_coral"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "15F8CAE45F8A5B8B"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 3889821894948755481L
 			}]
 		}
 	]

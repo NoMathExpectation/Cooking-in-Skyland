@@ -10,8 +10,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 6.5d
-			y: -5.5d
+			x: 5.0d
+			y: -7.0d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "653095D0CC79AA0A"
@@ -28,20 +28,8 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: -1.0d
 			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "551D2C8392D4FD9A"
-			tasks: [{
-				id: "53888A412019F731"
-				type: "item"
-				item: "exnihilosequentia:oak_crucible"
-			}]
-		}
-		{
-			x: -2.5d
-			y: -5.5d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "42FFAE0055FA6642"
@@ -71,8 +59,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -7.0d
+			x: -2.5d
+			y: -5.5d
 			dependencies: ["14D67790C835AEFD"]
 			id: "7FBD2B088CE6D2B0"
 			tasks: [{
@@ -138,6 +126,7 @@
 		{
 			x: 0.5d
 			y: -4.0d
+			description: ["然后用这个把装置3D打印出来"]
 			hide_dependency_lines: false
 			dependencies: ["22D16E5A46B01317"]
 			id: "20C37F1CB3C21172"
@@ -150,6 +139,7 @@
 		{
 			x: 5.0d
 			y: -4.0d
+			description: ["如果有什么需要合成的需求大的物品，这个可以帮你批量制造"]
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "42782D8704BBE7ED"
@@ -162,6 +152,7 @@
 		{
 			x: -1.0d
 			y: -4.0d
+			description: ["你可以去建一个创造档，然后自己设计装置，用蓝图保存"]
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "22D16E5A46B01317"
@@ -172,8 +163,9 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.0d
+			x: 6.5d
+			y: -2.5d
+			subtitle: "这就是沸羊羊的感觉~"
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "7FE72B6E9A2816BE"
@@ -276,18 +268,6 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "35DB75D0E5ABD056"
-			tasks: [{
-				id: "23C5156113C65C46"
-				type: "item"
-				item: "minecraft:coarse_dirt"
-			}]
-		}
-		{
 			x: 3.5d
 			y: -7.0d
 			description: [
@@ -313,8 +293,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: -7.0d
+			x: 5.0d
+			y: -2.5d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "333D28582ED41D18"
@@ -339,7 +319,7 @@
 		{
 			title: "抽屉"
 			x: 8.0d
-			y: -5.5d
+			y: -4.0d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "0426D3F1A7CCE75E"
@@ -371,8 +351,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -2.5d
+			x: 8.0d
+			y: -7.0d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "77EE45A69D8985BC"
@@ -383,8 +363,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -2.5d
+			x: 6.5d
+			y: -7.0d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "6F9160EA91F0AAA8"
@@ -395,8 +375,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -2.5d
+			x: 6.5d
+			y: -5.5d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "1BD94672F4B629BA"
@@ -408,7 +388,7 @@
 		}
 		{
 			x: 8.0d
-			y: -4.0d
+			y: -2.5d
 			dependencies: ["0426D3F1A7CCE75E"]
 			id: "6A0038AC2F2E13B6"
 			tasks: [{
@@ -418,18 +398,135 @@
 			}]
 		}
 		{
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["7FBD2B088CE6D2B0"]
+			id: "05C6D2412E2C581D"
+			tasks: [{
+				id: "7840B0468EDBD3D8"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["05C6D2412E2C581D"]
+			id: "2F66EE1705914AB1"
+			tasks: [{
+				id: "352A1901D2F20C6F"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "建筑核心"
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["2F66EE1705914AB1"]
+			id: "3132864AA7CD2337"
+			tasks: [
+				{
+					id: "1692E22062060E6E"
+					type: "item"
+					item: "constructionwand:core_angel"
+				}
+				{
+					id: "76ABF75C12DBB53E"
+					type: "item"
+					item: "constructionwand:core_destruction"
+				}
+			]
+		}
+		{
 			x: 6.5d
 			y: -4.0d
 			dependencies: ["0426D3F1A7CCE75E"]
-			id: "2D4800E350B404BD"
+			id: "451BC79172FB8FB9"
 			tasks: [{
-				id: "38FA08DA79FAEBEC"
+				id: "40416875F6B37907"
 				type: "item"
-				item: {
-					id: "fluiddrawerslegacy:fluiddrawer"
-					Count: 1b
-					tag: { }
-				}
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.5d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "4C5177B49B3AF334"
+			tasks: [{
+				id: "180A1CCEF5F32CB3"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "2C354071DED62906"
+			tasks: [{
+				id: "6AE3736B5C64F64D"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			dependencies: ["2C354071DED62906"]
+			id: "2B77C715EE72489B"
+			tasks: [{
+				id: "65B664AC6577E57C"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			dependencies: ["2B77C715EE72489B"]
+			id: "49FBD0C9DE5133D1"
+			tasks: [{
+				id: "45C298C1DD8BECBF"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["49FBD0C9DE5133D1"]
+			id: "5E6D62E98811E501"
+			tasks: [{
+				id: "3CDE5B197CBF0F31"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["333D28582ED41D18"]
+			id: "0A5B66C7C3D103D7"
+			tasks: [{
+				id: "2997CF9206203DA3"
+				type: "item"
+				item: "solcarrot:food_book"
 			}]
 		}
 	]

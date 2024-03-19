@@ -19,6 +19,7 @@ onEvent('recipes',event=>{
     //event.recipes.createCompacting('minecraft:gilded_blackstone',['minecraft:deepslate',Fluid.of('minecraft:lava',100)]).heated()
     event.recipes.exnihilosequentia.sieve('minecraft:gilded_blackstone','exnihilosequentia:gold_pieces')
         .addRoll(0.85,'iron')
+        .addRoll(0.85,'emerald')
     event.blasting('minecraft:basalt','minecraft:gilded_blackstone')
     event.recipes.createMilling([
         Item.of('2x minecraft:redstone'),
@@ -30,6 +31,19 @@ onEvent('recipes',event=>{
         '2x create:iron_sheet',
         '2x create:golden_sheet'
     ]).heated()
+
+    event.recipes.createCompacting('exnihilosequentia:emerald_mesh',['6x emerald','exnihilosequentia:iron_mesh']).heated()
+    event.recipes.exnihilosequentia.sieve('minecraft:gilded_blackstone','exnihilosequentia:iron_pieces')
+    .addRoll(0.85,'emerald')
+    .addRoll(0.85,'emerald')
+    event.recipes.exnihilosequentia.sieve('minecraft:gilded_blackstone','exnihilosequentia:copper_pieces')
+    .addRoll(0.85,'emerald')
+    .addRoll(0.85,'emerald')
+    event.recipes.exnihilosequentia.sieve('minecraft:gilded_blackstone','exnihilosequentia:zinc_pieces')
+    .addRoll(0.85,'emerald')
+    .addRoll(0.85,'emerald')
+
+
     //玫瑰石英
     event.recipes.createCompacting('2x create:polished_rose_quartz',[
         '8x minecraft:redstone',
@@ -47,7 +61,7 @@ onEvent('recipes',event=>{
     })
     event.recipes.createCompacting([Item.of('lapis_lazuli').withChance(0.8),Item.of('emerald').withChance(0.8)],'basalt').heated()
     //烈焰火炉
-    event.recipes.createCompacting('kubejs:firesword',[Fluid.of('kubejs:protein',200),'2x gold_block','2x create:brass_block','iron_block','8x gunpowder']).heated()
+    event.recipes.createCompacting('kubejs:firesword',[Fluid.of('milk',200),'2x gold_block','2x create:brass_block','iron_block','8x gunpowder']).heated()
     event.shaped('minecraft:flint_and_steel',[
         'A ',
         ' B'
@@ -89,8 +103,8 @@ onEvent('recipes',event=>{
     .transitionalItem('kubejs:incomplete_burner')
     .loops(1)
     //蛋白质
-    event.recipes.createMixing(Fluid.of('kubejs:protein',20),'farmersdelight:fried_egg').heated()
-    event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').superheated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').heated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',250),'farmersdelight:fried_egg').superheated()
     event.recipes.createMixing(Fluid.of('kubejs:protein',250),'rotten_flesh').superheated()
     event.recipes.createMixing('minecraft:mutton',[
         Fluid.of('kubejs:protein',200),'2x minecraft:string'
@@ -113,7 +127,7 @@ onEvent('recipes',event=>{
     event.recipes.createCompacting(Fluid.of('minecraft:milk',500),[
         Fluid.of('minecraft:water',250),Fluid.of('kubejs:protein',250),'minecraft:leather'
     ]).heated()
-    event.recipes.createCompacting(Fluid.of('kubejs:protein',200),[['mutton','chicken','beef','porkchop']]).heated()
+    event.recipes.createCompacting(Fluid.of('kubejs:protein',200),[['mutton','beef','porkchop']]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',50),['chicken']).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',100),[['farmersdelight:bacon','farmersdelight:mutton_chops','farmersdelight:minced_beef']]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',25),['farmersdelight:chicken_cuts']).heated()
@@ -153,9 +167,10 @@ onEvent('recipes',event=>{
         event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:cooked_bacon']),
         event.recipes.createFilling('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich',Fluid.of('create_central_kitchen:tomato_sauce',100)])
     ])
-    .transitionalItem('kubejs:incomplete_sandwich')
+    .transitionalItem(Item.of('create_central_kitchen:incomplete_hamburger'))
     .loops(1)
     //小刀
+    event.remove({output:'exnihilosequentia:zinc_ingot'})
     event.remove({output:'farmersdelight:flint_knife'})
     event.remove({output:'farmersdelight:iron_knife'})
     event.shapeless('farmersdelight:iron_knife',['create:polished_rose_quartz','minecraft:iron_sword'])
@@ -177,9 +192,10 @@ onEvent('recipes',event=>{
     })
     event.remove({input:'minecraft:string',output:'minecraft:scaffolding'})
     event.recipes.createCompacting('minecraft:podzol',['minecraft:grass_block','farmersdelight:canvas'])
+    event.recipes.createFilling('podzol',['grass_block',Fluid.of('exnihilosequentia:sea_water',100)])
     event.recipes.exnihilosequentia.sieve('minecraft:podzol','exnihilosequentia:zinc_pieces')
-        .addRoll(0.55,'flint')
-        .addRoll(0.75,'iron')  
+        .addRoll(1,'flint')
+        .addRoll(0.85,'iron')  
     event.recipes.exnihilosequentia.sieve('minecraft:podzol','farmersdelight:tomato_seeds')
         .addRoll(0.55,'flint')
         .addRoll(0.75,'iron')
@@ -195,6 +211,21 @@ onEvent('recipes',event=>{
     event.remove({type:'smelting',output:'#forge:meat_cooked'}) 
     event.remove({input:'farmersdelight:tomato',type:'create:mixing'})
     event.recipes.createMixing(Fluid.of('create_central_kitchen:tomato_sauce',250),['2x farmersdelight:tomato','minecraft:sugar']).heated()
+    event.remove({output:'scaffolding'})
+    event.shaped('16x scaffolding',[
+        'ABA',
+        'A A',
+        'A A'
+    ],{
+        A:'bamboo',
+        B:'farmersdelight:canvas'
+    })
+    event.remove({output:'create:brass_scaffolding'})
+    event.remove({output:'create:copper_scaffolding'})
+    event.remove({output:'create:andesite_scaffolding'})
+    event.shapeless('8x create:brass_scaffolding',['8x scaffolding','create:brass_ingot'])
+    event.shapeless('8x create:copper_scaffolding',['8x scaffolding','copper_ingot'])
+    event.shapeless('8x create:andesite_scaffolding',['8x scaffolding','create:zinc_ingot'])
     //矿物处理
     //event.recipes.createMixing('exnihilosequentia:iron_pieces',['minecraft:gravel',Fluid.of('minecraft:water',100)])
     event.recipes.createMixing('create:andesite_alloy',['minecraft:andesite',Fluid.of('minecraft:lava',100)]).heated()
@@ -206,6 +237,7 @@ onEvent('recipes',event=>{
     //面团冲突BUG
     event.remove({output:'create:dough'})
     event.replaceInput({},'create:dough','farmersdelight:wheat_dough')
+    event.recipes.createMixing('9x slime_ball',[Fluid.of('milk',500),'4x sea_pickle','4x seagrass']).superheated()
     //event.shapeless('minecraft:slime_ball',['create:wheat_flour','minecraft:water_bucket','minecraft:lime_dye']).replaceIngredient({item:Item.of('minecraft:potion',{potion:'minecraft:water'})},'minecraft:bucket')
     //event.recipes.createMixing('minecraft:flint',['minecraft:gravel',Fluid.of('minecraft:water',100)])
     //机械手
@@ -229,4 +261,5 @@ onEvent('recipes',event=>{
         A:'leather',
         B:'create:propeller'
     })
+    event.remove({output:'painting',input:'#minecraft:wool'})
 })

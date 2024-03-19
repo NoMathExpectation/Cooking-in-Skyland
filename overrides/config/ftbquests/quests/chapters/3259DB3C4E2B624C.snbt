@@ -121,7 +121,7 @@
 			title: "宙之月面盾反"
 			x: -3.5d
 			y: 0.5d
-			subtitle: "（兔子！坦克！）"
+			subtitle: "兔子！坦克！Yeah！"
 			description: ["玄武岩(basalt)，洋壳主要组成，属基性火山岩。是地球洋壳和月球月海的最主要组成物质，也是地球陆壳和月球月陆的重要组成物质。"]
 			dependencies: ["579F8D73D88A5AF3"]
 			id: "0ED6318FB1489BBE"
@@ -427,6 +427,7 @@
 		{
 			x: 5.5d
 			y: -2.5d
+			description: ["这不是老番茄，因为下巴不尖"]
 			dependencies: ["4F7AEAC0451F6E6F"]
 			id: "2298A2D6CFC9ED12"
 			tasks: [{
@@ -578,6 +579,7 @@
 		}
 		{
 			title: "黄铜"
+			icon: "create:brass_ingot"
 			x: 1.0d
 			y: 0.5d
 			subtitle: "铜锌合金"
@@ -591,11 +593,18 @@
 				"67D2CADE37F04EE4"
 			]
 			id: "086522766212231E"
-			tasks: [{
-				id: "1D0C3B523A1B1F7B"
-				type: "item"
-				item: "create:brass_ingot"
-			}]
+			tasks: [
+				{
+					id: "287526972DBCC149"
+					type: "item"
+					item: "create:brass_nugget"
+				}
+				{
+					id: "77246553C06C0F20"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+			]
 		}
 		{
 			title: "用手指着"
@@ -651,18 +660,32 @@
 		}
 		{
 			x: -3.5d
-			y: 2.0d
-			subtitle: "来自黑暗之魂3的传火祭祀场"
+			y: 5.0d
+			subtitle: "我从古达老师身上拔剑，他还要砍我"
 			description: [
-				"有了传火大剑，你可以非常方便地制备烈焰人燃烧室了"
+				"有了传火剑，你可以非常方便地制备烈焰人燃烧室了"
 				"不过可能有些燃烧室承受不住火焰的力量..."
 			]
-			dependencies: ["5C681A91530BE788"]
+			hide_dependency_lines: true
+			dependencies: ["79E7446A04BC2E1E"]
 			id: "4A408FF631E20594"
 			tasks: [{
 				id: "6B634E788F5DF6CB"
 				type: "item"
 				item: "kubejs:firesword"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			subtitle: "筛矿的终极解决方案"
+			description: ["如果不出意外，这就是你能获取到的最高级筛网"]
+			dependencies: ["0ED6318FB1489BBE"]
+			id: "4C949EE85C9DB3EB"
+			tasks: [{
+				id: "1ECD8E28BD80B158"
+				type: "item"
+				item: "exnihilosequentia:emerald_mesh"
 			}]
 		}
 	]

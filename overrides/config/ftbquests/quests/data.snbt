@@ -31,7 +31,7 @@
 		{ id: "minecraft:oak_sapling", Count: 1b }
 		{ id: "minecraft:dirt", Count: 1b }
 	]
-	emergency_items_cooldown: 180
+	emergency_items_cooldown: 60
 	drop_loot_crates: false
 	loot_crate_no_drop: {
 		passive: 4000
