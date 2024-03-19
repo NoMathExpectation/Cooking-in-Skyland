@@ -26,6 +26,7 @@ onEvent('recipes',event=>{
         Item.of('2x minecraft:quartz').withChance(0.125)
     ],'minecraft:gilded_blackstone')
     //金子
+    event.remove({input:'red_sand',type:'create:splashing'})
     event.remove({output:'create:item_vault'})
     event.recipes.createCompacting('create:item_vault',[
         '2x create:iron_sheet',
@@ -59,7 +60,7 @@ onEvent('recipes',event=>{
         B:'minecraft:basalt',
         C:'create:polished_rose_quartz'
     })
-    event.recipes.createCompacting([Item.of('lapis_lazuli').withChance(0.8),Item.of('emerald').withChance(0.8)],'basalt').heated()
+    event.recipes.createMixing([Item.of('lapis_lazuli').withChance(0.8),Item.of('emerald').withChance(0.8)],['basalt',Fluid.of('lava',100)]).heated()
     //烈焰火炉
     event.recipes.createCompacting('kubejs:firesword',[Fluid.of('milk',200),'2x gold_block','2x create:brass_block','iron_block','8x gunpowder']).heated()
     event.shaped('minecraft:flint_and_steel',[
@@ -104,11 +105,7 @@ onEvent('recipes',event=>{
     .loops(1)
     //蛋白质
     event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').heated()
-<<<<<<< HEAD
-    event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').superheated()
-=======
     event.recipes.createMixing(Fluid.of('kubejs:protein',250),'farmersdelight:fried_egg').superheated()
->>>>>>> 3c107d1 (0.9.1)
     event.recipes.createMixing(Fluid.of('kubejs:protein',250),'rotten_flesh').superheated()
     event.recipes.createMixing('minecraft:mutton',[
         Fluid.of('kubejs:protein',200),'2x minecraft:string'
@@ -186,7 +183,6 @@ onEvent('recipes',event=>{
     event.shapeless('farmersdelight:netherite_knife',['create:polished_rose_quartz','minecraft:netherite_sword'])
     event.remove({output:'farmersdelight:cutting_board'})
     event.shaped('farmersdelight:cutting_board',[
-        '   ',
         'ACB',
         'ABC'
     ],{
@@ -195,6 +191,9 @@ onEvent('recipes',event=>{
         C:'create:polished_rose_quartz'
     })
     event.remove({input:'minecraft:string',output:'minecraft:scaffolding'})
+
+    event.remove({output:'farmersdelight:canvas'})
+    event.shapeless('2x farmersdelight:canvas','4x farmersdelight:straw')
     event.recipes.createCompacting('minecraft:podzol',['minecraft:grass_block','farmersdelight:canvas'])
     event.recipes.createFilling('podzol',['grass_block',Fluid.of('exnihilosequentia:sea_water',100)])
     event.recipes.exnihilosequentia.sieve('minecraft:podzol','exnihilosequentia:zinc_pieces')
@@ -224,6 +223,12 @@ onEvent('recipes',event=>{
         A:'bamboo',
         B:'farmersdelight:canvas'
     })
+
+    event.recipes.createCompacting('3x sugar',[
+        Fluid.of('water',500),
+        '2x beetroot'
+    ]).heated()
+
     event.remove({output:'create:brass_scaffolding'})
     event.remove({output:'create:copper_scaffolding'})
     event.remove({output:'create:andesite_scaffolding'})

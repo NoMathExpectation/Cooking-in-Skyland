@@ -97,8 +97,9 @@
 		}
 		{
 			title: "不是pvp大佬"
-			x: -0.5d
+			x: 1.0d
 			y: -4.0d
+			subtitle: "苇名抖刀术"
 			description: [
 				"这是用来切菜的刀，所以不要试着给你兄弟来一下"
 				"（虽然也有伤害就是了）"
@@ -144,8 +145,10 @@
 			}]
 		}
 		{
+			title: "行星发动机"
 			x: -0.5d
 			y: -1.0d
+			subtitle: "烈焰人可以喝岩浆"
 			description: ["玫瑰石英还具有优良的导热性质，所以我们拿来做成燃烧炉"]
 			dependencies: ["5B09DE829B32B8C8"]
 			id: "337F25053FA6397E"
@@ -161,7 +164,7 @@
 			y: 0.0d
 			shape: "hexagon"
 			description: [
-				"我相信我们的人一定能完成任务，不计存亡，不论虚实！"
+				"我相信我们的人一定能完成任务，不论虚实，不计存亡！"
 				"——周喆（流浪地球2）"
 			]
 			dependencies: [
@@ -180,7 +183,7 @@
 			x: 2.5d
 			y: -4.0d
 			description: ["怎么获取呢？用刀子砍小麦"]
-			dependencies: ["51F43D2369EF7A92"]
+			dependencies: ["763230580B9AFB30"]
 			id: "2F00124C9D1377BB"
 			tasks: [{
 				id: "4944B06F223368A6"
@@ -206,6 +209,7 @@
 		{
 			x: -0.5d
 			y: 0.5d
+			subtitle: "烈焰人喜欢快乐水"
 			description: ["给烈焰人燃烧室点火时用的，不过以后燃烧室可以用固体或者是液体燃料"]
 			dependencies: ["337F25053FA6397E"]
 			id: "67D2CADE37F04EE4"
@@ -539,7 +543,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -0.5d
 			y: -4.0d
 			description: ["往砧板里面掺点玫瑰石英，这样砧板就能撑得住菜刀的切（zhe）割（mo）了"]
 			dependencies: ["763230580B9AFB30"]
@@ -565,10 +569,7 @@
 		{
 			x: 2.5d
 			y: 0.5d
-			description: [
-				"这是最后一种基础金属，也是黄铜的必需材料"
-				"一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药也可以..."
-			]
+			description: ["这是最后一种基础金属，也是黄铜的必需材料"]
 			dependencies: ["61BB95E3AB7B1384"]
 			id: "0A38B93E781BDE6D"
 			tasks: [{
@@ -578,16 +579,12 @@
 			}]
 		}
 		{
-			title: "黄铜"
+			title: "不是蓝铜是黄铜"
 			icon: "create:brass_ingot"
 			x: 1.0d
 			y: 0.5d
 			subtitle: "铜锌合金"
-			description: [
-				"你知道吗？"
-				"紫铜是纯铜，青铜是铜锡合金，白铜是铜镍合金"
-				"蓝铜？蓝铜是啥？"
-			]
+			description: ["一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药好像也可以..."]
 			dependencies: [
 				"0A38B93E781BDE6D"
 				"67D2CADE37F04EE4"
@@ -660,11 +657,7 @@
 		}
 		{
 			x: -3.5d
-<<<<<<< HEAD
-			y: 2.0d
-=======
 			y: 5.0d
->>>>>>> 3c107d1 (0.9.1)
 			subtitle: "我从古达老师身上拔剑，他还要砍我"
 			description: [
 				"有了传火剑，你可以非常方便地制备烈焰人燃烧室了"

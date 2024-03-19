@@ -94,7 +94,7 @@ onEvent('recipes',event=>{
     .transitionalItem('kubejs:incomplete_smart_zombie')
     .loops(1)
     event.remove({output:'create:electron_tube'})
-    event.shaped('create:electron_tube',[
+    event.shaped('3x create:electron_tube',[
         ' A ',
         ' B ',
         ' C '

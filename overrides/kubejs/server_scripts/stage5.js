@@ -43,10 +43,10 @@ onEvent('recipes',event=>{
         Item.of('minecraft:cocoa_beans').withChance(0.3)
     ],['minecraft:mycelium',Fluid.of('exnihilosequentia:witch_water',500)]).heated()
         event.recipes.createCompacting([
-            Item.of('exnihilosequentia:sweet_berry_seeds').withChance(0.05),
-            Item.of('minecraft:twisting_vines').withChance(0.05),
-            Item.of('minecraft:weeping_vines').withChance(0.05),
-            Item.of('minecraft:nether_wart').withChance(0.85)
+            Item.of('exnihilosequentia:sweet_berry_seeds').withChance(0.15),
+            Item.of('minecraft:twisting_vines').withChance(0.15),
+            Item.of('minecraft:weeping_vines').withChance(0.15),
+            Item.of('minecraft:nether_wart').withChance(0.8)
         ],'minecraft:nether_wart')
     //烈焰蛋糕
     event.remove({input:'exnihilosequentia:crushed_netherrack'})
@@ -57,7 +57,7 @@ onEvent('recipes',event=>{
         '4x create:cinder_flour',
         Fluid.of('create:chocolate',200)
     ]).heated()
-    event.recipes.createMixing(Fluid.of('create:honey',200),[Fluid.of('minecraft:water',1000),'4x minecraft:sugar']).superheated()
+    event.recipes.createMixing(Fluid.of('create:honey',250),[Fluid.of('minecraft:water',500),'4x minecraft:sugar']).superheated()
     event.remove({type:'exnihilosequentia:fluid_on_top'})
     event.recipes.createCompacting('4x minecraft:obsidian',['minecraft:netherrack',Fluid.of('minecraft:lava',1000)]).superheated()
     event.recipes.createCompacting('minecraft:glowstone_dust',['create:powdered_obsidian',Fluid.of('minecraft:lava',100)]).superheated()
@@ -77,11 +77,7 @@ onEvent('recipes',event=>{
     })
     event.remove({output:'minecraft:glowstone_dust',type:'create:filling'})
     event.recipes.createMixing(Fluid.of('kubejs:happywater',100),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250)]).superheated()
-<<<<<<< HEAD
-    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250),Fluid.of('create_central_kitchen:dragon_breath',200)]).superheated()
-=======
-    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250),Fluid.of('create_central_kitchen:dragon_breath',100)]).superheated()
->>>>>>> 3c107d1 (0.9.1)
+    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('kubejs:happywater',250),Fluid.of('create_central_kitchen:dragon_breath',100),'4x sugar']).superheated()
     //谜之火腿
     event.remove({output:'farmersdelight:honey_glazed_ham_block'})
     event.recipes.createSequencedAssembly('farmersdelight:honey_glazed_ham_block','minecraft:bowl',[

@@ -1,7 +1,7 @@
 onEvent('recipes',event=>{
     event.remove({output:'cake'}) 
-    event.recipes.createMixing([Item.of('rainbowcompound:netherstar_ingot').withChance(0.95),Fluid.of('kubejs:fluid6',500)],[
-        '10x create:wheat_flour','3x sugar','5x egg',Fluid.of('milk',400),'rainbowcompound:netherstar_ingot'
+    event.recipes.createMixing([Fluid.of('kubejs:fluid6',500)],[
+        '10x create:wheat_flour','3x sugar','5x egg',Fluid.of('milk',400)
     ])
     //整形
     event.recipes.createCompacting([
@@ -127,7 +127,6 @@ onEvent('recipes',event=>{
         event.recipes.createFilling('kubejs:proc10',['kubejs:proc10',Fluid.of('kubejs:fluid4',600)]),
         event.recipes.createFilling('kubejs:proc10',['kubejs:proc10',Fluid.of('kubejs:fluid2',600)]),
         event.recipes.createDeploying('kubejs:proc10',['kubejs:proc10','kubejs:item3']),
-        event.recipes.createDeploying('kubejs:proc10',['kubejs:proc10','kubejs:item3'])
     ]).transitionalItem('kubejs:proc10').loops(2)
     event.recipes.createSequencedAssembly([
         Item.of('cake').withChance(5),
@@ -142,27 +141,27 @@ onEvent('recipes',event=>{
     ]).transitionalItem('kubejs:proc11').loops(4)
     //原料生产
     event.recipes.createMixing(Fluid.of('kubejs:fluid1',250),[
-        Fluid.of('milk',500),
-        '3x sugar',
+        Fluid.of('milk',250),
+        'sugar',
         Fluid.of('kubejs:oil',100)
     ])
-    event.recipes.createMixing(Fluid.of('kubejs:fluid2',500),[
-        Fluid.of('kubejs:fluid1',500),
+    event.recipes.createMixing(Fluid.of('kubejs:fluid2',1000),[
+        Fluid.of('kubejs:fluid1',1000),
         'cooked_porkchop','cooked_beef','cooked_chicken',
         'cooked_mutton','cooked_cod','cooked_salmon'
     ])
-    event.recipes.createMixing(Fluid.of('kubejs:fluid3',500),[
-        Fluid.of('kubejs:fluid1',500),
+    event.recipes.createMixing(Fluid.of('kubejs:fluid3',1000),[
+        Fluid.of('kubejs:fluid1',1000),
         'iron_ingot','copper_ingot','gold_ingot',
         'create:andesite_alloy','create:zinc_ingot','diamond'
     ])
-    event.recipes.createMixing(Fluid.of('kubejs:fluid4',500),[
-        Fluid.of('kubejs:fluid1',500),
+    event.recipes.createMixing(Fluid.of('kubejs:fluid4',1000),[
+        Fluid.of('kubejs:fluid1',1000),
         'tube_coral','brain_coral','bubble_coral',
         'fire_coral','horn_coral','pufferfish'
     ])
-    event.recipes.createMixing(Fluid.of('kubejs:fluid5',500),[
-        Fluid.of('kubejs:fluid1',500),
+    event.recipes.createMixing(Fluid.of('kubejs:fluid5',1000),[
+        Fluid.of('kubejs:fluid1',1000),
         'bamboo','carrot','farmersdelight:rice',
         'potato','nether_wart','chorus_fruit'
     ])

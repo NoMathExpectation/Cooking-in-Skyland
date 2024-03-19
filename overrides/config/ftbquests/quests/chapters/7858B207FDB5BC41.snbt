@@ -9,10 +9,14 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "哎呀，我的脚！"
+			title: "像极了地板上的乐高零件"
 			x: -2.5d
 			y: -1.0d
-			description: ["混杂了许多珊瑚的石头，十分刺脚"]
+			subtitle: "...我的脚！"
+			description: [
+				"混杂了许多珊瑚的石头，十分刺脚"
+				"但是强壮如你根本感觉不到痛"
+			]
 			dependencies: ["042B412D355D862D"]
 			hide: true
 			id: "7D2D03C3F675F876"
@@ -137,8 +141,10 @@
 			]
 		}
 		{
+			title: "你爱我，我爱你..."
 			x: 3.5d
 			y: -4.0d
+			subtitle: "...蜜雪冰城甜蜜蜜"
 			dependencies: ["21D38A2AE4A4D563"]
 			id: "5F73059061C64806"
 			tasks: [{
@@ -174,7 +180,10 @@
 		{
 			x: 3.5d
 			y: 3.5d
-			description: ["烈焰人还挺喜欢吃甜食"]
+			description: [
+				"烈焰人还挺喜欢吃甜食"
+				"但他们更喜欢快乐水"
+			]
 			dependencies: ["33AB0C1641AEDD24"]
 			id: "518512E19D6A2346"
 			tasks: [{
@@ -188,10 +197,7 @@
 			y: 3.0d
 			shape: "hexagon"
 			subtitle: "甜甜的，就像爱情一样"
-<<<<<<< HEAD
-=======
 			description: ["吃了这个，烈焰人干活更厉害了"]
->>>>>>> 3c107d1 (0.9.1)
 			dependencies: ["518512E19D6A2346"]
 			size: 2.0d
 			id: "258E9C8D0D0BE775"
@@ -204,10 +210,7 @@
 		{
 			x: 0.5d
 			y: 2.0d
-<<<<<<< HEAD
-=======
 			subtitle: "哈基米，哈基米，哈基米~"
->>>>>>> 3c107d1 (0.9.1)
 			dependencies: ["258E9C8D0D0BE775"]
 			id: "0709806ECE6E58A1"
 			tasks: [{
@@ -374,8 +377,11 @@
 			}]
 		}
 		{
+			title: "哎呀，我的神镐！"
 			x: 0.5d
 			y: 6.5d
+			subtitle: "桌子HP-1"
+			description: ["估计是当时岷叔下意识开了连锁挖矿，结果没想到直接把神镐挖没了"]
 			dependencies: ["3CB754B2A2E2B6AA"]
 			id: "725480372798A4EF"
 			tasks: [{
@@ -452,6 +458,7 @@
 		{
 			x: 3.5d
 			y: 5.0d
+			subtitle: "疯狂打Call组长"
 			dependencies: ["2CE44CB9599FAD61"]
 			id: "4678607BC2DC4CFB"
 			tasks: [{

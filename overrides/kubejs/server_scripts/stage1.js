@@ -103,7 +103,7 @@ onEvent('recipes',event => {
     })
         //修改煎蛋配方
     event.remove({output:'farmersdelight:fried_egg',type:'minecraft:smelting'})
-
+    event.shapeless('9x create:andesite_alloy','create:andesite_alloy_block')
     event.recipes.createPressing('minecraft:rotten_flesh','minecraft:dirt')
     event.recipes.createPressing('exnihilosequentia:crushed_andesite','minecraft:andesite')
     event.recipes.createPressing('minecraft:gravel','minecraft:cobblestone')
@@ -124,5 +124,17 @@ onEvent('recipes',event => {
     event.remove({type:'exnihilosequentia:sieve'})
     event.recipes.exnihilosequentia.heat('create:blaze_burner',1,{"blaze":"smouldering"})
     event.recipes.exnihilosequentia.heat('create:blaze_burner',7,{"blaze":"kindled"})
+    event.recipes.exnihilosequentia.heat('create:blaze_burner',7,{"blaze":"fading"})
     event.recipes.exnihilosequentia.heat('create:blaze_burner',15,{"blaze":"seething"})
+
+    event.remove({output:'create:wrench'})
+    event.shaped('create:wrench',[
+        'A',
+        'A',
+        'A'
+    ],{
+        A:'stick'
+    })
+    event.remove({input:'andesite',type:'create:milling'})
+    event.recipes.createMilling(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
 })

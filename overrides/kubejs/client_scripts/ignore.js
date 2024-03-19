@@ -13,3 +13,6 @@ onEvent('jei.hide.items',event=>{
     event.hide('ironchest:trapped_crystal_chest')
     event.hide('ironchest:diamond_to_crystal_chest_upgrade')
 })
+onEvent('jei.remove.recipes',event=>{
+    event.remove('create:mystery_conversion','create:conversion_0')
+})

@@ -383,6 +383,7 @@
 		{
 			x: 3.5d
 			y: -7.5d
+			subtitle: "老子288个铁锭啊！"
 			description: [
 				"答不出来！"
 				"但是我来硬的！"
@@ -579,6 +580,7 @@
 			description: [
 				"冶炼岩浆的时候不要忘记在坩埚下准备一个热源方块，热源方块的热源决定了岩浆产生的速度"
 				"具体有哪些热源方块可以在JEI上查到"
+				"（比如说烈焰人燃烧室、篝火、火把...）"
 			]
 			dependencies: ["30EF250439E7239C"]
 			id: "15646B567BB38FBE"
@@ -767,8 +769,6 @@
 				item: "minecraft:coarse_dirt"
 			}]
 		}
-<<<<<<< HEAD
-=======
 		{
 			title: "多喝热水"
 			icon: "exnihilosequentia:oak_crucible"
@@ -793,7 +793,19 @@
 				}
 			}]
 		}
->>>>>>> 3c107d1 (0.9.1)
+		{
+			title: "这可是你命根子！"
+			x: -5.5d
+			y: -3.0d
+			subtitle: "别把它搞丢了！"
+			dependencies: ["4EF005EAAFA740D8"]
+			id: "0ACF7ADE5F87371B"
+			tasks: [{
+				id: "10EC53A584B866C2"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

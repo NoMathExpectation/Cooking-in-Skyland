@@ -13,7 +13,5 @@
 		{ item: "minecraft:dark_oak_sapling" }
 		{ item: "minecraft:azalea" }
 		{ item: "minecraft:flowering_azalea" }
-		{ item: "minecraft:crimson_fungus" }
-		{ item: "minecraft:warped_fungus" }
 	]
 }

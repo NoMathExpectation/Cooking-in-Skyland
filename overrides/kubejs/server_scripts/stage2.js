@@ -85,9 +85,9 @@ onEvent("recipes",event=>{
     event.recipes.createMilling('farmersdelight:rice','farmersdelight:rice_panicle')
     //流体设备部分
     event.remove({output:"create:fluid_pipe"})
-    event.recipes.createCompacting('4x create:fluid_pipe',"2x create:copper_sheet")             
+    event.recipes.createCompacting('8x create:fluid_pipe',"2x create:copper_sheet")             
     event.remove({output:"create:fluid_tank"})
-    event.shaped('create:fluid_tank',[
+    event.shaped('4x create:fluid_tank',[
         'BAB',
         'B B',
         'BBB'
@@ -100,6 +100,25 @@ onEvent("recipes",event=>{
     event.replaceInput({output:'create:spout'},'create:copper_casing','create:fluid_tank')
     event.replaceInput({output:'create:item_drain'},'create:copper_casing','create:fluid_tank')   
     //动力部分
+    event.remove({output:'create:sail_frame'})
+    event.remove({output:'create:white_sail'})
+    event.shaped('8x create:sail_frame',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:'stick',
+        B:'create:andesite_alloy'
+    })
+    event.shaped('8x create:white_sail',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:'create:sail_frame',
+        B:'#minecraft:wool'
+    })
+
     event.remove({output:'create:water_wheel'})
     event.remove({output:'create:large_water_wheel'})
     event.remove({output:'create:windmill_bearing'})
@@ -192,6 +211,8 @@ onEvent("recipes",event=>{
         Fluid.of('minecraft:water',1000)
     ])
     //event.remove({})
+    event.remove({input:'sugar_cane',type:'create:crushing'})
+    event.recipes.createCrushing(['4x sugar',Item.of('sugar').withChance(0.6),Item.of('sugar').withChance(0.3)],'sugar_cane')
 })
     //吃冷米饭返回碗
 onEvent('item.food_eaten',event=>{

@@ -121,6 +121,8 @@
 			x: -5.5d
 			y: -0.5d
 			shape: "hexagon"
+			subtitle: "集合了八种合金的力量..."
+			description: ["...但是不够稳定，我们还得加点啥"]
 			dependencies: [
 				"278E810BF8B4BD70"
 				"667BEB72BC890E94"
@@ -140,8 +142,10 @@
 			}]
 		}
 		{
+			title: "世界尽头的石头"
 			x: -4.0d
 			y: -5.0d
+			subtitle: "收下吧！这是我最后的石头了！"
 			dependencies: [
 				"46C3B015BFC3CB61"
 				"5AB8F0EC756E4C26"
@@ -169,6 +173,7 @@
 		{
 			x: -2.5d
 			y: -3.5d
+			subtitle: "即使到了世界尽头也不要忘记吃水果！"
 			dependencies: ["2D61BE82DD8DB7C1"]
 			id: "1D119DE622659A2D"
 			tasks: [{
@@ -198,6 +203,7 @@
 			}]
 		}
 		{
+			title: "绿绿的块"
 			x: -4.0d
 			y: -6.5d
 			dependencies: ["46C3B015BFC3CB61"]
@@ -209,6 +215,7 @@
 			}]
 		}
 		{
+			title: "红红的块"
 			x: -4.0d
 			y: -3.5d
 			dependencies: ["46C3B015BFC3CB61"]
@@ -246,6 +253,7 @@
 		{
 			x: -5.5d
 			y: -3.5d
+			description: ["属于是蜘蛛眼长蘑菇了"]
 			dependencies: ["46C3B015BFC3CB61"]
 			id: "3FF303F675709500"
 			tasks: [{
@@ -276,7 +284,6 @@
 			x: -1.0d
 			y: -0.5d
 			shape: "hexagon"
-			subtitle: "诶——那俩人不听课搁那干啥呢——"
 			description: [
 				"彩虹到手，意味着所有的科技线已经全部解锁了"
 				"不过要做出蛋糕，我们还得获取更加强大的力量..."
@@ -301,6 +308,7 @@
 			x: -1.0d
 			y: -2.0d
 			subtitle: "她，星芒的旅人，万千世界的降临者"
+			description: ["来自茫茫星海之中，她之一瞥后降临于此..."]
 			dependencies: [
 				"1E1D8BE5F0754957"
 				"31B56F6C1322A888"
@@ -316,6 +324,7 @@
 			x: -1.0d
 			y: 1.0d
 			subtitle: "他，不屈的斗士，漫漫长夜的幸存者"
+			description: ["遭受暗黑意志诅咒，他的战斗后存活至今..."]
 			dependencies: [
 				"1E1D8BE5F0754957"
 				"33611E8F12E3E6D4"
@@ -330,6 +339,8 @@
 		{
 			x: 0.5d
 			y: -0.5d
+			subtitle: "...中二病其实挺朴实的"
+			description: ["一个是刚睡醒，另一个是刚准备睡觉"]
 			dependencies: [
 				"067BAE2DA5C8F766"
 				"080208548139897E"
@@ -344,6 +355,7 @@
 		{
 			x: 0.5d
 			y: -2.0d
+			description: ["完美无缺的晶体，来自于地狱之火的冶炼"]
 			dependencies: ["067BAE2DA5C8F766"]
 			id: "563D0304E89E39CE"
 			tasks: [{
@@ -355,6 +367,8 @@
 		{
 			x: 0.5d
 			y: 1.0d
+			subtitle: "“这是谁搞出的玩意？”"
+			description: ["经由人工老化处理的膜，除了做实验已经没啥别的用了"]
 			dependencies: ["080208548139897E"]
 			id: "3ADBC131F9C788F5"
 			tasks: [{
@@ -368,7 +382,10 @@
 			x: -7.0d
 			y: -5.0d
 			subtitle: "我同意并遵守用户协议"
-			description: ["你不会真的想看这种又长又无聊的协议吧"]
+			description: [
+				"你不会真的想看这种又长又无聊的协议吧？"
+				"不过这一章做不了食物，会挺无聊的，要不去挑战章节看看？"
+			]
 			dependencies: ["41ABF97082BDEF64"]
 			hide: true
 			dependency_requirement: "one_completed"
@@ -406,6 +423,8 @@
 		{
 			x: 2.0d
 			y: -2.0d
+			subtitle: "手握日月摘星辰..."
+			description: ["利用彩虹的力量，获取最纯粹的光明"]
 			hide_dependency_lines: true
 			dependencies: ["6581D835B733C61E"]
 			id: "07774CFFB0E7D81D"
@@ -474,6 +493,8 @@
 		{
 			x: 2.0d
 			y: 1.0d
+			subtitle: "...世间无我这般人！"
+			description: ["利用彩虹的力量，获取最纯粹的黑暗"]
 			hide_dependency_lines: true
 			dependencies: ["6581D835B733C61E"]
 			id: "652306B3B0107713"
@@ -554,6 +575,7 @@
 		{
 			x: 2.0d
 			y: -5.0d
+			description: ["除了奔向蛋糕的科技线，这里还有一些额外的线路"]
 			hide_dependency_lines: true
 			dependencies: ["1E1D8BE5F0754957"]
 			id: "609ABBFA3E0440E8"
@@ -566,6 +588,7 @@
 		{
 			x: 2.0d
 			y: -3.5d
+			description: ["把异彩化合物丢到虚空里面"]
 			dependencies: ["609ABBFA3E0440E8"]
 			id: "4B7E8942F97C766A"
 			tasks: [{
@@ -577,6 +600,7 @@
 		{
 			x: 2.0d
 			y: -6.5d
+			description: ["把异彩化合物丢到一堆火把中间"]
 			dependencies: ["609ABBFA3E0440E8"]
 			id: "1033E8D437960AC8"
 			tasks: [{
@@ -586,11 +610,7 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 3.5d
-=======
 			x: 0.5d
->>>>>>> 3c107d1 (0.9.1)
 			y: -5.0d
 			dependencies: ["609ABBFA3E0440E8"]
 			id: "40981C486317D90C"
@@ -601,11 +621,7 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 3.5d
-=======
 			x: 0.5d
->>>>>>> 3c107d1 (0.9.1)
 			y: -3.5d
 			dependencies: [
 				"4B7E8942F97C766A"
@@ -619,11 +635,7 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 3.5d
-=======
 			x: 0.5d
->>>>>>> 3c107d1 (0.9.1)
 			y: -6.5d
 			dependencies: [
 				"1033E8D437960AC8"
@@ -637,11 +649,7 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 5.0d
-=======
 			x: -1.0d
->>>>>>> 3c107d1 (0.9.1)
 			y: -3.5d
 			dependencies: ["4ADDCFE331BB8289"]
 			id: "77D53B100ABA5EDF"
@@ -658,11 +666,7 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 5.0d
-=======
 			x: -1.0d
->>>>>>> 3c107d1 (0.9.1)
 			y: -6.5d
 			dependencies: ["4DCA76B24C460230"]
 			id: "7E29ECAB6EE22085"
@@ -679,12 +683,8 @@
 			}]
 		}
 		{
-<<<<<<< HEAD
-			x: 0.5d
-=======
 			title: "黑曜石合金套"
 			x: 3.5d
->>>>>>> 3c107d1 (0.9.1)
 			y: -5.0d
 			dependencies: ["609ABBFA3E0440E8"]
 			id: "7BCD80A6B9A52C9A"
@@ -736,12 +736,8 @@
 			]
 		}
 		{
-<<<<<<< HEAD
-			x: -1.0d
-=======
 			title: "彩虹套"
 			x: 5.0d
->>>>>>> 3c107d1 (0.9.1)
 			y: -5.0d
 			dependencies: ["7BCD80A6B9A52C9A"]
 			id: "4942EAC66BAE1B60"

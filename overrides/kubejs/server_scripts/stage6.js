@@ -7,18 +7,32 @@ onEvent('recipes',event=>{
     event.remove({output:'fermented_spider_eye'})
     event.recipes.createMixing('fermented_spider_eye',['spider_eye','red_mushroom','brown_mushroom','minecraft:sugar']).heated()
     event.remove({output:"nether_wart_block"})
-    event.recipes.createCompacting('nether_wart_block',['8x nether_wart','fermented_spider_eye']).heated()
-    event.recipes.createCompacting('warped_wart_block',['4x twisting_vines','4x weeping_vines','ghast_tear']).heated()
+    event.recipes.createCompacting('nether_wart_block',['4x nether_wart','fermented_spider_eye']).heated()
+    event.recipes.createCompacting('warped_wart_block',['2x twisting_vines','2x weeping_vines','ghast_tear']).heated()
     event.recipes.createCompacting(['end_stone',Item.of('minecraft:end_stone').withChance(0.4)],['nether_wart_block','warped_wart_block','magma_cream']).superheated()
     event.recipes.createPressing('exnihilosequentia:crushed_end_stone','end_stone')
     event.recipes.createMixing(['ender_pearl',Item.of('ender_pearl').withChance(0.4),Item.of('chorus_fruit').withChance(0.4)],['exnihilosequentia:crushed_end_stone',Fluid.of('water',500)])
-    event.recipes.createMixing(Fluid.of('create_central_kitchen:dragon_breath',100),[
+    event.recipes.createMixing(Fluid.of('create_central_kitchen:dragon_breath',250),[
         'end_crystal','8x end_rod','8x purpur_block'
     ]).superheated()
-    event.recipes.createMixing([Fluid.of('create_central_kitchen:dragon_breath',50),Item.of('dragon_head').withChance(0.9)],['dragon_head'])
+    event.recipes.createMixing([Fluid.of('create_central_kitchen:dragon_breath',100),Item.of('dragon_head').withChance(0.95)],['dragon_head'])
     event.recipes.createFilling('dragon_head',[Fluid.of("create_central_kitchen:dragon_breath",100),'kubejs:smart_zombie'])
     event.recipes.createMixing([Item.of('chorus_fruit').withChance(0.5),'chorus_fruit'],['chorus_fruit',Fluid.of('exnihilosequentia:witch_water',200)])
     //合金
+    event.remove({output:'rainbowcompound:polished_ender_quartz'})
+    event.recipes.createFilling('rainbowcompound:polished_ender_quartz',[Fluid.of('create_central_kitchen:dragon_breath',50),'rainbowcompound:ender_quartz'])
+    event.remove({output:'rainbowcompound:strange_colored_ingot'})
+    event.recipes.createCompacting([
+      Item.of('rainbowcompound:strange_colored_ingot').withChance(0.9),
+      Item.of('rainbowcompound:strange_colored_ingot').withChance(0.8),
+      Item.of('rainbowcompound:strange_colored_ingot').withChance(0.7),
+      Item.of('rainbowcompound:strange_colored_ingot').withChance(0.6)
+    ],[
+      'rainbowcompound:blazeite_ingot','rainbowcompound:warpedite_ingot',
+      'rainbowcompound:glowstoneite_ingot','rainbowcompound:netherwartite_ingot',
+      'rainbowcompound:frostite_ingot','rainbowcompound:enderite_ingot',
+      'rainbowcompound:chorusite_ingot','rainbowcompound:obsidianite_ingot'
+    ]).heated()
     event.remove({output:'exnihilosequentia:end_cake'})
     event.remove({output:'rainbowcompound:blazeite_ingot'})
     event.remove({output:'rainbowcompound:warpedite_ingot'})
@@ -98,7 +112,7 @@ onEvent('recipes',event=>{
     event.remove({output:'rainbowcompound:rainbow_compound'})
     event.remove({output:'rainbowcompound:netherstar_ingot'})
     event.recipes.createMixing('rainbowcompound:rainbow_compound',[
-        '2x create:chromatic_compound','2x kubejs:refined_radiance','2x kubejs:shadow_steel',
+        'create:chromatic_compound','2x kubejs:refined_radiance','2x kubejs:shadow_steel',
         '4x amethyst_shard','4x rainbowcompound:haunted_membrane','rainbowcompound:obsidianite_ingot'
     ]).superheated()
     //dlc
@@ -106,7 +120,7 @@ onEvent('recipes',event=>{
     event.recipes.createMixing('wither_skeleton_skull',['kubejs:shadow_steel','rainbowcompound:rainbow_compound']).superheated()
     event.recipes.createMixing('rainbowcompound:netherstar_ingot',[
         'rainbowcompound:rainbow_compound','2x kubejs:refined_radiance','2x kubejs:shadow_steel',
-        '4x nether_star','4x wither_skeleton_skull','2x rainbowcompound:obsidianite_ingot'
+        '2x nether_star','2x wither_skeleton_skull','2x rainbowcompound:obsidianite_ingot'
     ]).superheated()
     event.recipes.createMechanicalCrafting('kubejs:cake_shovel',[
       '   B ',
@@ -462,11 +476,7 @@ onEvent('recipes',event=>{
       'AAA'
     ],{
       A:'iron_ingot',
-<<<<<<< HEAD
-      B:'glowstone_dust',
-=======
       B:'magma_cream',
->>>>>>> 3c107d1 (0.9.1)
       C:'redstone'
     })
     event.remove({output:'pipez:fluid_pipe'})
@@ -476,11 +486,7 @@ onEvent('recipes',event=>{
       'AAA'
     ],{
       A:'iron_ingot',
-<<<<<<< HEAD
-      B:'glowstone_dust',
-=======
       B:'magma_cream',
->>>>>>> 3c107d1 (0.9.1)
       C:'bucket'
     })
     event.remove({output:'pipez:universal_pipe'})
@@ -495,4 +501,28 @@ onEvent('recipes',event=>{
       B:'magma_cream',
       C:'stick'
     })
+    //龙息增产系列
+    event.recipes.createMixing([
+      Item.of('rainbowcompound:glowstoneite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:netherwartite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:warpedite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:chorusite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:slimeite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:frostite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:enderite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:blazeite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:rainbow_compound').withChance(0.95)
+    ],['rainbowcompound:rainbow_compound',Fluid.of('create_central_kitchen:dragon_breath',100)]).superheated()
+    event.recipes.createMixing([
+      Item.of('rainbowcompound:glowstoneite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:netherwartite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:warpedite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:chorusite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:slimeite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:frostite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:enderite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:blazeite_ingot').withChance(0.2),
+      Item.of('rainbowcompound:strange_colored_ingot').withChance(0.95)
+    ],['create:chromatic_compound',Fluid.of('create_central_kitchen:dragon_breath',100)]).superheated()
 })
+

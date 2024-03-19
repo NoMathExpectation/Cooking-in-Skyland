@@ -28,7 +28,7 @@
 			subtitle: "因为它就在这里！"
 			description: ["接下来要做的蛋糕不是普通的蛋糕了，星光沐浴在蛋糕上，这使得我们每一步都十分艰难"]
 			dependencies: ["243BD0C2A518C3B3"]
-			hide: false
+			hide: true
 			id: "702E11E9752CC0FB"
 			tasks: [{
 				id: "5A8F7EDFB473E330"
@@ -38,6 +38,7 @@
 		{
 			x: -7.5d
 			y: -3.0d
+			subtitle: "第一步，我们先烤个大的蛋糕胚"
 			dependencies: ["702E11E9752CC0FB"]
 			id: "6AC2161B6E3218F3"
 			tasks: [{
@@ -49,6 +50,7 @@
 		{
 			x: -6.0d
 			y: -3.0d
+			subtitle: "然后用蛋糕刀把表皮去掉"
 			dependencies: ["6AC2161B6E3218F3"]
 			id: "21C339470B6AC9FD"
 			tasks: [{
@@ -60,6 +62,7 @@
 		{
 			x: -6.0d
 			y: -1.5d
+			subtitle: "现在给它切成三片，小小不要切坏了..."
 			dependencies: ["21C339470B6AC9FD"]
 			id: "52018E9F3D2AF99F"
 			tasks: [{
@@ -71,6 +74,7 @@
 		{
 			x: -6.0d
 			y: 0.0d
+			subtitle: "要给蛋糕填料的话，得先在蛋糕片上挖孔"
 			dependencies: ["52018E9F3D2AF99F"]
 			id: "5AF7611FB953A6DA"
 			tasks: [{
@@ -82,6 +86,7 @@
 		{
 			x: -6.0d
 			y: 1.5d
+			subtitle: "然后把这些处理过的蛋糕片组装起来"
 			dependencies: ["5AF7611FB953A6DA"]
 			id: "77B4A0AF91BD7824"
 			tasks: [{
@@ -93,6 +98,7 @@
 		{
 			x: -6.0d
 			y: 3.0d
+			subtitle: "往蛋糕里面塞上一些好吃的零食"
 			dependencies: ["77B4A0AF91BD7824"]
 			id: "21C038B52A4733AD"
 			tasks: [{
@@ -104,6 +110,7 @@
 		{
 			x: -4.5d
 			y: 3.0d
+			subtitle: "最后再用一个蛋糕片封顶"
 			dependencies: ["21C038B52A4733AD"]
 			id: "1179B67111383078"
 			tasks: [{
@@ -115,6 +122,7 @@
 		{
 			x: -3.0d
 			y: 3.0d
+			subtitle: "现在在蛋糕外面均匀抹上奶油"
 			dependencies: ["1179B67111383078"]
 			id: "599F9D212D22A65A"
 			tasks: [{
@@ -126,6 +134,7 @@
 		{
 			x: -3.0d
 			y: 1.5d
+			subtitle: "准备好彩色奶油，该裱花了"
 			dependencies: ["599F9D212D22A65A"]
 			id: "4C804F4A74A7D247"
 			tasks: [{
@@ -137,6 +146,7 @@
 		{
 			x: -3.0d
 			y: 0.0d
+			subtitle: "层次不够丰富，得再裱一点"
 			dependencies: ["4C804F4A74A7D247"]
 			id: "172AA783C5CD4653"
 			tasks: [{
@@ -148,6 +158,7 @@
 		{
 			x: -3.0d
 			y: -1.5d
+			subtitle: "还有几种颜色的奶油没送过来？"
 			dependencies: ["172AA783C5CD4653"]
 			id: "6ECCB88F8802BAED"
 			tasks: [{
@@ -159,6 +170,7 @@
 		{
 			x: -3.0d
 			y: -3.0d
+			subtitle: "这下终于裱好了，又是裱错又是误碰的..."
 			dependencies: ["6ECCB88F8802BAED"]
 			id: "25B2A4ED119C6EDD"
 			tasks: [{
@@ -170,6 +182,7 @@
 		{
 			x: -1.5d
 			y: -3.0d
+			subtitle: "现在该给蛋糕表面淋上巧克力酱了"
 			dependencies: ["25B2A4ED119C6EDD"]
 			id: "024A01ACC28EA9F1"
 			tasks: [{
@@ -181,6 +194,7 @@
 		{
 			x: 0.0d
 			y: -3.0d
+			subtitle: "然后在凝固的巧克力表面加点装饰..."
 			dependencies: ["024A01ACC28EA9F1"]
 			id: "477832968521A103"
 			tasks: [{
@@ -293,6 +307,7 @@
 		{
 			x: -3.0d
 			y: -6.0d
+			description: ["把奶油和牛奶混合冰冻就可以了"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "6859314507ACFA22"
@@ -305,6 +320,7 @@
 		{
 			x: -4.5d
 			y: -1.5d
+			subtitle: "哎呀！不知道哪里出问题总之不对劲！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "27FF9B39050CEE08"
@@ -317,6 +333,7 @@
 		{
 			x: -4.5d
 			y: 0.0d
+			subtitle: "哎呀！蛋糕片切坏了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "616F50B2D3691CEC"
@@ -329,6 +346,7 @@
 		{
 			x: -4.5d
 			y: 1.5d
+			subtitle: "哎呀！奶油裱错了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "786D302EEB2D4E3E"
@@ -342,6 +360,7 @@
 			x: -7.5d
 			y: -4.5d
 			subtitle: "你这迷人的小蛋糕~"
+			description: ["没关系，我们还能给它组装成蛋糕胚"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "7E90E089433914C1"
@@ -355,6 +374,7 @@
 			x: -7.5d
 			y: -6.0d
 			subtitle: "屑！bro~"
+			description: ["没关系，我们还能给它组装成蛋糕块"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "4F6CE47EA745EF76"

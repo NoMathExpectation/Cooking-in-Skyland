@@ -6,8 +6,4 @@ onEvent('recipes',event=>{
     event.remove({output:'solcarrot:food_book'})
     event.shapeless('solcarrot:food_book','solsweetpotato:food_book')
     event.shapeless('solsweetpotato:food_book','solcarrot:food_book')
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> 3c107d1 (0.9.1)

@@ -1,9 +1,6 @@
 onEvent('recipes',event=>{
     event.remove({mod:'functionalstorage'})
-<<<<<<< HEAD
-=======
     event.remove({mod:'fluiddrawerslegacy'})
->>>>>>> 3c107d1 (0.9.1)
     event.remove({output:"ironchest:crystal_chest"})
     event.remove({input:"ironchest:crystal_chest"})
     event.remove({output:"ironchest:diamond_to_crystal_chest_upgrade"})
