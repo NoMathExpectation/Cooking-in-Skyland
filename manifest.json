@@ -10,7 +10,7 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "CiS",
+  "name": "CiS Omega9915 Edition",
   "version": "0.9.2",
   "author": "",
   "files": [
@@ -465,8 +465,33 @@
       "required": true
     },
     {
-      "projectID": 576589,
-      "fileID": 4899765,
+      "projectID": 333396,
+      "fileID": 3844448,
+      "required": true
+    },
+    {
+      "projectID": 236307,
+      "fileID": 4925668,
+      "required": true
+    },
+    {
+      "projectID": 247007,
+      "fileID": 4987177,
+      "required": true
+    },
+    {
+      "projectID": 232758,
+      "fileID": 4905958,
+      "required": true
+    },
+    {
+      "projectID": 251389,
+      "fileID": 4724174,
+      "required": true
+    },
+    {
+      "projectID": 295910,
+      "fileID": 4728150,
       "required": true
     }
   ],

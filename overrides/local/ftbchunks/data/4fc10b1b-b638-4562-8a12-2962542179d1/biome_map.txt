@@ -1,0 +1,7 @@
+#47F minecraft:birch_forest
+#4F9 minecraft:dark_forest
+#010 minecraft:forest
+#1DF minecraft:old_growth_birch_forest
+#5FF minecraft:river
+#152 minecraft:windswept_forest
+#579 minecraft:windswept_savanna

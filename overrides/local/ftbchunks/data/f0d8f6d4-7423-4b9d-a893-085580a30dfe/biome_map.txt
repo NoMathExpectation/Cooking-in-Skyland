@@ -1,0 +1,7 @@
+#6F6 minecraft:badlands
+#010 minecraft:forest
+#4B0 minecraft:jungle
+#3DC minecraft:plains
+#3AF minecraft:sparse_jungle
+#421 minecraft:stony_peaks
+#1C9 minecraft:wooded_badlands

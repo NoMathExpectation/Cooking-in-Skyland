@@ -1,0 +1,91 @@
+{
+	id: "150796B49FFD6CF6"
+	group: "5C7CFACB63CA6A5F"
+	order_index: 1
+	filename: "150796B49FFD6CF6"
+	title: "Omega的改动"
+	icon: "angelring:itemring"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 1.0d
+			can_repeat: true
+			id: "54E9EA710D710F48"
+			tasks: [{
+				id: "36E34C33C09A429F"
+				type: "checkmark"
+				title: "门树"
+			}]
+			rewards: [{
+				id: "5AB49C403FA3C072"
+				type: "item"
+				item: "integrateddynamics:menril_sapling"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			can_repeat: true
+			id: "1C508097ED4FECDB"
+			tasks: [{
+				id: "60925E9A96EC3634"
+				type: "checkmark"
+				title: "经验"
+			}]
+			rewards: [{
+				id: "63DC619E7EF70B79"
+				type: "xp_levels"
+				xp_levels: 1000
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			description: ["领取天使指环"]
+			id: "050A70B3E065F46F"
+			tasks: [{
+				id: "106CF8D46AFAA68B"
+				type: "checkmark"
+				title: "天使指环"
+			}]
+			rewards: [{
+				id: "029EAA82224094FB"
+				type: "item"
+				item: "angelring:itemring"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.0d
+			description: ["附送的物品管理器"]
+			id: "36C08C377BF78C63"
+			tasks: [{
+				id: "4CE109F3B0FAC0FE"
+				type: "checkmark"
+				title: "初始物品"
+			}]
+			rewards: [
+				{
+					id: "23CB56107ACB114C"
+					type: "item"
+					item: "integratedtunnels:part_interface_item"
+					count: 64
+				}
+				{
+					id: "2C870DA810D97A8A"
+					type: "item"
+					item: "integrateddynamics:cable"
+					count: 64
+				}
+				{
+					id: "149A1576B9912FBA"
+					type: "item"
+					item: "integratedterminals:part_terminal_storage"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
