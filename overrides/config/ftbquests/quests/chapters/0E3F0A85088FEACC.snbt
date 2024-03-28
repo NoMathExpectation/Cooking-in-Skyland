@@ -316,6 +316,21 @@
 				title: "跑步进入共产主义"
 			}]
 		}
+		{
+			x: 4.5d
+			y: 5.5d
+			id: "432519E2D765DBA2"
+			tasks: [{
+				id: "48F8C80962C5C1FE"
+				type: "checkmark"
+				title: "Fly"
+			}]
+			rewards: [{
+				id: "3AE56EF6FC6C84D9"
+				type: "command"
+				command: "/ability @s mayfly true"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

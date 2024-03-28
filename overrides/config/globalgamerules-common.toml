@@ -10,7 +10,7 @@
 	#Whether raids are disabled.
 	disable_raids = true
 	#Whether the daylight cycle and moon phases progress.
-	do_daylight_cycle = true
+	do_daylight_cycle = false
 	#Whether entities that are not mobs should have drops.
 	do_entity_drops = true
 	#Whether fire should spread and naturally extinguish
@@ -44,7 +44,7 @@
 	#Whether the player should take damage when inside powder snow.
 	freeze_damage = true
 	#Whether the player should keep items and experience in their inventory after death .
-	keep_inventory = false
+	keep_inventory = true
 	#Whether to log admin commands to server log.
 	log_admin_commands = true
 	#The maximum length of a chain of commands that can be executed during one tick. Applies to command blocks and functions.
@@ -62,7 +62,7 @@
 	players_sleeping_percentage = 100
 	#How often a random block tick occurs (such as plant growth, leaf decay, etc.) per chunk section per game tick. 0 and negative values disables random ticks, higher numbers increase random ticks. Setting to a high integer results in high speeds of decay and growth. Numbers over 4096 make plant growth or leaf decay instantaneous.
 	#Range: > 0
-	random_tick_speed = 3
+	random_tick_speed = 20
 	#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
 	reduced_debug_info = false
 	#Whether the feedback from commands executed by a player should show up in chat. Also affects the default behavior of whether command blocks store their output text.
