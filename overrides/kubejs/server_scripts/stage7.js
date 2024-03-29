@@ -162,8 +162,8 @@ onEvent('recipes',event=>{
     ])
     event.recipes.createMixing(Fluid.of('kubejs:fluid5',1000),[
         Fluid.of('kubejs:fluid1',1000),
-        'bamboo','carrot','farmersdelight:rice',
-        'potato','nether_wart','chorus_fruit'
+        'farmersdelight:tomato','carrot','farmersdelight:rice',
+        'potato','farmersdelight:onion','farmersdelight:cabbage_leaf'
     ])
     event.recipes.createDeploying([
         Item.of('kubejs:item2').withChance(0.9),

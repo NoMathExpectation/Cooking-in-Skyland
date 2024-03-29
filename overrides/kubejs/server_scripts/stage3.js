@@ -234,7 +234,7 @@ onEvent('recipes',event=>{
     event.remove({output:'create:andesite_scaffolding'})
     event.shapeless('8x create:brass_scaffolding',['8x scaffolding','create:brass_ingot'])
     event.shapeless('8x create:copper_scaffolding',['8x scaffolding','copper_ingot'])
-    event.shapeless('8x create:andesite_scaffolding',['8x scaffolding','create:zinc_ingot'])
+    event.shapeless('8x create:andesite_scaffolding',['8x scaffolding','create:andesite_alloy'])
     //矿物处理
     //event.recipes.createMixing('exnihilosequentia:iron_pieces',['minecraft:gravel',Fluid.of('minecraft:water',100)])
     event.recipes.createMixing('create:andesite_alloy',['minecraft:andesite',Fluid.of('minecraft:lava',100)]).heated()

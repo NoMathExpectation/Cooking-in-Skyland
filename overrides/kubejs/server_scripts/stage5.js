@@ -77,7 +77,7 @@ onEvent('recipes',event=>{
     })
     event.remove({output:'minecraft:glowstone_dust',type:'create:filling'})
     event.recipes.createMixing(Fluid.of('kubejs:happywater',100),[Fluid.of('create:honey',250),Fluid.of('create:chocolate',250)]).superheated()
-    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('kubejs:happywater',250),Fluid.of('create_central_kitchen:dragon_breath',100),'4x sugar']).superheated()
+    event.recipes.createMixing(Fluid.of('kubejs:happywater',500),[Fluid.of('kubejs:happywater',250),Fluid.of('create_central_kitchen:dragon_breath',250),'4x sugar']).superheated()
     //谜之火腿
     event.remove({output:'farmersdelight:honey_glazed_ham_block'})
     event.recipes.createSequencedAssembly('farmersdelight:honey_glazed_ham_block','minecraft:bowl',[
