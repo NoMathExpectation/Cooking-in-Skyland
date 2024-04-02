@@ -54,6 +54,7 @@
 			title: "洗脚水"
 			x: -1.0d
 			y: -1.0d
+			subtitle: "...还有一块乐高嵌在我的脚上"
 			description: ["用水充分洗涤地狱岩，从而获取其中的地狱能量"]
 			dependencies: ["7D2D03C3F675F876"]
 			id: "3F9B43DA6B7C2D86"
@@ -355,17 +356,6 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.5d
-			dependencies: ["7D2D03C3F675F876"]
-			id: "664D5EFFB6EA9C9B"
-			tasks: [{
-				id: "792FE956B82FCA66"
-				type: "item"
-				item: "minecraft:nether_brick"
-			}]
-		}
-		{
 			x: 5.0d
 			y: 5.0d
 			dependencies: ["4678607BC2DC4CFB"]
@@ -497,17 +487,6 @@
 				id: "1128FB26E2E01D26"
 				type: "item"
 				item: "kubejs:happywater_bucket"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 2.0d
-			dependencies: ["664D5EFFB6EA9C9B"]
-			id: "1DA69BF9F4A6BBDD"
-			tasks: [{
-				id: "7B003B6800E6D67B"
-				type: "item"
-				item: "minecraft:nether_bricks"
 			}]
 		}
 		{

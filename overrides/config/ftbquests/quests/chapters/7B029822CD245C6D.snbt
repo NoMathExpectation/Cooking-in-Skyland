@@ -163,7 +163,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 6.5d
 			y: -1.0d
 			subtitle: "这就是沸羊羊的感觉~"
 			hide_dependency_lines: true
@@ -585,7 +585,7 @@
 			title: "动力鞘翅"
 			x: 5.0d
 			y: -1.0d
-			dependencies: ["5C1AAEC2F42A2F8E"]
+			dependencies: ["7FE72B6E9A2816BE"]
 			id: "04E0A4768D8F0BDD"
 			tasks: [{
 				id: "648D31281B5D0063"
@@ -601,20 +601,22 @@
 			}]
 		}
 		{
-			x: 6.5d
+			title: "喷气背包"
+			x: 8.0d
 			y: -1.0d
 			dependencies: ["7FE72B6E9A2816BE"]
-			id: "5C1AAEC2F42A2F8E"
+			id: "659386E4F8277875"
 			tasks: [{
-				id: "087BC887D11C149D"
+				id: "1AB8DDFCC007A09E"
 				type: "item"
 				item: {
-					id: "rainbowcompound:obsidianite_elytra"
+					id: "create_jetpack:jetpack"
 					Count: 1b
 					tag: {
-						Damage: 0
+						Air: 900
 					}
 				}
+				match_nbt: false
 			}]
 		}
 	]

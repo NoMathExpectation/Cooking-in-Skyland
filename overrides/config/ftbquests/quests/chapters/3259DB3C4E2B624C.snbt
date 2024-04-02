@@ -182,7 +182,10 @@
 		{
 			x: 2.5d
 			y: -4.0d
-			description: ["怎么获取呢？用刀子砍小麦"]
+			description: [
+				"怎么获取呢？用刀子砍小麦"
+				"（不是在砧板上切菜，而是去小麦田里面砍小麦）"
+			]
 			dependencies: ["763230580B9AFB30"]
 			id: "2F00124C9D1377BB"
 			tasks: [{
@@ -582,7 +585,7 @@
 			title: "不是蓝铜是黄铜"
 			icon: "create:brass_ingot"
 			x: 1.0d
-			y: 0.5d
+			y: -1.0d
 			subtitle: "铜锌合金"
 			description: ["一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药好像也可以..."]
 			dependencies: [
@@ -606,7 +609,7 @@
 		{
 			title: "用手指着"
 			x: 1.0d
-			y: -1.0d
+			y: -2.5d
 			subtitle: "给我玩天空厨房.jpg"
 			dependencies: ["086522766212231E"]
 			id: "5A75C07C9FC4F92B"
@@ -614,22 +617,6 @@
 				id: "019A6F9997073A81"
 				type: "item"
 				item: "create:brass_hand"
-			}]
-		}
-		{
-			x: 1.0d
-			y: -2.5d
-			subtitle: "装配线机器人"
-			description: [
-				"这是一种可以模仿玩家活动的机械，准备两个机械手并对着筛子，塞给其中一个需要筛的物品，就能自动使用筛子了"
-				"同时，机械手也能完成切菜、装配等操作"
-			]
-			dependencies: ["5A75C07C9FC4F92B"]
-			id: "5411361D367EDA90"
-			tasks: [{
-				id: "3DB9C27A1DB8F7F7"
-				type: "item"
-				item: "create:deployer"
 			}]
 		}
 		{
@@ -676,7 +663,10 @@
 			x: -3.5d
 			y: 2.0d
 			subtitle: "筛矿的终极解决方案"
-			description: ["如果不出意外，这就是你能获取到的最高级筛网"]
+			description: [
+				"如果不出意外，这就是你能获取到的最高级筛网"
+				"如何自动化？机械手做得到"
+			]
 			dependencies: ["0ED6318FB1489BBE"]
 			id: "4C949EE85C9DB3EB"
 			tasks: [{
@@ -684,6 +674,31 @@
 				type: "item"
 				item: "exnihilosequentia:emerald_mesh"
 			}]
+		}
+		{
+			title: "高级物流"
+			icon: "create:brass_funnel"
+			x: 1.0d
+			y: 0.5d
+			subtitle: "不是简单地换个材质"
+			description: [
+				"黄铜设备要比安山设备更智能，可以用过滤器进行筛选操作了"
+				"嫌太贵？下一章有更“便宜”的配方"
+			]
+			dependencies: ["086522766212231E"]
+			id: "23648B752317F08D"
+			tasks: [
+				{
+					id: "0F611B86E5FA38C8"
+					type: "item"
+					item: "create:brass_tunnel"
+				}
+				{
+					id: "561F7C3EBD79094D"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

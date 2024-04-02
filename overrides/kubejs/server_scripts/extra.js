@@ -6,4 +6,7 @@ onEvent('recipes',event=>{
     event.remove({output:'solcarrot:food_book'})
     event.shapeless('solcarrot:food_book','solsweetpotato:food_book')
     event.shapeless('solsweetpotato:food_book','solcarrot:food_book')
+    event.replaceInput({output:'storagedrawers:controller'},'diamond','emerald')
+    event.replaceInput({output:'storagedrawers:controller'},'comparator','redstone')
+    event.replaceInput({output:'storagedrawers:controller_slave'},'comparator','redstone')
 })

@@ -234,5 +234,27 @@ onEvent('recipes',event=>{
         Item.of('kubejs:smart_zombie').withChance(0.8)
     ],['kubejs:smart_zombie',Item.of('minecraft:netherite_pickaxe').ignoreNBT()])
     .damageIngredient(Item.of('minecraft:netherite_pickaxe').ignoreNBT())
+    //设备
+    event.remove({output:'create:rotation_speed_controller'})
+    event.shaped('create:rotation_speed_controller',[
+        ' C ',
+        'DBA',
+        ' B '
+    ],{
+        A:'create:shaft',
+        B:'create:brass_casing',
+        C:'create:electron_tube',
+        D:'create:large_cogwheel'
+    })
+    event.remove({output:'create:weighted_ejector'})
+    event.shaped('create:weighted_ejector',[
+        ' A ',
+        'CBC',
+        ' D '
+    ],{
+        A:'create:golden_sheet',
+        B:'create:brass_casing',
+        C:'create:cogwheel',
+        D:'create:electron_tube'
+    })
 })
-

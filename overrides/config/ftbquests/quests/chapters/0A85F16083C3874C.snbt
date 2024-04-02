@@ -125,8 +125,10 @@
 			}]
 		}
 		{
+			title: "《最强大脑》"
 			x: 3.0d
 			y: -1.0d
+			subtitle: "——中国的最强大脑在哪里？"
 			dependencies: ["3E496D9E7BF4401A"]
 			id: "4CB5F662E12F4FF4"
 			tasks: [{
@@ -239,7 +241,10 @@
 			title: "更适合僵尸宝宝体质的营养午餐"
 			x: 3.0d
 			y: -6.5d
-			description: ["充分地喂养僵尸，它们的智商就会升高，这样它们就能完成一些更复杂的工作了"]
+			description: [
+				"充分地喂养僵尸，它们的智商就会升高，这样它们就能完成一些更复杂的工作了"
+				"...或者吃一顿高端菜，但是有的僵尸不爱吃"
+			]
 			dependencies: ["27B7353F7150E169"]
 			id: "6EF3FB95A0470931"
 			tasks: [{
@@ -374,24 +379,17 @@
 			x: 4.5d
 			y: -5.0d
 			subtitle: "你小心被工人爷爷们挂电灯上"
+			description: [
+				"有了电子管，机械动力的物流设备基本上都能合成了"
+				"（传说有更加便利的物流设备，唤作pipez...）"
+			]
 			dependencies: ["27B7353F7150E169"]
+			optional: true
 			id: "090DEC658A82F755"
 			tasks: [{
 				id: "7999FD4B308486E6"
 				type: "item"
 				item: "create:electron_tube"
-			}]
-		}
-		{
-			x: 4.5d
-			y: -3.5d
-			dependencies: ["090DEC658A82F755"]
-			optional: true
-			id: "5BC589A98A9879DF"
-			tasks: [{
-				id: "717B8F1935A915A7"
-				type: "item"
-				item: "create:brass_funnel"
 			}]
 		}
 		{
@@ -456,18 +454,6 @@
 		}
 		{
 			x: 6.0d
-			y: -3.5d
-			dependencies: ["090DEC658A82F755"]
-			optional: true
-			id: "5E9973A025C7891B"
-			tasks: [{
-				id: "597F7E792C516686"
-				type: "item"
-				item: "create:brass_tunnel"
-			}]
-		}
-		{
-			x: 6.0d
 			y: -8.0d
 			subtitle: "所以钻石挖出来了没"
 			dependencies: ["087FC9EF15A60751"]
@@ -505,13 +491,38 @@
 		}
 		{
 			x: 6.0d
-			y: -5.0d
+			y: -3.5d
 			dependencies: ["090DEC658A82F755"]
+			optional: true
 			id: "3B3BC53F7C76C71E"
 			tasks: [{
 				id: "4A1CA54A4BC9DF76"
 				type: "item"
 				item: "create:content_observer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -5.0d
+			dependencies: ["090DEC658A82F755"]
+			optional: true
+			id: "3C4D3B1F51012B6E"
+			tasks: [{
+				id: "6BABA3B1DE0CE0F8"
+				type: "item"
+				item: "create:weighted_ejector"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: ["090DEC658A82F755"]
+			optional: true
+			id: "6B8FAE1B1CA7DDAB"
+			tasks: [{
+				id: "48978DDA4598FB21"
+				type: "item"
+				item: "create:rotation_speed_controller"
 			}]
 		}
 	]

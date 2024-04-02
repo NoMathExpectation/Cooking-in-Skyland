@@ -213,7 +213,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:fail1').withChance(0.1)
     ],'kubejs:fail3',[
         event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Item.of('kubejs:cake_shovel').ignoreNBT()]),
-        event.recipes.createFilling('kubejs:procfail3',['kubejs:procfail3',Fluid.of('kubejs:fluid1',1500)]),
+        event.recipes.createFilling('kubejs:procfail3',['kubejs:procfail3',Fluid.of('kubejs:fluid1',1000)]),
         event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Item.of('kubejs:cake_shovel').ignoreNBT()])
     ]).transitionalItem('kubejs:procfail3').loops(1)
 })

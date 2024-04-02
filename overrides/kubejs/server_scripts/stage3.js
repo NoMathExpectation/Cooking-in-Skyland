@@ -271,4 +271,21 @@ onEvent('recipes',event=>{
         B:'create:propeller'
     })
     event.remove({output:'painting',input:'#minecraft:wool'})
+    event.shaped('create:brass_tunnel',[
+        'AAA',
+        'ABA',
+        'ABA'
+    ],{
+        A:'create:brass_ingot',
+        B:'dried_kelp'
+    })
+    event.shaped('create:brass_funnel',[
+        ' A ',
+        'ABA',
+        ' B '
+    ],{
+        A:'create:brass_ingot',
+        B:'dried_kelp'
+    })
 })
+

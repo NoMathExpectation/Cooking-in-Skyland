@@ -5,4 +5,5 @@ onEvent('recipes',event=>{
     event.remove({input:"ironchest:crystal_chest"})
     event.remove({output:"ironchest:diamond_to_crystal_chest_upgrade"})
     event.remove({output:'create:tree_fertilizer'})
+    //event.remove({output:'farmersdelight:straw'})
 })
