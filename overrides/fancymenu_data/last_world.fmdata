@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = C:/Users/10678/Saved Games/PCL/.minecraft/versions/CFOE/saves/新的世界
-}
-

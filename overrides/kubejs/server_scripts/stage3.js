@@ -160,13 +160,13 @@ onEvent('recipes',event=>{
     event.smoking('minecraft:bread','farmersdelight:wheat_dough')
     event.remove({output:'farmersdelight:hamburger'})
     event.recipes.createSequencedAssembly('farmersdelight:hamburger',
-    'kubejs:undo_sandwich',[
-        event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:beef_patty']),
-        event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:cabbage_leaf']),
-        event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:tomato']),
-        event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:onion']),
-        event.recipes.createDeploying('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich','farmersdelight:cooked_bacon']),
-        event.recipes.createFilling('kubejs:incomplete_sandwich',['kubejs:incomplete_sandwich',Fluid.of('create_central_kitchen:tomato_sauce',100)])
+        'kubejs:undo_sandwich', [
+        event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'farmersdelight:beef_patty']),
+        event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'farmersdelight:cabbage_leaf']),
+        event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'farmersdelight:tomato']),
+        event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'farmersdelight:onion']),
+        event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'farmersdelight:cooked_bacon']),
+            event.recipes.createDeploying('kubejs:incomplete_sandwich', ['kubejs:incomplete_sandwich', 'integrateddynamics:menril_berries'],
     ])
     .transitionalItem(Item.of('create_central_kitchen:incomplete_hamburger'))
     .loops(1)

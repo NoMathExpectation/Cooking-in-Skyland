@@ -9,52 +9,31 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.5d
-			y: 1.0d
-			can_repeat: true
-			id: "54E9EA710D710F48"
-			tasks: [{
-				id: "36E34C33C09A429F"
-				type: "checkmark"
-				title: "门树"
-			}]
-			rewards: [{
-				id: "5AB49C403FA3C072"
-				type: "item"
-				item: "integrateddynamics:menril_sapling"
-			}]
-		}
-		{
-			x: -1.0d
-			y: 1.0d
-			can_repeat: true
-			id: "1C508097ED4FECDB"
-			tasks: [{
-				id: "60925E9A96EC3634"
-				type: "checkmark"
-				title: "经验"
-			}]
-			rewards: [{
-				id: "63DC619E7EF70B79"
-				type: "xp_levels"
-				xp_levels: 1000
-			}]
-		}
-		{
 			x: -4.0d
 			y: 1.0d
-			description: ["领取天使指环"]
+			description: [
+				"领取天使指环"
+				"经验！"
+			]
 			id: "050A70B3E065F46F"
 			tasks: [{
 				id: "106CF8D46AFAA68B"
 				type: "checkmark"
 				title: "天使指环"
 			}]
-			rewards: [{
-				id: "029EAA82224094FB"
-				type: "item"
-				item: "angelring:itemring"
-			}]
+			rewards: [
+				{
+					id: "029EAA82224094FB"
+					type: "item"
+					item: "angelring:itemring"
+				}
+				{
+					id: "0E3C11577DAF598B"
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 1024
+				}
+			]
 		}
 		{
 			x: -5.5d

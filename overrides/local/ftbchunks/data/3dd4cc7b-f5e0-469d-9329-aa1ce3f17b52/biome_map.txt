@@ -1,5 +1,0 @@
-#4CA minecraft:dripstone_caves
-#010 minecraft:forest
-#2D6 minecraft:meadow
-#5FF minecraft:river
-#169 minecraft:taiga

@@ -1,9 +1,0 @@
-{
-  "inventory": {
-    "0:2": "{Count:1b,id:\"create:goggles\"}",
-    "0:3": "{Count:1b,id:\"farmersdelight:cake_slice\"}",
-    "0:0": "{Count:1b,id:\"create:wrench\"}",
-    "0:1": "{Count:1b,id:\"ftbquests:book\"}"
-  },
-  "wipeBlacklist": []
-}

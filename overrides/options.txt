@@ -1,2 +1,0 @@
-lang:zh_cn
-difficulty:2

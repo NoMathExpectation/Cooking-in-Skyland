@@ -1,6 +1,0 @@
-{
-    "fluid":"kubejs:oil",
-    "burnTime":4,
-    "superHeat":false,
-    "amountConsumedPerTick":1
-}

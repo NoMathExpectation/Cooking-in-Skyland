@@ -1,1 +1,0 @@
-本整合包是https://github.com/NoMathExpectation/Cooking-in-Skyland的修改版本，系本人摸索修改而来，必然存在冗余文件，仅manifest.json系手动修改。任务是在编辑模式中修改的，故其中overrides中内容复制自PCL文件夹，本人不太清楚任务储存于哪个文件中，故无法提交合并申请，而是选择fork后修改发布。

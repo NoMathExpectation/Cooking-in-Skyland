@@ -481,6 +481,7 @@
 				"6C471DBC8D166C6A"
 				"617F56708110B404"
 				"22DF666C3E0CB072"
+				"0CAB3074BF78E118"
 			]
 			size: 2.0d
 			id: "7FF252648E61FCB8"
@@ -683,6 +684,48 @@
 				id: "1ECD8E28BD80B158"
 				type: "item"
 				item: "exnihilosequentia:emerald_mesh"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			description: ["牛奶才是优秀的经验来源"]
+			dependencies: ["79E7446A04BC2E1E"]
+			id: "0A3B6C0E0DFE6B5E"
+			tasks: [{
+				id: "56682BF9DE09DE3B"
+				type: "item"
+				item: "minecraft:experience_bottle"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			description: [
+				"听说腐败的蛋白质会变蓝"
+				"集成动力，闪耀登场！"
+			]
+			dependencies: ["5C681A91530BE788"]
+			id: "51923287DC5F1A5D"
+			tasks: [{
+				id: "76C71F72929D81BE"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			description: [
+				"这可都是优秀的蛋白质呀！（不是）"
+				"听说你也喜欢清心滑史莱姆？"
+			]
+			dependencies: ["51923287DC5F1A5D"]
+			id: "0CAB3074BF78E118"
+			tasks: [{
+				id: "22A6B8581CF7565E"
+				type: "item"
+				item: "integrateddynamics:menril_berries"
 			}]
 		}
 	]
