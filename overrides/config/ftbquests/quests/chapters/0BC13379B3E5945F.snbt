@@ -1,0 +1,811 @@
+{
+	id: "0BC13379B3E5945F"
+	group: "0A9230109B4C8FE3"
+	order_index: 0
+	filename: "0BC13379B3E5945F"
+	title: "基础的学习：煎蛋"
+	icon: "farmersdelight:fried_egg"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "要致富，先撸树"
+			x: -5.5d
+			y: -4.5d
+			description: ["首先得砍点木头，做点基础物资"]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			id: "68CFCF52CCC2DF4C"
+			tasks: [{
+				id: "29A7D0A3C5455F0B"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			title: "木板？木块！"
+			x: -4.0d
+			y: -4.5d
+			description: ["我早就想吐槽了，跟原木一样大小的木板能叫木板？"]
+			dependencies: ["68CFCF52CCC2DF4C"]
+			id: "3638713CC717D290"
+			tasks: [{
+				id: "417F96FA01EBD27A"
+				type: "item"
+				item: "minecraft:oak_planks"
+			}]
+		}
+		{
+			title: "桌子挖个洞"
+			x: -2.5d
+			y: -3.0d
+			description: [
+				"你可以把几个筛子并排放并且都安装上筛网，就可以同时使用这些筛子了"
+				"不过你只能同时使用安装了同一种筛网的筛子"
+			]
+			dependencies: ["4EF005EAAFA740D8"]
+			id: "5F763D08B2FFB15A"
+			tasks: [{
+				id: "549D7FECB1764D60"
+				type: "item"
+				item: "exnihilosequentia:oak_sieve"
+			}]
+		}
+		{
+			title: "金箍棒（幻视"
+			x: -4.0d
+			y: -6.0d
+			description: ["当你在路上捡到一根长度合适大小适中的棒子的时候，你会不会把他挥舞起来"]
+			dependencies: ["3638713CC717D290"]
+			id: "24DB6110DEAE6C0A"
+			tasks: [{
+				id: "13FBFEF0DF06317D"
+				type: "item"
+				item: "minecraft:stick"
+			}]
+		}
+		{
+			title: "真·玩钩子"
+			x: -4.0d
+			y: -7.5d
+			description: ["用这个钩子去钩树叶，有几率获得蚕宝宝"]
+			dependencies: ["24DB6110DEAE6C0A"]
+			id: "767F9639B16BCB9D"
+			tasks: [{
+				id: "0A117C077CB4272B"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:wooden_crook"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "钻木取火"
+			x: -2.5d
+			y: -6.0d
+			description: ["火把不一定需要木炭或者煤炭啥的，你只需要把这根棒子狠狠地快速摩擦就能生火了"]
+			dependencies: ["24DB6110DEAE6C0A"]
+			id: "14BE71744A769546"
+			tasks: [{
+				id: "2B3E07919E12FB3B"
+				type: "item"
+				item: "minecraft:torch"
+			}]
+		}
+		{
+			title: "不是桑叶也能吃？"
+			x: -2.5d
+			y: -7.5d
+			subtitle: "你确定这不是蛆？"
+			description: [
+				"把蚕宝宝放到树叶上，让蚕宝宝把树叶吃掉，然后用钩子把树叶打掉，你就可以获得大量的线了"
+				""
+			]
+			dependencies: ["767F9639B16BCB9D"]
+			id: "5EDD58F06B6BBA89"
+			tasks: [{
+				id: "7D71E4C02EFAD2D1"
+				type: "item"
+				item: "exnihilosequentia:silkworm"
+			}]
+		}
+		{
+			title: "用蚕丝编制的..."
+			x: -1.0d
+			y: -6.0d
+			subtitle: "...是丝绸！"
+			description: ["把丝绸...不是...筛网安装到筛子上，你就可以用筛子来过滤方块了"]
+			dependencies: ["5EDD58F06B6BBA89"]
+			id: "2FA2FC56E8CB0C4D"
+			tasks: [{
+				id: "4A7B9871B0D3935F"
+				type: "item"
+				item: "exnihilosequentia:string_mesh"
+			}]
+		}
+		{
+			title: "晒足九九八十一天"
+			x: -2.5d
+			y: -4.5d
+			description: [
+				"把树苗、线、小麦等这些有机物塞满桶，过一段时间就能发酵生成泥土"
+				"除此之外，这个桶也能用来装雨水"
+			]
+			dependencies: ["3638713CC717D290"]
+			id: "5C924D502232AC94"
+			tasks: [{
+				id: "268F651E5F7077CD"
+				type: "item"
+				item: "exnihilosequentia:oak_barrel"
+			}]
+		}
+		{
+			title: "万物之源"
+			x: -1.0d
+			y: -4.0d
+			shape: "hexagon"
+			subtitle: "除水之外的万物之源"
+			description: [
+				"是由你自己发酵出来的泥土！或者由你自己从砂土中筛出来的泥土！"
+				"（应该不是你在岛上挖的吧QAQ）"
+			]
+			dependencies: [
+				"5C924D502232AC94"
+				"2FA2FC56E8CB0C4D"
+				"5F763D08B2FFB15A"
+			]
+			size: 2.0d
+			id: "7009C5208E158730"
+			tasks: [{
+				id: "0EE5FE66C0D8DF3A"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			title: "这是？工作台！"
+			x: -4.0d
+			y: -3.0d
+			subtitle: "成就已解锁！"
+			description: ["进度已经没有这个成就了（悲"]
+			dependencies: ["3638713CC717D290"]
+			id: "4EF005EAAFA740D8"
+			tasks: [{
+				id: "12A184AC423AC229"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			title: "不要饿死"
+			x: 0.5d
+			y: -3.0d
+			subtitle: "真·应急食品"
+			description: ["虽然但是，在饥荒里面吃腐烂食品会掉san的"]
+			dependencies: ["7009C5208E158730"]
+			id: "55D78980AEB920B5"
+			tasks: [{
+				id: "3184267B32350CF0"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+		}
+		{
+			title: "禁止高空抛物"
+			x: 0.5d
+			y: -4.5d
+			description: [
+				"这些小石子可以用来合成圆石和安山岩"
+				"右键可以丢出小石子，会造成伤害，所以不要乱丢"
+				"（如果好兄弟站在悬崖边上就更不能丢出去了）"
+			]
+			dependencies: ["7009C5208E158730"]
+			id: "72FD70DE6279BFED"
+			tasks: [
+				{
+					id: "1B6B35210AD0F506"
+					type: "item"
+					item: "exnihilosequentia:andesite_pebble"
+				}
+				{
+					id: "17BAC9A9A6823DE1"
+					type: "item"
+					item: "exnihilosequentia:stone_pebble"
+				}
+			]
+		}
+		{
+			title: "圆石，启动！"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "正在播放：Shed a light"
+			description: ["一道白光闪过..."]
+			dependencies: ["72FD70DE6279BFED"]
+			id: "157CE210A9E83E14"
+			tasks: [
+				{
+					id: "5750E0B05C5F6D70"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "6A8AC481D451F656"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+			]
+		}
+		{
+			title: "这是怎么做到的？"
+			x: 2.0d
+			y: -6.0d
+			subtitle: "仅仅靠锤子就能把..."
+			description: ["掏出你的八！十！狠狠地砸碎圆石！"]
+			dependencies: ["157CE210A9E83E14"]
+			id: "113C7F997CAD184A"
+			tasks: [{
+				id: "748A37ADE5672712"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "这又是怎么做到的？"
+			x: 0.5d
+			y: -7.5d
+			subtitle: "人形自走粉碎机了属于是..."
+			description: [
+				"继续用你的八！十！狠狠地砸碎沙砾！"
+				"累？不许累！"
+			]
+			dependencies: ["113C7F997CAD184A"]
+			id: "09027B20AF0CFD05"
+			tasks: [{
+				id: "0E5E22EE82E8FFEC"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "尘归尘，土归土"
+			x: -1.0d
+			y: -7.5d
+			subtitle: "...糊糊归糊糊"
+			description: [
+				"——世界美食officials"
+				"（有谁记得是哪一期来着）"
+			]
+			dependencies: ["09027B20AF0CFD05"]
+			id: "789C64A946B7651D"
+			tasks: [{
+				id: "145DC0C6322D4B3A"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			title: "乱披风锤法"
+			x: 3.5d
+			y: -3.0d
+			description: [
+				"只要连续锤出81锤，就能将..."
+				"咳咳...总之用锤子打碎安山岩就好了"
+			]
+			dependencies: ["157CE210A9E83E14"]
+			id: "3064F1BCF362DB2C"
+			tasks: [{
+				id: "1E67787277E8B15F"
+				type: "item"
+				item: "exnihilosequentia:crushed_andesite"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			description: [
+				"这就是为什么小孩子们喜欢玩沙子而不喜欢玩沙砾的原因"
+				"因为燧石容易划伤手"
+			]
+			dependencies: ["113C7F997CAD184A"]
+			id: "02BC307B9ACFED8A"
+			tasks: [{
+				id: "73C2E087215E81D4"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			shape: "hexagon"
+			subtitle: "机械动力！启动！"
+			description: ["有了这种合金，你就可以开始准备机械动力的设备了"]
+			dependencies: [
+				"02BC307B9ACFED8A"
+				"3064F1BCF362DB2C"
+			]
+			size: 2.0d
+			id: "1B42591BAB03312A"
+			tasks: [{
+				id: "1D9354C5D1EA5A98"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "种子？啥种子？哪里有种子？"
+			x: -1.0d
+			y: -1.5d
+			description: [
+				"这是小麦种子！不是什么奇怪的东西！"
+				"还有那边的泰拉瑞亚玩家！不要拿去当吹管子弹！"
+			]
+			dependencies: ["7009C5208E158730"]
+			id: "33A539AB997A2097"
+			tasks: [{
+				id: "442292FC070C603A"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+		{
+			title: "天有洪炉，地生五金"
+			x: 5.0d
+			y: -7.5d
+			description: ["熔炉同时用来烤食物和冶炼矿石还是有点过于落后了...该去准备烟熏食物了！"]
+			dependencies: ["63A4E1AD135A06F0"]
+			id: "26510D7ED23E97FC"
+			tasks: [{
+				id: "06214230454E764E"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			description: [
+				"突击检查！"
+				"这个颜色的铁矿石是什么类型的氧化铁？"
+			]
+			dependencies: ["113C7F997CAD184A"]
+			id: "7A0B769DB53EF535"
+			tasks: [{
+				id: "4DE57F930EA535E7"
+				type: "item"
+				item: "exnihilosequentia:iron_pieces"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -7.5d
+			subtitle: "老子288个铁锭啊！"
+			description: [
+				"答不出来！"
+				"但是我来硬的！"
+			]
+			dependencies: ["7A0B769DB53EF535"]
+			id: "504B19508BE39B85"
+			tasks: [{
+				id: "33FD07BD1FB940C2"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["02DA276995078432"]
+			id: "572438D191D63E37"
+			tasks: [{
+				id: "10F9F56A97FC4A06"
+				type: "item"
+				item: "minecraft:wheat"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			description: ["生物的坚硬物质，很合理吧"]
+			dependencies: [
+				"72FD70DE6279BFED"
+				"55D78980AEB920B5"
+			]
+			id: "708A133D27B7C419"
+			tasks: [{
+				id: "0B2223AF5C899FD4"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			title: "鸽鸽蛋"
+			x: 3.5d
+			y: -1.5d
+			subtitle: "“一个蛋砸出了四个鸡！”"
+			description: ["鸡蛋的外壳坚硬，内部柔软,所以这个配方很合理吧"]
+			dependencies: [
+				"572438D191D63E37"
+				"708A133D27B7C419"
+			]
+			id: "5C793601B195334F"
+			tasks: [{
+				id: "67045CDC40F35DFD"
+				type: "item"
+				item: "minecraft:egg"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.0d
+			description: [
+				"你需要把原木放下来，然后用斧头去皮，再用安山合金右键去皮原木就能获取"
+				"以后有自动化获取的方法"
+			]
+			dependencies: ["1B42591BAB03312A"]
+			id: "63A4E1AD135A06F0"
+			tasks: [{
+				id: "7F7CE6B45149B99E"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			title: "Duang！"
+			x: 6.5d
+			y: -6.0d
+			description: [
+				"你不能叫我拍马上就拍，第一我要试一下，我又不想说，一个广告拍完后加上好多特技，那头发，Duang ！"
+				"——成龙"
+			]
+			dependencies: ["63A4E1AD135A06F0"]
+			id: "6A355DCC678F26CC"
+			tasks: [{
+				id: "745B37D7DDA9026D"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			dependencies: ["6A355DCC678F26CC"]
+			id: "33066B22C0CF96B3"
+			tasks: [{
+				id: "75DED69D08273CA1"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -7.5d
+			description: ["干海带不仅可以用来吃，更是一种很好的工业原材料"]
+			dependencies: ["292B0B03B89A4DFA"]
+			id: "6E0C86D45370DD42"
+			tasks: [{
+				id: "3565D85C46483247"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+		}
+		{
+			title: "“钢板”"
+			x: 8.0d
+			y: -6.0d
+			description: ["其实只是一块铁板，被狠狠锤了一下而已"]
+			dependencies: ["6A355DCC678F26CC"]
+			id: "36C64ED3A2944276"
+			tasks: [{
+				id: "0EA19AE01466DD0B"
+				type: "item"
+				item: "create:iron_sheet"
+			}]
+		}
+		{
+			title: "海的味道，我知道！"
+			x: 6.5d
+			y: -7.5d
+			subtitle: "波力海苔！"
+			dependencies: ["26510D7ED23E97FC"]
+			id: "292B0B03B89A4DFA"
+			tasks: [{
+				id: "0ECCCDFFD57F85B0"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -6.0d
+			description: [
+				"你有没有思考过教室上面的风扇掉下来会发生什么"
+				"思考过吧！绝对思考过吧！"
+			]
+			dependencies: ["36C64ED3A2944276"]
+			id: "65C7C26516C55828"
+			tasks: [{
+				id: "7945495622E43AB9"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "简单的煎蛋"
+			description: [
+				"恭喜！你完成了第一阶段！"
+				"接下来是...前往地底！"
+			]
+			dependencies: [
+				"5C793601B195334F"
+				"201B64EB04F4323E"
+			]
+			size: 2.0d
+			id: "2AD382183C74DD42"
+			tasks: [{
+				id: "4829737AB07CCB57"
+				type: "item"
+				item: "farmersdelight:fried_egg"
+			}]
+		}
+		{
+			title: "多冷啊~"
+			x: 9.5d
+			y: -4.5d
+			subtitle: "我在东北玩泥巴~"
+			description: [
+				"你知道吗？"
+				"Tunak Tunak Tun这首我们熟知的印度神曲实际上是一首情歌"
+			]
+			dependencies: ["65C7C26516C55828"]
+			id: "0BEA160F2B2BC9D1"
+			tasks: [{
+				id: "7061AF8FEA552962"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			title: "大炼岩浆"
+			x: 9.5d
+			y: -1.5d
+			subtitle: "咕噜咕噜咕噜..."
+			description: [
+				"冶炼岩浆的时候不要忘记在坩埚下准备一个热源方块，热源方块的热源决定了岩浆产生的速度"
+				"具体有哪些热源方块可以在JEI上查到"
+				"（比如说烈焰人燃烧室、篝火、火把...）"
+			]
+			dependencies: ["30EF250439E7239C"]
+			id: "15646B567BB38FBE"
+			tasks: [{
+				id: "6EE658AB649D4C0A"
+				type: "item"
+				item: "exnihilosequentia:fired_crucible"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			subtitle: "你的手不烫吗"
+			description: [
+				"岩浆的温度在700度到1400度之间，铁的熔点是1538度"
+				"所以用铁桶装岩浆完全没问题"
+			]
+			dependencies: ["15646B567BB38FBE"]
+			id: "2ECEEA0179A87621"
+			tasks: [{
+				id: "0ABD8C37893CA455"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.0d
+			subtitle: "china！china！china！"
+			description: [
+				"瓷器的英文为china，中国的英文为China"
+				"（古代中国出口的瓷器很多，影响很广，于是中国的英文名就变成了China）"
+			]
+			dependencies: ["0BEA160F2B2BC9D1"]
+			id: "30EF250439E7239C"
+			tasks: [{
+				id: "631A48B17F74E0E2"
+				type: "item"
+				item: "exnihilosequentia:porcelain_clay"
+			}]
+		}
+		{
+			title: "大哥，抽烟"
+			x: 6.5d
+			y: -1.5d
+			description: ["营火放在鼓风机的前面，就能产生不会烧坏食物的烟熏气流了"]
+			dependencies: ["2ECEEA0179A87621"]
+			id: "201B64EB04F4323E"
+			tasks: [{
+				id: "3CB0E1FE945F3BAF"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			description: ["这是一种更高级的筛网，能筛出一般筛网筛不出或者筛得少的东西"]
+			dependencies: ["1B42591BAB03312A"]
+			id: "5DC71AB063374FDF"
+			tasks: [{
+				id: "4C2EF6031A0EC39A"
+				type: "item"
+				item: "exnihilosequentia:flint_mesh"
+			}]
+		}
+		{
+			title: "是圆石不是原石"
+			x: 3.5d
+			y: -6.0d
+			description: [
+				"把箱子或者别的什么容器放到它的上方，就能获得源源不断的圆石了"
+				"以后还有更高级的刷石机，记得查JEI"
+			]
+			dependencies: ["02BC307B9ACFED8A"]
+			id: "4939D028567E8716"
+			tasks: [{
+				id: "7F082AFDD3464320"
+				type: "item"
+				item: "cobblefordays:tier_1"
+			}]
+		}
+		{
+			title: "八十！八十！"
+			x: -5.5d
+			y: -6.0d
+			subtitle: "一！锤！八！十！"
+			dependencies: ["24DB6110DEAE6C0A"]
+			id: "748F73918278CE6D"
+			tasks: [{
+				id: "1CE1D7AA18BD79F1"
+				type: "item"
+				title: "Any #exnihilosequentia:hammer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:hammer"
+					}
+				}
+			}]
+		}
+		{
+			title: "人力发动机（确信"
+			x: 6.5d
+			y: -4.5d
+			description: [
+				"为了给设备提供能源，你需要手动摇杆"
+				"不过以后会有动力源设备就是了"
+			]
+			dependencies: ["1B42591BAB03312A"]
+			id: "238CA9D8A205FDA2"
+			tasks: [{
+				id: "2247AD185115F9EF"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["1B42591BAB03312A"]
+			id: "5DF95007E7F74471"
+			tasks: [{
+				id: "2EF60CA6CF7F2CF6"
+				type: "item"
+				item: "create:shaft"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			description: [
+				"你知道吗？"
+				"很早以前MC把齿轮加入了游戏，并且有齿轮电路"
+				"不过后来改成了红石电路"
+			]
+			dependencies: ["5DF95007E7F74471"]
+			id: "66F040CA6D5F3DC2"
+			tasks: [{
+				id: "01261F1A886A6D37"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			title: "没有水≠不能种田"
+			x: 0.5d
+			y: -1.5d
+			description: [
+				"耕种好泥土后，在耕地退化之前种下小麦，耕地就不会退化了"
+				"这样种植的话会比一般有水源的生长速度慢一些"
+			]
+			dependencies: ["33A539AB997A2097"]
+			id: "02DA276995078432"
+			tasks: [{
+				id: "7F4656B82E483E64"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -7.5d
+			subtitle: "实际用处：捕捞网"
+			description: [
+				"如果你发现你没法获取你想要的产品，用这个给你的工作设备设置合成黑名单或者是白名单"
+				"你可以把JEI里面的物品拖进来，这样你可以在获取某个物品前就设置它的过滤"
+			]
+			dependencies: ["6E0C86D45370DD42"]
+			id: "6329F470B19F93C0"
+			tasks: [{
+				id: "6A97D8CFBC33FD6F"
+				type: "item"
+				item: "create:filter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.0d
+			subtitle: "还缺泥土吗？试试这个！"
+			dependencies: ["113C7F997CAD184A"]
+			id: "4DA43D12BF2B587E"
+			tasks: [{
+				id: "220AE34F03E1E82F"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+		{
+			title: "多喝热水"
+			icon: "exnihilosequentia:oak_crucible"
+			x: -2.5d
+			y: -1.5d
+			description: [
+				"如果还没下雨，用这个烧水"
+				"记得坩埚底下要有一个热源"
+			]
+			dependencies: ["33A539AB997A2097"]
+			id: "5935930CE7F0F758"
+			tasks: [{
+				id: "6471E5947B5C24A1"
+				type: "item"
+				title: "Any #exnihilosequentia:crucibles"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "exnihilosequentia:crucibles"
+					}
+				}
+			}]
+		}
+		{
+			title: "这可是你命根子！"
+			x: -5.5d
+			y: -3.0d
+			subtitle: "别把它搞丢了！"
+			dependencies: ["4EF005EAAFA740D8"]
+			id: "0ACF7ADE5F87371B"
+			tasks: [{
+				id: "10EC53A584B866C2"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

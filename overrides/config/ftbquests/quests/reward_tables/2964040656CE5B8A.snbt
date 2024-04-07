@@ -1,0 +1,10 @@
+{
+	id: "2964040656CE5B8A"
+	order_index: 4
+	title: "猫"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:cat_spawn_egg" }
+		{ item: "minecraft:ocelot_spawn_egg" }
+	]
+}

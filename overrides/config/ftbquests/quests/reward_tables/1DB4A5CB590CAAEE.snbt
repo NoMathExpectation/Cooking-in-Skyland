@@ -1,0 +1,22 @@
+{
+	id: "1DB4A5CB590CAAEE"
+	order_index: 3
+	title: "植物"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:grass" }
+		{ item: "minecraft:fern" }
+		{ item: "minecraft:dead_bush" }
+		{ item: "minecraft:crimson_roots" }
+		{ item: "minecraft:warped_roots" }
+		{ item: "minecraft:nether_sprouts" }
+		{ item: "minecraft:moss_carpet" }
+		{ item: "minecraft:moss_block" }
+		{ item: "minecraft:hanging_roots" }
+		{ item: "minecraft:big_dripleaf" }
+		{ item: "minecraft:small_dripleaf" }
+		{ item: "minecraft:vine" }
+		{ item: "minecraft:glow_lichen" }
+		{ item: "minecraft:lily_pad" }
+	]
+}

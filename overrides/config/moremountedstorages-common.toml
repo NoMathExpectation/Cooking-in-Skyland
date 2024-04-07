@@ -1,0 +1,69 @@
+
+#Mod integration config
+[Integration]
+
+	#Minecraft
+	[Integration.minecraft]
+
+		#Vanilla Minecraft
+		[Integration.minecraft.minecraft]
+			#Enabled Vanilla Minecraft integration. Default value is true
+			enabled = true
+
+	#Create
+	[Integration.create]
+
+		#Create Creative Crate
+		[Integration.create.creative_crate]
+			#Enabled Create Creative Crate integration. Default value is true
+			enabled = true
+			#Create Creative Crate storage priority. Items are inserted first into storages with higher priority. Default value is 0
+			priority = 0
+
+	#EnderStorage
+	[Integration.enderstorage]
+
+		#Ender Storage
+		[Integration.enderstorage.ender_chest]
+			#Enabled Ender Storage integration. Default value is true
+			enabled = true
+			#Ender Storage storage priority. Items are inserted first into storages with higher priority. Default value is 1
+			priority = 1
+
+	#Iron Chests
+	[Integration.ironchest]
+
+		#Iron Chests
+		[Integration.ironchest.chest]
+			#Enabled Iron Chests integration. Default value is true
+			enabled = true
+
+	#Storage Drawers
+	[Integration.storagedrawers]
+
+		#standard drawers
+		[Integration.storagedrawers.drawer]
+			#Enabled standard drawers integration. Default value is true
+			enabled = true
+			#standard drawers storage priority. Items are inserted first into storages with higher priority. Default value is 10
+			priority = 10
+
+		#compacting drawers
+		[Integration.storagedrawers.compacting_drawer]
+			#Enabled compacting drawers integration. Default value is true
+			enabled = true
+			#compacting drawers storage priority. Items are inserted first into storages with higher priority. Default value is 10
+			priority = 10
+
+	#Trash Cans
+	[Integration.trashcans]
+
+		#Trash Cans
+		[Integration.trashcans.trashcans]
+			#Enabled Trash Cans integration. Default value is true
+			enabled = true
+			#Trash Cans storage priority. Items are inserted first into storages with higher priority. Default value is -10
+			priority = -10
+			#Trash Cans storage priority when whitelist is enabled. Items are inserted first into storages with higher priority. Default value is 20
+			priority_whitelist = 20
+

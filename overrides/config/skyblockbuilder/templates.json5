@@ -1,0 +1,41 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": null,cookinskyblock
+  
+  "spawns": {
+    "default": [
+      [ 6, 3, 5 ]
+    ]
+    "cookinskyblock": [
+      [ 2, 2, 2 ]
+    ]
+
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "default",
+      "desc": "",
+      "file": "default.nbt",
+      "spawns": "default",
+      "direction": "south"
+    }
+    {
+      "name": "cook in skyblock",
+      "desc": "天空厨房",
+      "file": "skyblock.nbt",
+      "spawns": "cookinskyblock",
+      "direction": "south"
+    }
+  ]
+
+}

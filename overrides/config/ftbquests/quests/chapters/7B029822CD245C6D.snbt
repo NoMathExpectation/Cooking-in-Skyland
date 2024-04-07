@@ -1,0 +1,575 @@
+{
+	id: "7B029822CD245C6D"
+	group: "4D81F2802AE7DA76"
+	order_index: 1
+	filename: "7B029822CD245C6D"
+	title: "实用的玩意：工具"
+	icon: "create:wrench"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 5.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "653095D0CC79AA0A"
+			tasks: [{
+				id: "3C3C29C437C56548"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "42FFAE0055FA6642"
+			tasks: [{
+				id: "210EA9F912CCD542"
+				type: "item"
+				item: "trashcans:item_trash_can"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "14D67790C835AEFD"
+			tasks: [{
+				id: "1B371EDCB03A83E8"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			dependencies: ["14D67790C835AEFD"]
+			id: "7FBD2B088CE6D2B0"
+			tasks: [{
+				id: "24772DF5359D44AF"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.0d
+			subtitle: "合成前先清空"
+			description: [
+				"在合成前记得把里面的食物拿出来，不然会消失的"
+				"BUG？不，是特性"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2D19992998164BB7"]
+			id: "095C4C9BB41D6911"
+			tasks: [{
+				id: "3D69EC562625C78F"
+				type: "item"
+				item: {
+					id: "solsweetpotato:lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 9
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			hide_dependency_lines: false
+			dependencies: ["095C4C9BB41D6911"]
+			id: "069B3E1CBD189653"
+			tasks: [{
+				id: "388484DAE7D3D203"
+				type: "item"
+				item: {
+					id: "solsweetpotato:golden_lunchbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 14
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: ["然后用这个把装置3D打印出来"]
+			hide_dependency_lines: false
+			dependencies: ["22D16E5A46B01317"]
+			id: "20C37F1CB3C21172"
+			tasks: [{
+				id: "2066EDC5D789E693"
+				type: "item"
+				item: "create:schematicannon"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			description: ["如果有什么需要合成的需求大的物品，这个可以帮你批量制造"]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "42782D8704BBE7ED"
+			tasks: [{
+				id: "4F1F5A6561556390"
+				type: "item"
+				item: "create:crafting_blueprint"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			description: ["你可以去建一个创造档，然后自己设计装置，用蓝图保存"]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "22D16E5A46B01317"
+			tasks: [{
+				id: "286E588C05EA1616"
+				type: "item"
+				item: "create:empty_schematic"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			subtitle: "这就是沸羊羊的感觉~"
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "7FE72B6E9A2816BE"
+			tasks: [{
+				id: "7C0FAD3235E58748"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "必要的工具"
+			x: -5.0d
+			y: -4.0d
+			subtitle: "...其实也没那么必要"
+			description: ["这里是你可能会用到的一些小玩意，能帮助你推进主线或者建设空岛"]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "72BFB42105316390"
+			tasks: [{
+				id: "1A216C2A7B9D0B6F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			dependencies: ["42FFAE0055FA6642"]
+			id: "126816FDFD181643"
+			tasks: [{
+				id: "1BE80691783E13EA"
+				type: "item"
+				item: "trashcans:liquid_trash_can"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0220C5A6612C57C1"
+			tasks: [{
+				id: "793E48E9D14DBD6D"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "21490A8EA52FBF66"
+			tasks: [{
+				id: "6B5A40E4B4F29C2E"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "14988C3504573BAB"
+			tasks: [{
+				id: "643132B35038D47D"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1BBF124A4D401C65"
+			tasks: [{
+				id: "582140CC9FD1576B"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1F01F5210A2A05D3"
+			tasks: [{
+				id: "2CED6427931C62F4"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -7.0d
+			description: [
+				"按下shift并右键打开午餐袋界面"
+				"长按右键吃午餐袋里面的食物"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "2D19992998164BB7"
+			tasks: [{
+				id: "6E209EDE315A282B"
+				type: "item"
+				item: {
+					id: "solsweetpotato:lunchbag"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "333D28582ED41D18"
+			tasks: [{
+				id: "0D016D0EB183D861"
+				type: "item"
+				item: "solsweetpotato:food_book"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0A103788D15F82F8"
+			tasks: [{
+				id: "0439320E4F4B4647"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			title: "抽屉"
+			x: 8.0d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0426D3F1A7CCE75E"
+			tasks: [{
+				id: "6976C697573DA7AD"
+				type: "item"
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:mod"
+								tag: {
+									value: "storagedrawers"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "storagedrawers:drawers"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "77EE45A69D8985BC"
+			tasks: [{
+				id: "417339BF70B0F914"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "6F9160EA91F0AAA8"
+			tasks: [{
+				id: "44B3C521F7CA09A5"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1BD94672F4B629BA"
+			tasks: [{
+				id: "2CC6DD8F58B250D5"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.5d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "6A0038AC2F2E13B6"
+			tasks: [{
+				id: "1A4131DA788C20AB"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["7FBD2B088CE6D2B0"]
+			id: "05C6D2412E2C581D"
+			tasks: [{
+				id: "7840B0468EDBD3D8"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["05C6D2412E2C581D"]
+			id: "2F66EE1705914AB1"
+			tasks: [{
+				id: "352A1901D2F20C6F"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "建筑核心"
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["2F66EE1705914AB1"]
+			id: "3132864AA7CD2337"
+			tasks: [
+				{
+					id: "1692E22062060E6E"
+					type: "item"
+					item: "constructionwand:core_angel"
+				}
+				{
+					id: "76ABF75C12DBB53E"
+					type: "item"
+					item: "constructionwand:core_destruction"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "451BC79172FB8FB9"
+			tasks: [{
+				id: "40416875F6B37907"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.5d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "4C5177B49B3AF334"
+			tasks: [{
+				id: "180A1CCEF5F32CB3"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "2C354071DED62906"
+			tasks: [{
+				id: "6AE3736B5C64F64D"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["2C354071DED62906"]
+			id: "2B77C715EE72489B"
+			tasks: [{
+				id: "65B664AC6577E57C"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["2B77C715EE72489B"]
+			id: "49FBD0C9DE5133D1"
+			tasks: [{
+				id: "45C298C1DD8BECBF"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["49FBD0C9DE5133D1"]
+			id: "5E6D62E98811E501"
+			tasks: [{
+				id: "3CDE5B197CBF0F31"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["333D28582ED41D18"]
+			id: "0A5B66C7C3D103D7"
+			tasks: [{
+				id: "2997CF9206203DA3"
+				type: "item"
+				item: "solcarrot:food_book"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			description: [
+				"想要无限的液体供应不？这个可以做到"
+				"你只需要把一万格液体放在世界里面，那么它就是无限供应的！"
+				"（目前只支持岩浆。水？水只要三格）"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "5B4D69FB4EB4BA41"
+			tasks: [{
+				id: "1F936397269BE443"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["1396F2AECAF7E17D"]
+			id: "6C3C2323B3B19A9F"
+			tasks: [{
+				id: "23D02CB8AFDB633A"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["想要试试远程控制的话，这个少不了"]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "1396F2AECAF7E17D"
+			tasks: [{
+				id: "78E1D573D89EB58E"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

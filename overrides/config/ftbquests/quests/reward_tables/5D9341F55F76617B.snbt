@@ -1,0 +1,14 @@
+{
+	id: "5D9341F55F76617B"
+	order_index: 5
+	title: "鱼"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:cod_spawn_egg" }
+		{ item: "minecraft:glow_squid_spawn_egg" }
+		{ item: "minecraft:salmon_spawn_egg" }
+		{ item: "minecraft:squid_spawn_egg" }
+		{ item: "minecraft:tropical_fish_spawn_egg" }
+		{ item: "minecraft:pufferfish_spawn_egg" }
+	]
+}
