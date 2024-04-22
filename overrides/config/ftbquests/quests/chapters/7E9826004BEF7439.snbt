@@ -1,7 +1,7 @@
 {
 	id: "7E9826004BEF7439"
 	group: "4D81F2802AE7DA76"
-	order_index: 2
+	order_index: 3
 	filename: "7E9826004BEF7439"
 	title: "环境的美化：装饰"
 	icon: "minecraft:azure_bluet"
@@ -580,8 +580,8 @@
 		{
 			title: "地狱矿石"
 			icon: "minecraft:netherrack"
-			x: 5.5d
-			y: 2.0d
+			x: 7.0d
+			y: 3.5d
 			dependencies: ["7002E44FFB94AD50"]
 			id: "7E051B4EA7E3BE5D"
 			tasks: [{
@@ -632,6 +632,21 @@
 				type: "choice"
 				exclude_from_claim_all: true
 				table_id: 1604268204642605904L
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			description: [
+				"附魔台其实还有点用：那些在流水线上被使用的工具依然享受耐久的效果"
+				"还有别的用吗？我也在寻找呢..."
+			]
+			dependencies: ["7002E44FFB94AD50"]
+			id: "51CC30D414979514"
+			tasks: [{
+				id: "652000B2A7536F20"
+				type: "item"
+				item: "minecraft:enchanting_table"
 			}]
 		}
 	]

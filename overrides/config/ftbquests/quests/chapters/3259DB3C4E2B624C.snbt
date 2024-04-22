@@ -223,7 +223,7 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -3.5d
 			y: -4.0d
 			subtitle: "瓦特改良蒸汽机，不是他发明蒸汽机"
 			description: ["只要烧水就能获得大量应力的机器，如果应力短缺就试试这个"]
@@ -233,17 +233,6 @@
 				id: "67C5F4E08137F19A"
 				type: "item"
 				item: "create:steam_engine"
-			}]
-		}
-		{
-			x: -3.5d
-			y: -4.0d
-			dependencies: ["50ED9E6DA6A87724"]
-			id: "50D8E60A27D21714"
-			tasks: [{
-				id: "5ABD158952FB7576"
-				type: "item"
-				item: "create:item_vault"
 			}]
 		}
 		{
@@ -643,7 +632,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -2.0d
 			y: 5.0d
 			subtitle: "我从古达老师身上拔剑，他还要砍我"
 			description: [
@@ -699,6 +688,61 @@
 					item: "create:brass_funnel"
 				}
 			]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			description: [
+				"什么？你不会用机器手实现筛子自动化？那我们有得忙了..."
+				"试试这个动力筛子，这玩意的自动化就简单了"
+			]
+			dependencies: ["4C949EE85C9DB3EB"]
+			optional: true
+			id: "73EAAD8371E33CA0"
+			tasks: [{
+				id: "64AB392E1F3ABE77"
+				type: "item"
+				item: "createsifter:sifter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			subtitle: "啊哈！意外来喽！"
+			description: ["既然是接入动力的筛子，那么对于筛网的要求也变高了..."]
+			dependencies: ["4C949EE85C9DB3EB"]
+			optional: true
+			id: "03BED3DF8A8D4827"
+			tasks: [{
+				id: "0741C0C2446FF7AB"
+				type: "item"
+				item: {
+					id: "createsifter:brass_mesh"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "create:brass_hand"
+			x: -5.0d
+			y: 3.5d
+			description: [
+				"1、由于黄铜筛子被改造过，你可以把它放在你的左手，把可以过筛的方块放在右手，像用砂纸一样使用，就可以手动过筛了"
+				"2、有些配方需要动力筛子在水里才能使用"
+				"3、想手动过筛含水配方？只要你站在水里就行了"
+			]
+			dependencies: [
+				"73EAAD8371E33CA0"
+				"03BED3DF8A8D4827"
+			]
+			optional: true
+			id: "02A9DDEBA3BCF951"
+			tasks: [{
+				id: "5CBE78F2498D1A30"
+				type: "checkmark"
+				title: "关于动力筛子的补充说明"
+			}]
 		}
 	]
 	quest_links: [ ]

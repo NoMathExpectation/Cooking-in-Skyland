@@ -27,7 +27,7 @@ onEvent('recipes',event=>{
         Item.of('16x kubejs:item1-1').withChance(2)
     ],'kubejs:step2',[
         event.recipes.createDeploying('kubejs:proc2',['kubejs:proc2',Item.of('kubejs:cake_knife').ignoreNBT()])
-    ]).transitionalItem('kubejs:proc2').loops(3)
+    ]).transitionalItem('kubejs:proc2').loops(2)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step3-2').withChance(0.8),
         Item.of('4x kubejs:item1-1').withChance(0.1),

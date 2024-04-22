@@ -12,6 +12,10 @@ onEvent('jei.hide.items',event=>{
     event.hide('ironchest:crystal_chest')
     event.hide('ironchest:trapped_crystal_chest')
     event.hide('ironchest:diamond_to_crystal_chest_upgrade')
+    event.hide('createsifter:string_mesh')
+    event.hide('createsifter:andesite_mesh')
+    event.hide('createsifter:zinc_mesh')
+    event.hide('createsifter:custom_mesh')
 })
 onEvent('jei.remove.recipes',event=>{
     event.remove('create:mystery_conversion','create:conversion_0')

@@ -1,0 +1,20 @@
+onEvent('recipes',event=>{
+    event.remove({input:'createutilities:graviton_tube'})
+    event.shaped('createutilities:void_motor',[
+        'CDC',
+        'BAB',
+        'CEC'
+    ],{
+        A:'create:electron_tube',
+        B:'obsidian',
+        C:'blaze_rod',
+        D:'create:shaft',
+        E:'ender_pearl'
+    })
+    event.shapeless('enderstorage:ender_tank','createutilities:void_tank')
+    event.shapeless('createutilities:void_tank','enderstorage:ender_tank')
+    event.shapeless('enderstorage:ender_chest','createutilities:void_chest')
+    event.shapeless('createutilities:void_chest','enderstorage:ender_chest')
+    event.remove({output:'createutilities:void_steel_scaffolding'})
+    event.shapeless('8x createutilities:void_steel_scaffolding',['8x scaffolding','createutilities:void_steel_ingot'])
+})

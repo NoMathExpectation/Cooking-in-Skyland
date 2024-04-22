@@ -1,6 +1,6 @@
 {
     "fluid":"kubejs:happywater",
-    "burnTime":10,
+    "burnTime":12,
     "superHeat":true,
     "amountConsumedPerTick":1
 }

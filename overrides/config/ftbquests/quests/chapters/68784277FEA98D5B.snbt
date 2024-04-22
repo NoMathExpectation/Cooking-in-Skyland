@@ -1,0 +1,480 @@
+{
+	id: "68784277FEA98D5B"
+	group: "4D81F2802AE7DA76"
+	order_index: 2
+	filename: "68784277FEA98D5B"
+	title: "物流的灵魂：存储"
+	icon: "minecraft:chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["49FBD0C9DE5133D1"]
+			id: "5E6D62E98811E501"
+			tasks: [{
+				id: "3CDE5B197CBF0F31"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			dependencies: ["2B77C715EE72489B"]
+			id: "49FBD0C9DE5133D1"
+			tasks: [{
+				id: "45C298C1DD8BECBF"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["2C354071DED62906"]
+			id: "2B77C715EE72489B"
+			tasks: [{
+				id: "65B664AC6577E57C"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["08D104CD4251AAA0"]
+			id: "2C354071DED62906"
+			tasks: [{
+				id: "6AE3736B5C64F64D"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "6A0038AC2F2E13B6"
+			tasks: [{
+				id: "1A4131DA788C20AB"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "61DF859B51904652"
+			tasks: [{
+				id: "4AAB1C46B1330FB8"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "451BC79172FB8FB9"
+			tasks: [{
+				id: "40416875F6B37907"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			title: "抽屉"
+			x: -5.0d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "0426D3F1A7CCE75E"
+			tasks: [{
+				id: "6976C697573DA7AD"
+				type: "item"
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:mod"
+								tag: {
+									value: "storagedrawers"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "storagedrawers:drawers"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["0426D3F1A7CCE75E"]
+			id: "4C5177B49B3AF334"
+			tasks: [{
+				id: "180A1CCEF5F32CB3"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["5DA5F52058CD83E3"]
+			id: "1BD94672F4B629BA"
+			tasks: [{
+				id: "2CC6DD8F58B250D5"
+				type: "item"
+				item: "enderstorage:ender_pouch"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.5d
+			hide_dependency_lines: false
+			dependencies: ["5DA5F52058CD83E3"]
+			id: "6F9160EA91F0AAA8"
+			tasks: [
+				{
+					id: "44B3C521F7CA09A5"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+				{
+					id: "3FE52C5351F6BE27"
+					type: "item"
+					item: "createutilities:void_tank"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["5DA5F52058CD83E3"]
+			id: "77EE45A69D8985BC"
+			tasks: [
+				{
+					id: "417339BF70B0F914"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "3AD9CC84523F9CC1"
+					type: "item"
+					item: "createutilities:void_chest"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "42FFAE0055FA6642"
+			tasks: [{
+				id: "210EA9F912CCD542"
+				type: "item"
+				item: "trashcans:item_trash_can"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["42FFAE0055FA6642"]
+			id: "126816FDFD181643"
+			tasks: [{
+				id: "1BE80691783E13EA"
+				type: "item"
+				item: "trashcans:liquid_trash_can"
+			}]
+		}
+		{
+			title: "末影存储系列"
+			icon: "minecraft:ender_eye"
+			x: -3.5d
+			y: 3.5d
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "5DA5F52058CD83E3"
+			tasks: [{
+				id: "2AAB9C04B8235A05"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "2A1DC4692D08E041"
+			tasks: [{
+				id: "567D0E47A2E89036"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "2044DD4552D38509"
+			tasks: [{
+				id: "36BD1CAE952B53B1"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+				match_nbt: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["精妙背包的升级有很多种，这里就不展开了"]
+			dependencies: ["2044DD4552D38509"]
+			id: "0B704DDE92600641"
+			tasks: [{
+				id: "4126CF29E9B0F52A"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["2044DD4552D38509"]
+			id: "10F41B9EBBF244DF"
+			tasks: [{
+				id: "573D027A4004FF66"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["10F41B9EBBF244DF"]
+			id: "24E812DC780EDCA0"
+			tasks: [{
+				id: "15C69BAEA7461919"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["24E812DC780EDCA0"]
+			id: "1ABDF995BF6244A1"
+			tasks: [{
+				id: "0883EE5D76365701"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			dependencies: ["1ABDF995BF6244A1"]
+			id: "28325F0D57FFAC71"
+			tasks: [{
+				id: "1580340FA632A338"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "08D104CD4251AAA0"
+			tasks: [{
+				id: "1BE961CC5066FB3D"
+				type: "item"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["2C354071DED62906"]
+			id: "30B1AA270167CFDD"
+			tasks: [{
+				id: "68C16F94183B69F5"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["2B77C715EE72489B"]
+			id: "36BD0FA44C363E7F"
+			tasks: [{
+				id: "188F8F578561BECD"
+				type: "item"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["49FBD0C9DE5133D1"]
+			id: "3CFA4E626F0343A2"
+			tasks: [{
+				id: "5F398C816AA31FF7"
+				type: "item"
+				item: "ironchest:diamond_to_obsidian_chest_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			subtitle: "超级简陋版AE"
+			description: ["这是整个Tom存储网络的核心，每一个网络都需要一个这个"]
+			hide_dependency_lines: true
+			dependencies: ["2A1DC4692D08E041"]
+			id: "104BAE4525104BCA"
+			tasks: [{
+				id: "7F89E582BEAF11D1"
+				type: "item"
+				item: "toms_storage:ts.inventory_connector"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			description: ["把这个连进网络，然后在它旁边放箱子"]
+			dependencies: ["09C7BC114B28DEEC"]
+			id: "50F4726E0D0CDC2D"
+			tasks: [{
+				id: "42C10970C8322E06"
+				type: "item"
+				item: "toms_storage:ts.trim"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["104BAE4525104BCA"]
+			id: "09C7BC114B28DEEC"
+			tasks: [{
+				id: "32F78B803073AC67"
+				type: "item"
+				item: "toms_storage:ts.inventory_cable"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			description: ["通过终端来访问网络里面的物品"]
+			dependencies: ["104BAE4525104BCA"]
+			id: "293EE8A502FA5294"
+			tasks: [{
+				id: "236E86DC688B6F00"
+				type: "item"
+				item: "toms_storage:ts.storage_terminal"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			description: ["现在我们在终端里面加了个合成表"]
+			dependencies: ["293EE8A502FA5294"]
+			id: "6D0DAF6A9AB400E2"
+			tasks: [{
+				id: "3DAB5186E28ADD83"
+				type: "item"
+				item: "toms_storage:ts.crafting_terminal"
+			}]
+		}
+		{
+			title: "真正的无线终端"
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"上一个无线终端很废物？是的。"
+				"这个才是真正的无线终端，离得远也能随便访问的那种"
+				"记得先绑定终端：蹲下来右键"
+			]
+			dependencies: ["11986B7BC2B40310"]
+			id: "0EA64F3A62B443FF"
+			tasks: [{
+				id: "2FD4D2C8FC7753D4"
+				type: "item"
+				item: "toms_storage:ts.adv_wireless_terminal"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["104BAE4525104BCA"]
+			id: "06E4760F54D2D1AB"
+			tasks: [{
+				id: "69F20FAC5127385C"
+				type: "item"
+				item: {
+					id: "toms_storage:ts.paint_kit"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["104BAE4525104BCA"]
+			id: "02E97010D8EA563D"
+			tasks: [{
+				id: "0B18139C96FB2FA6"
+				type: "item"
+				item: "toms_storage:ts.level_emitter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.0d
+			dependencies: ["5DA5F52058CD83E3"]
+			id: "3BE7CF1C16180D3B"
+			tasks: [{
+				id: "26FF7FF025D9E9F8"
+				type: "item"
+				item: "createutilities:void_motor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: [
+				"什么？这玩意怎么用？"
+				"你得站在你能看得见终端的地方，然后拿着这个对着终端，才能远程打开"
+				"而且不能离得太远..."
+			]
+			dependencies: ["293EE8A502FA5294"]
+			id: "11986B7BC2B40310"
+			tasks: [{
+				id: "3A065E124DE49E3B"
+				type: "item"
+				item: "toms_storage:ts.wireless_terminal"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

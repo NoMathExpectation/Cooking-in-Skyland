@@ -28,20 +28,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "42FFAE0055FA6642"
-			tasks: [{
-				id: "210EA9F912CCD542"
-				type: "item"
-				item: "trashcans:item_trash_can"
-			}]
-		}
-		{
 			x: -2.5d
-			y: -7.0d
+			y: -5.5d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "14D67790C835AEFD"
@@ -60,7 +48,7 @@
 		}
 		{
 			x: -2.5d
-			y: -5.5d
+			y: -4.0d
 			dependencies: ["14D67790C835AEFD"]
 			id: "7FBD2B088CE6D2B0"
 			tasks: [{
@@ -137,8 +125,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -4.0d
+			x: 0.5d
+			y: -5.5d
 			description: ["如果有什么需要合成的需求大的物品，这个可以帮你批量制造"]
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
@@ -163,7 +151,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 0.5d
 			y: -1.0d
 			subtitle: "这就是沸羊羊的感觉~"
 			hide_dependency_lines: true
@@ -197,21 +185,9 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -5.5d
-			dependencies: ["42FFAE0055FA6642"]
-			id: "126816FDFD181643"
-			tasks: [{
-				id: "1BE80691783E13EA"
-				type: "item"
-				item: "trashcans:liquid_trash_can"
-			}]
-		}
-		{
 			x: 3.5d
-			y: -4.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			y: -2.5d
+			dependencies: ["515E481F6CE8C20C"]
 			id: "0220C5A6612C57C1"
 			tasks: [{
 				id: "793E48E9D14DBD6D"
@@ -222,8 +198,7 @@
 		{
 			x: 2.0d
 			y: -4.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			dependencies: ["515E481F6CE8C20C"]
 			id: "21490A8EA52FBF66"
 			tasks: [{
 				id: "6B5A40E4B4F29C2E"
@@ -232,10 +207,9 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -5.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			x: 5.0d
+			y: -4.0d
+			dependencies: ["515E481F6CE8C20C"]
 			id: "14988C3504573BAB"
 			tasks: [{
 				id: "643132B35038D47D"
@@ -246,8 +220,7 @@
 		{
 			x: 2.0d
 			y: -5.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			dependencies: ["515E481F6CE8C20C"]
 			id: "1BBF124A4D401C65"
 			tasks: [{
 				id: "582140CC9FD1576B"
@@ -258,8 +231,7 @@
 		{
 			x: 3.5d
 			y: -5.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			dependencies: ["515E481F6CE8C20C"]
 			id: "1F01F5210A2A05D3"
 			tasks: [{
 				id: "2CED6427931C62F4"
@@ -293,8 +265,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -2.5d
+			x: -1.0d
+			y: -7.0d
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
 			id: "333D28582ED41D18"
@@ -307,8 +279,7 @@
 		{
 			x: 5.0d
 			y: -5.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			dependencies: ["515E481F6CE8C20C"]
 			id: "0A103788D15F82F8"
 			tasks: [{
 				id: "0439320E4F4B4647"
@@ -317,89 +288,8 @@
 			}]
 		}
 		{
-			title: "抽屉"
-			x: 8.0d
-			y: -4.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "0426D3F1A7CCE75E"
-			tasks: [{
-				id: "6976C697573DA7AD"
-				type: "item"
-				item: {
-					id: "itemfilters:and"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:mod"
-								tag: {
-									value: "storagedrawers"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "storagedrawers:drawers"
-								}
-							}
-						]
-					}
-				}
-			}]
-		}
-		{
-			x: 8.0d
-			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "77EE45A69D8985BC"
-			tasks: [{
-				id: "417339BF70B0F914"
-				type: "item"
-				item: "enderstorage:ender_chest"
-			}]
-		}
-		{
-			x: 6.5d
-			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "6F9160EA91F0AAA8"
-			tasks: [{
-				id: "44B3C521F7CA09A5"
-				type: "item"
-				item: "enderstorage:ender_tank"
-			}]
-		}
-		{
-			x: 6.5d
-			y: -5.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "1BD94672F4B629BA"
-			tasks: [{
-				id: "2CC6DD8F58B250D5"
-				type: "item"
-				item: "enderstorage:ender_pouch"
-			}]
-		}
-		{
-			x: 8.0d
-			y: -2.5d
-			dependencies: ["0426D3F1A7CCE75E"]
-			id: "6A0038AC2F2E13B6"
-			tasks: [{
-				id: "1A4131DA788C20AB"
-				type: "item"
-				item: "storagedrawers:upgrade_template"
-			}]
-		}
-		{
 			x: -2.5d
-			y: -4.0d
+			y: -2.5d
 			dependencies: ["7FBD2B088CE6D2B0"]
 			id: "05C6D2412E2C581D"
 			tasks: [{
@@ -417,7 +307,7 @@
 		}
 		{
 			x: -2.5d
-			y: -2.5d
+			y: -1.0d
 			dependencies: ["05C6D2412E2C581D"]
 			id: "2F66EE1705914AB1"
 			tasks: [{
@@ -434,9 +324,9 @@
 		}
 		{
 			title: "建筑核心"
-			x: -1.0d
-			y: -2.5d
-			dependencies: ["2F66EE1705914AB1"]
+			x: -2.5d
+			y: -7.0d
+			dependencies: ["14D67790C835AEFD"]
 			id: "3132864AA7CD2337"
 			tasks: [
 				{
@@ -452,75 +342,8 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: -4.0d
-			dependencies: ["0426D3F1A7CCE75E"]
-			id: "451BC79172FB8FB9"
-			tasks: [{
-				id: "40416875F6B37907"
-				type: "item"
-				item: "storagedrawers:compacting_drawers_3"
-			}]
-		}
-		{
-			x: 8.0d
-			y: -5.5d
-			dependencies: ["0426D3F1A7CCE75E"]
-			id: "4C5177B49B3AF334"
-			tasks: [{
-				id: "180A1CCEF5F32CB3"
-				type: "item"
-				item: "storagedrawers:controller"
-			}]
-		}
-		{
-			x: 0.5d
-			y: -2.5d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "2C354071DED62906"
-			tasks: [{
-				id: "6AE3736B5C64F64D"
-				type: "item"
-				item: "ironchest:iron_chest"
-			}]
-		}
-		{
-			x: 0.5d
-			y: -1.0d
-			dependencies: ["2C354071DED62906"]
-			id: "2B77C715EE72489B"
-			tasks: [{
-				id: "65B664AC6577E57C"
-				type: "item"
-				item: "ironchest:gold_chest"
-			}]
-		}
-		{
 			x: -1.0d
-			y: -1.0d
-			dependencies: ["2B77C715EE72489B"]
-			id: "49FBD0C9DE5133D1"
-			tasks: [{
-				id: "45C298C1DD8BECBF"
-				type: "item"
-				item: "ironchest:diamond_chest"
-			}]
-		}
-		{
-			x: -2.5d
-			y: -1.0d
-			dependencies: ["49FBD0C9DE5133D1"]
-			id: "5E6D62E98811E501"
-			tasks: [{
-				id: "3CDE5B197CBF0F31"
-				type: "item"
-				item: "ironchest:obsidian_chest"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -2.5d
+			y: -5.5d
 			dependencies: ["333D28582ED41D18"]
 			id: "0A5B66C7C3D103D7"
 			tasks: [{
@@ -537,8 +360,7 @@
 				"你只需要把一万格液体放在世界里面，那么它就是无限供应的！"
 				"（目前只支持岩浆。水？水只要三格）"
 			]
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
+			dependencies: ["515E481F6CE8C20C"]
 			id: "5B4D69FB4EB4BA41"
 			tasks: [{
 				id: "1F936397269BE443"
@@ -547,7 +369,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: -1.0d
 			y: -1.0d
 			dependencies: ["1396F2AECAF7E17D"]
 			id: "6C3C2323B3B19A9F"
@@ -558,8 +380,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -1.0d
+			x: -1.0d
+			y: -2.5d
 			description: ["想要试试远程控制的话，这个少不了"]
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
@@ -571,20 +393,9 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: -2.5d
-			dependencies: ["0426D3F1A7CCE75E"]
-			id: "61DF859B51904652"
-			tasks: [{
-				id: "4AAB1C46B1330FB8"
-				type: "item"
-				item: "storagedrawers:drawer_key"
-			}]
-		}
-		{
 			title: "动力鞘翅"
-			x: 5.0d
-			y: -1.0d
+			x: 0.5d
+			y: -2.5d
 			dependencies: ["7FE72B6E9A2816BE"]
 			id: "04E0A4768D8F0BDD"
 			tasks: [{
@@ -602,8 +413,9 @@
 		}
 		{
 			title: "喷气背包"
-			x: 8.0d
+			x: 2.0d
 			y: -1.0d
+			subtitle: "有人说史蒂夫不会飞？"
 			dependencies: ["7FE72B6E9A2816BE"]
 			id: "659386E4F8277875"
 			tasks: [{
@@ -617,6 +429,61 @@
 					}
 				}
 				match_nbt: false
+			}]
+		}
+		{
+			title: "更多实用设备"
+			icon: "create:andesite_casing"
+			x: 3.5d
+			y: -4.0d
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "515E481F6CE8C20C"
+			tasks: [{
+				id: "1A8FD5BDFD18795E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "富含黑土地的北大荒"
+			x: 5.0d
+			y: -1.0d
+			description: [
+				"由沃土开垦的田地非常厉害，不但能加速生长，而且不需要水源"
+				"此外，在这上面生长的蘑菇会变成蘑菇菌落"
+			]
+			dependencies: ["668FBFD31D3148D9"]
+			id: "35C064CC568159BE"
+			tasks: [{
+				id: "0C5C55938E7AA1A1"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+			}]
+		}
+		{
+			title: "金坷垃，金坷垃！"
+			x: 3.5d
+			y: -1.0d
+			subtitle: "一袋能抵两袋撒！"
+			description: ["当你做好了肥料之后，把它放在世界里面，让它转变成沃土"]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "668FBFD31D3148D9"
+			tasks: [{
+				id: "28EE41E663B8C10A"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			dependencies: ["515E481F6CE8C20C"]
+			id: "7DC197142062FB3E"
+			tasks: [{
+				id: "2603B0C80EFAB6DB"
+				type: "item"
+				item: "create:stressometer"
 			}]
 		}
 	]

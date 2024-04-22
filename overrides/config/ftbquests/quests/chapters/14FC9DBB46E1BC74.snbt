@@ -219,6 +219,68 @@
 				type: "item"
 				item: "minecraft:cake"
 			}]
+			rewards: [
+				{
+					id: "65D27E13A18F1FB5"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/summon minecraft:firework_rocket ~ ~ ~ {LifeTime:10,FireworksItem:{id:\"minecraft:firework_rocket\",Count:10,tag:{Fireworks:{Explosions:[{Trail:1b,Flicker:1b,Type:0,Colors:[I;14427429],FadeColors:[I;14149428]},{Trail:1b,Flicker:1b,Type:1,Colors:[I;1907942],FadeColors:[I;1953245]}]}}}}"
+					player_command: true
+					silent: true
+				}
+				{
+					id: "0A72AA88134225E9"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:\"minecraft:firework_rocket\",Count:5,tag:{Fireworks:{Explosions:[{Trail:1b,Flicker:1b,Type:1,Colors:[I;14545411],FadeColors:[I;55308]},{Trail:1b,Flicker:1b,Type:3,Colors:[I;13755745],FadeColors:[I;1842330]},{Trail:1b,Flicker:1b,Type:4,Colors:[I;1038209],FadeColors:[I;6153965]}]}}}}"
+					player_command: true
+					silent: true
+				}
+				{
+					id: "29C2C1982067B34F"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:30,FireworksItem:{id:\"minecraft:firework_rocket\",Count:1,tag:{Fireworks:{Explosions:[{Trail:1b,Flicker:1b,Type:0,Colors:[I;15826301],FadeColors:[I;349535]},{Trail:1b,Flicker:1b,Type:2,Colors:[I;15005098],FadeColors:[I;7366823]},{Trail:1b,Flicker:1b,Type:2,Colors:[I;1552384],FadeColors:[I;6967201]},{Trail:1b,Flicker:1b,Type:3,Colors:[I;8164738],FadeColors:[I;16448250]}]}}}}"
+					player_command: true
+					silent: true
+				}
+				{
+					id: "4508620525F2DA27"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/title @p title [{\"text\":\"GAME CLEAR！\",\"color\":\"gold\",\"bold\":true,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]"
+					player_command: true
+					silent: true
+				}
+				{
+					id: "35026DB4A2EBA00B"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/title @p subtitle [{\"text\":\"你通关了天空厨房！\",\"color\":\"red\",\"bold\":true,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]"
+					player_command: true
+					silent: true
+				}
+				{
+					id: "2D0280E0F991857E"
+					type: "command"
+					auto: "invisible"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/title @p actionbar [{\"text\":\"是时候开派对了！\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]"
+					player_command: true
+					silent: true
+				}
+			]
 		}
 		{
 			title: "魔法奶油"
