@@ -590,8 +590,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 2.0d
+			x: 8.5d
+			y: 3.5d
 			hide_dependency_lines: false
 			dependencies: ["7E051B4EA7E3BE5D"]
 			id: "29766775503E5423"
@@ -635,18 +635,55 @@
 			}]
 		}
 		{
+			title: "凿子"
+			x: 8.5d
+			y: 2.0d
+			description: ["还想要更多方块？大名鼎鼎的凿子来咯！（虽然是高版本的致敬版）"]
+			dependencies: ["7002E44FFB94AD50"]
+			id: "437E17392416B760"
+			tasks: [{
+				id: "10BBD5A9DFD2A0C4"
+				type: "item"
+				item: {
+					id: "rechiseled:chisel"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "动力凿子"
+			x: 7.0d
+			y: 2.0d
+			subtitle: "我去这也能自动化？"
+			description: ["手搓方块太麻烦了？用这个实现自动化生产"]
+			hide_dependency_lines: false
+			dependencies: ["437E17392416B760"]
+			id: "0ADB77EAF83B07C1"
+			tasks: [{
+				id: "2261FBDE39EDACAD"
+				type: "item"
+				item: "rechiseledcreate:mechanical_chisel"
+			}]
+		}
+		{
+			title: "伪装板"
 			x: 5.5d
 			y: 2.0d
-			description: [
-				"附魔台其实还有点用：那些在流水线上被使用的工具依然享受耐久的效果"
-				"还有别的用吗？我也在寻找呢..."
-			]
+			description: ["...完整方块也满足不了你了？"]
 			dependencies: ["7002E44FFB94AD50"]
-			id: "51CC30D414979514"
+			id: "56252783280A9738"
 			tasks: [{
-				id: "652000B2A7536F20"
+				id: "4396186770E9D6B1"
 				type: "item"
-				item: "minecraft:enchanting_table"
+				title: "Any #copycats:copycat_block"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "copycats:copycat_block"
+					}
+				}
 			}]
 		}
 	]

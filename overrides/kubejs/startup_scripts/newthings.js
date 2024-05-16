@@ -63,7 +63,8 @@ onEvent('item.registry',event=>{
 
     event.create('expensive_sushi').maxStackSize(1)
         .texture('kubejs:item/expensive_sushi')
-        .displayName('§e“§6天§c才§4の§b便§9当§2”§f————大师の作 ￥32888')
+        .displayName('§e“§6天§c才§4の§b便§9当§2”')
+        .tooltip('§7————大师の作 ￥32888')
         .glow(true)
 
     event.create('incomplete_ham','create:sequenced_assembly')
@@ -105,5 +106,55 @@ onEvent('item.registry',event=>{
         .texture('kubejs:item/firesword')
         .displayName('传火螺旋剑')
 
+    event.create('cake_ingot')
+        .texture('kubejs:item/cake_ingot')
+        .displayName('蛋糕锭')
+        .tooltip('§7§o终焉之途的开始...')
+
+    event.create('infinity_cake_shovel','shovel')
+        .glow(true)
+        .tier('netherite')
+        .textureJson({layer0:'rainbowcompound:item/rainbow_shovel'})
+        .color(0,'#7F7F7F')
+        .displayName('无尽·奶油刮刀')
+        .tooltip('§7§o...来自星尘')
+
+    event.create('infinity_cake_knife','sword')
+        .glow(true)
+        .tier('netherite')
+        .textureJson({layer0:'rainbowcompound:item/rainbow_knife'})
+        .color(0,'#7F7F7F')
+        .displayName('无尽·蛋糕切刀')
+        .tooltip('§7§o归于星尘...')
+
+    event.create('endest_pearl')
+        //.texture('kubejs:item/endest_pearl')
+        .displayName('终望珍珠')
+        .tooltip('§7§o刹那一瞥，即见永恒')
+
+    event.create('infinity_catalyst')
+        //.texture('kubejs:item/infinity_catalyst')
+        .displayName('无尽催化剂')
+        .tooltip('§7§o星河浩瀚，星芒璀璨')
+
+    event.create('infinity_ingot')
+        //.texture('kubejs:item/infinity_ingot')
+        .displayName('无尽锭')
+        .tooltip('§7§o此刻，祂就在这里')
+
+    event.create('double_cake_ingot')
+        .glow(true)
+        .displayName('压缩蛋糕锭')
+        .tooltip('§7§o天地藏于浮尘，果壳孕育宇宙')
+
+    event.create('singularity')
+        .textureJson({layer0:'kubejs:item/singularity_layer_0',layer1:'kubejs:item/singularity_layer_1'})
+        .displayName('视域边界')
+        .tooltip('§7§o从此便是祂的位面...')
+
+    event.create('fake_bread')
+        .texture('minecraft:item/bread')
+        .displayName('§m面包')
+        .tooltip('§7只是三个小麦而已，诶嘿')
 })
 

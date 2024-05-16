@@ -597,6 +597,7 @@
 			description: [
 				"岩浆的温度在700度到1400度之间，铁的熔点是1538度"
 				"所以用铁桶装岩浆完全没问题"
+				"（嫌坩埚产岩浆太慢了？我送你一个手搓配方：8个煤炭换一桶岩浆）"
 			]
 			dependencies: ["15646B567BB38FBE"]
 			id: "2ECEEA0179A87621"
@@ -804,6 +805,33 @@
 				id: "10EC53A584B866C2"
 				type: "item"
 				item: "create:wrench"
+			}]
+		}
+		{
+			title: "虽然没有那么必要..."
+			x: -4.0d
+			y: -1.5d
+			subtitle: "...也别搞丢了！"
+			dependencies: ["4EF005EAAFA740D8"]
+			id: "4D9DDA60F9645E4A"
+			tasks: [{
+				id: "42B7526CEEE79321"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			title: "逗你玩！"
+			x: -5.5d
+			y: -1.5d
+			subtitle: "开个玩笑！你可以拿回你的小麦"
+			optional: true
+			invisible: true
+			id: "77D7D86D483363DF"
+			tasks: [{
+				id: "4BB59F3840CE6277"
+				type: "item"
+				item: "kubejs:fake_bread"
 			}]
 		}
 	]

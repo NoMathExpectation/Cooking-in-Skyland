@@ -1,3 +1,7 @@
+onEvent('item.tags',event=>{
+    event.add('kubejs:cake_knives',['kubejs:infinity_cake_knife','kubejs:cake_knife'])
+    event.add('kubejs:cake_shovels',['kubejs:infinity_cake_shovel','kubejs:cake_shovel'])
+})
 onEvent('recipes',event=>{
     event.remove({output:'cake'}) 
     event.recipes.createMixing([Fluid.of('kubejs:fluid6',500)],[
@@ -18,7 +22,7 @@ onEvent('recipes',event=>{
         Item.of('8x kubejs:item1-2').withChance(1)
     ],'kubejs:step1',[
         event.recipes.createCutting('kubejs:proc1','kubejs:proc1'),
-        event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:cake_knife').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Ingredient.of("#kubejs:cake_knives")])
     ]).transitionalItem('kubejs:proc1').loops(2)
     event.recipes.createSequencedAssembly([
         Item.of('3x kubejs:step3-1').withChance(90),
@@ -26,14 +30,14 @@ onEvent('recipes',event=>{
         Item.of('kubejs:step3-1').withChance(3),
         Item.of('16x kubejs:item1-1').withChance(2)
     ],'kubejs:step2',[
-        event.recipes.createDeploying('kubejs:proc2',['kubejs:proc2',Item.of('kubejs:cake_knife').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc2',['kubejs:proc2',Ingredient.of("#kubejs:cake_knives")])
     ]).transitionalItem('kubejs:proc2').loops(2)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step3-2').withChance(0.8),
         Item.of('4x kubejs:item1-1').withChance(0.1),
         Item.of('kubejs:fail2').withChance(0.1)
     ],'kubejs:step3-1',[
-        event.recipes.createDeploying('kubejs:proc3-1',['kubejs:proc3-1',Item.of('kubejs:cake_knife').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc3-1',['kubejs:proc3-1',Ingredient.of("#kubejs:cake_knives")])
     ]).transitionalItem('kubejs:proc3-1').loops(1)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step4').withChance(75),
@@ -41,7 +45,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:fail1').withChance(15)
     ],'kubejs:step3-1',[
         event.recipes.createFilling('kubejs:proc3-1',['kubejs:proc3-1',Fluid.of('kubejs:fluid1',200)]),
-        event.recipes.createDeploying('kubejs:proc3-1',['kubejs:proc3-1',Item.of(Item.of('kubejs:cake_shovel').ignoreNBT()).ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc3-1',['kubejs:proc3-1',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createDeploying('kubejs:proc3-1',['kubejs:proc3-1','kubejs:step3-2'])
     ]).transitionalItem('kubejs:proc3-1').loops(2)
     event.recipes.createSequencedAssembly([
@@ -58,7 +62,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:fail1').withChance(3)
     ],'kubejs:step5',[
         event.recipes.createFilling('kubejs:proc5',['kubejs:proc5',Fluid.of('kubejs:fluid1',200)]),
-        event.recipes.createDeploying('kubejs:proc5',['kubejs:proc5',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc5',['kubejs:proc5',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createDeploying('kubejs:proc5',['kubejs:proc5','kubejs:step3-1'])
     ]).transitionalItem('kubejs:proc5').loops(1)
     //裱花
@@ -68,45 +72,45 @@ onEvent('recipes',event=>{
         Item.of('kubejs:fail3').withChance(25)
     ],'kubejs:step6',[
         event.recipes.createFilling('kubejs:proc6',['kubejs:proc6',Fluid.of('kubejs:fluid1',400)]),
-        event.recipes.createDeploying('kubejs:proc6',['kubejs:proc6',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc6',['kubejs:proc6',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createPressing('kubejs:proc6','kubejs:proc6'),
-        event.recipes.createDeploying('kubejs:proc6',['kubejs:proc6',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc6',['kubejs:proc6',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:proc6').loops(4)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step8-1').withChance(65),
         Item.of('kubejs:fail3').withChance(35)
     ],'kubejs:step7',[
         event.recipes.createFilling('kubejs:proc7',['kubejs:proc7',Fluid.of('kubejs:fluid3',300)]),
-        event.recipes.createDeploying('kubejs:proc7',['kubejs:proc7',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc7',['kubejs:proc7',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createFilling('kubejs:proc7',['kubejs:proc7',Fluid.of('kubejs:fluid2',100)]),
-        event.recipes.createDeploying('kubejs:proc7',['kubejs:proc7',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc7',['kubejs:proc7',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:proc7').loops(4)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step8-2').withChance(6),
         Item.of('kubejs:fail3').withChance(4)
     ],'kubejs:step8-1',[
         event.recipes.createFilling('kubejs:proc8-1',['kubejs:proc8-1',Fluid.of('kubejs:fluid5',200)]),
-        event.recipes.createDeploying('kubejs:proc8-1',['kubejs:proc8-1',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc8-1',['kubejs:proc8-1',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createFilling('kubejs:proc8-1',['kubejs:proc8-1',Fluid.of('kubejs:fluid1',200)]),
-        event.recipes.createDeploying('kubejs:proc8-1',['kubejs:proc8-1',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc8-1',['kubejs:proc8-1',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:proc8-1').loops(4)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step8-3').withChance(6),
         Item.of('kubejs:fail3').withChance(4)
     ],'kubejs:step8-2',[
         event.recipes.createFilling('kubejs:proc8-2',['kubejs:proc8-2',Fluid.of('kubejs:fluid3',200)]),
-        event.recipes.createDeploying('kubejs:proc8-2',['kubejs:proc8-2',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc8-2',['kubejs:proc8-2',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createFilling('kubejs:proc8-2',['kubejs:proc8-2',Fluid.of('kubejs:fluid1',200)]),
-        event.recipes.createDeploying('kubejs:proc8-2',['kubejs:proc8-2',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc8-2',['kubejs:proc8-2',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:proc8-2').loops(4)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step9').withChance(6),
         Item.of('kubejs:fail3').withChance(4)
     ],'kubejs:step8-3',[
         event.recipes.createFilling('kubejs:proc8-3',['kubejs:proc8-3',Fluid.of('kubejs:fluid5',200)]),
-        event.recipes.createDeploying('kubejs:proc8-3',['kubejs:proc8-3',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc8-3',['kubejs:proc8-3',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createFilling('kubejs:proc8-3',['kubejs:proc8-3',Fluid.of('kubejs:fluid4',200)]),
-        event.recipes.createDeploying('kubejs:proc8-3',['kubejs:proc8-3',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:proc8-3',['kubejs:proc8-3',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:proc8-3').loops(4)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step10').withChance(55),
@@ -114,7 +118,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:step8-3').withChance(10)
     ],'kubejs:step9',[
         event.recipes.createFilling('kubejs:proc9',['kubejs:proc9',Fluid.of('create:chocolate',1000)]),
-        event.recipes.createDeploying('kubejs:proc9',['kubejs:proc9',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:proc9',['kubejs:proc9',Ingredient.of("#kubejs:cake_shovels")]),
     ]).transitionalItem('kubejs:proc8-3').loops(2)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step11').withChance(55),
@@ -170,7 +174,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:item2').withChance(0.85),
         Item.of('kubejs:item2').withChance(0.8),
         Item.of('kubejs:item2').withChance(0.75)
-    ],['create:bar_of_chocolate',Item.of('kubejs:cake_knife').ignoreNBT()])
+    ],['create:bar_of_chocolate',Ingredient.of("#kubejs:cake_knives")])
     event.recipes.createMixing(Item.of('kubejs:item3').withChance(0.8),[
         Fluid.of('milk',300),
         Fluid.of('kubejs:fluid1',100),
@@ -196,7 +200,7 @@ onEvent('recipes',event=>{
         Item.of('kubejs:step1').withChance(0.75),
         Item.of('4x kubejs:item1-1').withChance(0.25)
     ],'kubejs:fail1',[
-        event.recipes.createDeploying('kubejs:procfail1',['kubejs:procfail1',Item.of('kubejs:cake_knife').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:procfail1',['kubejs:procfail1',Ingredient.of("#kubejs:cake_knives")]),
         event.recipes.createPressing('kubejs:procfail1','kubejs:procfail1')
     ]).transitionalItem('kubejs:procfail1').loops(2)
     event.recipes.createSequencedAssembly([
@@ -205,15 +209,15 @@ onEvent('recipes',event=>{
         Item.of('kubejs:item1-1').withChance(0.2),
         Item.of('4x kubejs:item1-2').withChance(0.1)
     ],'kubejs:fail2',[
-        event.recipes.createDeploying('kubejs:procfail2',['kubejs:procfail2',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:procfail2',['kubejs:procfail2',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createPressing('kubejs:procfail2','kubejs:procfail2')
     ]).transitionalItem('kubejs:procfail2').loops(1)
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step7').withChance(0.9),
         Item.of('kubejs:fail1').withChance(0.1)
     ],'kubejs:fail3',[
-        event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Item.of('kubejs:cake_shovel').ignoreNBT()]),
+        event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Ingredient.of("#kubejs:cake_shovels")]),
         event.recipes.createFilling('kubejs:procfail3',['kubejs:procfail3',Fluid.of('kubejs:fluid1',1000)]),
-        event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Item.of('kubejs:cake_shovel').ignoreNBT()])
+        event.recipes.createDeploying('kubejs:procfail3',['kubejs:procfail3',Ingredient.of("#kubejs:cake_shovels")])
     ]).transitionalItem('kubejs:procfail3').loops(1)
 })

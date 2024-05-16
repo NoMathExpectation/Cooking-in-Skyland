@@ -60,5 +60,20 @@ onEvent('recipes',event=>{
         Item.of("brown_mushroom").withChance(0.6),
         Item.of("brown_mushroom").withChance(0.7),
     ],'farmersdelight:brown_mushroom_colony')
+
+    event.shaped('lava_bucket',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:'coal',
+        B:'bucket'
+    })
+    event.shaped('kubejs:fake_bread',[
+        'AAA'
+    ],{
+        A:'wheat'
+    })
+    event.shapeless('3x wheat','kubejs:fake_bread')
 })
 

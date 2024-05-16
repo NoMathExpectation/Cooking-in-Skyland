@@ -17,6 +17,7 @@ onEvent("recipes",event=>{
     event.blasting('minecraft:cobbled_deepslate','minecraft:tuff')
     event.remove({output:'minecraft:deepslate'})
     event.blasting('minecraft:deepslate','minecraft:cobbled_deepslate')
+    event.recipes.createCompacting('deepslate',['cobblestone','copper_ingot','create:zinc_ingot']).heated()
     event.remove({output:'create:basin'})
     event.shaped('create:basin',[
         'A A',
@@ -153,14 +154,14 @@ onEvent("recipes",event=>{
         C:'create:shaft'
     })
     //食用油部分
-    event.recipes.createCompacting(Fluid.of('kubejs:oil',100),'#forge:seeds')
-        .id('3:crank')
-    event.recipes.createCompacting(Fluid.of('kubejs:oil',400),'#forge:seeds')
+    event.recipes.createCompacting(Fluid.of('kubejs:oil',300),'3x #forge:seeds')
+        .id('oil:1')
+    event.recipes.createCompacting(Fluid.of('kubejs:oil',800),'2x #forge:seeds')
         .heated()
-        .id('2:brank')
+        .id('oil:2')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',1000),'#forge:seeds')
         .superheated()
-        .id('1:arank')
+        .id('oil:3')
         /*
     event.recipes.createCompacting(Fluid.of('kubejs:oil',50),'#minecraft:flowers')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',200),'#minecraft:flowers')

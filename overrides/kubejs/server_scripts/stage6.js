@@ -12,24 +12,24 @@ onEvent('recipes',event=>{
     event.recipes.createCompacting([
       'end_stone',
       Item.of('minecraft:end_stone').withChance(0.6),
-      Item.of('minecraft:end_stone').withChance(0.4)
+      Item.of('minecraft:end_stone').withChance(0.8)
     ],['nether_wart_block','warped_wart_block','magma_cream']).superheated()
     event.recipes.createPressing('exnihilosequentia:crushed_end_stone','end_stone')
     event.recipes.createMixing([
       'ender_pearl',
-      Item.of('ender_pearl').withChance(0.4),
+      Item.of('ender_pearl').withChance(0.8),
       Item.of('ender_pearl').withChance(0.6),
     ],['exnihilosequentia:crushed_end_stone',Fluid.of('water',250)])
     event.recipes.createMixing([
       'chorus_fruit',
-      Item.of('chorus_fruit').withChance(0.4),
+      Item.of('chorus_fruit').withChance(0.8),
       Item.of('chorus_fruit').withChance(0.6)
     ],['exnihilosequentia:crushed_end_stone',Fluid.of('exnihilosequentia:witch_water',250)])
     
     event.recipes.createMixing(Fluid.of('create_central_kitchen:dragon_breath',250),[
         'end_crystal','8x end_rod','8x purpur_block'
     ]).superheated()
-    event.recipes.createMixing([Fluid.of('create_central_kitchen:dragon_breath',50),Item.of('dragon_head').withChance(0.9)],['dragon_head'])
+    event.recipes.createMixing([Fluid.of('create_central_kitchen:dragon_breath',50),Item.of('dragon_head').withChance(0.95)],['dragon_head'])
     event.recipes.createFilling('dragon_head',[Fluid.of("create_central_kitchen:dragon_breath",200),'kubejs:smart_zombie'])
     event.recipes.createMixing([Item.of('chorus_fruit').withChance(0.5),'chorus_fruit'],['chorus_fruit',Fluid.of('exnihilosequentia:witch_water',500)])
     //合金

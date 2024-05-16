@@ -142,7 +142,7 @@ onEvent('recipes',event=>{
     event.recipes.createMixing('rainbowcompound:rainbow_apple_stew',['2x rainbowcompound:rainbow_apple','2x apple','sugar','4x farmersdelight:cabbage_leaf']).heated()
     event.remove({output:'rainbowcompound:enchanted_golden_apple_stew'})
     event.recipes.createMixing('rainbowcompound:enchanted_golden_apple_stew',['2x enchanted_golden_apple','2x apple','sugar','4x farmersdelight:cabbage_leaf']).heated()
-    event.recipes.createMixing('apple',['grass_block','#minecraft:saplings','bone_meal'])
+    event.recipes.createMixing('10x apple',['grass_block','#minecraft:saplings','bone_meal'])
 
     event.remove({output:'beetroot_soup'})
     event.recipes.createMixing('beetroot_soup',['bowl','5x beetroot','sugar']).heated()
@@ -160,4 +160,11 @@ onEvent('recipes',event=>{
     event.remove({output:'rainbowcompound:shadow_steel_tea'})
     event.remove({output:'rainbowcompound:refined_radiance_tea'})
     event.remove({output:'farmersdelight:fried_rice'})
+    //extra
+    event.remove({output:'farmersdelight:glow_berry_custard'})
+    event.remove({output:'farmersdelight:tomato_sauce',type:'farmersdelight:cooking'})
+    event.remove({output:'farmersdelight:apple_cider',type:'farmersdelight:cooking'})
+    event.remove({output:'farmersdelight:hot_cocoa',type:'farmersdelight:cooking'})
+    event.remove({output:'farmersdelight:dog_food'})
+    event.recipes.createMixing('farmersdelight:dog_food',['rotten_flesh','bone_meal','#farmersdelight:wolf_prey','farmersdelight:rice','bowl']).heated()
 })

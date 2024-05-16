@@ -26,7 +26,7 @@ B:game_intro_fade_out = 'true';
 B:show_custom_window_icon = 'false';
 S:custom_window_icon_macos = '';
 S:custom_window_icon_32 = '/config/fancymenu/assets/2.png';
-S:custom_window_title = '空岛厨房：工业化美食和自动化生产          Chineselulil出品';
+S:custom_window_title = '天空厨房：工业化美食和自动化生产          Chineselulil出品';
 S:custom_window_icon_16 = '';
 
 

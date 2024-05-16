@@ -137,4 +137,10 @@ onEvent('recipes',event => {
     })
     event.remove({input:'andesite',type:'create:milling'})
     event.recipes.createMilling(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
+    event.remove({output:'create:goggles'})
+    event.shaped('create:goggles',[
+        'AAA'
+    ],{
+        A:'stick'
+    })
 })

@@ -13,7 +13,10 @@
 			x: -3.0d
 			y: -2.0d
 			subtitle: "钓鱼佬绝不空军！"
-			description: ["准备一点鱼食，待会钓鱼去"]
+			description: [
+				"准备一点鱼食，待会钓鱼去"
+				"缺蛋白质？要不要试试把捞起来的鱼做成鱼食进行循环..."
+			]
 			dependencies: ["7FF252648E61FCB8"]
 			hide: true
 			id: "7C0A9BB29F07E1E5"

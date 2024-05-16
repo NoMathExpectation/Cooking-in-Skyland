@@ -510,15 +510,36 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -3.0d
-			description: ["没有风帆，你的风车就转不起来"]
+			x: -2.0d
+			y: -1.5d
+			description: [
+				"没有风帆，你的风车就转不起来"
+				"（此乃谎言，实际上羊毛都能让风车转起来）"
+			]
 			dependencies: ["48F81517FA589797"]
+			optional: true
 			id: "5A35B63D83AFCAB4"
 			tasks: [{
 				id: "09C46184E14AA041"
 				type: "item"
 				item: "create:white_sail"
+			}]
+		}
+		{
+			title: "无限水怎么做？"
+			icon: "minecraft:water_bucket"
+			x: 7.0d
+			y: -3.0d
+			subtitle: "你先这样，然后这样，最后这样"
+			description: [
+				"首先摆个无限水出来（这不用教吧？俩水源摆成1x3或者2x2）"
+				"然后用一个管道从无限水格子里抽水，这样你就给你的管道准备好无限水了"
+			]
+			dependencies: ["6EE74CDC6D292549"]
+			id: "39C1D3612E40F30C"
+			tasks: [{
+				id: "635CF24C28B320E6"
+				type: "checkmark"
 			}]
 		}
 	]

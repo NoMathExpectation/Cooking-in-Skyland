@@ -16,6 +16,7 @@ onEvent('jei.hide.items',event=>{
     event.hide('createsifter:andesite_mesh')
     event.hide('createsifter:zinc_mesh')
     event.hide('createsifter:custom_mesh')
+    event.hide('farmersdelight:cooking_pot')
 })
 onEvent('jei.remove.recipes',event=>{
     event.remove('create:mystery_conversion','create:conversion_0')

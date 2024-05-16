@@ -3,15 +3,15 @@ onEvent('recipes',event=>{
     event.recipes.createSequencedAssembly('minecraft:blackstone',
     'minecraft:deepslate',[
         event.recipes.createCutting('kubejs:incomplete_blackstone','kubejs:incomplete_blackstone'),
-        event.recipes.createFilling('kubejs:incomplete_blackstone',['kubejs:incomplete_blackstone',Fluid.of('minecraft:lava',250)]),
+        event.recipes.createFilling('kubejs:incomplete_blackstone',['kubejs:incomplete_blackstone',Fluid.of('minecraft:lava',50)]),
         event.recipes.createPressing('kubejs:incomplete_blackstone','kubejs:incomplete_blackstone')
     ])
     .transitionalItem('kubejs:incomplete_blackstone')
     .loops(2)
     event.recipes.createSequencedAssembly('minecraft:gilded_blackstone',
     'minecraft:blackstone',[
-        event.recipes.createFilling('kubejs:incomplete_gilded_blackstone',['kubejs:incomplete_gilded_blackstone',Fluid.of('minecraft:water',100)]),
-        event.recipes.createFilling('kubejs:incomplete_gilded_blackstone',['kubejs:incomplete_gilded_blackstone',Fluid.of('minecraft:lava',100)]),
+        event.recipes.createFilling('kubejs:incomplete_gilded_blackstone',['kubejs:incomplete_gilded_blackstone',Fluid.of('minecraft:water',50)]),
+        event.recipes.createFilling('kubejs:incomplete_gilded_blackstone',['kubejs:incomplete_gilded_blackstone',Fluid.of('minecraft:lava',25)]),
         event.recipes.createPressing('kubejs:incomplete_gilded_blackstone','kubejs:incomplete_gilded_blackstone')
     ])
     .transitionalItem('kubejs:incomplete_gilded_blackstone')
@@ -104,9 +104,9 @@ onEvent('recipes',event=>{
     .transitionalItem('kubejs:incomplete_burner')
     .loops(1)
     //蛋白质
-    event.recipes.createMixing(Fluid.of('kubejs:protein',50),'farmersdelight:fried_egg').heated()
-    event.recipes.createMixing(Fluid.of('kubejs:protein',250),'farmersdelight:fried_egg').superheated()
-    event.recipes.createMixing(Fluid.of('kubejs:protein',250),'rotten_flesh').superheated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',150),'2x farmersdelight:fried_egg').heated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',400),'farmersdelight:fried_egg').superheated()
+    event.recipes.createMixing(Fluid.of('kubejs:protein',200),'rotten_flesh').superheated()
     event.recipes.createMixing('minecraft:mutton',[
         Fluid.of('kubejs:protein',200),'2x minecraft:string'
     ]).heated()
@@ -224,10 +224,15 @@ onEvent('recipes',event=>{
         B:'farmersdelight:canvas'
     })
 
-    event.recipes.createCompacting('3x sugar',[
+    event.recipes.createMixing('3x sugar',[
         Fluid.of('water',500),
         '2x beetroot'
     ]).heated()
+    event.recipes.createCompacting('5x sugar',[
+        Fluid.of('water',500),
+        '2x beetroot'
+    ]).superheated()
+    
 
     event.remove({output:'create:brass_scaffolding'})
     event.remove({output:'create:copper_scaffolding'})

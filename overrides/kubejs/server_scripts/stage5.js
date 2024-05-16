@@ -128,11 +128,11 @@ onEvent('recipes',event=>{
     ],{
         A:'obsidian',
         B:'diamond',
-        C:'diamond_pickaxe',
+        C:Item.of('diamond_pickaxe').ignoreNBT(),
         D:'create:andesite_alloy',
         E:'cobblestone',
         F:'blaze_powder',
-        G:'netherite_pickaxe'
+        G:Item.of('netherite_pickaxe').ignoreNBT()
     })
     event.recipes.createDeploying([
         Item.of('minecraft:netherite_scrap').withChance(0.2),
