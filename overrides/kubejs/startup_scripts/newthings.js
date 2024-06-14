@@ -140,10 +140,11 @@ onEvent('item.registry',event=>{
     event.create('infinity_ingot')
         //.texture('kubejs:item/infinity_ingot')
         .displayName('无尽锭')
-        .tooltip('§7§o此刻，祂就在这里')
+        .tooltip('§7§o来了，见了，留下一颗星星，走了')
+        //.tooltip('§7§o此刻，祂就在这里')
 
     event.create('double_cake_ingot')
-        .glow(true)
+        //.glow(true)
         .displayName('压缩蛋糕锭')
         .tooltip('§7§o天地藏于浮尘，果壳孕育宇宙')
 
@@ -156,5 +157,12 @@ onEvent('item.registry',event=>{
         .texture('minecraft:item/bread')
         .displayName('§m面包')
         .tooltip('§7只是三个小麦而已，诶嘿')
+})
+onEvent('block.registry',event=>{
+    event.create('infinity_block')
+        .displayName('无尽块')
+        //.tooltip('§7§o来了，见了，留下一颗星星，走了')
+        .material('iron')
+        .lightLevel(1)
 })
 

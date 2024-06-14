@@ -1,3 +1,6 @@
+onEvent('item.tags',event=>{
+    event.add('forge:raw_materials/zinc','exnihilosequentia:raw_zinc')
+})
 onEvent('recipes',event=>{
     //黑石(不是黑丝)
     event.recipes.createSequencedAssembly('minecraft:blackstone',
@@ -44,7 +47,7 @@ onEvent('recipes',event=>{
     .addRoll(0.85,'emerald')
     .addRoll(0.85,'emerald')
 
-
+    event.replaceInput({output:'create:raw_zinc_block'},'create:raw_zinc',Ingredient.of('#forge:raw_materials/zinc'))
     //玫瑰石英
     event.recipes.createCompacting('2x create:polished_rose_quartz',[
         '8x minecraft:redstone',

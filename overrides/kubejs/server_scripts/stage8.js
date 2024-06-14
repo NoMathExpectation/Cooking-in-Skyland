@@ -84,7 +84,7 @@ onEvent('recipes',event=>{
         'BC CBCCCC',
         'BC CB    ',
         'BC CBCCC ',
-        'BBBB BBBB',
+        'BBBBABBBB',
         ' CCCBC CB',
         '    BC CB',
         'CCCCBC CB',
@@ -267,4 +267,21 @@ onEvent('recipes',event=>{
     event.recipes.createDeploying('kubejs:protein_bucket',['kubejs:oil_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])
     event.recipes.createDeploying('milk_bucket',['kubejs:protein_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])
     event.recipes.createDeploying('kubejs:fluid1_bucket',['milk_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])
+
+    event.recipes.createSequencedAssembly([
+        Item.of('cake').withChance(5),
+        Item.of('kubejs:step2').withChance(5),
+        Item.of('kubejs:step4').withChance(9),
+        Item.of('kubejs:step5').withChance(9),
+        Item.of('kubejs:step6').withChance(9),
+        Item.of('kubejs:step7').withChance(9),
+        Item.of('kubejs:step8-1').withChance(9),
+        Item.of('kubejs:step8-2').withChance(9),
+        Item.of('kubejs:step8-3').withChance(9),
+        Item.of('kubejs:step9').withChance(9),
+        Item.of('kubejs:step10').withChance(9),
+        Item.of('kubejs:step11').withChance(9)
+    ],'kubejs:step1',[
+        event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:singularity')]).keepHeldItem()
+    ]).transitionalItem('kubejs:proc1').loops(1)
 })

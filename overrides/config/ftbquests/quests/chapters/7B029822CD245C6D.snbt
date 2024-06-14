@@ -396,6 +396,7 @@
 			title: "动力鞘翅"
 			x: 0.5d
 			y: -2.5d
+			subtitle: "Man! What can I say!"
 			dependencies: ["7FE72B6E9A2816BE"]
 			id: "04E0A4768D8F0BDD"
 			tasks: [{

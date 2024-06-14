@@ -37,6 +37,7 @@
 		{
 			x: -5.0d
 			y: -2.5d
+			subtitle: "淘金热"
 			dependencies: ["579F8D73D88A5AF3"]
 			id: "43332A2ACD258751"
 			tasks: [{
@@ -48,6 +49,7 @@
 		{
 			x: -5.0d
 			y: -4.0d
+			subtitle: "猪灵快乐锭"
 			dependencies: ["43332A2ACD258751"]
 			id: "50ED9E6DA6A87724"
 			tasks: [{
@@ -423,7 +425,10 @@
 		{
 			x: 5.5d
 			y: -2.5d
-			description: ["这不是老番茄，因为下巴不尖"]
+			description: [
+				"这不是老番茄，因为下巴不尖"
+				"（烂掉的番茄可以砸在兄弟身上）"
+			]
 			dependencies: ["4F7AEAC0451F6E6F"]
 			id: "2298A2D6CFC9ED12"
 			tasks: [{
@@ -525,6 +530,7 @@
 		{
 			x: 4.0d
 			y: -4.0d
+			description: ["受够了在机器之间跑酷？试试这个"]
 			dependencies: ["08FFE58FA6998650"]
 			optional: true
 			id: "0C5D8B723B21AC52"

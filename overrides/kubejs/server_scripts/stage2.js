@@ -154,9 +154,9 @@ onEvent("recipes",event=>{
         C:'create:shaft'
     })
     //食用油部分
-    event.recipes.createCompacting(Fluid.of('kubejs:oil',300),'3x #forge:seeds')
+    event.recipes.createCompacting(Fluid.of('kubejs:oil',500),'5x #forge:seeds')
         .id('oil:1')
-    event.recipes.createCompacting(Fluid.of('kubejs:oil',800),'2x #forge:seeds')
+    event.recipes.createCompacting(Fluid.of('kubejs:oil',500),'3x #forge:seeds')
         .heated()
         .id('oil:2')
     event.recipes.createCompacting(Fluid.of('kubejs:oil',1000),'#forge:seeds')

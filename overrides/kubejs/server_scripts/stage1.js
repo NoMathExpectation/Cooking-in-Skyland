@@ -7,7 +7,22 @@ onEvent('recipes',event => {
     event.remove({output:'farmersdelight:skillet'})
         //删除烟熏炉 高炉
     event.remove({output:'minecraft:smoker'})
+    event.shaped('smoker',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:'cobblestone',
+        B:'campfire'
+    })
     event.remove({output:'minecraft:blast_furnace'})
+    event.shaped('blast_furnace',[
+        'AAA',
+        'A A',
+        'AAA'
+    ],{
+        A:'cobbled_deepslate'
+    })
         //修改泥土 沙子 沙砾 尘土 筛网配方
     event.remove({input:'minecraft:dirt',type:'exnihilosequentia:sieve'})
     event.recipes.exnihilosequentia.sieve('minecraft:dirt','exnihilosequentia:stone_pebble')
@@ -137,6 +152,7 @@ onEvent('recipes',event => {
     })
     event.remove({input:'andesite',type:'create:milling'})
     event.recipes.createMilling(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
+    event.recipes.createCrushing(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.7),Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
     event.remove({output:'create:goggles'})
     event.shaped('create:goggles',[
         'AAA'

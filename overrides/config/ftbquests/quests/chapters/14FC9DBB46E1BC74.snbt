@@ -170,7 +170,7 @@
 		{
 			x: -3.0d
 			y: -3.0d
-			subtitle: "这下终于裱好了，又是裱错又是误碰的..."
+			subtitle: "现在侧面搞定了，该装饰顶面了"
 			dependencies: ["6ECCB88F8802BAED"]
 			id: "25B2A4ED119C6EDD"
 			tasks: [{
@@ -182,7 +182,7 @@
 		{
 			x: -1.5d
 			y: -3.0d
-			subtitle: "现在该给蛋糕表面淋上巧克力酱了"
+			subtitle: "给蛋糕表面淋上巧克力酱"
 			dependencies: ["25B2A4ED119C6EDD"]
 			id: "024A01ACC28EA9F1"
 			tasks: [{
@@ -194,7 +194,7 @@
 		{
 			x: 0.0d
 			y: -3.0d
-			subtitle: "然后在凝固的巧克力表面加点装饰..."
+			subtitle: "最后在凝固的巧克力表面加点装饰..."
 			dependencies: ["024A01ACC28EA9F1"]
 			id: "477832968521A103"
 			tasks: [{
@@ -369,6 +369,7 @@
 		{
 			x: -3.0d
 			y: -6.0d
+			subtitle: "我喜欢吃冰淇淋"
 			description: ["把奶油和牛奶混合冰冻就可以了"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
@@ -382,7 +383,7 @@
 		{
 			x: -4.5d
 			y: -1.5d
-			subtitle: "哎呀！不知道哪里出问题总之不对劲！"
+			subtitle: "哎呀！蛋糕坏掉了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
 			id: "27FF9B39050CEE08"

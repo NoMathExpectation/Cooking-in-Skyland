@@ -75,5 +75,17 @@ onEvent('recipes',event=>{
         A:'wheat'
     })
     event.shapeless('3x wheat','kubejs:fake_bread')
+    event.blasting('create:zinc_block','create:raw_zinc_block')
+    event.blasting('gold_block','raw_gold_block')
+    event.blasting('copper_block','raw_copper_block')
+    event.blasting('iron_block','raw_iron_block')
+    event.shaped('kubejs:infinity_block',[
+        'AAA',
+        'AAA',
+        'AAA'
+    ],{
+        A:"kubejs:infinity_ingot"
+    })
+    event.shapeless('9x kubejs:infinity_ingot','kubejs:infinity_block')
 })
 

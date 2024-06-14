@@ -26,7 +26,7 @@
 			title: "木板？木块！"
 			x: -4.0d
 			y: -4.5d
-			description: ["我早就想吐槽了，跟原木一样大小的木板能叫木板？"]
+			description: ["早就想吐槽了，跟原木一样大小的木板能叫木板？"]
 			dependencies: ["68CFCF52CCC2DF4C"]
 			id: "3638713CC717D290"
 			tasks: [{
@@ -55,6 +55,7 @@
 			title: "金箍棒（幻视"
 			x: -4.0d
 			y: -6.0d
+			subtitle: "我是个巫师，不是乱挥棍子的狒狒"
 			description: ["当你在路上捡到一根长度合适大小适中的棒子的时候，你会不会把他挥舞起来"]
 			dependencies: ["3638713CC717D290"]
 			id: "24DB6110DEAE6C0A"
@@ -87,7 +88,7 @@
 			title: "钻木取火"
 			x: -2.5d
 			y: -6.0d
-			description: ["火把不一定需要木炭或者煤炭啥的，你只需要把这根棒子狠狠地快速摩擦就能生火了"]
+			description: ["火把不一定需要木炭或者煤炭啥的，你只需要把这根棒子狠狠地快速摩擦（合成）就能生火了"]
 			dependencies: ["24DB6110DEAE6C0A"]
 			id: "14BE71744A769546"
 			tasks: [{
@@ -291,10 +292,7 @@
 			title: "乱披风锤法"
 			x: 3.5d
 			y: -3.0d
-			description: [
-				"只要连续锤出81锤，就能将..."
-				"咳咳...总之用锤子打碎安山岩就好了"
-			]
+			description: ["...总之用锤子打碎安山岩就好了"]
 			dependencies: ["157CE210A9E83E14"]
 			id: "3064F1BCF362DB2C"
 			tasks: [{
@@ -714,6 +712,7 @@
 		{
 			x: 8.0d
 			y: -3.0d
+			subtitle: "前轱辘转后轱辘不转思密达"
 			description: [
 				"你知道吗？"
 				"很早以前MC把齿轮加入了游戏，并且有齿轮电路"
@@ -762,6 +761,10 @@
 			x: 0.5d
 			y: -6.0d
 			subtitle: "还缺泥土吗？试试这个！"
+			description: [
+				"别傻乎乎地拿锄头开垦，试试用筛子过筛"
+				"（就是你小子拿筛子垦地是吧）"
+			]
 			dependencies: ["113C7F997CAD184A"]
 			id: "4DA43D12BF2B587E"
 			tasks: [{

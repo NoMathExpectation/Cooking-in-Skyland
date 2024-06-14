@@ -11,6 +11,7 @@
 		{
 			x: 1.0d
 			y: 0.0d
+			subtitle: "我们得更深入一些！"
 			description: ["普通的石头不足以进行工业化，是时候获取更加深层的石头了！"]
 			dependencies: ["2AD382183C74DD42"]
 			hide: true
@@ -54,6 +55,7 @@
 		{
 			x: 4.0d
 			y: 0.0d
+			subtitle: "生产队的驴都不敢这么歇"
 			dependencies: ["7AE4757D4C5A7952"]
 			id: "3C073D71B1D399AA"
 			tasks: [{
@@ -202,6 +204,7 @@
 		{
 			x: 5.5d
 			y: 0.0d
+			subtitle: "功率 压力 扬程..."
 			dependencies: ["6EE74CDC6D292549"]
 			id: "4DBD60B8C7DB1DC1"
 			tasks: [{
@@ -289,6 +292,7 @@
 		{
 			x: 7.0d
 			y: 0.0d
+			subtitle: "翻滚吧！牛宝宝"
 			dependencies: ["00706BA6E9598D7E"]
 			optional: true
 			id: "3C34FCE45AC8F91C"
@@ -452,10 +456,7 @@
 		{
 			x: 11.5d
 			y: 4.5d
-			description: [
-				"南方糖的来源是甘蔗，而北方是甜菜"
-				"（话说咱们扯了好多地理知识点欸）"
-			]
+			description: ["南方糖的来源是甘蔗，而北方是甜菜"]
 			dependencies: ["0FDC088A43B9A1C3"]
 			id: "498210FFDBC544BA"
 			tasks: [{
@@ -467,6 +468,7 @@
 		{
 			x: 13.0d
 			y: 4.5d
+			subtitle: "糖，糖完了都"
 			dependencies: ["498210FFDBC544BA"]
 			id: "0A5AFBF4D9898F8A"
 			tasks: [{

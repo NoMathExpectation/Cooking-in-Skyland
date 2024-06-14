@@ -65,9 +65,51 @@ onEvent('recipes',event=>{
     })
 
     event.remove({output:'sophisticatedbackpacks:battery_upgrade'})
+    //背包系列
+    
+    /*Ingredient.registerCustomIngredientAction('packupgrade',(A,C)=>{
+        let D = C.get(C.find(Ingredient.of('#curios:back'))).nbt
+        if (A.nbt == null)
+            A.nbt = {}
+        A.nbt = A.nbt.merge({uuid:D.get()})
+        return A;
+    })
+    Ingredient.registerCustomIngredientAction('packupgrade2',(A,C)=>{
+        A.nbt = C.nbt
+        return A;
+    })*/
 
     event.remove({output:'sophisticatedbackpacks:iron_backpack'})
-    event.shaped('sophisticatedbackpacks:iron_backpack',[
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+          {
+            "itemRegistryName": "sophisticatedbackpacks:iron_backpack",
+            "type": "sophisticatedcore:item_enabled"
+          }
+        ],
+        "pattern": [
+          "AIA",
+          "IBI",
+          "AIA"
+        ],
+        "key": {
+          "I": {
+            "tag": "forge:ingots/iron"
+          },
+          "B": {
+            "item": "sophisticatedbackpacks:copper_backpack"
+          },
+          'A':
+          {
+            'item':'create:zinc_ingot'
+          }
+        },
+        "result": {
+          "item": "sophisticatedbackpacks:iron_backpack"
+        }
+      })
+    /*event.shaped('sophisticatedbackpacks:iron_backpack',[
         'ABA',
         'BCB',
         'ABA'
@@ -75,9 +117,38 @@ onEvent('recipes',event=>{
         A:'create:zinc_ingot',
         B:'iron_ingot',
         C:'sophisticatedbackpacks:copper_backpack'
-    })
+    })*/
     event.remove({output:'sophisticatedbackpacks:diamond_backpack'})
-    event.recipes.createMechanicalCrafting('sophisticatedbackpacks:diamond_backpack',[
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+          {
+            "itemRegistryName": "sophisticatedbackpacks:diamond_backpack",
+            "type": "sophisticatedcore:item_enabled"
+          }
+        ],
+        "pattern": [
+          "AIA",
+          "IBI",
+          "AIA"
+        ],
+        "key": {
+          "I": {
+            "item": "lapis_lazuli"
+          },
+          "B": {
+            "item": "sophisticatedbackpacks:gold_backpack"
+          },
+          'A':
+          {
+            'item':'emerald'
+          }
+        },
+        "result": {
+          "item": "sophisticatedbackpacks:diamond_backpack"
+        }
+      })
+    /*event.recipes.createMechanicalCrafting('sophisticatedbackpacks:diamond_backpack',[
         'ABA',
         'BCB',
         'ABA'
@@ -85,9 +156,38 @@ onEvent('recipes',event=>{
         A:'emerald',
         B:'lapis_lazuli',
         C:'sophisticatedbackpacks:gold_backpack'
-    })
+    })*/
     event.remove({output:'sophisticatedbackpacks:netherite_backpack'})
-    event.recipes.createMechanicalCrafting('sophisticatedbackpacks:netherite_backpack',[
+    event.custom({
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "conditions": [
+          {
+            "itemRegistryName": "sophisticatedbackpacks:netherite_backpack",
+            "type": "sophisticatedcore:item_enabled"
+          }
+        ],
+        "pattern": [
+          "AIA",
+          "IBI",
+          "AIA"
+        ],
+        "key": {
+          "I": {
+            "item": "netherite_block"
+          },
+          "B": {
+            "item": "sophisticatedbackpacks:diamond_backpack"
+          },
+          'A':
+          {
+            'item':'diamond_block'
+          }
+        },
+        "result": {
+          "item": "sophisticatedbackpacks:netherite_backpack"
+        }
+      })
+    /*event.recipes.createMechanicalCrafting('sophisticatedbackpacks:netherite_backpack',[
         ' ABA ',
         'AABAA',
         'BBCBB',
@@ -97,5 +197,5 @@ onEvent('recipes',event=>{
         A:'diamond',
         B:'netherite_ingot',
         C:'sophisticatedbackpacks:diamond_backpack'
-    })
+    })*/
 })
