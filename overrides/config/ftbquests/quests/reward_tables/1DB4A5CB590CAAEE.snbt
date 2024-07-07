@@ -18,5 +18,13 @@
 		{ item: "minecraft:vine" }
 		{ item: "minecraft:glow_lichen" }
 		{ item: "minecraft:lily_pad" }
+		{ item: "quark:chorus_weeds" }
+		{ item: "quark:chorus_twist" }
+		{ item: "babyfat:water_lettuce" }
+		{ item: "quark:glow_lichen_growth" }
+		{ item: "quark:glow_shroom_ring" }
+		{ item: "quark:glow_shroom" }
+		{ item: "minecraft:tall_grass" }
+		{ item: "minecraft:large_fern" }
 	]
 }

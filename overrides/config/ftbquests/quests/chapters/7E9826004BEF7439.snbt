@@ -1,22 +1,21 @@
 {
 	id: "7E9826004BEF7439"
 	group: "4D81F2802AE7DA76"
-	order_index: 3
+	order_index: 2
 	filename: "7E9826004BEF7439"
-	title: "环境的美化：装饰"
-	icon: "minecraft:azure_bluet"
+	title: "牢固的建材：方块"
+	icon: "copycats:copycat_block"
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: true
 	quests: [
 		{
-			title: "又或者是建筑大佬"
-			x: -6.0d
-			y: 0.5d
-			subtitle: "总之不是pvp大佬"
+			title: "土木老哥就业点"
+			x: -3.0d
+			y: 1.0d
 			description: [
 				"这里提供了一些装饰方块，供你装饰一下你的空岛"
-				"在这个章节中，任务形状为方形的任务是交易型任务，你可以根据任务要求换取一些物资"
+				"当然可以用的方块不止这些，在JEI里面慢慢找吧"
 			]
 			dependencies: ["6D3EC08B948ED057"]
 			hide: true
@@ -25,225 +24,6 @@
 			tasks: [{
 				id: "5115A238DAEE06C7"
 				type: "checkmark"
-			}]
-		}
-		{
-			title: "花"
-			icon: "minecraft:dandelion"
-			x: -3.5d
-			y: -2.5d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "44605E32616E6D98"
-			tasks: [{
-				id: "3B311AD051B7A032"
-				type: "item"
-				item: "create:tree_fertilizer"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "4B773710FD60B872"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 5019194028131084911L
-			}]
-		}
-		{
-			title: "树苗"
-			icon: "minecraft:oak_sapling"
-			x: -2.0d
-			y: -2.5d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "40C3AC4B9E7B1457"
-			tasks: [
-				{
-					id: "66CF6E0F02C0BE11"
-					type: "item"
-					item: "create:tree_fertilizer"
-					consume_items: true
-				}
-				{
-					id: "0D2D831271F9E2BA"
-					type: "item"
-					item: "minecraft:oak_sapling"
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "643BF228BA1C3269"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 1859286757284857000L
-			}]
-		}
-		{
-			title: "染料"
-			x: -2.0d
-			y: -1.0d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "7D38C6375A571DB5"
-			tasks: [{
-				id: "5EAB4C1A79D32164"
-				type: "item"
-				item: "minecraft:white_dye"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "445D3DF18641D771"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 3153998298479458326L
-			}]
-		}
-		{
-			title: "小型植物"
-			icon: "minecraft:grass"
-			x: -3.5d
-			y: -1.0d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "474C078369CF290A"
-			tasks: [{
-				id: "3A090A1B45E3077A"
-				type: "item"
-				item: "minecraft:bone_meal"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "79F6091BCA264D91"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 2140518015698774766L
-			}]
-		}
-		{
-			title: "养猫许可证"
-			icon: "minecraft:cooked_cod"
-			x: -3.5d
-			y: 0.5d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "5D3159C00C88001A"
-			tasks: [
-				{
-					id: "0F856EA723E29DE0"
-					type: "item"
-					item: "farmersdelight:cooked_cod_slice"
-					count: 8L
-					consume_items: true
-				}
-				{
-					id: "36E9F36DC494CBFC"
-					type: "item"
-					item: "farmersdelight:cooked_salmon_slice"
-					count: 8L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "1E5E8197BD50212F"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 2982513278498790282L
-			}]
-		}
-		{
-			title: "养狗许可证"
-			icon: "minecraft:bone"
-			x: -2.0d
-			y: 0.5d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "4F0094DFEBDE338C"
-			tasks: [
-				{
-					id: "63559659E95BEEC8"
-					type: "item"
-					item: "minecraft:cooked_chicken"
-					count: 4L
-					consume_items: true
-				}
-				{
-					id: "14EA9FBB2D7BA596"
-					type: "item"
-					item: "minecraft:cooked_porkchop"
-					count: 4L
-					consume_items: true
-				}
-				{
-					id: "1C3B567BCB3D884A"
-					type: "item"
-					item: "minecraft:cooked_mutton"
-					count: 4L
-					consume_items: true
-				}
-				{
-					id: "1059DEBCAC91CD89"
-					type: "item"
-					item: "minecraft:cooked_beef"
-					count: 4L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "354D8CB62A6EAC96"
-				type: "item"
-				item: "minecraft:wolf_spawn_egg"
-			}]
-		}
-		{
-			title: "美观鱼市场"
-			icon: "minecraft:tropical_fish"
-			x: -3.5d
-			y: 2.0d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "568341453DE7CEC3"
-			tasks: [{
-				id: "3745CB2A6A2E85B1"
-				type: "item"
-				item: "kubejs:fishfood"
-				count: 16L
-				consume_items: true
-			}]
-			rewards: [{
-				id: "4F46E272BDA30FA3"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 6742805589228151163L
-			}]
-		}
-		{
-			title: "六角小恐龙"
-			icon: "minecraft:axolotl_bucket"
-			x: -2.0d
-			y: 2.0d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "024C4DE2283C8659"
-			tasks: [{
-				id: "408DB9E2B8269DC2"
-				type: "item"
-				item: "minecraft:tropical_fish"
-				count: 8L
-				consume_items: true
-			}]
-			rewards: [{
-				id: "657C680102FC59C9"
-				type: "item"
-				item: "minecraft:axolotl_spawn_egg"
 			}]
 		}
 		{
@@ -470,7 +250,8 @@
 		{
 			x: -0.5d
 			y: 2.0d
-			dependencies: ["7002E44FFB94AD50"]
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "6CF3501E46327E6D"
 			tasks: [{
 				id: "3CC02284FDC5EC66"
@@ -481,7 +262,8 @@
 		{
 			x: 1.0d
 			y: 2.0d
-			dependencies: ["7002E44FFB94AD50"]
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "30B733E6C957359A"
 			tasks: [{
 				id: "30474548B1F9D20D"
@@ -492,7 +274,8 @@
 		{
 			x: 2.5d
 			y: 2.0d
-			dependencies: ["7002E44FFB94AD50"]
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "05B6B8645CDE2E22"
 			tasks: [{
 				id: "3BC79D69D2B9A7AA"
@@ -501,9 +284,10 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 2.0d
-			dependencies: ["7002E44FFB94AD50"]
+			x: 2.5d
+			y: 3.5d
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "181B04C139F695A3"
 			tasks: [{
 				id: "6D8B983A7EE394F9"
@@ -514,7 +298,8 @@
 		{
 			x: -0.5d
 			y: 3.5d
-			dependencies: ["7002E44FFB94AD50"]
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "59DABDA741673394"
 			tasks: [{
 				id: "4BBA7D9FDBAD409C"
@@ -523,9 +308,10 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 3.5d
-			dependencies: ["7002E44FFB94AD50"]
+			x: -0.5d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "11DBA4AF11EB794C"
 			tasks: [{
 				id: "4F2DA6B62C732A44"
@@ -534,9 +320,10 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 3.5d
-			dependencies: ["7002E44FFB94AD50"]
+			x: 1.0d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "7A7F3AAD90960764"
 			tasks: [{
 				id: "5FAEFB6CE7C56E3F"
@@ -545,9 +332,10 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 3.5d
-			dependencies: ["7002E44FFB94AD50"]
+			x: 2.5d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["0E404FA4E40CCB43"]
 			id: "0046575FFA1C88E7"
 			tasks: [{
 				id: "3F0B63D33417C0EA"
@@ -556,31 +344,9 @@
 			}]
 		}
 		{
-			title: "旗帜图案"
-			icon: "minecraft:mojang_banner_pattern"
-			x: -3.5d
-			y: 3.5d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "70DDC436716A5CF8"
-			tasks: [{
-				id: "6675C4B69E2955C7"
-				type: "item"
-				item: "minecraft:white_wool"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "14876B027552967E"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 5362436926700261591L
-			}]
-		}
-		{
 			title: "地狱矿石"
 			icon: "minecraft:netherrack"
-			x: 7.0d
+			x: 8.5d
 			y: 3.5d
 			dependencies: ["7002E44FFB94AD50"]
 			id: "7E051B4EA7E3BE5D"
@@ -591,7 +357,7 @@
 		}
 		{
 			x: 8.5d
-			y: 3.5d
+			y: 5.0d
 			hide_dependency_lines: false
 			dependencies: ["7E051B4EA7E3BE5D"]
 			id: "29766775503E5423"
@@ -602,8 +368,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 3.5d
+			x: 8.5d
+			y: 2.0d
 			hide_dependency_lines: false
 			dependencies: ["7E051B4EA7E3BE5D"]
 			id: "3E10790621AE86CE"
@@ -614,30 +380,9 @@
 			}]
 		}
 		{
-			title: "其他头颅"
-			x: -2.0d
-			y: 3.5d
-			shape: "rsquare"
-			dependencies: ["7002E44FFB94AD50"]
-			can_repeat: true
-			id: "48028F61AA8FABE6"
-			tasks: [{
-				id: "78DED13A94C4F794"
-				type: "item"
-				item: "minecraft:zombie_head"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "32D7930DCFB4F54C"
-				type: "choice"
-				exclude_from_claim_all: true
-				table_id: 1604268204642605904L
-			}]
-		}
-		{
 			title: "凿子"
 			x: 8.5d
-			y: 2.0d
+			y: 0.5d
 			description: ["还想要更多方块？大名鼎鼎的凿子来咯！（虽然是高版本的致敬版）"]
 			dependencies: ["7002E44FFB94AD50"]
 			id: "437E17392416B760"
@@ -653,8 +398,8 @@
 		}
 		{
 			title: "动力凿子"
-			x: 7.0d
-			y: 2.0d
+			x: 8.5d
+			y: -1.0d
 			subtitle: "我去这也能自动化？"
 			description: ["手搓方块太麻烦了？用这个实现自动化生产"]
 			hide_dependency_lines: false
@@ -668,8 +413,8 @@
 		}
 		{
 			title: "伪装板"
-			x: 5.5d
-			y: 2.0d
+			x: 8.5d
+			y: -2.5d
 			description: ["...完整方块也满足不了你了？"]
 			dependencies: ["7002E44FFB94AD50"]
 			id: "56252783280A9738"
@@ -684,6 +429,126 @@
 						value: "copycats:copycat_block"
 					}
 				}
+			}]
+		}
+		{
+			icon: "create:andesite_casing"
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "0E404FA4E40CCB43"
+			tasks: [{
+				id: "741B11E697113F86"
+				type: "checkmark"
+				title: "机械动力系列"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "7A65210857E9A933"
+			tasks: [{
+				id: "30BDD7B39ACEF0D3"
+				type: "item"
+				item: "quark:limestone"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "35D50869835FB98E"
+			tasks: [{
+				id: "3DADE2A79C89405B"
+				type: "item"
+				item: "quark:jasper"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "3039683FEFE2FE84"
+			tasks: [{
+				id: "01D098AE612B924C"
+				type: "item"
+				item: "quark:myalite"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "28E33ED3BEFCD684"
+			tasks: [{
+				id: "6A04540C5B613425"
+				type: "item"
+				item: "quark:iron_plate"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "787C4B47378467C3"
+			tasks: [{
+				id: "2DF813B33A73E150"
+				type: "item"
+				item: "quark:framed_glass"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "357043A021B5EFE8"
+			tasks: [{
+				id: "136D9A19FE5FEED9"
+				type: "item"
+				item: "quark:permafrost"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "709BD3B8F5190CD8"
+			tasks: [{
+				id: "6EAD8ADD9B276501"
+				type: "item"
+				item: "quark:dusky_myalite"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			hide_dependency_lines: false
+			dependencies: ["7369CE441C0CE13D"]
+			id: "55CC2D88806607A7"
+			tasks: [{
+				id: "040043C974171F39"
+				type: "item"
+				item: "quark:shale"
+			}]
+		}
+		{
+			title: "夸克系列"
+			icon: "quark:stone_brick_lamp"
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["7002E44FFB94AD50"]
+			id: "7369CE441C0CE13D"
+			tasks: [{
+				id: "2D73A97B060A45F8"
+				type: "checkmark"
 			}]
 		}
 	]

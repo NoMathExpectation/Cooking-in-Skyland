@@ -31,7 +31,7 @@ onEvent('recipes',event=>{
     ]).superheated()
     event.recipes.createMixing([Fluid.of('create_central_kitchen:dragon_breath',50),Item.of('dragon_head').withChance(0.95)],['dragon_head'])
     event.recipes.createFilling('dragon_head',[Fluid.of("create_central_kitchen:dragon_breath",200),'kubejs:smart_zombie'])
-    event.recipes.createMixing([Item.of('chorus_fruit').withChance(0.5),'chorus_fruit'],['chorus_fruit',Fluid.of('exnihilosequentia:witch_water',500)])
+    //event.recipes.createMixing([Item.of('chorus_fruit').withChance(0.5),'chorus_fruit'],['chorus_fruit',Fluid.of('exnihilosequentia:witch_water',500)])
     //合金
     event.remove({output:'rainbowcompound:ender_quartz'})
     event.shaped('rainbowcompound:ender_quartz',[
@@ -551,7 +551,7 @@ onEvent('recipes',event=>{
     ],['create:chromatic_compound',Fluid.of('create_central_kitchen:dragon_breath',100)]).superheated()
     */
     //不，是末地石增产系列
-    event.recipes.createDeploying([
+    /*event.recipes.createDeploying([
       Item.of('nether_wart').withChance(0.9),
       Item.of('nether_wart').withChance(0.8),
       Item.of('nether_wart').withChance(0.7),
@@ -571,7 +571,7 @@ onEvent('recipes',event=>{
       Item.of('weeping_vines').withChance(0.7),
       Item.of('weeping_vines').withChance(0.6),
       Item.of('exnihilosequentia:crushed_end_stone').withChance(0.9)
-    ],['exnihilosequentia:crushed_end_stone','weeping_vines'])
+    ],['exnihilosequentia:crushed_end_stone','weeping_vines'])*/
     //不，是增产末地石系列（
     event.recipes.createMilling([
       Item.of("exnihilosequentia:crushed_end_stone").withChance(0.7),

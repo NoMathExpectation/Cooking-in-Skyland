@@ -1,0 +1,120 @@
+{
+	id: "20763082CA8010B7"
+	group: "5C7CFACB63CA6A5F"
+	order_index: 1
+	filename: "20763082CA8010B7"
+	title: "大师的试炼：进阶"
+	icon: {
+		id: "minecraft:enchanted_book"
+		Count: 1b
+		tag: {
+			StoredEnchantments: [{
+				lvl: 1s
+				id: "minecraft:protection"
+			}]
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "来点刺激的！"
+			description: [
+				"什么？还想来点带劲的？"
+				"这里有些挑战，要不试试看"
+			]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "77A988BB468C67D4"
+			tasks: [{
+				id: "299F59AE3B50EB7B"
+				type: "checkmark"
+				title: "天空厨房还是太简单了！"
+			}]
+		}
+		{
+			icon: "create:wrench"
+			x: 2.0d
+			y: 0.5d
+			subtitle: "主打一个机械动力"
+			description: ["除了主线必需品和平替类物品（抽屉、垃圾桶等），只能使用原版和机械动力物品做出蛋糕"]
+			dependencies: ["77A988BB468C67D4"]
+			id: "56FA6BBEB2997EED"
+			tasks: [{
+				id: "3507A16B6756F8B1"
+				type: "checkmark"
+				title: "蒸汽朋克挑战"
+			}]
+		}
+		{
+			icon: "minecraft:chest"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "天空厨房.zip"
+			description: ["你的机器与流水线只能布置在一个区块里（16x16x320），包括存储、运输、加工等"]
+			dependencies: ["77A988BB468C67D4"]
+			id: "02696BF30198694E"
+			tasks: [{
+				id: "290F2E0C02689FBB"
+				type: "checkmark"
+				title: "微小世界挑战"
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:golden_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -1.5d
+			subtitle: "天空厨房は最速の伝说！Chineselulil一郎です"
+			description: [
+				"以最快速度做出蛋糕！"
+				"如果可以的话记录一下时间，我给你挂在Mcmod上（"
+			]
+			dependencies: ["77A988BB468C67D4"]
+			id: "5C2C76707CFE09FC"
+			tasks: [{
+				id: "6FBE46D606889467"
+				type: "checkmark"
+				title: "最速传说挑战"
+			}]
+		}
+		{
+			icon: "minecraft:grass_block"
+			x: 0.0d
+			y: 2.5d
+			subtitle: "绿色 低碳 环保"
+			description: ["装饰你的流水线，让它看起来：像个工厂，符合物理规则，美观整洁，最好还能环境友好"]
+			dependencies: ["77A988BB468C67D4"]
+			id: "7DC60FF49F252554"
+			tasks: [{
+				id: "434C5EEDD4853C15"
+				type: "checkmark"
+				title: "美丽家园挑战"
+			}]
+		}
+		{
+			icon: "create:mechanical_arm"
+			x: 2.0d
+			y: 2.5d
+			subtitle: "电子拧螺丝 赛博搓零件"
+			description: ["全自动生产在主线中出现的中间产品和最终产品，达到每分钟至少一个"]
+			dependencies: ["77A988BB468C67D4"]
+			id: "221BED3D43DC1EE0"
+			tasks: [{
+				id: "716195E84D6D3F5B"
+				type: "checkmark"
+				title: "标准工厂挑战"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

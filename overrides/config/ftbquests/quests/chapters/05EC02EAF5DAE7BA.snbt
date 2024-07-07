@@ -1,0 +1,533 @@
+{
+	id: "05EC02EAF5DAE7BA"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 7
+	filename: "05EC02EAF5DAE7BA"
+	title: "佐餐的伴侣：饮品"
+	icon: {
+		id: "minecraft:potion"
+		Count: 1b
+		tag: {
+			Potion: "minecraft:water"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -6.0d
+			y: -1.5d
+			description: ["这里是各种各样的饮品，渴了就来这看看"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "3F0EF1FDA14621BA"
+			tasks: [{
+				id: "4780F5859E78B0AD"
+				type: "checkmark"
+				title: "还是要多喝水"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7663CE674CF5275D"
+			tasks: [{
+				id: "05C8FCD3993F01DB"
+				type: "item"
+				item: "croptopia:apple_juice"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "729210E98EC53828"
+			tasks: [{
+				id: "75A88A7DEAF1A50D"
+				type: "item"
+				item: "croptopia:cranberry_juice"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "39D88E53B8AE88E8"
+			tasks: [{
+				id: "1ADE670CF148827B"
+				type: "item"
+				item: "croptopia:grape_juice"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "09A1D36252FEF336"
+			tasks: [{
+				id: "0D9DB58B9D57FF12"
+				type: "item"
+				item: "croptopia:melon_juice"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "17C6D78DBBA94DF3"
+			tasks: [{
+				id: "276E9E0B43608FB8"
+				type: "item"
+				item: "croptopia:orange_juice"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "60471A4B4242EBF4"
+			tasks: [{
+				id: "236874347D2F69F9"
+				type: "item"
+				item: "croptopia:pineapple_juice"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "0ED1208CF26A704C"
+			tasks: [{
+				id: "126EDEA2DE0DB812"
+				type: "item"
+				item: "croptopia:saguaro_juice"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "59C569042E0A4DE4"
+			tasks: [{
+				id: "372F62B8B8D66CDC"
+				type: "item"
+				item: "croptopia:tomato_juice"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "08D35DCB2CFBA184"
+			tasks: [{
+				id: "39F60CD05C2311AA"
+				type: "item"
+				item: "croptopia:apricot_jam"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "672B7CEA2FC20E20"
+			tasks: [{
+				id: "6C3D354ECBA4E21A"
+				type: "item"
+				item: "croptopia:blackberry_jam"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "62097885BD1CBC56"
+			tasks: [{
+				id: "19AC7B4B118BE653"
+				type: "item"
+				item: "croptopia:blueberry_jam"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "5E9A8E25464DF271"
+			tasks: [{
+				id: "1050CAF16BB55C11"
+				type: "item"
+				item: "croptopia:cherry_jam"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "240A15FEE983D4D9"
+			tasks: [{
+				id: "5BDF5A82EDCD9F05"
+				type: "item"
+				item: "croptopia:elderberry_jam"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "6E9457175693FF61"
+			tasks: [{
+				id: "4B5D5508B339B0C1"
+				type: "item"
+				item: "croptopia:grape_jam"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "5A88BEF6DF3933AE"
+			tasks: [{
+				id: "5D05DE16248BDF98"
+				type: "item"
+				item: "croptopia:peach_jam"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "0AA37045A30526CA"
+			tasks: [{
+				id: "30ADC8FA5FD0413E"
+				type: "item"
+				item: "croptopia:raspberry_jam"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "36B71B9947A35034"
+			tasks: [{
+				id: "3EC91E6B1D3A862B"
+				type: "item"
+				item: "croptopia:strawberry_jam"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7A5C8F23C079E1A3"
+			tasks: [{
+				id: "3EA414A51C350BE6"
+				type: "item"
+				item: "croptopia:banana_smoothie"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "3535FFC6CC69929E"
+			tasks: [{
+				id: "2880095572AD3DE4"
+				type: "item"
+				item: "croptopia:strawberry_smoothie"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "0C4360D8DFD379E3"
+			tasks: [{
+				id: "25A8272043D0FC65"
+				type: "item"
+				item: "croptopia:coffee"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "07B043C757421299"
+			tasks: [{
+				id: "4FA4E84D8E485855"
+				type: "item"
+				item: "croptopia:lemonade"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "5F0ACEE674F5A11F"
+			tasks: [{
+				id: "6A52040675CA54F1"
+				type: "item"
+				item: "croptopia:limeade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "607DF7501CB4AD29"
+			tasks: [{
+				id: "1C80D4E2F145DE9B"
+				type: "item"
+				item: "croptopia:soy_milk"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "637A1CCAC281D0D5"
+			tasks: [{
+				id: "7D7B77A97ED143AD"
+				type: "item"
+				item: "croptopia:kale_smoothie"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "07C8F286605E1E35"
+			tasks: [{
+				id: "1F9BD4B34129F57F"
+				type: "item"
+				item: "croptopia:fruit_smoothie"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "130178F332DB41F9"
+			tasks: [{
+				id: "5A0319A098EF9AB4"
+				type: "item"
+				item: "croptopia:chocolate_milkshake"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "1C77720996118E26"
+			tasks: [{
+				id: "13183F28375E3D9F"
+				type: "item"
+				item: "croptopia:beer"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "78E86D714B17BCA1"
+			tasks: [{
+				id: "5C78F14901D5DA91"
+				type: "item"
+				item: "croptopia:wine"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "6136915EB85D7A4C"
+			tasks: [{
+				id: "261F9C8D025EC10F"
+				type: "item"
+				item: "croptopia:rum"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "1EEEB3C76E39A5F3"
+			tasks: [{
+				id: "6EF4D5BEC730F33B"
+				type: "item"
+				item: "croptopia:mead"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "445BB00A1E5C45C4"
+			tasks: [{
+				id: "6FC8858DF6D25D1D"
+				type: "item"
+				item: "croptopia:pumpkin_spice_latte"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7CB1A79B177DC46C"
+			tasks: [{
+				id: "59A4D8E984656E45"
+				type: "item"
+				item: "croptopia:yam_jam"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7BDD71E5E093BF60"
+			tasks: [{
+				id: "60B6CA9DC06D7081"
+				type: "item"
+				item: "croptopia:horchata"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "2648E738613E965B"
+			tasks: [{
+				id: "258F311368FE1607"
+				type: "item"
+				item: "croptopia:eton_mess"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "37597BF66484079B"
+			tasks: [{
+				id: "6F327FB40910633E"
+				type: "item"
+				item: "croptopia:tea"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "6493CB3E773EEB09"
+			tasks: [{
+				id: "1F79FB866F34B5F6"
+				type: "item"
+				item: "croptopia:peanut_butter"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "0D633CDA7BBEE401"
+			tasks: [{
+				id: "77D90B10198D2F9B"
+				type: "item"
+				item: "neapolitan:chocolate_milkshake"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7D22AC622E930500"
+			tasks: [{
+				id: "1C06F3DCD3DAA746"
+				type: "item"
+				item: "neapolitan:strawberry_milkshake"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "1C549240FE9D3209"
+			tasks: [{
+				id: "4EA02CEF43B2DACE"
+				type: "item"
+				item: "neapolitan:vanilla_milkshake"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "78B2DCAA084841F4"
+			tasks: [{
+				id: "066CB12595E86153"
+				type: "item"
+				item: "neapolitan:banana_milkshake"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "24094E4E0FAFF314"
+			tasks: [{
+				id: "33CA6DD16B740D5D"
+				type: "item"
+				item: "neapolitan:mint_milkshake"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "2D4AB2BF17017133"
+			tasks: [{
+				id: "5427C8973AADB141"
+				type: "item"
+				item: "neapolitan:adzuki_milkshake"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "4CF66E054211102F"
+			tasks: [{
+				id: "4CAB13567CF788EB"
+				type: "item"
+				item: "neapolitan:strawberry_banana_smoothie"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "7BC9A623229B5016"
+			tasks: [{
+				id: "4B35A94B5649B021"
+				type: "item"
+				item: "minecraft:honey_bottle"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			dependencies: ["3F0EF1FDA14621BA"]
+			id: "32BA18C202402392"
+			tasks: [{
+				id: "69E37F5B0E09ED78"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

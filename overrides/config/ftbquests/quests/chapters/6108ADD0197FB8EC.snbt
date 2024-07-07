@@ -1,7 +1,7 @@
 {
 	id: "6108ADD0197FB8EC"
-	group: "0A9230109B4C8FE3"
-	order_index: 7
+	group: "4D81F2802AE7DA76"
+	order_index: 4
 	filename: "6108ADD0197FB8EC"
 	title: "远方的星芒：创造"
 	icon: "kubejs:infinity_catalyst"
@@ -9,15 +9,15 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "什么？还在输出！"
+			title: "不是，哥们..."
 			x: -9.5d
 			y: -1.0d
-			subtitle: "吃蛋糕吃饱了撑的..."
+			subtitle: "...吃蛋糕吃饱了撑的"
 			description: [
 				"开派对的时候，你突然想到蛋糕的星光力量值得探索。或许可以制得创造类物品...？"
-				"接下来的路线如同无尽贪婪一样折磨，如果放弃了也不要感到愧疚：你已经通关了"
+				"（这一章是为那些能够批量生产蛋糕的玩家们准备的。想到处看看？随你）"
 			]
-			dependencies: ["47C40B8B1D26D756"]
+			dependencies: ["6D3EC08B948ED057"]
 			hide: true
 			id: "79724C82E43C0F34"
 			tasks: [{
@@ -127,7 +127,7 @@
 		}
 		{
 			x: -6.5d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "...我上个厕所"
 			description: [
 				"这一章就是用来慢慢玩的啦..."
@@ -144,7 +144,7 @@
 		}
 		{
 			x: -8.0d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "翻个面就能当法杖用"
 			dependencies: ["47DA6B9E393B93EB"]
 			id: "41DF32D7B3C6C34A"
@@ -162,7 +162,7 @@
 		}
 		{
 			x: -5.0d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "别忘了它还是一把刀"
 			dependencies: ["47DA6B9E393B93EB"]
 			id: "6AA0CF775AEA4AB3"
@@ -180,7 +180,7 @@
 		}
 		{
 			x: -6.5d
-			y: 3.5d
+			y: 2.0d
 			dependencies: ["47DA6B9E393B93EB"]
 			id: "16F49E26CF7A6B33"
 			tasks: [{
@@ -191,7 +191,7 @@
 		}
 		{
 			x: -6.5d
-			y: 5.0d
+			y: 3.5d
 			dependencies: ["16F49E26CF7A6B33"]
 			id: "0A667CCFCDDD9F29"
 			tasks: [{
@@ -202,7 +202,7 @@
 		}
 		{
 			x: -6.5d
-			y: 6.5d
+			y: 5.0d
 			dependencies: ["0A667CCFCDDD9F29"]
 			id: "3EA15005A1BB2E54"
 			tasks: [{
@@ -213,7 +213,7 @@
 		}
 		{
 			x: -6.5d
-			y: 8.0d
+			y: 6.5d
 			dependencies: ["3EA15005A1BB2E54"]
 			id: "4D28B7D665B06863"
 			tasks: [{
@@ -224,7 +224,7 @@
 		}
 		{
 			x: -8.0d
-			y: 9.5d
+			y: 8.0d
 			dependencies: ["4D28B7D665B06863"]
 			id: "6EB718BA2FBB1B3F"
 			tasks: [{
@@ -235,7 +235,7 @@
 		}
 		{
 			x: -5.0d
-			y: 9.5d
+			y: 8.0d
 			dependencies: ["4D28B7D665B06863"]
 			id: "121F89B4E6E438EE"
 			tasks: [{
@@ -254,6 +254,21 @@
 				id: "23EBE785B426510E"
 				type: "item"
 				item: "kubejs:singularity"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 9.5d
+			subtitle: "我听说建筑大佬需要这个？"
+			dependencies: [
+				"121F89B4E6E438EE"
+				"6EB718BA2FBB1B3F"
+			]
+			id: "7ACB427DD7619094"
+			tasks: [{
+				id: "5585CC30864CC737"
+				type: "item"
+				item: "create:handheld_worldshaper"
 			}]
 		}
 	]

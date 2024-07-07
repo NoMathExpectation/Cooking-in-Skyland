@@ -10,5 +10,6 @@
 		{ item: "minecraft:squid_spawn_egg" }
 		{ item: "minecraft:tropical_fish_spawn_egg" }
 		{ item: "minecraft:pufferfish_spawn_egg" }
+		{ item: "babyfat:ranchu_spawn_egg" }
 	]
 }

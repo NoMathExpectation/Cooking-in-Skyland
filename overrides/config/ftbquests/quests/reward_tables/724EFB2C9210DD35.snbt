@@ -1,0 +1,25 @@
+{
+	id: "724EFB2C9210DD35"
+	order_index: 10
+	title: "其他动物"
+	loot_size: 1
+	rewards: [
+		{ item: "quark:frog_spawn_egg" }
+		{ item: "quark:crab_spawn_egg" }
+		{ item: "neapolitan:chimpanzee_spawn_egg" }
+		{ item: "minecraft:turtle_spawn_egg" }
+		{ item: "minecraft:strider_spawn_egg" }
+		{ item: "minecraft:polar_bear_spawn_egg" }
+		{ item: "minecraft:rabbit_spawn_egg" }
+		{ item: "minecraft:panda_spawn_egg" }
+		{ item: "minecraft:llama_spawn_egg" }
+		{ item: "minecraft:mule_spawn_egg" }
+		{ item: "minecraft:horse_spawn_egg" }
+		{ item: "minecraft:goat_spawn_egg" }
+		{ item: "minecraft:fox_spawn_egg" }
+		{ item: "minecraft:dolphin_spawn_egg" }
+		{ item: "minecraft:donkey_spawn_egg" }
+		{ item: "minecraft:bat_spawn_egg" }
+		{ item: "minecraft:trader_llama_spawn_egg" }
+	]
+}

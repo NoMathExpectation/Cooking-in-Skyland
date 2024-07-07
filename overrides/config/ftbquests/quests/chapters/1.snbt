@@ -1,0 +1,362 @@
+{
+	id: "4DA8A5CD9A335555"
+	group: "4D81F2802AE7DA76"
+	order_index: 5
+	filename: "1"
+	title: "划算的买卖：交易"
+	icon: "minecraft:totem_of_undying"
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "花"
+			icon: "minecraft:dandelion"
+			x: 1.0d
+			y: -2.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "44605E32616E6D98"
+			tasks: [{
+				id: "3B311AD051B7A032"
+				type: "item"
+				item: "create:tree_fertilizer"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4B773710FD60B872"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5019194028131084911L
+			}]
+		}
+		{
+			title: "树苗"
+			icon: "minecraft:oak_sapling"
+			x: 1.0d
+			y: -0.5d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "40C3AC4B9E7B1457"
+			tasks: [
+				{
+					id: "66CF6E0F02C0BE11"
+					type: "item"
+					item: "create:tree_fertilizer"
+					consume_items: true
+				}
+				{
+					id: "0D2D831271F9E2BA"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "643BF228BA1C3269"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1859286757284857000L
+			}]
+		}
+		{
+			title: "遛鸟大爷刷新点"
+			x: -0.5d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "0A6B09B2D29FB791"
+			tasks: [{
+				id: "639F5DF1BC7163E5"
+				type: "item"
+				item: "minecraft:cocoa_beans"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0ABBA44671436BCD"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1224125300939760211L
+			}]
+		}
+		{
+			title: "小型植物"
+			icon: "minecraft:grass"
+			x: -2.0d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "474C078369CF290A"
+			tasks: [{
+				id: "3A090A1B45E3077A"
+				type: "item"
+				item: "minecraft:bone_meal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "79F6091BCA264D91"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2140518015698774766L
+			}]
+		}
+		{
+			title: "养猫许可证"
+			icon: "minecraft:cooked_cod"
+			x: -2.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "5D3159C00C88001A"
+			tasks: [
+				{
+					id: "0F856EA723E29DE0"
+					type: "item"
+					item: "farmersdelight:cooked_cod_slice"
+					count: 8L
+					consume_items: true
+				}
+				{
+					id: "36E9F36DC494CBFC"
+					type: "item"
+					item: "farmersdelight:cooked_salmon_slice"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "1E5E8197BD50212F"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2982513278498790282L
+			}]
+		}
+		{
+			title: "养狗许可证"
+			icon: "minecraft:bone"
+			x: -0.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "4F0094DFEBDE338C"
+			tasks: [
+				{
+					id: "63559659E95BEEC8"
+					type: "item"
+					item: "minecraft:cooked_chicken"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "14EA9FBB2D7BA596"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "1C3B567BCB3D884A"
+					type: "item"
+					item: "minecraft:cooked_mutton"
+					count: 4L
+					consume_items: true
+				}
+				{
+					id: "1059DEBCAC91CD89"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 4L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "3A86394912ECC080"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8487238346058621668L
+			}]
+		}
+		{
+			title: "六角小恐龙"
+			icon: "minecraft:axolotl_bucket"
+			x: -0.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "024C4DE2283C8659"
+			tasks: [{
+				id: "408DB9E2B8269DC2"
+				type: "item"
+				item: "minecraft:tropical_fish"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "657C680102FC59C9"
+				type: "item"
+				item: "minecraft:axolotl_spawn_egg"
+			}]
+		}
+		{
+			title: "美观鱼市场"
+			icon: "minecraft:tropical_fish"
+			x: -2.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "568341453DE7CEC3"
+			tasks: [{
+				id: "3745CB2A6A2E85B1"
+				type: "item"
+				item: "kubejs:fishfood"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4F46E272BDA30FA3"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 6742805589228151163L
+			}]
+		}
+		{
+			title: "动物园守则"
+			icon: "mcwfences:oak_horse_fence"
+			x: -2.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "298EFED272A068E1"
+			tasks: [{
+				id: "5AD2F323F6FF3E0D"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "619A163B4035A44E"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8236796937354927413L
+			}]
+		}
+		{
+			title: "旗帜图案"
+			icon: "minecraft:mojang_banner_pattern"
+			x: 1.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "70DDC436716A5CF8"
+			tasks: [{
+				id: "6675C4B69E2955C7"
+				type: "item"
+				item: "minecraft:white_wool"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "14876B027552967E"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5362436926700261591L
+			}]
+		}
+		{
+			title: "其他头颅"
+			x: 1.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "48028F61AA8FABE6"
+			tasks: [{
+				id: "78DED13A94C4F794"
+				type: "item"
+				item: "minecraft:zombie_head"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "32D7930DCFB4F54C"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1604268204642605904L
+			}]
+		}
+		{
+			title: "养殖业"
+			icon: "minecraft:egg"
+			x: -0.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "143A4043DCD6949D"
+			tasks: [{
+				id: "6CB5F24FC88B55D4"
+				type: "item"
+				item: "rainbowcompound:netherstar_ingot"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "639DC4F74823AEA3"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8255941029373841285L
+			}]
+		}
+		{
+			title: "流浪商人（确信"
+			x: -4.0d
+			y: 0.5d
+			description: ["在这里你可以通过重复完成任务获取一些物资"]
+			dependencies: ["6D3EC08B948ED057"]
+			size: 2.0d
+			id: "18418DDA29CA772E"
+			tasks: [{
+				id: "490121296AEE7B6B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "卡拉OK"
+			icon: "minecraft:jukebox"
+			x: 2.5d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			can_repeat: true
+			id: "4AF7B7983BBA7CBB"
+			tasks: [{
+				id: "6E23F40C9BA902E9"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "286C531B49B06BED"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1556574414295741083L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

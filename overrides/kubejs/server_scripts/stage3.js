@@ -128,8 +128,8 @@ onEvent('recipes',event=>{
     event.recipes.createMixing('rabbit',[
         Fluid.of('kubejs:protein',100),'rabbit_hide'
     ]).heated()
-    event.recipes.createCompacting(Fluid.of('minecraft:milk',500),[
-        Fluid.of('minecraft:water',250),Fluid.of('kubejs:protein',250),'minecraft:leather'
+    event.recipes.createMixing(Fluid.of('minecraft:milk',500),[
+        Fluid.of('minecraft:water',250),Fluid.of('kubejs:protein',250),Fluid.of('kubejs:oil',100)
     ]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',200),[['mutton','beef','porkchop']]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',50),['chicken']).heated()
@@ -295,5 +295,23 @@ onEvent('recipes',event=>{
         A:'create:brass_ingot',
         B:'dried_kelp'
     })
+    event.remove({output:'create:smart_fluid_pipe'})
+    event.shaped('create:smart_fluid_pipe',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:"create:brass_sheet",
+        B:'create:fluid_pipe'
+    })
+    event.shaped('2x create:smart_fluid_pipe',[
+        ' C ',
+        'ABA',
+    ],{
+        A:"create:brass_sheet",
+        B:'create:fluid_pipe',
+        C:'create:electron_tube'
+    })
+    
 })
 

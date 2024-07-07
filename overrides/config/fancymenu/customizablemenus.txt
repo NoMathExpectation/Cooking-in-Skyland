@@ -3,3 +3,66 @@ type = customizablemenus
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+
+net.minecraft.client.gui.screens.LanguageSelectScreen {
+}
+
+net.minecraft.client.gui.screens.AccessibilityOptionsScreen {
+}
+
+net.minecraftforge.client.gui.ModListScreen {
+}
+
+net.minecraft.client.gui.screens.SkinCustomizationScreen {
+}
+
+net.minecraft.client.gui.screens.OnlineOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.SoundOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.MouseSettingsScreen {
+}
+
+net.minecraft.client.gui.screens.ChatOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.packs.PackSelectionScreen {
+}
+
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
+me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
+}
+
+net.coderbot.iris.gui.screen.ShaderPackScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+net.minecraft.client.gui.screens.advancements.AdvancementsScreen {
+}
+
+net.minecraft.client.gui.screens.achievement.StatsScreen {
+}
+
+net.minecraft.client.gui.screens.ShareToLanScreen {
+}
+
+vazkii.quark.base.client.config.screen.QuarkConfigHomeScreen {
+}
+
+net.minecraft.client.gui.screens.controls.ControlsScreen {
+}
+

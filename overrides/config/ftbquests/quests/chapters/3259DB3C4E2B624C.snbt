@@ -693,6 +693,11 @@
 					type: "item"
 					item: "create:brass_funnel"
 				}
+				{
+					id: "6406D6ADBA4DABED"
+					type: "item"
+					item: "create:smart_fluid_pipe"
+				}
 			]
 		}
 		{

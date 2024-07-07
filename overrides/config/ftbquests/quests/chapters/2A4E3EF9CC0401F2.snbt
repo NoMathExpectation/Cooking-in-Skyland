@@ -1,0 +1,193 @@
+{
+	id: "2A4E3EF9CC0401F2"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 0
+	filename: "2A4E3EF9CC0401F2"
+	title: "充足的准备：厨具"
+	icon: "farmersdelight:cooking_pot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "美食博主家里什么都有"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "准备好就开始吧！"
+			description: ["你要准备的东西不多：一些加工设备，还有一本美食清单"]
+			dependencies: ["6D3EC08B948ED057"]
+			hide: true
+			size: 2.0d
+			id: "389F231819AAA1BF"
+			tasks: [{
+				id: "4916B0A3C2DC28B2"
+				type: "checkmark"
+				title: "我不是厨神"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "55A4AE21974A00CA"
+			tasks: [{
+				id: "082F2BBB1B6DC7C8"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "1CB68A955280A4AE"
+			tasks: [{
+				id: "12E905AE9F1BA645"
+				type: "item"
+				item: {
+					id: "farmersdelight:skillet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "3E84C5A80E715F3A"
+			tasks: [{
+				id: "7505280BE58B4009"
+				type: "item"
+				item: "croptopia:frying_pan"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			dependencies: ["389F231819AAA1BF"]
+			id: "6AE5A059396519AB"
+			tasks: [{
+				id: "4924B7BD94634159"
+				type: "item"
+				item: "croptopia:cooking_pot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "327913989D555248"
+			tasks: [{
+				id: "100E4505237FEDEE"
+				type: "item"
+				item: "croptopia:food_press"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "381D227A95A6A1BD"
+			tasks: [{
+				id: "25E5CA8A250BE959"
+				type: "item"
+				item: "croptopia:mortar_and_pestle"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "06C6C5D4FF336AF9"
+			tasks: [{
+				id: "63140C1DC7240964"
+				type: "item"
+				item: "croptopia:knife"
+			}]
+		}
+		{
+			title: "美食教程"
+			x: 7.0d
+			y: -2.0d
+			dependencies: ["389F231819AAA1BF"]
+			id: "2F801E7FFDA8006D"
+			tasks: [
+				{
+					id: "0E8A3BE4AA55BF3C"
+					type: "item"
+					item: "solcarrot:food_book"
+				}
+				{
+					id: "205A06AE7D19ABA5"
+					type: "item"
+					item: "solsweetpotato:food_book"
+				}
+				{
+					id: "77C8E5E209179D83"
+					type: "item"
+					item: "croptopia:guide"
+				}
+			]
+		}
+		{
+			title: "烈焰人竟然识字"
+			x: 7.0d
+			y: 1.0d
+			subtitle: "还以为它们只会喝快乐水"
+			description: [
+				"把这本书拿给燃烧室看，这样燃烧室就可以作为厨锅和煎锅的热源了"
+				"同时还能为厨锅自动化做准备"
+			]
+			dependencies: ["389F231819AAA1BF"]
+			id: "0B071BFF11A178D9"
+			tasks: [{
+				id: "418CD05BB486D66B"
+				type: "item"
+				item: {
+					id: "create_central_kitchen:cooking_guide"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			description: ["炸锅的目的是省油。代价是？不能自动化"]
+			dependencies: ["389F231819AAA1BF"]
+			id: "0681922066430A9A"
+			tasks: [{
+				id: "4FA619EC00E942E6"
+				type: "item"
+				item: "casualness_delight:deep_frying_pan"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["389F231819AAA1BF"]
+			id: "5DC9BF1358080288"
+			tasks: [{
+				id: "0CCC573C9698B7A3"
+				type: "item"
+				item: "cacao:filter_cloth"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			dependencies: ["389F231819AAA1BF"]
+			id: "0F5252B36AC710DD"
+			tasks: [{
+				id: "50ADA2F1D8143373"
+				type: "item"
+				item: "cacao:silicon_mold"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,126 @@
+{
+	id: "17FD8E8074E5895E"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 5
+	filename: "17FD8E8074E5895E"
+	title: "舌尖的华夏：中式"
+	icon: "farmersdelight:dumplings"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "家乡味 永流传"
+			x: -2.5d
+			y: -0.5d
+			subtitle: "赛博思乡之情"
+			description: ["这里是一些中式餐点，有没有勾起什么回忆"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "1BD45625B8188AC3"
+			tasks: [{
+				id: "2C0A8B9AD3FAF0F1"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "53ABAB5F92381F7E"
+			tasks: [{
+				id: "0B9E7F891A2ABEFD"
+				type: "item"
+				item: "casualness_delight:sweet_rice"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "250F20DCE019E86E"
+			tasks: [{
+				id: "2AB7969377BC0CBB"
+				type: "item"
+				item: "casualness_delight:plate_of_fried_dumpling"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "5930F71E8414FC28"
+			tasks: [{
+				id: "270449D9D83F5D97"
+				type: "item"
+				item: "casualness_delight:spring_roll_medley"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "3BB6D750E6DE6898"
+			tasks: [{
+				id: "11D26FFCBE72E883"
+				type: "item"
+				item: "casualness_delight:donkey_burger"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "1C1D013DF9DBFF07"
+			tasks: [{
+				id: "456D2D4880239BE5"
+				type: "item"
+				item: "casualness_delight:roast_gluten"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "1823CF18EC81CBDC"
+			tasks: [{
+				id: "27D85DB6A43944BD"
+				type: "item"
+				item: "casualness_delight:spicy_strips"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "7E07DB5AE0CC6C54"
+			tasks: [{
+				id: "12D13829D0B7695A"
+				type: "item"
+				item: "casualness_delight:bobo_chicken"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "56FE6CF95237A805"
+			tasks: [{
+				id: "49F28464BF82C3C2"
+				type: "item"
+				item: "casualness_delight:paper_wrapped_fish"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["1BD45625B8188AC3"]
+			id: "76139D8A3FDE0623"
+			tasks: [{
+				id: "7AC582EC58505BA2"
+				type: "item"
+				item: "casualness_delight:beef_noodles"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

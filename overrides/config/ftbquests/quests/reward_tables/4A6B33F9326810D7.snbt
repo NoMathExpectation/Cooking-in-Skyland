@@ -10,5 +10,6 @@
 		{ item: "minecraft:mojang_banner_pattern" }
 		{ item: "minecraft:globe_banner_pattern" }
 		{ item: "minecraft:piglin_banner_pattern" }
+		{ item: "neapolitan:chimpanzee_banner_pattern" }
 	]
 }

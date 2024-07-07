@@ -1,170 +1,342 @@
+onEvent('item.tags',event=>{
+    event.add('forge:raw_bacon','croptopia:bacon')
+    event.add('forge:frog_legs','quark:frog_leg')
+})
 onEvent('recipes',event=>{
-    event.remove({output:'farmersdelight:pie_crust'})
-    event.recipes.createCompacting('farmersdelight:pie_crust',[Fluid.of('milk',250),Fluid.of('kubejs:oil',50),'2x sugar','4x create:wheat_flour','egg']).heated()
-    event.remove({output:'farmersdelight:chocolate_pie',type:'crafting_shaped'})
-    event.remove({output:'farmersdelight:apple_pie',type:'crafting_shaped'})
-    event.remove({output:'farmersdelight:sweet_berry_cheesecake',type:'crafting_shaped'})
-    event.remove({output:'pumpkin_pie',type:'crafting_shaped'})
+    event.recipes.createMixing('create:bar_of_chocolate',Fluid.of('create:chocolate',250))
+    event.replaceInput({},'#forge:cheese','#forge:cheeses')
+    event.replaceInput({},'farmersdelight:cooked_bacon','#forge:cooked_bacon')
+    event.replaceInput({},'croptopia:cooked_bacon','#forge:cooked_bacon')
+    event.replaceInput({},'#forge:crops','#forge:seeds')
+    event.replaceInput({type:'farmersdelight:cooking'},'snowball','kubejs:item3')
+    event.replaceInput({},'neapolitan:ice_cubes','kubejs:ice_cube')
+    event.replaceOutput({type:'crafting_shaped'},'ice','packed_ice')
+    event.shapeless('ice','9x neapolitan:ice_cubes')
+    event.shapeless('packed_ice','9x kubejs:ice_cube')
+    event.replaceInput({},'neapolitan:banana','#forge:bananas')
+    event.replaceInput({},'neapolitan:strawberries','#forge:strawberries')
+    event.replaceInput({},'croptopia:bacon','#forge:raw_bacon')
+    event.replaceInput({},'farmersdelight:bacon','#forge:raw_bacon')    
+    event.replaceInput({},'croptopia:noodle','#forge:pasta/raw_pasta')
+    event.replaceInput({},'croptopia:dough','create:dough')
     
-    event.remove ({output:'cookie'})
-    event.remove ({output:'farmersdelight:honey_cookie'})
-    event.remove ({output:'farmersdelight:sweet_berry_cookie'})
-    event.recipes.createCompacting('8x cookie',[Fluid.of('milk',250),'4x create:wheat_flour','cocoa_beans','2x sugar']).heated()
-    event.recipes.createCompacting('8x farmersdelight:sweet_berry_cookie',[Fluid.of('milk',250),'4x create:wheat_flour','sweet_berries','2x sugar']).heated()
-    event.recipes.createCompacting('8x farmersdelight:honey_cookie',[Fluid.of('milk',250),'4x create:wheat_flour',Fluid.of('create:honey',100),'2x sugar']).heated()
     
-    event.replaceInput({output:'farmersdelight:melon_popsicle'},'ice','kubejs:ice_cube')
-
-    event.remove({output:'farmersdelight:milk_bottle',type:'crafting_shapeless'})
-    event.recipes.createMixing('farmersdelight:glow_berry_custard',['glow_berries','farmersdelight:milk_bottle','egg','sugar',Fluid.of('kubejs:fluid1',100)]).heated()
     
-    event.remove({output:'farmersdelight:fruit_salad'})
-    event.recipes.createMechanicalCrafting('farmersdelight:fruit_salad',[
-        'CDEDC',
-        ' BAB '
+    
+    event.remove({input:'croptopia:noodle'})
+    event.remove({input:'croptopia:dough'})
+    event.remove({output:'cacao:manual_food_grinder'})
+    event.remove({input:'cacao:manual_food_grinder'})
+    event.remove({output:'cacao:cacao_nibs'})
+    event.smoking('cacao:cacao_nibs','cocoa_beans')
+    event.recipes.createMixing('2x cacao:cocoa_powder',['cacao:pressed_cocoa_cone','sugar']).heated()
+    event.recipes.createCompacting('cacao:cacao_mass_bucket',['bucket','8x cacao:cacao_nibs']).heated()
+    event.recipes.createFilling('croptopia:olive_oil',[Fluid.of('kubejs:oil',200),'glass_bottle'])
+    event.recipes.createCompacting('honeycomb',[Fluid.of('create:honey',100),'#forge:flour']).heated()
+    event.shaped('farmersdelight:cooking_pot',[
+        'A A',
+        'B B',
+        'BCB'
     ],{
-        A:'bowl',
-        B:'farmersdelight:cabbage_leaf',
-        C:'sweet_berries',
-        D:'melon_slice',
-        E:'glow_berries'
+        A:'create:polished_rose_quartz',
+        B:'createdeco:cast_iron_sheet',
+        C:'create:basin'
     })
-    event.remove({output:"farmersdelight:mixed_salad"})
-    event.recipes.createMechanicalCrafting('farmersdelight:mixed_salad',[
-        'DC CD',
-        ' BAB '
+    event.shaped('farmersdelight:skillet',[
+        'A A',
+        'BBB',
     ],{
-        A:'bowl',
-        B:'farmersdelight:cabbage_leaf',
-        C:'farmersdelight:tomato',
-        D:'beetroot'
+        A:'create:polished_rose_quartz',
+        B:'createdeco:cast_iron_sheet',
     })
-    event.remove({output:'farmersdelight:nether_salad'})
-    event.recipes.createMechanicalCrafting('farmersdelight:nether_salad',[
-        'FC DF',
-        'EBABE',
+    event.recipes.createsifterSifting([
+        Item.of('croptopia:artichoke_seed').withChance(0.05),Item.of('croptopia:asparagus_seed').withChance(0.05),Item.of('croptopia:barley_seed').withChance(0.05),
+        Item.of('croptopia:bellpepper_seed').withChance(0.05),Item.of('croptopia:blackbean_seed').withChance(0.05),Item.of('croptopia:blackberry_seed').withChance(0.05),
+        Item.of('croptopia:blueberry_seed').withChance(0.05),Item.of('croptopia:broccoli_seed').withChance(0.05),Item.of('croptopia:cabbage_seed').withChance(0.05),
+        Item.of('croptopia:cantaloupe_seed').withChance(0.05),Item.of('croptopia:cauliflower_seed').withChance(0.05),Item.of('croptopia:celery_seed').withChance(0.05),
+        Item.of('croptopia:coffee_seed').withChance(0.05),Item.of('croptopia:corn_seed').withChance(0.05),Item.of('croptopia:cranberry_seed').withChance(0.05),
+        Item.of('croptopia:cucumber_seed').withChance(0.05),Item.of('croptopia:currant_seed').withChance(0.05),Item.of('croptopia:eggplant_seed').withChance(0.05),
+        Item.of('croptopia:elderberry_seed').withChance(0.05),Item.of('croptopia:garlic_seed').withChance(0.05),Item.of('croptopia:grape_seed').withChance(0.05),
+        Item.of('croptopia:greenbean_seed').withChance(0.05),Item.of('croptopia:greenonion_seed').withChance(0.05),Item.of('croptopia:honeydew_seed').withChance(0.05),
+        Item.of('croptopia:hops_seed').withChance(0.05),Item.of('croptopia:kale_seed').withChance(0.05),Item.of('croptopia:kiwi_seed').withChance(0.05),
+        Item.of('croptopia:leek_seed').withChance(0.05),Item.of('croptopia:lettuce_seed').withChance(0.05),Item.of('croptopia:olive_seed').withChance(0.05),
+        Item.of('croptopia:onion_seed').withChance(0.05),Item.of('croptopia:peanut_seed').withChance(0.05),Item.of('croptopia:pineapple_seed').withChance(0.05),
+        Item.of('croptopia:radish_seed').withChance(0.05),Item.of('croptopia:raspberry_seed').withChance(0.05),Item.of('croptopia:rhubarb_seed').withChance(0.05),
+        Item.of('croptopia:rice_seed').withChance(0.05),Item.of('croptopia:rutabaga_seed').withChance(0.05),Item.of('croptopia:saguaro_seed').withChance(0.05),
+        Item.of('croptopia:spinach_seed').withChance(0.05),Item.of('croptopia:squash_seed').withChance(0.05),Item.of('croptopia:strawberry_seed').withChance(0.05),
+        Item.of('croptopia:sweetpotato_seed').withChance(0.05),Item.of('croptopia:tomatillo_seed').withChance(0.05),Item.of('croptopia:tomato_seed').withChance(0.05),
+        Item.of('croptopia:turnip_seed').withChance(0.05),Item.of('croptopia:yam_seed').withChance(0.05),Item.of('croptopia:zucchini_seed').withChance(0.05),
+        Item.of('croptopia:mustard_seed').withChance(0.05),Item.of('croptopia:chile_pepper_seed').withChance(0.05),Item.of('croptopia:turmeric_seed').withChance(0.05),
+        Item.of('croptopia:ginger_seed').withChance(0.05),Item.of('croptopia:basil_seed').withChance(0.05),Item.of('croptopia:oat_seed').withChance(0.05),
+        Item.of('croptopia:barley_seed').withChance(0.05),Item.of('croptopia:vanilla_seeds').withChance(0.05),Item.of('croptopia:pepper_seed').withChance(0.05),
+        Item.of('croptopia:tea_seed').withChance(0.05),Item.of("croptopia:soybean_seed").withChance(0.05),Item.of('neapolitan:adzuki_beans').withChance(0.05),
+        Item.of('neapolitan:vanilla_pods').withChance(0.05),Item.of('neapolitan:mint_sprout').withChance(0.05)
+    ],['farmersdelight:organic_compost','createsifter:brass_mesh'])
+    event.shapeless('2x rooted_dirt',['2x dirt','2x stick'])
+    event.recipes.createsifterSifting([    
+        Item.of('croptopia:banana_sapling').withChance(0.05),
+        Item.of('croptopia:apple_sapling').withChance(0.05),
+        Item.of('croptopia:orange_sapling').withChance(0.05),
+        Item.of('croptopia:persimmon_sapling').withChance(0.05),
+        Item.of('croptopia:plum_sapling').withChance(0.05),
+        Item.of('croptopia:cherry_sapling').withChance(0.05),
+        Item.of('croptopia:lemon_sapling').withChance(0.05),
+        Item.of('croptopia:grapefruit_sapling').withChance(0.05),
+        Item.of('croptopia:kumquat_sapling').withChance(0.05),
+        Item.of('croptopia:peach_sapling').withChance(0.05),
+        Item.of('croptopia:coconut_sapling').withChance(0.05),
+        Item.of('croptopia:nutmeg_sapling').withChance(0.05),
+        Item.of('croptopia:fig_sapling').withChance(0.05),
+        Item.of('croptopia:nectarine_sapling').withChance(0.05),
+        Item.of('croptopia:mango_sapling').withChance(0.05),
+        Item.of('croptopia:dragonfruit_sapling').withChance(0.05),
+        Item.of('croptopia:starfruit_sapling').withChance(0.05),
+        Item.of('croptopia:avocado_sapling').withChance(0.05),
+        Item.of('croptopia:apricot_sapling').withChance(0.05),
+        Item.of('croptopia:pear_sapling').withChance(0.05),
+        Item.of('croptopia:lime_sapling').withChance(0.05),
+        Item.of('croptopia:date_sapling').withChance(0.05),
+        Item.of('croptopia:almond_sapling').withChance(0.05),
+        Item.of('croptopia:cashew_sapling').withChance(0.05),
+        Item.of('croptopia:pecan_sapling').withChance(0.05),
+        Item.of('croptopia:walnut_sapling').withChance(0.05),
+        Item.of('croptopia:cinnamon_sapling').withChance(0.05)
+    ],['rooted_dirt','createsifter:brass_mesh'])
+    event.recipes.createCompacting('neapolitan:small_banana_frond','#forge:bananas')
+    event.recipes.createCompacting('neapolitan:banana_frond','2x neapolitan:small_banana_frond')
+    event.recipes.createCompacting('neapolitan:large_banana_frond','2x neapolitan:banana_frond')
+    //seafood
+    event.recipes.createDeploying([
+        Item.of('bucket'),
+        Item.of('croptopia:anchovy').withChance(0.15),Item.of('croptopia:calamari').withChance(0.15),
+        Item.of('croptopia:clam').withChance(0.15),Item.of('croptopia:crab').withChance(0.15),
+        Item.of('croptopia:glowing_calamari').withChance(0.15),Item.of('croptopia:oyster').withChance(0.15),
+        Item.of('croptopia:shrimp').withChance(0.15),Item.of('croptopia:tuna').withChance(0.15),
+        Item.of('babyfat:ranchu').withChance(0.15),Item.of('babyfat:water_lettuce').withChance(0.15),
+        Item.of('oceansdelight:guardian').withChance(0.15),Item.of('oceansdelight:elder_guardian_slab').withChance(0.15),
+        Item.of('croptopia:sea_lettuce').withChance(0.15),Item.of('croptopia:frog_legs').withChance(0.15),
+        Item.of('quark:frog_leg').withChance(0.15),
+    ],[Item.of('exnihilosequentia:sea_water_bucket'),Item.of('exnihilosequentia:emerald_mesh')]).keepHeldItem()
+    event.custom({    
+    "type":"farmersdelight:cutting",
+    "ingredients": [{"item": "croptopia:tuna"}],
+    "tool":{"tag":"forge:tools/knives"},
+    "result":[
+    {"item":"croptopia:roe","count":1},
+    {"item":"croptopia:roe","count":1,"chance":0.5}
+]})
+event.custom({    
+    "type":"farmersdelight:cutting",
+    "ingredients": [{"item": "croptopia:calamari"}],
+    "tool":{"tag":"forge:tools/knives"},
+    "result":[
+    {"item":"oceansdelight:tentacles","count":1},
+    {"item":"oceansdelight:tentacles","count":1,"chance":0.5}
+]})
+event.custom({    
+    "type":"farmersdelight:cutting",
+    "ingredients": [{"item": "croptopia:crab"}],
+    "tool":{"tag":"forge:tools/knives"},
+    "result":[
+    {"item":"quark:crab_shell","count":1},
+    {"item":"quark:crab_leg","count":6},
+    {"item":"quark:crab_leg","count":2,"chance":0.5}
+]})
+
+    event.remove({output:'croptopia:water_bottle'})
+    event.recipes.createFilling('croptopia:water_bottle',['glass_bottle',Fluid.of('water',50)])
+    event.shapeless('croptopia:salt_ore','9x croptopia:salt')
+    event.shapeless('9x croptopia:salt','croptopia:salt_ore')
+
+    event.remove({output:'endersdelight:chorus_crate'})
+    event.remove({input:'endersdelight:chorus_crate'})
+    event.shaped('endersdelight:chorus_crate',[
+        "A A",
+        'AAA',
+        'AAA'
     ],{
-        A:'bowl',
-        B:'nether_wart',
-        C:'warped_fungus',
-        D:'crimson_fungus',
-        E:'blaze_powder',
-        F:'magma_cream'
+        A:'chorus_fruit'
     })
+    event.shapeless('8x chorus_fruit','endersdelight:chorus_crate')
 
-    event.remove({output:'farmersdelight:egg_sandwich',type:'crafting_shapeless'})
-    event.remove({output:'farmersdelight:bacon_sandwich',type:'crafting_shapeless'})
-    event.remove({output:'farmersdelight:chicken_sandwich',type:'crafting_shapeless'})
-    event.remove({output:'farmersdelight:mutton_wrap',type:'crafting_shapeless'})
+    event.remove({output:'ends_delight:chorus_fruit_crate'})
+    event.remove({input:'ends_delight:chorus_fruit_crate'})
+    event.shaped('ends_delight:chorus_fruit_crate',[
+        "AAA",
+        'AAA',
+        'A A'
+    ],{
+        A:'chorus_fruit'
+    })
+    event.shapeless('8x chorus_fruit','ends_delight:chorus_fruit_crate')
 
-    event.remove({output:'farmersdelight:dumplings'})
-    event.recipes.createMixing([Item.of('farmersdelight:dumplings').withChance(0.95),Fluid.of('water',1000)],['farmersdelight:wheat_dough','farmersdelight:cabbage_leaf','farmersdelight:onion','#farmersdelight:cabbage_roll_ingredients',Fluid.of('water',1000)]).heated()
 
-    event.remove({output:'farmersdelight:stuffed_potato'})
-    event.recipes.createCompacting('farmersdelight:stuffed_potato',['baked_potato','#forge:cooked_beef',Fluid.of('milk',250)]).heated()
-
-    event.remove({output:'farmersdelight:cabbage_rolls'})
-    event.recipes.createDeploying('farmersdelight:cabbage_rolls',['#farmersdelight:cabbage_roll_ingredients','farmersdelight:cabbage_leaf'])
-
-    event.remove({output:'farmersdelight:bone_broth'})
-    event.remove({output:'farmersdelight:beef_stew'})
-    event.remove({output:'farmersdelight:chicken_soup'})
-    event.remove({output:'farmersdelight:vegetable_soup'})
-    event.remove({output:'farmersdelight:fish_stew'})
-    event.remove({output:'farmersdelight:pumpkin_soup'})
-    event.remove({output:'farmersdelight:baked_cod_stew'})
-    event.remove({output:'farmersdelight:noodle_soup'})
-    event.recipes.createMixing('farmersdelight:bone_broth',['bowl',Fluid.of('water',500),'bone','red_mushroom','brown_mushroom']).heated()
-    event.recipes.createMixing('farmersdelight:beef_stew',['bowl',Fluid.of('water',500),'carrot','potato','#forge:raw_beef']).heated()
-    event.recipes.createMixing('farmersdelight:chicken_soup',['bowl',Fluid.of('water',500),'carrot','farmersdelight:cabbage_leaf','farmersdelight:onion','#forge:raw_chicken']).heated()
-    event.recipes.createMixing('farmersdelight:vegetable_soup',['bowl',Fluid.of('water',500),'carrot','potato','beetroot','farmersdelight:cabbage_leaf','farmersdelight:onion']).heated()
-    event.recipes.createMixing('farmersdelight:fish_stew',['bowl',Fluid.of('water',500),'farmersdelight:cod_slice','farmersdelight:salmon_slice','farmersdelight:onion',Fluid.of('create_central_kitchen:tomato_sauce',200)]).heated()
-    event.recipes.createMixing('farmersdelight:pumpkin_soup',['bowl',Fluid.of('water',500),'farmersdelight:pumpkin_slice','farmersdelight:cabbage_leaf','farmersdelight:bacon',Fluid.of('milk',250)]).heated()
-    event.recipes.createMixing('farmersdelight:baked_cod_stew',['bowl','farmersdelight:cod_slice','farmersdelight:tomato','potato','egg']).heated()
-    event.recipes.createMixing('farmersdelight:noodle_soup',['bowl',Fluid.of('water',500),'farmersdelight:raw_pasta','farmersdelight:fried_egg','dried_kelp','farmersdelight:bacon']).heated()
-
-    event.remove({output:'farmersdelight:bacon_and_eggs'})
-    event.recipes.createCompacting('farmersdelight:bacon_and_eggs',['bowl','2x farmersdelight:fried_egg','2x farmersdelight:cooked_bacon'])
-
-    event.remove({output:'farmersdelight:pasta_with_meatballs'})
-    event.remove({output:'farmersdelight:pasta_with_mutton_chop'})
-    event.remove({output:'farmersdelight:vegetable_noodles'})
-    event.remove({output:'farmersdelight:squid_ink_pasta'})
-    event.recipes.createMixing('farmersdelight:pasta_with_meatballs',['farmersdelight:raw_pasta','bowl','farmersdelight:minced_beef',Fluid.of('create_central_kitchen:tomato_sauce',200)]).heated()
-    event.recipes.createMixing('farmersdelight:pasta_with_mutton_chop',['farmersdelight:raw_pasta','bowl','farmersdelight:mutton_chops',Fluid.of('create_central_kitchen:tomato_sauce',200)]).heated()
-    event.recipes.createMixing('farmersdelight:vegetable_noodles',['farmersdelight:raw_pasta','bowl','carrot','potato','red_mushroom','brown_mushroom','farmersdelight:cabbage_leaf','farmersdelight:tomato']).heated()
-    event.recipes.createMixing('farmersdelight:squid_ink_pasta',['farmersdelight:raw_pasta','bowl','farmersdelight:cod_slice','farmersdelight:salmon_slice','farmersdelight:tomato','ink_sac']).heated()
-    event.recipes.createCompacting('ink_sac',[Fluid.of('exnihilosequentia:sea_water',200),'kubejs:fishfood'])
-
-    event.remove({output:'farmersdelight:mushroom_rice'})
-    event.recipes.createMixing('farmersdelight:mushroom_rice',[
-        'kubejs:cold_rice','red_mushroom','brown_mushroom','potato','farmersdelight:fried_egg',Fluid.of('kubejs:oil',200)
-    ]).heated()
-
-    event.remove({output:'farmersdelight:roasted_mutton_chops'})
-    event.recipes.createMixing('farmersdelight:roasted_mutton_chops',[
-        'farmersdelight:cooked_mutton_chops','beetroot','farmersdelight:rice','potato','farmersdelight:tomato',Fluid.of('kubejs:oil',50)
-    ]).heated()
-
-    event.remove({output:'farmersdelight:steak_and_potatoes'})
-    event.recipes.createMixing('farmersdelight:steak_and_potatoes',[
-        'cooked_beef','potato','farmersdelight:cooked_rice','farmersdelight:onion',Fluid.of('kubejs:oil',50)
-    ]).heated()
-
-    event.remove({output:'farmersdelight:ratatouille'})
-    event.recipes.createCompacting('farmersdelight:ratatouille',[
-        'bowl','farmersdelight:cabbage_leaf','farmersdelight:onion','potato','beetroot','carrot','farmersdelight:tomato'
-    ]).heated()
-
-    event.remove({output:'farmersdelight:grilled_salmon'})
-    event.recipes.createCompacting('farmersdelight:grilled_salmon',[
-        'bowl','farmersdelight:cabbage_leaf','sweet_berries','farmersdelight:onion','farmersdelight:salmon_slice',Fluid.of('create_central_kitchen:tomato_sauce',100)
-    ]).heated()
-
-    event.remove({output:'farmersdelight:roast_chicken_block'})
-    event.recipes.createCompacting('farmersdelight:roast_chicken_block',[
-        'bowl','2x potato','2x carrot','chicken','2x egg','2x farmersdelight:onion','kubejs:undo_sandwich',Fluid.of('kubejs:oil',100)
-    ]).heated()
-
-    event.remove({output:'farmersdelight:stuffed_pumpkin_block'})
-    event.recipes.createCompacting('farmersdelight:stuffed_pumpkin_block',[
-        'bowl','pumpkin','farmersdelight:onion','red_mushroom','brown_mushroom','potato','sweet_berries','carrot',Fluid.of('kubejs:oil',100)
-    ]).heated()
-
-    event.remove({output:"farmersdelight:shepherds_pie_block"})
-    event.recipes.createCompacting('farmersdelight:shepherds_pie_block',[
-        'bowl','4x farmersdelight:onion','4x baked_potato','8x farmersdelight:cooked_mutton_chops',Fluid.of('kubejs:oil',100),Fluid.of('milk',250)
-    ]).heated()
-    
-    event.remove({output:'rainbowcompound:golden_apple_stew'})
-    event.recipes.createMixing('rainbowcompound:golden_apple_stew',['2x golden_apple','2x apple','sugar','4x farmersdelight:cabbage_leaf']).heated()
-    event.remove({output:'rainbowcompound:rainbow_apple_stew'})
-    event.recipes.createMixing('rainbowcompound:rainbow_apple_stew',['2x rainbowcompound:rainbow_apple','2x apple','sugar','4x farmersdelight:cabbage_leaf']).heated()
-    event.remove({output:'rainbowcompound:enchanted_golden_apple_stew'})
-    event.recipes.createMixing('rainbowcompound:enchanted_golden_apple_stew',['2x enchanted_golden_apple','2x apple','sugar','4x farmersdelight:cabbage_leaf']).heated()
-    event.recipes.createMixing('10x apple',['grass_block','#minecraft:saplings','bone_meal'])
-
-    event.remove({output:'beetroot_soup'})
-    event.recipes.createMixing('beetroot_soup',['bowl','5x beetroot','sugar']).heated()
-    event.remove({output:'mushroom_stew'})
-    event.recipes.createMixing('mushroom_stew',['bowl','red_mushroom','brown_mushroom']).heated()
-    event.remove({output:'rabbit_stew'})
-    event.recipes.createMixing('rabbit_stew',['bowl','baked_potato','carrot','cooked_rabbit','farmersdelight:onion']).heated()
-
-    event.recipes.createMixing('rainbowcompound:shadow_steel_tea',[
-        Fluid.of('create:tea',250),'glass_bottle','create:powdered_obsidian','bone_meal','kubejs:shadow_steel'
-    ]).heated()
-    event.recipes.createMixing('rainbowcompound:refined_radiance_tea',[
-        Fluid.of('create:tea',250),'glass_bottle','glowstone_dust','bone_meal','kubejs:refined_radiance'
-    ]).heated()
-    event.remove({output:'rainbowcompound:shadow_steel_tea'})
-    event.remove({output:'rainbowcompound:refined_radiance_tea'})
-    event.remove({output:'farmersdelight:fried_rice'})
-    //extra
-    event.remove({output:'farmersdelight:glow_berry_custard'})
-    event.remove({output:'farmersdelight:tomato_sauce',type:'farmersdelight:cooking'})
-    event.remove({output:'farmersdelight:apple_cider',type:'farmersdelight:cooking'})
-    event.remove({output:'farmersdelight:hot_cocoa',type:'farmersdelight:cooking'})
-    event.remove({output:'farmersdelight:dog_food'})
-    event.recipes.createMixing('farmersdelight:dog_food',['rotten_flesh','bone_meal','#farmersdelight:wolf_prey','farmersdelight:rice','bowl']).heated()
+    //nether
+    event.recipes.createHaunting('shroomlight','glowstone')
+    event.shaped('crimson_nylium',[
+        ' A ',
+        'CBC',
+        ' A '
+    ],{
+        A:Item.of('rainbowcompound:netherwartite_ingot'),
+        B:'netherrack',
+        C:'nether_wart_block'
+    })
+    event.recipes.createHaunting('shroomlight','glowstone')
+    event.shaped('warped_nylium',[
+        ' A ',
+        'CBC',
+        ' A '
+    ],{
+        A:Item.of('rainbowcompound:warpedite_ingot'),
+        B:'netherrack',
+        C:'warped_wart_block'
+    })
+    event.remove({output:'nethersdelight:propelplant_stem'})
+    event.recipes.createPressing('exnihilosequentia:crushed_netherrack','netherrack')
+    event.recipes.createMilling([
+        Item.of('exnihilosequentia:crushed_netherrack').withChance(0.8),
+        Item.of('exnihilosequentia:crushed_netherrack').withChance(0.7)
+    ],'netherrack')
+    event.recipes.createCrushing([
+        Item.of('exnihilosequentia:crushed_netherrack').withChance(0.8),
+        Item.of('exnihilosequentia:crushed_netherrack').withChance(0.7),
+        Item.of('exnihilosequentia:crushed_netherrack').withChance(0.6)
+    ],'netherrack')
+    event.recipes.createsifterSifting([
+        Item.of('nethersdelight:propelplant_stem').withChance(0.4),
+        Item.of('nethersdelight:mimicarnation').withChance(0.4),
+        Item.of('crimson_roots').withChance(0.4),
+        Item.of('warped_roots').withChance(0.4),
+        Item.of('nether_sprouts').withChance(0.4)
+    ],['exnihilosequentia:crushed_netherrack','createsifter:brass_mesh'])
+    event.recipes.createHaunting('nethersdelight:hoglin_hide','leather')
+    event.recipes.createHaunting('nethersdelight:hoglin_loin','porkchop')
+    event.recipes.createHaunting('nethersdelight:strider_slice','#forge:raw_fishes')
+    event.remove({input:'nethersdelight:hoglin_hide'})
+    event.recipes.createMechanicalCrafting('nethersdelight:hoglin_mount',[
+        'AAAAA',
+        'BDDDB',
+        'BDCDB',
+        'BDDDB',
+        'BBBBB'
+    ],{
+        A:'shroomlight',
+        B:'gold_nugget',
+        C:'nethersdelight:hoglin_hide',
+        D:'#minecraft:planks'
+    })
+    event.recipes.createMechanicalCrafting('nethersdelight:raw_stuffed_hoglin',[
+        'GGBAQACHH',
+        'GBADFDACH',
+        'BADEMEDAC',
+        'BAPONOPAC',
+        'AIAAAAAIA',
+        'AILKNKLIA',
+        'AIKLMLKIA',
+        'AJIIIIIJA',
+        'JAAAAAAAJ'
+    ],{
+        A:'nethersdelight:hoglin_hide',
+        B:'warped_roots',
+        C:'crimson_roots',
+        D:'#forge:pepper',
+        E:'#forge:salt',
+        F:'golden_apple',
+        G:'warped_fungus',
+        H:'crimson_fungus',
+        I:'nethersdelight:hoglin_loin',
+        J:'farmersdelight:ham',
+        K:'potato',
+        L:'carrot',
+        M:'#forge:onions',
+        N:'#forge:garlic',
+        O:'#forge:tomatoes',
+        P:'glow_berries',
+        Q:'nethersdelight:mimicarnation'
+    })
+    //end
+    event.recipes.createsifterSifting([
+        Item.of('ends_delight:dragon_tooth').withChance(0.4),
+        Item.of('shulker_shell').withChance(0.4),
+        Item.of('endersdelight:mite_crust').withChance(0.4),
+    ],['exnihilosequentia:crushed_end_stone','createsifter:brass_mesh'])
+    event.recipes.createMixing([
+        Item.of('chorus_fruit').withChance(0.7),
+        Item.of('chorus_plant').withChance(0.7),
+        Item.of('chorus_flower').withChance(0.7),
+        Item.of('ends_delight:chorus_succulent').withChance(0.7),
+    ],['chorus_fruit',Fluid.of('create_central_kitchen:dragon_breath',200)])
+    event.recipes.createFilling('chorus_flower',['chorus_plant',Fluid.of('create_central_kitchen:dragon_breath',150)])
+    event.recipes.createFilling('endersdelight:enderman_sight',['endersdelight:ender_shard',Fluid.of('create_central_kitchen:dragon_breath',150)])
+    event.recipes.createDeploying([
+        Item.of('endersdelight:shulker_mollusk').withChance(0.4),
+        Item.of('shulker_shell').withChance(0.9)
+    ],['shulker_shell','#exnihilosequentia:crook'])
+    event.recipes.createDeploying([
+        Item.of('ends_delight:raw_ender_mite_meat').withChance(0.4),
+        Item.of('endersdelight:mite_crust').withChance(0.9)
+    ],['endersdelight:mite_crust','#exnihilosequentia:crook'])
+    event.recipes.createMechanicalCrafting('dragon_egg',[
+        '  A  ',
+        ' ABA ',
+        'ABCBA',
+        'A B A',
+        ' AAA '
+    ],{
+        A:'ends_delight:dragon_egg_shell',
+        B:'rainbowcompound:enderite_ingot',
+        C:'rainbowcompound:netherstar_ingot'
+    })
+    event.recipes.createFilling('ends_delight:dragon_leg',['farmersdelight:ham',Fluid.of("create_central_kitchen:dragon_breath",500)])
+    //extraore
+    event.recipes.createsifterSifting([
+        Item.of('exnihilosequentia:tin_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:tin_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:lead_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:lead_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:nickel_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:nickel_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:silver_pieces').withChance(0.85),
+        Item.of('exnihilosequentia:silver_pieces').withChance(0.85),
+    ],['stone','createsifter:brass_mesh'])
+    //tool
+    event.remove({output:'croptopia:cooking_pot'})
+    event.remove({output:'croptopia:frying_pan'})
+    event.remove({output:'croptopia:mortar_and_pestle'})
+    event.remove({output:'croptopia:food_press'})
+    event.remove({output:'casualness_delight:deep_frying_pan'})
+    event.shaped('croptopia:cooking_pot',[
+        'B B',
+        'B B',
+        'BBB'
+    ],{
+        B:'createdeco:cast_iron_sheet'
+    })
+    event.shaped('croptopia:frying_pan',[
+        'A  ',
+        ' AB',
+        ' BB'
+    ],{
+        A:'stick',
+        B:'createdeco:cast_iron_sheet'
+    })
+    event.shaped('croptopia:mortar_and_pestle',[
+        'A  ',
+        ' AB',
+        ' BB'
+    ],{
+        A:'stick',
+        B:'create:brass_sheet'
+    })
+    event.shaped('croptopia:food_press',[
+        ' A ',
+        'CBC',
+        ' C '
+    ],{
+        A:'create:mechanical_press',
+        B:'hopper',
+        C:'createdeco:cast_iron_sheet'
+    })
+    event.recipes.createFilling('casualness_delight:deep_frying_pan',['farmersdelight:cooking_pot',Fluid.of('kubejs:oil',1000)])
 })

@@ -1,10 +1,10 @@
 {
 	id: "571E635043697F80"
-	group: "4D81F2802AE7DA76"
-	order_index: 0
+	group: "6D82F4D3C76D3F5F"
+	order_index: 1
 	filename: "571E635043697F80"
-	title: "皇帝的晚饭：挑战"
-	icon: "minecraft:totem_of_undying"
+	title: "新手的初试：经典"
+	icon: "minecraft:bread"
 	disable_toast: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -304,7 +304,7 @@
 		{
 			x: -3.5d
 			y: -2.0d
-			description: ["我曾经沉迷于cookies clicker，一款放置挂机类游戏"]
+			subtitle: "Cookies Clicker"
 			hide_dependency_lines: true
 			dependencies: ["31A8D049A7A47E96"]
 			id: "2FF64093D2675501"
@@ -485,17 +485,21 @@
 			}]
 		}
 		{
-			title: "厨师技能考核"
+			title: "傻瓜烹饪指南"
 			x: -9.0d
 			y: -2.0d
-			subtitle: "现在播放考场守则..."
-			description: ["做一个蛋糕不够展示你作为一名厨师的水平，制作更多类型的美食才是"]
-			dependencies: ["6D3EC08B948ED057"]
+			subtitle: "你的第一道菜"
+			description: [
+				"这里是农夫乐事和一些MC原版美食，对于初学者来说是个不错的开始"
+				"主线里的美食不算在内（那也不像是厨师能够搞定的"
+				"（其实这里是内测版的挑战章节"
+			]
+			dependencies: ["389F231819AAA1BF"]
 			hide: true
 			size: 2.0d
 			id: "31A8D049A7A47E96"
 			tasks: [{
-				id: "6BBB6EF656F84A0A"
+				id: "2FA60FD0DCAD1045"
 				type: "checkmark"
 			}]
 		}

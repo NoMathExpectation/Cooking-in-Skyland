@@ -446,6 +446,7 @@
 				"（也许是竹笋吧...）"
 			]
 			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
 			id: "05902DDA8439DC50"
 			tasks: [{
 				id: "737F643F9A0BCB8F"
@@ -458,6 +459,7 @@
 			y: 4.5d
 			description: ["南方糖的来源是甘蔗，而北方是甜菜"]
 			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
 			id: "498210FFDBC544BA"
 			tasks: [{
 				id: "299651E19E1306C1"
@@ -470,6 +472,7 @@
 			y: 4.5d
 			subtitle: "糖，糖完了都"
 			dependencies: ["498210FFDBC544BA"]
+			optional: true
 			id: "0A5AFBF4D9898F8A"
 			tasks: [{
 				id: "4C2D4710EE2B9E7B"
@@ -493,6 +496,7 @@
 			x: 11.5d
 			y: 3.0d
 			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
 			id: "416DD89068B5BFEE"
 			tasks: [{
 				id: "6A9903C9C6595D5B"
@@ -504,6 +508,7 @@
 			x: 11.5d
 			y: 1.5d
 			dependencies: ["0FDC088A43B9A1C3"]
+			optional: true
 			id: "5E0F11C67932A13F"
 			tasks: [{
 				id: "5035881AD7995DC1"

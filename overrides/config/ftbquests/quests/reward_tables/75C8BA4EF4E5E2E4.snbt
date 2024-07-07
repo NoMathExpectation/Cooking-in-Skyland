@@ -1,0 +1,10 @@
+{
+	id: "75C8BA4EF4E5E2E4"
+	order_index: 8
+	title: "狗"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:wolf_spawn_egg" }
+		{ item: "quark:shiba_spawn_egg" }
+	]
+}

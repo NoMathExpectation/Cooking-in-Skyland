@@ -85,11 +85,12 @@ onEvent('recipes',event=>{
     .transitionalItem('kubejs:incomplete_stupid_zombie')
     .loops(1)
     event.recipes.createSequencedAssembly('kubejs:smart_zombie','kubejs:stupid_zombie',[
-        event.recipes.createPressing('kubejs:incomplete_smart_zombie','kubejs:incomplete_smart_zombie'),
+        event.recipes.createCutting('kubejs:incomplete_smart_zombie','kubejs:incomplete_smart_zombie'),
         event.recipes.createFilling('kubejs:incomplete_smart_zombie',['kubejs:incomplete_smart_zombie',Fluid.of('milk',500)]),
         event.recipes.createDeploying('kubejs:incomplete_smart_zombie',['kubejs:incomplete_smart_zombie','farmersdelight:fried_egg']),
         event.recipes.createDeploying('kubejs:incomplete_smart_zombie',['kubejs:incomplete_smart_zombie','farmersdelight:fried_rice']),
-        event.recipes.createDeploying('kubejs:incomplete_smart_zombie',['kubejs:incomplete_smart_zombie','farmersdelight:hamburger'])
+        event.recipes.createDeploying('kubejs:incomplete_smart_zombie',['kubejs:incomplete_smart_zombie','farmersdelight:hamburger']),
+        event.recipes.createPressing('kubejs:incomplete_smart_zombie','kubejs:incomplete_smart_zombie')
     ])
     .transitionalItem('kubejs:incomplete_smart_zombie')
     .loops(1)
@@ -110,12 +111,12 @@ onEvent('recipes',event=>{
         Item.of('kubejs:stupid_zombie').withChance(0.05),
         Item.of('kubejs:smart_zombie').withChance(0.05)
     ],'create:brass_sheet',[
+        event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','create:cogwheel']),
         event.recipes.createPressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
-        event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','create:cogwheel']),
-        event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','create:large_cogwheel']),
         event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','kubejs:smart_zombie']),
-        event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','create:cogwheel']),
+        event.recipes.createPressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
         event.recipes.createDeploying('create:incomplete_precision_mechanism',['create:incomplete_precision_mechanism','create:large_cogwheel']),
+        event.recipes.createPressing('create:incomplete_precision_mechanism','create:incomplete_precision_mechanism'),
     ])
     .transitionalItem('create:incomplete_precision_mechanism')
     .loops(1)

@@ -1,0 +1,468 @@
+{
+	id: "37C42D425A0A5CF6"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 10
+	filename: "37C42D425A0A5CF6"
+	title: "深邃的天空：末地"
+	icon: "minecraft:dragon_egg"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "...结束了？"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "开始了..."
+			description: ["这里是来自末地的美食，快感谢末影龙的馈赠（"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "615A98995978B5C8"
+			tasks: [{
+				id: "45205E7F7F571CDE"
+				type: "checkmark"
+				title: "结束了？"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "02E4FDF46DDAD506"
+			tasks: [{
+				id: "0070A588BD2E59E0"
+				type: "item"
+				item: "endersdelight:stuffed_shulker"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "245FB4C8668ABCBF"
+			tasks: [{
+				id: "7A872646870406A5"
+				type: "item"
+				item: "endersdelight:stuffed_shulker_bowl"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "1B5BDE3AAE7965A2"
+			tasks: [{
+				id: "131C0B8468CB11B5"
+				type: "item"
+				item: "endersdelight:ender_paella"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "00DD8D5F29792F51"
+			tasks: [{
+				id: "706ACD9093F3CBF7"
+				type: "item"
+				item: "endersdelight:pearl_pasta"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "01B9C6E4E273B2BD"
+			tasks: [{
+				id: "1FBAB62E2542BFBF"
+				type: "item"
+				item: "endersdelight:endermite_stew"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "6CDB3BCC206B7B3B"
+			tasks: [{
+				id: "6786E12C5F9C4EA8"
+				type: "item"
+				item: "endersdelight:twisted_cereal"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "3D5F614F8C88C5CC"
+			tasks: [{
+				id: "6C932352CF8BD8A6"
+				type: "item"
+				item: "endersdelight:ender_paella_wood"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "2214EB3ECE9D36ED"
+			tasks: [{
+				id: "152DFB84D22DC05A"
+				type: "item"
+				item: "endersdelight:pearl_pasta_wood"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "4EC60A082914BC64"
+			tasks: [{
+				id: "38C20DDCD33B1F58"
+				type: "item"
+				item: "endersdelight:endermite_stew_wood"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "7FF4D183132214B0"
+			tasks: [{
+				id: "2144F5526A46B87A"
+				type: "item"
+				item: "endersdelight:twisted_cereal_wood"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "34F19C6506CE5362"
+			tasks: [{
+				id: "611B2BB0FD474A17"
+				type: "item"
+				item: "endersdelight:crawling_sandwich"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "3BD2106FE099B5A8"
+			tasks: [{
+				id: "06BD5F21E6FCBA09"
+				type: "item"
+				item: "endersdelight:crispy_skewer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "52943F2328F7E45A"
+			tasks: [{
+				id: "0CF81B76D2C7A3D8"
+				type: "item"
+				item: "endersdelight:chorus_stew"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "6BE3C9637AEFD59C"
+			tasks: [{
+				id: "3D122B10C91810B3"
+				type: "item"
+				item: "endersdelight:chorus_pie"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "1FE90684B9497235"
+			tasks: [{
+				id: "029848302022E81B"
+				type: "item"
+				item: "endersdelight:strange_eclair"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "2DDC460CC4014127"
+			tasks: [{
+				id: "545F4D217BB3D084"
+				type: "item"
+				item: "endersdelight:chorus_juice"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "1D530D0E6AEDFB77"
+			tasks: [{
+				id: "2E7065835775C634"
+				type: "item"
+				item: "endersdelight:uncanny_cookies"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "79F430343A24F8B9"
+			tasks: [{
+				id: "54CE3C4ECBD4E14A"
+				type: "item"
+				item: "ends_delight:grilled_shulker"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "08CE2AC91E84C072"
+			tasks: [{
+				id: "0B9476DEEB5EDAD1"
+				type: "item"
+				item: "ends_delight:grilled_shulker_block"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "284CB2922A04DDB1"
+			tasks: [{
+				id: "156406F8D421AB2C"
+				type: "item"
+				item: "ends_delight:dragon_meat_stew_block"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "7903CC82A2CB2E0D"
+			tasks: [{
+				id: "10C98DC4E61CEC42"
+				type: "item"
+				item: "ends_delight:steamed_dragon_egg_block"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "48BAD27B2451DD83"
+			tasks: [{
+				id: "1AB7176FA06E2609"
+				type: "item"
+				item: "ends_delight:dragon_leg_with_sauce_block"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "5712DE45C461E783"
+			tasks: [{
+				id: "5D7F60AC0135A9B0"
+				type: "item"
+				item: "ends_delight:end_barbecue_stick"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "0B620FD40C295ABB"
+			tasks: [{
+				id: "777D1D178019632D"
+				type: "item"
+				item: "ends_delight:assorted_salad"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "3A4D2965E7817CDB"
+			tasks: [{
+				id: "7BA3DA2031D9EE37"
+				type: "item"
+				item: "ends_delight:end_mixed_salad"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "6D3B537E8A6647CC"
+			tasks: [{
+				id: "77A5D8CE67E6FCA8"
+				type: "item"
+				item: "ends_delight:roasted_dragon_steak"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "22EBD25751D5A018"
+			tasks: [{
+				id: "6AB4485A973560E7"
+				type: "item"
+				item: "ends_delight:stir_fried_shulker_meat"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "587C90204E12696D"
+			tasks: [{
+				id: "427EBB132106ACF5"
+				type: "item"
+				item: "ends_delight:dragon_breath_and_chorus_soup"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "67B12A1FC6FBF898"
+			tasks: [{
+				id: "0D133A9F77B22BE6"
+				type: "item"
+				item: "ends_delight:ender_congee"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "3FFDA5B47BEEBE38"
+			tasks: [{
+				id: "274F26B5BAFBCC43"
+				type: "item"
+				item: "ends_delight:chorus_fruit_pie"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "2218F19743F868B4"
+			tasks: [{
+				id: "3F373066F27B9BCF"
+				type: "item"
+				item: "ends_delight:chorus_fruit_popsicle"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			dependencies: ["615A98995978B5C8"]
+			id: "465FB7644BD7B16E"
+			tasks: [{
+				id: "2FD18EC702F30629"
+				type: "item"
+				item: "ends_delight:chorus_cookie"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "0C2BBEA76DF0B6C8"
+			tasks: [{
+				id: "759AAF6C92B1E532"
+				type: "item"
+				item: "ends_delight:dragon_breath_soda"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "68EF87A3462967FA"
+			tasks: [{
+				id: "4186DB5DE95BB118"
+				type: "item"
+				item: "ends_delight:chorus_flower_tea"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "65B4C1BCFCD5BC1B"
+			tasks: [{
+				id: "65F171E7BA5DCF26"
+				type: "item"
+				item: "ends_delight:bubble_tea"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "261D57B07C164CD4"
+			tasks: [{
+				id: "06CE0FF53BC7A93E"
+				type: "item"
+				item: "ends_delight:stuffed_rice_cake"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "17F0DDFA730DFDF0"
+			tasks: [{
+				id: "2046B38DA00289AB"
+				type: "item"
+				item: "ends_delight:chorus_flower_pie"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "4D899FF1F6DA02BC"
+			tasks: [{
+				id: "4EA224CA620E8F64"
+				type: "item"
+				item: "ends_delight:chorus_fruit_wine"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "0A65449C17556D7F"
+			tasks: [{
+				id: "35C55A6FE87CFBB8"
+				type: "item"
+				item: "ends_delight:roasted_shulker_meat"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			dependencies: ["615A98995978B5C8"]
+			id: "43B61282EFF71835"
+			tasks: [{
+				id: "65700A49FD15E5E2"
+				type: "item"
+				item: "ends_delight:fried_dragon_egg"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,125 @@
+{
+	id: "3F0289192D77138A"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 8
+	filename: "3F0289192D77138A"
+	title: "摇曳的波涛：海产"
+	icon: "oceansdelight:guardian"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -6.0d
+			y: -0.5d
+			description: ["这里是一些鱼类与海产品，通称“海鲜”的美食"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "6690F3F55019DC74"
+			tasks: [{
+				id: "13DBA799C6A93D40"
+				type: "checkmark"
+				title: "海的那边是..."
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "1DDC0FC0DB3EF221"
+			tasks: [{
+				id: "2307A2668DE9C31B"
+				type: "item"
+				item: "babydelight:kelp_salad"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "5BBF984091951EE6"
+			tasks: [{
+				id: "055397ACEA423A1F"
+				type: "item"
+				item: "babydelight:ranchu_soup"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "67A37269E1CC6B13"
+			tasks: [{
+				id: "17548C6AAC96F378"
+				type: "item"
+				item: "babydelight:river_coleslav"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			dependencies: ["6690F3F55019DC74"]
+			id: "67CC009414B6DFAD"
+			tasks: [{
+				id: "20E4860801CDD6EF"
+				type: "item"
+				item: "babydelight:goldfish_fried_rice"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["6690F3F55019DC74"]
+			id: "1E6F95B3B59652B2"
+			tasks: [{
+				id: "65231670864B6ABB"
+				type: "item"
+				item: "oceansdelight:squid_rings"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["6690F3F55019DC74"]
+			id: "710241B346888004"
+			tasks: [{
+				id: "171EEFC743D303D7"
+				type: "item"
+				item: "oceansdelight:baked_tentacle_on_a_stick"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "3A82B3E8C7B12959"
+			tasks: [{
+				id: "5B5628C9F3A8A5A5"
+				type: "item"
+				item: "oceansdelight:guardian_soup"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "55F3759710426806"
+			tasks: [{
+				id: "6B925373C62C2CCE"
+				type: "item"
+				item: "oceansdelight:cabbage_wrapped_elder_guardian"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["6690F3F55019DC74"]
+			id: "1E94D421C108F88B"
+			tasks: [{
+				id: "39F3473229E716AA"
+				type: "item"
+				item: "oceansdelight:braised_sea_pickle"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,59 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1719735381141
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:efa68265-7c55-4c1e-a6ce-d39b5ef1db13-1719735373787] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/aquavelvet.ogg
+  audio_instance_1 = [source:local]/config/fancymenu/assets/brokenradio_1.ogg
+  audio_instance_2 = [source:local]/config/fancymenu/assets/burningfield.ogg
+  audio_instance_3 = [source:local]/config/fancymenu/assets/entertaincrown.ogg
+  audio_instance_4 = [source:local]/config/fancymenu/assets/lalalalovesone.ogg
+  audio_instance_5 = [source:local]/config/fancymenu/assets/seawishes.ogg
+  audio_instance_6 = [source:local]/config/fancymenu/assets/storyteller.ogg
+  audio_instance_7 = [source:local]/config/fancymenu/assets/tothefield.ogg
+  play_mode = shuffle
+  looping = true
+  volume = 0.35
+  sound_source = music
+  element_type = audio_v2
+  instance_identifier = cbeffd78-09de-42c5-9870-7833ecd7c74d-1719735102531
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -33
+  y = -21
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 15a7f381-8e2e-4456-8864-85cd633bb29c-1719735102531
+  [loading_requirement_container_meta:15a7f381-8e2e-4456-8864-85cd633bb29c-1719735102531] = [groups:][instances:]
+}
+

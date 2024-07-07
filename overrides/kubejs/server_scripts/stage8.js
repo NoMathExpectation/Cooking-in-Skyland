@@ -284,4 +284,19 @@ onEvent('recipes',event=>{
     ],'kubejs:step1',[
         event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:singularity')]).keepHeldItem()
     ]).transitionalItem('kubejs:proc1').loops(1)
+
+    event.recipes.createMechanicalCrafting('create:handheld_worldshaper',[
+        'AAAAEDC',
+        '   FEDC',
+        'BBBBEEE',
+        '    EFE',
+        '      E'
+    ],{
+        A:'kubejs:refined_radiance',
+        B:'kubejs:shadow_steel',
+        C:'create:creative_fluid_tank',
+        D:'create:creative_crate',
+        E:'kubejs:infinity_ingot',
+        F:'create:creative_motor'
+    })
 })

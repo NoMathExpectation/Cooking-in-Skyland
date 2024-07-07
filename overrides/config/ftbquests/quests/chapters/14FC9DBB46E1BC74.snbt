@@ -26,7 +26,7 @@
 			x: -7.5d
 			y: -1.5d
 			subtitle: "因为它就在这里！"
-			description: ["接下来要做的蛋糕不是普通的蛋糕了，星光沐浴在蛋糕上，这使得我们每一步都十分艰难"]
+			description: ["星光沐浴在蛋糕上，使得做蛋糕每一步都十分艰难"]
 			dependencies: ["243BD0C2A518C3B3"]
 			hide: true
 			id: "702E11E9752CC0FB"
@@ -383,9 +383,10 @@
 		{
 			x: -4.5d
 			y: -1.5d
-			subtitle: "哎呀！蛋糕坏掉了！"
+			subtitle: "哎呀！蛋糕裂开了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
+			optional: true
 			id: "27FF9B39050CEE08"
 			tasks: [{
 				id: "52B0852D75C2A3F7"
@@ -399,6 +400,7 @@
 			subtitle: "哎呀！蛋糕片切坏了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
+			optional: true
 			id: "616F50B2D3691CEC"
 			tasks: [{
 				id: "72E16B23A6CCC637"
@@ -412,6 +414,7 @@
 			subtitle: "哎呀！奶油裱错了！"
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
+			optional: true
 			id: "786D302EEB2D4E3E"
 			tasks: [{
 				id: "3537E7D95A8EFACC"
@@ -426,6 +429,7 @@
 			description: ["没关系，我们还能给它组装成蛋糕胚"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
+			optional: true
 			id: "7E90E089433914C1"
 			tasks: [{
 				id: "401A8FF72B9FE682"
@@ -440,6 +444,7 @@
 			description: ["没关系，我们还能给它组装成蛋糕块"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
+			optional: true
 			id: "4F6CE47EA745EF76"
 			tasks: [{
 				id: "6E31E37DA87F6A59"

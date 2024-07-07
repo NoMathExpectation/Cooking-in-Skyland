@@ -1,0 +1,304 @@
+{
+	id: "45A06F138C623CA3"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 3
+	filename: "45A06F138C623CA3"
+	title: "繁茂的山林：果树"
+	icon: "rainbowoaks:rainbow_sapling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "脱贫致富奔小康"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "经济作物补收入"
+			description: ["只是农作物的话还是太单一了，种点果树补充一下吧"]
+			dependencies: ["389F231819AAA1BF"]
+			hide: true
+			size: 2.0d
+			id: "5E30819215B838AA"
+			tasks: [{
+				id: "4F78F2546D10A5F2"
+				type: "checkmark"
+				title: "脱贫致富经"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "5D99D607FDE794BA"
+			tasks: [{
+				id: "45F507414DA250E1"
+				type: "item"
+				item: "croptopia:almond"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "6AE1DABE9AE78BAC"
+			tasks: [{
+				id: "2BAA99CF0978A5F5"
+				type: "item"
+				item: "croptopia:apricot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "4B65B4F93C3F1AA0"
+			tasks: [{
+				id: "7E3F5C57CF554D77"
+				type: "item"
+				item: "croptopia:avocado"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "3226283550EA0B06"
+			tasks: [{
+				id: "3D791B13B414D959"
+				type: "item"
+				item: "croptopia:banana"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "63BB525ACDA37B30"
+			tasks: [{
+				id: "6FF147C1E7042651"
+				type: "item"
+				item: "croptopia:cashew"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "4B89010127981EE9"
+			tasks: [{
+				id: "2FBA47371DD785D4"
+				type: "item"
+				item: "croptopia:cherry"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "506622C1E87EE9A5"
+			tasks: [{
+				id: "45F820D9919EA41B"
+				type: "item"
+				item: "croptopia:coconut"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "2CEAE2F5B4F488F8"
+			tasks: [{
+				id: "4C651A2781B01747"
+				type: "item"
+				item: "croptopia:date"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "17C1DE4390DE872C"
+			tasks: [{
+				id: "697859F18DEB4F3B"
+				type: "item"
+				item: "croptopia:dragonfruit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "393A38D2BE356132"
+			tasks: [{
+				id: "3D3AAF1236DA3D7A"
+				type: "item"
+				item: "croptopia:fig"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "1DBA7F93FE5B2FE9"
+			tasks: [{
+				id: "5D0A19D6F7A096C4"
+				type: "item"
+				item: "croptopia:grapefruit"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "37BFC67EA4E95476"
+			tasks: [{
+				id: "58D4E1C5B1CFECAA"
+				type: "item"
+				item: "croptopia:kumquat"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "6FE581E10E30B7EE"
+			tasks: [{
+				id: "41B079849D7E4A8A"
+				type: "item"
+				item: "croptopia:lemon"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "4D3DCE0D35C516F1"
+			tasks: [{
+				id: "089504F033723AC8"
+				type: "item"
+				item: "croptopia:lime"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "1FCDA5D654E4C812"
+			tasks: [{
+				id: "1014D63BFE94DA13"
+				type: "item"
+				item: "croptopia:mango"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "35179C475175894C"
+			tasks: [{
+				id: "708AB0D88A66A642"
+				type: "item"
+				item: "croptopia:nectarine"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "4B9DA3ADF8980F08"
+			tasks: [{
+				id: "1FE34C381DE584D2"
+				type: "item"
+				item: "croptopia:nutmeg"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "00AB8555F3145DD9"
+			tasks: [{
+				id: "2FB27E1F7CA42A63"
+				type: "item"
+				item: "croptopia:orange"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "13BC5DDEAEAD7ABB"
+			tasks: [{
+				id: "16B0C6E9A325CE00"
+				type: "item"
+				item: "croptopia:peach"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["5E30819215B838AA"]
+			id: "004257CC6032B027"
+			tasks: [{
+				id: "50131E286B0EADF8"
+				type: "item"
+				item: "croptopia:pear"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "5160F5AC3DC70ED2"
+			tasks: [{
+				id: "346F0F4711E83882"
+				type: "item"
+				item: "croptopia:pecan"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "0524864CFA62BA84"
+			tasks: [{
+				id: "650041AE1FD527AD"
+				type: "item"
+				item: "croptopia:persimmon"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "20CF26B15F05B219"
+			tasks: [{
+				id: "2198E69A1073F00A"
+				type: "item"
+				item: "croptopia:plum"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "451F23DE568E377C"
+			tasks: [{
+				id: "5C2DA8B88A89EE1B"
+				type: "item"
+				item: "croptopia:starfruit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["5E30819215B838AA"]
+			id: "7AFAC4EF84DF4A8B"
+			tasks: [{
+				id: "5A24867865338187"
+				type: "item"
+				item: "croptopia:walnut"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

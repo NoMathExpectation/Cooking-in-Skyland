@@ -1,0 +1,297 @@
+{
+	id: "4D4D05A8C00097C5"
+	group: "4D81F2802AE7DA76"
+	order_index: 3
+	filename: "4D4D05A8C00097C5"
+	title: "幸福的家园：装饰"
+	icon: "supplementaries:globe"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Macaw的桥"
+			x: 4.5d
+			y: -0.5d
+			hide_dependency_lines: false
+			dependencies: ["2E2ACB9E00053DB5"]
+			id: "3F2F5A10CB5A0A7F"
+			tasks: [{
+				id: "25DF3D449F2CDCBD"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwbridges"
+					}
+				}
+			}]
+		}
+		{
+			icon: "mcwbridges:pliers"
+			x: 4.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["70C600E5EC9F8895"]
+			id: "2E2ACB9E00053DB5"
+			tasks: [{
+				id: "33B1B6C7A10A7E43"
+				type: "checkmark"
+				title: "Macaw系列"
+			}]
+		}
+		{
+			title: "Macaw的小路"
+			x: 4.5d
+			y: 2.5d
+			hide_dependency_lines: false
+			dependencies: ["2E2ACB9E00053DB5"]
+			id: "7463F79FEA2BA76D"
+			tasks: [{
+				id: "7D7BC2A5DF753B1A"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwpaths"
+					}
+				}
+			}]
+		}
+		{
+			title: "Macaw的家具"
+			x: 6.0d
+			y: 1.0d
+			hide_dependency_lines: false
+			dependencies: ["2E2ACB9E00053DB5"]
+			id: "63B83E642ACF6D4D"
+			tasks: [{
+				id: "6A1A33728134AC15"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwfurnitures"
+					}
+				}
+			}]
+		}
+		{
+			title: "Macaw的墙"
+			x: 6.0d
+			y: -0.5d
+			hide_dependency_lines: false
+			dependencies: ["2E2ACB9E00053DB5"]
+			id: "65518172F87CDFC1"
+			tasks: [{
+				id: "7AF7251D9A5E4E3A"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwfences"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			subtitle: "虽然家具都是自己搓的"
+			description: [
+				"这里有一些装饰物品，可以更好装饰空岛"
+				"（我按模组给他们分了个类"
+			]
+			dependencies: ["6D3EC08B948ED057"]
+			size: 2.0d
+			id: "70C600E5EC9F8895"
+			tasks: [{
+				id: "5352C562F9CD6381"
+				type: "checkmark"
+				title: "家居建材城"
+			}]
+		}
+		{
+			title: "风铃"
+			x: 0.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["70C600E5EC9F8895"]
+			id: "3BB33C0F337CCBF1"
+			tasks: [{
+				id: "454DDFB68A28EB95"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "chimes"
+					}
+				}
+			}]
+		}
+		{
+			title: "Macaw的灯"
+			x: 6.0d
+			y: 2.5d
+			dependencies: ["2E2ACB9E00053DB5"]
+			id: "6C0CDCF0C527B457"
+			tasks: [{
+				id: "3F2CB1B89A9F32DD"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwlights"
+					}
+				}
+			}]
+		}
+		{
+			title: "锦致装饰"
+			x: 0.0d
+			y: 2.5d
+			hide_dependency_lines: true
+			dependencies: ["70C600E5EC9F8895"]
+			id: "3AE07998DE3C2342"
+			tasks: [{
+				id: "21E0075DC6443643"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "supplementaries"
+					}
+				}
+			}]
+		}
+		{
+			icon: "create:brass_casing"
+			x: 1.5d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["70C600E5EC9F8895"]
+			id: "4B4B39B73CC44636"
+			tasks: [{
+				id: "014C38907F0047F3"
+				type: "checkmark"
+				title: "机械动力附属"
+			}]
+		}
+		{
+			title: "机械动力：设计与装扮"
+			x: 1.5d
+			y: -0.5d
+			dependencies: ["4B4B39B73CC44636"]
+			id: "4B3F502B627D15AD"
+			tasks: [{
+				id: "1C6A0E1B94DE49B5"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "design_decor"
+					}
+				}
+			}]
+		}
+		{
+			title: "机械动力：装饰"
+			x: 1.5d
+			y: 2.5d
+			dependencies: ["4B4B39B73CC44636"]
+			id: "1B8F7B6135C331DE"
+			tasks: [{
+				id: "40E28FAF1E0B431E"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "createdeco"
+					}
+				}
+			}]
+		}
+		{
+			title: "机械动力：内饰"
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["4B4B39B73CC44636"]
+			id: "39E335FD49EA1CA9"
+			tasks: [{
+				id: "6EF9732DD08853B8"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "interiors"
+					}
+				}
+			}]
+		}
+		{
+			title: "机械动力：晶莹剔透"
+			x: 3.0d
+			y: -0.5d
+			dependencies: ["4B4B39B73CC44636"]
+			id: "471714AA71B0C776"
+			tasks: [{
+				id: "0AE2D3B664A16CDD"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "create_crystal_clear"
+					}
+				}
+			}]
+		}
+		{
+			title: "机械动力：凿子"
+			x: 3.0d
+			y: 2.5d
+			dependencies: ["4B4B39B73CC44636"]
+			id: "0DFFE462CB471254"
+			tasks: [{
+				id: "3BC795C970C7EA7D"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "rechiseledcreate"
+					}
+				}
+			}]
+		}
+		{
+			title: "Redden的石灯笼"
+			x: 3.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["70C600E5EC9F8895"]
+			id: "7881C11F211AE2CA"
+			tasks: [{
+				id: "4494C9C0F3CB958F"
+				type: "item"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "reddensstonelantern"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,126 @@
+{
+	id: "401B6E47168EC538"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 9
+	filename: "401B6E47168EC538"
+	title: "滚烫的岩浆：地狱"
+	icon: "farmersdelight:nether_salad"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -3.0d
+			y: -0.5d
+			subtitle: "...等会，去哪里深入？"
+			description: ["这里是来自地狱的美食，即使去不了地狱还是能做出来的"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "4E7D1CDF9D5E70F9"
+			tasks: [{
+				id: "6BAD3AFB57740C0D"
+				type: "checkmark"
+				title: "我们得更深入一些..."
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "215A455A06819D94"
+			tasks: [{
+				id: "654FE2C0E8107354"
+				type: "item"
+				item: "nethersdelight:stuffed_hoglin"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "54080403FC828F43"
+			tasks: [{
+				id: "4BAB60AD95C9F925"
+				type: "item"
+				item: "nethersdelight:plate_of_stuffed_hoglin_snout"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "0EB0DCC8213A818E"
+			tasks: [{
+				id: "0CBDBA7CF1F582FB"
+				type: "item"
+				item: "nethersdelight:plate_of_stuffed_hoglin_ham"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "31BB3E45FC0531ED"
+			tasks: [{
+				id: "42A26B7B2CD2D16B"
+				type: "item"
+				item: "nethersdelight:plate_of_stuffed_hoglin_roast"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "66495EF572DCD060"
+			tasks: [{
+				id: "337D9279EDE55143"
+				type: "item"
+				item: "nethersdelight:grilled_strider"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "1596E2716B455663"
+			tasks: [{
+				id: "0BA785BB64856285"
+				type: "item"
+				item: "nethersdelight:warped_moldy_meat"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "4A77B269BAE72787"
+			tasks: [{
+				id: "20815BD85B5E9C44"
+				type: "item"
+				item: "nethersdelight:nether_skewer"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "7BB272B1B66517C4"
+			tasks: [{
+				id: "032B0322CCD57F2D"
+				type: "item"
+				item: "nethersdelight:magma_gelatin"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["4E7D1CDF9D5E70F9"]
+			id: "5C5F7975F4433101"
+			tasks: [{
+				id: "3920F128CD134DE4"
+				type: "item"
+				item: "nethersdelight:hoglin_sirloin"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

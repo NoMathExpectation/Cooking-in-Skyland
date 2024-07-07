@@ -1,0 +1,1016 @@
+{
+	id: "003BBE89D74478C4"
+	group: "6D82F4D3C76D3F5F"
+	order_index: 6
+	filename: "003BBE89D74478C4"
+	title: "午后的时光：小吃"
+	icon: "create:bar_of_chocolate"
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["这里主要是甜点和小吃一类，能当零食吃"]
+			dependencies: ["389F231819AAA1BF"]
+			size: 2.0d
+			id: "16A102AEC055AB18"
+			tasks: [{
+				id: "15A8DD2CA12A052E"
+				type: "checkmark"
+				title: "byd吃完一顿接着吃是吧"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "30475E6CB90714E4"
+			tasks: [{
+				id: "4D335E453FD65815"
+				type: "item"
+				item: "croptopia:mango_ice_cream"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "5576385D50627721"
+			tasks: [{
+				id: "5864E4C8B2713291"
+				type: "item"
+				item: "croptopia:pecan_ice_cream"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4AADD72E1266BA6F"
+			tasks: [{
+				id: "4FA5FB9E00235E4F"
+				type: "item"
+				item: "croptopia:strawberry_ice_cream"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "5EA1A13C992263CF"
+			tasks: [{
+				id: "5E9DA638BA4DEA96"
+				type: "item"
+				item: "croptopia:vanilla_ice_cream"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "217DB0D2A9103AE7"
+			tasks: [{
+				id: "79B14FDDFBF521CE"
+				type: "item"
+				item: "croptopia:apple_pie"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "182E798AD69D4945"
+			tasks: [{
+				id: "4FCF85A0BF8FF746"
+				type: "item"
+				item: "croptopia:cherry_pie"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6BF887EC53833DDF"
+			tasks: [{
+				id: "6E4FC24AC40A752A"
+				type: "item"
+				item: "croptopia:pecan_pie"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "499857B74339B7D6"
+			tasks: [{
+				id: "0D674B7D935D5D07"
+				type: "item"
+				item: "croptopia:rhubarb_pie"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -7.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "18DF0C284AD367AA"
+			tasks: [{
+				id: "4A8F932F23D232EF"
+				type: "item"
+				item: "croptopia:onion_rings"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "205B2E38FFD06CD7"
+			tasks: [{
+				id: "34308DEF5CD10788"
+				type: "item"
+				item: "croptopia:doughnut"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3AAAB8040F61E5F6"
+			tasks: [{
+				id: "6AC97907D53B9E63"
+				type: "item"
+				item: "croptopia:protein_bar"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "5B64FD351697E5D1"
+			tasks: [{
+				id: "32F8DDD6807E0B9C"
+				type: "item"
+				item: "croptopia:nougat"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "1901B51CDAB12EB9"
+			tasks: [{
+				id: "626CFD62BE22AFD6"
+				type: "item"
+				item: "croptopia:banana_cream_pie"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "68464FF811E0372A"
+			tasks: [{
+				id: "72554237E01E944F"
+				type: "item"
+				item: "croptopia:candy_corn"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6A4A610755DE81E4"
+			tasks: [{
+				id: "10057952F05FAB2C"
+				type: "item"
+				item: "croptopia:rum_raisin_ice_cream"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "7D77B4028158D8DE"
+			tasks: [{
+				id: "2A3B2C701DD8BDDB"
+				type: "item"
+				item: "croptopia:cheese_cake"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "559DDE86D539B356"
+			tasks: [{
+				id: "29A0D823D8CC9EFF"
+				type: "item"
+				item: "croptopia:brownies"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -5.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3B72753B3ED09B9E"
+			tasks: [{
+				id: "4C9718471C1CF0DE"
+				type: "item"
+				item: "croptopia:snicker_doodle"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "1D17D8F73EA24FA1"
+			tasks: [{
+				id: "5920ED3287083FE6"
+				type: "item"
+				item: "croptopia:candied_nuts"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4BAD5F57E5D49789"
+			tasks: [{
+				id: "7F638756A8515CC9"
+				type: "item"
+				item: "croptopia:almond_brittle"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2C99CB47215BCD52"
+			tasks: [{
+				id: "410B6A9E562091CE"
+				type: "item"
+				item: "croptopia:raisin_oatmeal_cookie"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "7E7410939C4346AB"
+			tasks: [{
+				id: "20F6ECB1A19D02D4"
+				type: "item"
+				item: "croptopia:nutty_cookie"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "5676176B44DF40D8"
+			tasks: [{
+				id: "3AAA19A14D07ADE4"
+				type: "item"
+				item: "croptopia:tres_leche_cake"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3B573F30FA66A43B"
+			tasks: [{
+				id: "45737F2C89871FCF"
+				type: "item"
+				item: "croptopia:scones"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "47E02872F99F495E"
+			tasks: [{
+				id: "0D3132E048E0AB08"
+				type: "item"
+				item: "croptopia:figgy_pudding"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "7EB1F597A53D5622"
+			tasks: [{
+				id: "16AFCE6A7BDC5923"
+				type: "item"
+				item: "croptopia:treacle_tart"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2B4C0C54234392FB"
+			tasks: [{
+				id: "4AFE93CA32173D2C"
+				type: "item"
+				item: "croptopia:sticky_toffee_pudding"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4F3CCB6762946DA6"
+			tasks: [{
+				id: "17A47EAD982EEB06"
+				type: "item"
+				item: "croptopia:trifle"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6D335268FC10165F"
+			tasks: [{
+				id: "3CDCFD3BFCA28A1F"
+				type: "item"
+				item: "croptopia:kiwi_sorbet"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3D0F8CFBB32AFF06"
+			tasks: [{
+				id: "301D757D68B47907"
+				type: "item"
+				item: "croptopia:lemon_coconut_bar"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "24307CD7C4EE3B64"
+			tasks: [{
+				id: "635CC3079375E9BA"
+				type: "item"
+				item: "croptopia:baked_crepes"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6AA30D6FD19E4AA3"
+			tasks: [{
+				id: "67F6E69C893EC269"
+				type: "item"
+				item: "croptopia:macaron"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4A3E20985EA2EB67"
+			tasks: [{
+				id: "2E0D11CA4382AEFF"
+				type: "item"
+				item: "cacao:dark_chocolate"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6410008FD41BDFCA"
+			tasks: [{
+				id: "2CBC567485007D0A"
+				type: "item"
+				item: "cacao:caramel_dark_chocolate"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "415D765ACD2AED78"
+			tasks: [{
+				id: "6640B953BBECB7B8"
+				type: "item"
+				item: "cacao:praline_dark_chocolate"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "075D6AC8025AA21D"
+			tasks: [{
+				id: "72F6E965B13ABB0E"
+				type: "item"
+				item: "cacao:strawberry_cream_dark_chocolate"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3064179ABEC9C28C"
+			tasks: [{
+				id: "7A903E6625FF210D"
+				type: "item"
+				item: "cacao:cookie_cream_dark_chocolate"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4C4F0B8D6FC77AFD"
+			tasks: [{
+				id: "1C54CB62E2FEA60A"
+				type: "item"
+				item: "cacao:mixed_nuts_dark_chocolate"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "53BC6EA4CCBAC2EC"
+			tasks: [{
+				id: "594B7A3D85A7D270"
+				type: "item"
+				item: "cacao:coconut_dark_chocolate"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "032D695D8A1F099C"
+			tasks: [{
+				id: "3068F2A36B7925B8"
+				type: "item"
+				item: "cacao:peanut_butter_dark_chocolate"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4F053535E47F16FF"
+			tasks: [{
+				id: "19A0315DC0FF1072"
+				type: "item"
+				item: "cacao:milk_chocolate"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "141C59D6135D4255"
+			tasks: [{
+				id: "547A7919646267CE"
+				type: "item"
+				item: "cacao:caramel_milk_chocolate"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "56F3B1B13F8EAD49"
+			tasks: [{
+				id: "31421E6F5DC1B40E"
+				type: "item"
+				item: "cacao:praline_milk_chocolate"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "25234186C70ABF54"
+			tasks: [{
+				id: "1926044FBEBCA870"
+				type: "item"
+				item: "cacao:strawberry_cream_milk_chocolate"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "44999B7DF0CB111C"
+			tasks: [{
+				id: "4C7AD6579F601330"
+				type: "item"
+				item: "cacao:cookie_cream_milk_chocolate"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4132704A468D9DB8"
+			tasks: [{
+				id: "70AB91368B16A471"
+				type: "item"
+				item: "cacao:mixed_nuts_milk_chocolate"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "637FFD28C18861FB"
+			tasks: [{
+				id: "033B34AEB2DB23D1"
+				type: "item"
+				item: "cacao:coconut_milk_chocolate"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "05D79B231AF535D2"
+			tasks: [{
+				id: "2D1C52EA6628E7A4"
+				type: "item"
+				item: "cacao:peanut_butter_milk_chocolate"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6BF9EC504AC8E89A"
+			tasks: [{
+				id: "4599FF7BF4A980D0"
+				type: "item"
+				item: "cacao:white_chocolate"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "502896C680E75255"
+			tasks: [{
+				id: "510F083B91664E26"
+				type: "item"
+				item: "cacao:caramel_white_chocolate"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "0D4A8281FE4D52AC"
+			tasks: [{
+				id: "056E471E1E72CA88"
+				type: "item"
+				item: "cacao:praline_white_chocolate"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4E88C88DC417BB17"
+			tasks: [{
+				id: "7E1C6C32E5A65600"
+				type: "item"
+				item: "cacao:strawberry_cream_white_chocolate"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "59F1A013970F45A1"
+			tasks: [{
+				id: "4D209639B6819A4D"
+				type: "item"
+				item: "cacao:cookie_cream_white_chocolate"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "48F9270541BB252A"
+			tasks: [{
+				id: "304CF9C89B83B97A"
+				type: "item"
+				item: "cacao:peanut_butter_white_chocolate"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "44CF1994F8D27DA1"
+			tasks: [{
+				id: "41D72F9AD32CDE8D"
+				type: "item"
+				item: "cacao:coconut_white_chocolate"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2E7A419C2117D89B"
+			tasks: [{
+				id: "366592EE8DFC66C8"
+				type: "item"
+				item: "cacao:mixed_nuts_white_chocolate"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "491361F8EE37FF1F"
+			tasks: [{
+				id: "0FEB5660516B9342"
+				type: "item"
+				item: "cacao:dark_chocolate_covered_apple"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "4A0657BE7C709C15"
+			tasks: [{
+				id: "2F5D1A7B3B509852"
+				type: "item"
+				item: "cacao:milk_chocolate_covered_apple"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "42D3EE315E49118C"
+			tasks: [{
+				id: "12D5E9DD69337103"
+				type: "item"
+				item: "cacao:white_chocolate_covered_apple"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2BF7ED72EDECAF28"
+			tasks: [{
+				id: "295FD49EA6354BB2"
+				type: "item"
+				item: "cacao:white_chips_cookie"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "52C233FCE0A87818"
+			tasks: [{
+				id: "019E71CB94330A92"
+				type: "item"
+				item: "cacao:white_chips_chocolate_cookie"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6DCF759E62D5F455"
+			tasks: [{
+				id: "2E91162D57ECD71A"
+				type: "item"
+				item: "cacao:dark_chips_chocolate_cookie"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "49B28552E118D2E2"
+			tasks: [{
+				id: "3ADC8DC96F5BE7C5"
+				type: "item"
+				item: "cacao:chocolate_cake"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6AFB589ADF4FB40A"
+			tasks: [{
+				id: "5190E46E2E265774"
+				type: "item"
+				item: "cacao:nutella"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "093851AB4EF0EB3C"
+			tasks: [{
+				id: "62DBA0F47B8798DD"
+				type: "item"
+				item: "neapolitan:chocolate_bar"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "645E437F98B29996"
+			tasks: [{
+				id: "10B0AADFD5E2D0E7"
+				type: "item"
+				item: "neapolitan:chocolate_ice_cream"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "710D2D7CAA43D9D3"
+			tasks: [{
+				id: "519AAFDE48CAA93F"
+				type: "item"
+				item: "neapolitan:chocolate_cake"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "59871EE2F5739F5C"
+			tasks: [{
+				id: "5F97E67C80B7E5A7"
+				type: "item"
+				item: "neapolitan:strawberry_scones"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "7712C7DBDD86C6EF"
+			tasks: [{
+				id: "5B0ECF9E0C414423"
+				type: "item"
+				item: "neapolitan:strawberry_ice_cream"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2EF21B8024D5EA74"
+			tasks: [{
+				id: "3948357E09D6BD83"
+				type: "item"
+				item: "neapolitan:strawberry_cake"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "61D4BB46717FFE8F"
+			tasks: [{
+				id: "755B1F0D654BC1E4"
+				type: "item"
+				item: "neapolitan:vanilla_fudge"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "0B873E8EB2A17C5F"
+			tasks: [{
+				id: "5F2C39FC99AF8427"
+				type: "item"
+				item: "cacao:golden_chocolate"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "45607458E124232B"
+			tasks: [{
+				id: "0FF1670F06C57770"
+				type: "item"
+				item: "neapolitan:vanilla_pudding"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "775304F3E9B8597F"
+			tasks: [{
+				id: "47313F3C32C460A1"
+				type: "item"
+				item: "neapolitan:vanilla_ice_cream"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "41C004D01AE11A0D"
+			tasks: [{
+				id: "366B0DD79ACC8E1F"
+				type: "item"
+				item: "neapolitan:vanilla_cake"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "1B72BFCC318EEC6D"
+			tasks: [{
+				id: "3ACF6C5F1975F213"
+				type: "item"
+				item: "neapolitan:banana_bread"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6F17F598FBC24E2B"
+			tasks: [{
+				id: "5AA8569397690DC6"
+				type: "item"
+				item: "neapolitan:banana_ice_cream"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3D442EF3A121E556"
+			tasks: [{
+				id: "6AEBDCED034ABE31"
+				type: "item"
+				item: "neapolitan:banana_cake"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3D2F555F0A3A3039"
+			tasks: [{
+				id: "235D192E3EBFBDD4"
+				type: "item"
+				item: "neapolitan:mint_ice_cream"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "1FB761D99ECAE4CE"
+			tasks: [{
+				id: "084AB6ACFABA103A"
+				type: "item"
+				item: "neapolitan:mint_cake"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 5.0d
+			dependencies: ["16A102AEC055AB18"]
+			id: "0780464C7AD731EE"
+			tasks: [{
+				id: "5F8934B216EEC80D"
+				type: "item"
+				item: "neapolitan:adzuki_bun"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "74F4FCA8F414377C"
+			tasks: [{
+				id: "24C2C09ECA189AD1"
+				type: "item"
+				item: "neapolitan:adzuki_ice_cream"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "784375C9913B0F25"
+			tasks: [{
+				id: "04301534CF50F122"
+				type: "item"
+				item: "neapolitan:chocolate_strawberries"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "6516A76702100CF3"
+			tasks: [{
+				id: "37B42969DAE494B2"
+				type: "item"
+				item: "neapolitan:adzuki_cake"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "1C870FB27AAEF653"
+			tasks: [{
+				id: "76B3925735C26228"
+				type: "item"
+				item: "neapolitan:vanilla_chocolate_fingers"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "573DEBF4528E6F9D"
+			tasks: [{
+				id: "6F4CF8EE440050C9"
+				type: "item"
+				item: "neapolitan:mint_chocolate"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "62638D747BE85F14"
+			tasks: [{
+				id: "2EFFC8F74D6C8238"
+				type: "item"
+				item: "neapolitan:strawberry_bean_bonbons"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "3CD009992797ED1B"
+			tasks: [{
+				id: "05175EFCA194D762"
+				type: "item"
+				item: "neapolitan:adzuki_curry"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "2D02755EF423CACF"
+			tasks: [{
+				id: "6E3BAAEA7508C656"
+				type: "item"
+				item: "neapolitan:neapolitan_ice_cream"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 6.5d
+			dependencies: ["16A102AEC055AB18"]
+			id: "00CE88BB95EE7791"
+			tasks: [{
+				id: "31C465D992F06F64"
+				type: "item"
+				item: "supplementaries:candy"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

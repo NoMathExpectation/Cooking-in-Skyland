@@ -1,3 +1,4 @@
+blueprint:original_source_marker
 minecraft:badlands
 minecraft:bamboo_jungle
 minecraft:basalt_deltas
@@ -59,3 +60,4 @@ minecraft:windswept_gravelly_hills
 minecraft:windswept_hills
 minecraft:windswept_savanna
 minecraft:wooded_badlands
+quark:glimmering_weald

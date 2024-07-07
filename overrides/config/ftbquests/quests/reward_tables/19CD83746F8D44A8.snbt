@@ -13,5 +13,12 @@
 		{ item: "minecraft:dark_oak_sapling" }
 		{ item: "minecraft:azalea" }
 		{ item: "minecraft:flowering_azalea" }
+		{ item: "rainbowoaks:rainbow_sapling" }
+		{ item: "quark:blue_blossom_sapling" }
+		{ item: "quark:lavender_blossom_sapling" }
+		{ item: "quark:orange_blossom_sapling" }
+		{ item: "quark:pink_blossom_sapling" }
+		{ item: "quark:yellow_blossom_sapling" }
+		{ item: "quark:red_blossom_sapling" }
 	]
 }

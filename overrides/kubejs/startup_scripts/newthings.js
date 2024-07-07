@@ -66,6 +66,7 @@ onEvent('item.registry',event=>{
         .displayName('§e“§6天§c才§4の§b便§9当§2”')
         .tooltip('§7————大师の作 ￥32888')
         .glow(true)
+        .rarity('uncommon')
 
     event.create('incomplete_ham','create:sequenced_assembly')
         .texture('kubejs:item/smoked_ham')
@@ -88,6 +89,7 @@ onEvent('item.registry',event=>{
         .modelJson({parent:'create:block/mechanical_drill/item'})
         .displayName('突破天际的钻头!')
         .glow(true)
+        .rarity('uncommon')
 
     event.create('cake_shovel','shovel')
         .tier('iron')
@@ -105,11 +107,13 @@ onEvent('item.registry',event=>{
         .glow(true)
         .texture('kubejs:item/firesword')
         .displayName('传火螺旋剑')
+        .rarity('uncommon')
 
     event.create('cake_ingot')
         .texture('kubejs:item/cake_ingot')
         .displayName('蛋糕锭')
         .tooltip('§7§o终焉之途的开始...')
+        .rarity('uncommon')
 
     event.create('infinity_cake_shovel','shovel')
         .glow(true)
@@ -118,6 +122,7 @@ onEvent('item.registry',event=>{
         .color(0,'#7F7F7F')
         .displayName('无尽·奶油刮刀')
         .tooltip('§7§o...来自星尘')
+        .rarity('uncommon')
 
     event.create('infinity_cake_knife','sword')
         .glow(true)
@@ -126,37 +131,44 @@ onEvent('item.registry',event=>{
         .color(0,'#7F7F7F')
         .displayName('无尽·蛋糕切刀')
         .tooltip('§7§o归于星尘...')
+        .rarity('uncommon')
 
     event.create('endest_pearl')
         //.texture('kubejs:item/endest_pearl')
         .displayName('终望珍珠')
         .tooltip('§7§o刹那一瞥，即见永恒')
+        .rarity('rare')
 
     event.create('infinity_catalyst')
         //.texture('kubejs:item/infinity_catalyst')
         .displayName('无尽催化剂')
         .tooltip('§7§o星河浩瀚，星芒璀璨')
+        .rarity('epic')
 
     event.create('infinity_ingot')
         //.texture('kubejs:item/infinity_ingot')
         .displayName('无尽锭')
         .tooltip('§7§o来了，见了，留下一颗星星，走了')
+        .rarity('epic')
         //.tooltip('§7§o此刻，祂就在这里')
 
     event.create('double_cake_ingot')
         //.glow(true)
         .displayName('压缩蛋糕锭')
         .tooltip('§7§o天地藏于浮尘，果壳孕育宇宙')
+        .rarity('uncommon')
 
     event.create('singularity')
         .textureJson({layer0:'kubejs:item/singularity_layer_0',layer1:'kubejs:item/singularity_layer_1'})
         .displayName('视域边界')
         .tooltip('§7§o从此便是祂的位面...')
+        .rarity('rare')
 
     event.create('fake_bread')
         .texture('minecraft:item/bread')
         .displayName('§m面包')
         .tooltip('§7只是三个小麦而已，诶嘿')
+        .rarity('common')
 })
 onEvent('block.registry',event=>{
     event.create('infinity_block')
@@ -164,5 +176,6 @@ onEvent('block.registry',event=>{
         //.tooltip('§7§o来了，见了，留下一颗星星，走了')
         .material('iron')
         .lightLevel(1)
+        
 })
 

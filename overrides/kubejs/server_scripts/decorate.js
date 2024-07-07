@@ -7,7 +7,7 @@ onEvent('recipes',event=>{/*
     event.recipes.createFilling('azalea',['dark_oak_sapling',Fluid.of('water',100)])
     event.recipes.createFilling('flowering_azalea',['azalea',Fluid.of('water',100)])
     event.recipes.createFilling('oak_sapling',['flowering_azalea',Fluid.of('water',100)])
-*/
+*/  event.recipes.createFilling('moss_block',['cobblestone',Fluid.of('water',250)])
     event.shapeless('2x create:tree_fertilizer',['2x bone_meal',['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral'],['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral']])
     
     event.remove({output:'globe_banner_pattern'})
@@ -42,11 +42,11 @@ onEvent('recipes',event=>{/*
     event.recipes.createCompacting('nether_quartz_ore',['quartz','netherrack'])
 
     event.smelting('calcite','diorite')
-    event.shapeless('create:asurine',['cobblestone','blue_dye'])
-    event.shapeless('create:crimsite',['cobblestone','red_dye'])
-    event.shapeless('create:limestone',['stone','gray_dye'])
-    event.shapeless('create:ochrum',['stone','yellow_dye'])
-    event.shapeless('create:veridium',['cobblestone','green_dye'])
+    event.shapeless('create:asurine',['#forge:cobblestone','blue_dye'])
+    event.shapeless('create:crimsite',['#forge:cobblestone','red_dye'])
+    event.shapeless('create:limestone',['#forge:stone','gray_dye'])
+    event.shapeless('create:ochrum',['#forge:stone','yellow_dye'])
+    event.shapeless('create:veridium',['#forge:cobblestone','green_dye'])
 
     event.remove({output:'create:crushed_raw_zinc'})
     event.remove({output:'create:crushed_raw_copper'})
@@ -54,26 +54,182 @@ onEvent('recipes',event=>{/*
     event.remove({output:'create:crushed_raw_gold'})
 
     event.replaceInput({output:'#minecraft:candles'},'honeycomb','create:cinder_flour')
+
+    event.shapeless('quark:myalite',['#forge:cobblestone','purple_dye'])
+    event.shapeless('quark:shale',['#forge:cobblestone','cyan_dye'])
+    event.shapeless('quark:jasper',['#forge:cobblestone','brown_dye'])
+    event.shapeless('quark:limestone',['#forge:cobblestone','light_gray_dye'])
+    event.recipes.createHaunting('quark:dusky_myalite','quark:myalite')
+    event.recipes.createHaunting('quark:myalite','quark:dusky_myalite')
+    event.shapeless('quark:permafrost',['#forge:cobblestone','4x neapolitan:ice_cubes'])
+    event.recipes.createFilling('4x pointed_dripstone',['create:powdered_obsidian',Fluid.of('lava',200)])
+
+    event.recipes.createMechanicalCrafting('supplementaries:globe',[
+        '   AK',
+        ' BCDA',
+        ' EFGA',
+        'AHIJA',
+        'KAAAL',
+        '  A  ',
+        ' AAA ',
+    ],{
+        A:'gold_nugget',
+        B:'sand',
+        C:'quark:bottled_cloud',
+        D:'podzol',
+        E:'grass_block',
+        F:'#forge:ores',
+        G:'mycelium',
+        H:'end_stone',
+        I:'stone',
+        J:'netherrack',
+        K:'glowstone',
+        L:'shroomlight'
+    })
+    event.shapeless('quark:bottled_cloud','glass_bottle')
+    event.shaped('supplementaries:antique_ink',[
+        'A',
+        'B'
+    ],{
+        A:"black_dye",
+        B:"exnihilosequentia:silver_ingot"
+    })
+
+    event.shaped('2x orange_dye',[
+        'A  ',
+        ' A ',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x magenta_dye',[
+        ' A ',
+        ' A ',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x light_blue_dye',[
+        '  A',
+        ' A ',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x yellow_dye',[
+        '   ',
+        ' AA',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x lime_dye',[
+        '   ',
+        ' A ',
+        '  A'
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x pink_dye',[
+        '   ',
+        ' A ',
+        ' A '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x gray_dye',[
+        '   ',
+        ' A ',
+        'A  '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x light_gray_dye',[
+        '   ',
+        'AA ',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x cyan_dye',[
+        'A  ',
+        '   ',
+        '  A'
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x purple_dye',[
+        ' A ',
+        '   ',
+        '  A'
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x blue_dye',[
+        '  A',
+        '   ',
+        'A  '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x brown_dye',[
+        ' A ',
+        '   ',
+        'A  '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x green_dye',[
+        'A  ',
+        '   ',
+        ' A '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x red_dye',[
+        '  A',
+        '   ',
+        ' A '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+    event.shaped('2x black_dye',[
+        '   ',
+        'A A',
+        '   '
+    ],{
+        A:'bone_meal'
+    }).noMirror()
+
+    event.shapeless('createdeco:cast_iron_coin','createdeco:cast_iron_nugget')
+    event.shapeless('createdeco:netherite_coin','createdeco:netherite_nugget')
+    event.shapeless('createdeco:gold_coin','gold_nugget')
+    event.shapeless('createdeco:iron_coin','iron_nugget')
+    event.shapeless('createdeco:brass_coin','create:brass_nugget')
+    event.shapeless('createdeco:copper_coin','create:copper_nugget')
+    event.shapeless('createdeco:zinc_coin','create:zinc_nugget')
+
+    //event.shaped('dripstone_block',['AA','AA'],{A:'pointed_dripstone'})
 })
 onEvent('lootjs',event=>{
-    event.addBlockLootModifier('coal_ore').removeLoot('coal').addLoot('coal_ore')
-    event.addBlockLootModifier('iron_ore').removeLoot('raw_iron').addLoot('iron_ore')
-    event.addBlockLootModifier('copper_ore').removeLoot('raw_copper').addLoot('copper_ore')
-    event.addBlockLootModifier('gold_ore').removeLoot('raw_gold').addLoot('gold_ore')
-    event.addBlockLootModifier('redstone_ore').removeLoot('redstone').addLoot('redstone_ore')
-    event.addBlockLootModifier('emerald_ore').removeLoot('emerald').addLoot('emerald_ore')
-    event.addBlockLootModifier('lapis_ore').removeLoot('lapis_lazuli').addLoot('lapis_ore')
-    event.addBlockLootModifier('diamond_ore').removeLoot('diamond').addLoot('diamond_ore')
+    event.addBlockLootModifier('coal_ore').removeLoot('coal').addLoot('coal_ore').dropExperience(0)
+    event.addBlockLootModifier('iron_ore').removeLoot('raw_iron').addLoot('iron_ore').dropExperience(0)
+    event.addBlockLootModifier('copper_ore').removeLoot('raw_copper').addLoot('copper_ore').dropExperience(0)
+    event.addBlockLootModifier('gold_ore').removeLoot('raw_gold').addLoot('gold_ore').dropExperience(0)
+    event.addBlockLootModifier('redstone_ore').removeLoot('redstone').addLoot('redstone_ore').dropExperience(0)
+    event.addBlockLootModifier('emerald_ore').removeLoot('emerald').addLoot('emerald_ore').dropExperience(0)
+    event.addBlockLootModifier('lapis_ore').removeLoot('lapis_lazuli').addLoot('lapis_ore').dropExperience(0)
+    event.addBlockLootModifier('diamond_ore').removeLoot('diamond').addLoot('diamond_ore').dropExperience(0)
 
-    event.addBlockLootModifier('deepslate_coal_ore').removeLoot('coal').addLoot('deepslate_coal_ore')
-    event.addBlockLootModifier('deepslate_iron_ore').removeLoot('raw_iron').addLoot('deepslate_iron_ore')
-    event.addBlockLootModifier('deepslate_copper_ore').removeLoot('raw_copper').addLoot('deepslate_copper_ore')
-    event.addBlockLootModifier('deepslate_gold_ore').removeLoot('raw_gold').addLoot('deepslate_gold_ore')
-    event.addBlockLootModifier('deepslate_redstone_ore').removeLoot('redstone').addLoot('deepslate_redstone_ore')
-    event.addBlockLootModifier('deepslate_emerald_ore').removeLoot('emerald').addLoot('deepslate_emerald_ore')
-    event.addBlockLootModifier('deepslate_lapis_ore').removeLoot('lapis_lazuli').addLoot('deepslate_lapis_ore')
-    event.addBlockLootModifier('deepslate_diamond_ore').removeLoot('diamond').addLoot('deepslate_diamond_ore')
+    event.addBlockLootModifier('deepslate_coal_ore').removeLoot('coal').addLoot('deepslate_coal_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_iron_ore').removeLoot('raw_iron').addLoot('deepslate_iron_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_copper_ore').removeLoot('raw_copper').addLoot('deepslate_copper_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_gold_ore').removeLoot('raw_gold').addLoot('deepslate_gold_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_redstone_ore').removeLoot('redstone').addLoot('deepslate_redstone_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_emerald_ore').removeLoot('emerald').addLoot('deepslate_emerald_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_lapis_ore').removeLoot('lapis_lazuli').addLoot('deepslate_lapis_ore').dropExperience(0)
+    event.addBlockLootModifier('deepslate_diamond_ore').removeLoot('diamond').addLoot('deepslate_diamond_ore').dropExperience(0)
 
-    event.addBlockLootModifier('nether_gold_ore').removeLoot('gold_nugget').addLoot('nether_gold_ore')
-    event.addBlockLootModifier('nether_quartz_ore').removeLoot('quartz').addLoot('nether_quartz_ore')
+    event.addBlockLootModifier('nether_gold_ore').removeLoot('gold_nugget').addLoot('nether_gold_ore').dropExperience(0)
+    event.addBlockLootModifier('nether_quartz_ore').removeLoot('quartz').addLoot('nether_quartz_ore').dropExperience(0)
 })

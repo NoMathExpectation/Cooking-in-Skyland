@@ -1,0 +1,14 @@
+{
+	id: "10FCF779BB152253"
+	order_index: 9
+	title: "鸟"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:parrot_spawn_egg" }
+		{ item: "quark:egg_parrot_red_blue" }
+		{ item: "quark:egg_parrot_blue" }
+		{ item: "quark:egg_parrot_green" }
+		{ item: "quark:egg_parrot_yellow_blue" }
+		{ item: "quark:egg_parrot_grey" }
+	]
+}

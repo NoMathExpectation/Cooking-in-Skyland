@@ -1,7 +1,7 @@
 {
 	id: "7B029822CD245C6D"
 	group: "4D81F2802AE7DA76"
-	order_index: 1
+	order_index: 0
 	filename: "7B029822CD245C6D"
 	title: "实用的玩意：工具"
 	icon: "create:wrench"
@@ -265,18 +265,6 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -7.0d
-			hide_dependency_lines: true
-			dependencies: ["72BFB42105316390"]
-			id: "333D28582ED41D18"
-			tasks: [{
-				id: "0D016D0EB183D861"
-				type: "item"
-				item: "solsweetpotato:food_book"
-			}]
-		}
-		{
 			x: 5.0d
 			y: -5.5d
 			dependencies: ["515E481F6CE8C20C"]
@@ -340,17 +328,6 @@
 					item: "constructionwand:core_destruction"
 				}
 			]
-		}
-		{
-			x: -1.0d
-			y: -5.5d
-			dependencies: ["333D28582ED41D18"]
-			id: "0A5B66C7C3D103D7"
-			tasks: [{
-				id: "2997CF9206203DA3"
-				type: "item"
-				item: "solcarrot:food_book"
-			}]
 		}
 		{
 			x: 2.0d
@@ -485,6 +462,23 @@
 				id: "2603B0C80EFAB6DB"
 				type: "item"
 				item: "create:stressometer"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			subtitle: "超级厚的万能宝典"
+			description: [
+				"嫌手上拿很多书占地方？试试这个！"
+				"通过把阿卡什宝典和书本合成，所有的书本就会被整合到阿卡什宝典上了！"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "7B28270161B5DF86"
+			tasks: [{
+				id: "417B73D501F6329F"
+				type: "item"
+				item: "akashictome:tome"
 			}]
 		}
 	]

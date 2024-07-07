@@ -2,6 +2,7 @@
 	chapter_groups: [
 		{ id: "5C7CFACB63CA6A5F", title: "心潮澎湃的开始" }
 		{ id: "0A9230109B4C8FE3", title: "制作蛋糕的路途" }
-		{ id: "4D81F2802AE7DA76", title: "主线之外的故事" }
+		{ id: "6D82F4D3C76D3F5F", title: "普天之下的美食" }
+		{ id: "4D81F2802AE7DA76", title: "厨房之外的故事" }
 	]
 }

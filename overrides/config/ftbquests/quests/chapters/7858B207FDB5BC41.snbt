@@ -198,7 +198,10 @@
 			y: 3.0d
 			shape: "hexagon"
 			subtitle: "甜甜的，就像爱情一样"
-			description: ["吃了这个，烈焰人干活更厉害了"]
+			description: [
+				"吃了这个，烈焰人干活更厉害了"
+				"（悄悄给你把第六章打开了"
+			]
 			dependencies: ["518512E19D6A2346"]
 			size: 2.0d
 			id: "258E9C8D0D0BE775"
@@ -289,13 +292,14 @@
 			}]
 		}
 		{
+			title: "巧克力棒"
 			x: 5.0d
 			y: 2.0d
 			description: ["士力架，一饿就手软！"]
 			dependencies: ["33AB0C1641AEDD24"]
 			id: "76B463034A8D348C"
 			tasks: [{
-				id: "295AB86D7A35E592"
+				id: "04C0E9B706BDEFD9"
 				type: "item"
 				item: "create:bar_of_chocolate"
 			}]
@@ -361,6 +365,8 @@
 		{
 			x: 5.0d
 			y: 5.0d
+			subtitle: "Shining like diamond~"
+			description: ["出自《刀剑神域3》OP"]
 			dependencies: ["4678607BC2DC4CFB"]
 			id: "1F614E988E463D82"
 			tasks: [{

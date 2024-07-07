@@ -1,0 +1,11 @@
+
+[general]
+	#Rarity of a rainbow tree patch in 1/N chunks
+	#Range: > 1
+	rarity = 1
+	#Extra trees that spawn in a patch
+	#Range: > 0
+	extraAttempts = 2
+	#Resource Locations of biomes they spawn in. Separate with commas.
+	biomes = ["minecraft:flower_forest"]
+
