@@ -87,5 +87,63 @@ onEvent('recipes',event=>{
         A:"kubejs:infinity_ingot"
     })
     event.shapeless('9x kubejs:infinity_ingot','kubejs:infinity_block')
-})
+    //附魔书
+    event.shaped(Item.of('enchanted_book').enchant('unbreaking',1),[
+        ' A ',
+        'ABA',
+        ' A '
+    ],{
+        A:'zombie_head',
+        B:'book'
+    })
+    event.shaped(Item.of('enchanted_book').enchant('unbreaking',2),[
+        ' A ',
+        'ABA',
+        ' A '
+    ],{
+        A:'kubejs:stupid_zombie',
+        B:Item.of('enchanted_book').enchant('unbreaking',1)
+    })
+event.shaped(Item.of('enchanted_book').enchant('unbreaking',3),[
+    ' A ',
+    'ABA',
+    ' A '
+],{
+    A:'kubejs:smart_zombie',
+    B:Item.of('enchanted_book').enchant('unbreaking',2)
+    })
 
+    event.shaped(Item.of('enchanted_book').enchant('create:capacity',3),[
+        ' A ',
+        'ABA',
+        ' A '
+    ],{
+        A:'experience_bottle',
+        B:Item.of('enchanted_book').enchant('create:capacity',2)
+        })
+    event.shaped(Item.of('enchanted_book').enchant('create:capacity',2),[
+            ' A ',
+            'ABA',
+            ' A '
+        ],{
+            A:'experience_bottle',
+            B:Item.of('enchanted_book').enchant('create:capacity',1)
+        })
+    event.shaped(Item.of('enchanted_book').enchant('create:capacity',1),[
+            ' A ',
+            'ABA',
+            ' A '
+        ],{
+            A:'experience_bottle',
+            B:'book'
+        })
+    event.remove({output:'chancecubes:chance_cube'})
+    event.shaped('chancecubes:chance_cube',[
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A:'diamond',
+        B:'diamond_block'
+    })
+})

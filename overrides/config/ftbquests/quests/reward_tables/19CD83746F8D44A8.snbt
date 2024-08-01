@@ -20,5 +20,11 @@
 		{ item: "quark:pink_blossom_sapling" }
 		{ item: "quark:yellow_blossom_sapling" }
 		{ item: "quark:red_blossom_sapling" }
+		{ item: "atmospheric:rosewood_sapling" }
+		{ item: "atmospheric:morado_sapling" }
+		{ item: "atmospheric:yucca_sapling" }
+		{ item: "atmospheric:kousa_sapling" }
+		{ item: "atmospheric:aspen_sapling" }
+		{ item: "atmospheric:grimwood_sapling" }
 	]
 }

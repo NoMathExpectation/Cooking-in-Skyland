@@ -112,8 +112,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -4.0d
+			x: -1.0d
+			y: -5.5d
 			description: ["然后用这个把装置3D打印出来"]
 			hide_dependency_lines: false
 			dependencies: ["22D16E5A46B01317"]
@@ -371,8 +371,8 @@
 		}
 		{
 			title: "动力鞘翅"
-			x: 0.5d
-			y: -2.5d
+			x: 2.0d
+			y: -1.0d
 			subtitle: "Man! What can I say!"
 			dependencies: ["7FE72B6E9A2816BE"]
 			id: "04E0A4768D8F0BDD"
@@ -391,8 +391,8 @@
 		}
 		{
 			title: "喷气背包"
-			x: 2.0d
-			y: -1.0d
+			x: 0.5d
+			y: -2.5d
 			subtitle: "有人说史蒂夫不会飞？"
 			dependencies: ["7FE72B6E9A2816BE"]
 			id: "659386E4F8277875"
@@ -440,7 +440,7 @@
 		}
 		{
 			title: "金坷垃，金坷垃！"
-			x: 3.5d
+			x: 6.5d
 			y: -1.0d
 			subtitle: "一袋能抵两袋撒！"
 			description: ["当你做好了肥料之后，把它放在世界里面，让它转变成沃土"]
@@ -471,6 +471,7 @@
 			description: [
 				"嫌手上拿很多书占地方？试试这个！"
 				"通过把阿卡什宝典和书本合成，所有的书本就会被整合到阿卡什宝典上了！"
+				"（也能用来收集扳手）"
 			]
 			hide_dependency_lines: true
 			dependencies: ["72BFB42105316390"]
@@ -480,6 +481,109 @@
 				type: "item"
 				item: "akashictome:tome"
 			}]
+		}
+		{
+			title: "充电五分钟，使用两小时"
+			icon: {
+				id: "create_jetpack:netherite_jetpack"
+				Count: 1b
+				tag: {
+					Air: 900
+				}
+			}
+			x: 0.5d
+			y: -4.0d
+			subtitle: "全新POOP R7扩容喷气背包"
+			dependencies: ["659386E4F8277875"]
+			id: "743A93F126C468EB"
+			tasks: [
+				{
+					id: "0F5E43C2FBBE89AC"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "create:capacity"
+							}]
+						}
+					}
+				}
+				{
+					id: "65653AC56A3EE280"
+					type: "item"
+					item: {
+						id: "create_jetpack:netherite_jetpack"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "我的世界为什么没有声音？"
+			x: 6.5d
+			y: -4.0d
+			description: ["嫌机器很吵？试试消音器"]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "4D3BDCDABAED18F8"
+			tasks: [{
+				id: "58AD6BD455F16823"
+				type: "item"
+				item: "bettermuffling:muffling_block"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			description: ["我们地狱也有自己的北大荒（"]
+			dependencies: ["668FBFD31D3148D9"]
+			id: "187FFD4A80E4C2D8"
+			tasks: [{
+				id: "4BCFBDDBC8587649"
+				type: "item"
+				item: "nethersdelight:rich_soul_soil"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["04E0A4768D8F0BDD"]
+			id: "30FB9406D329FB22"
+			tasks: [{
+				id: "1E9FAC335C25AB42"
+				type: "item"
+				item: "angelring:itemring"
+			}]
+		}
+		{
+			title: "无土栽培"
+			x: 6.5d
+			y: -5.5d
+			description: [
+				"利用工业化手段批量生产农作物！"
+				"不过科技不发达，只有部分作物能用它"
+			]
+			hide_dependency_lines: true
+			dependencies: ["72BFB42105316390"]
+			id: "0A65C5237C55C4C2"
+			tasks: [
+				{
+					id: "1157232FCBB18AD0"
+					type: "item"
+					item: "kubejs:gardenpot1"
+				}
+				{
+					id: "14669BD1064C9A57"
+					type: "item"
+					item: "kubejs:gardenpot2"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

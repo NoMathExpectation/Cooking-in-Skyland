@@ -327,6 +327,7 @@
 			y: 0.5d
 			description: ["在这里你可以通过重复完成任务获取一些物资"]
 			dependencies: ["6D3EC08B948ED057"]
+			hide: true
 			size: 2.0d
 			id: "18418DDA29CA772E"
 			tasks: [{

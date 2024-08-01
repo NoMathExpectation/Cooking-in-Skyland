@@ -94,21 +94,25 @@ onEvent('recipes',event=>{
     //剩下的
     event.remove({output:'create:experience_nugget',type:'create:crushing'})
     event.recipes.createMixing([
+      Item.of('create:experience_nugget'),
         Item.of('create:experience_nugget').withChance(0.8),
         Item.of('create:experience_nugget').withChance(0.6),
         Item.of('rainbowcompound:strange_colored_ingot')//.withChance(0.95),
     ],['create:chromatic_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:sea_water',500)]).superheated()
     event.recipes.createMixing([
+      Item.of('phantom_membrane'),
         Item.of('phantom_membrane').withChance(0.8),
         Item.of('phantom_membrane').withChance(0.6),
         Item.of('rainbowcompound:strange_colored_ingot')//.withChance(0.95),
     ],['create:chromatic_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:witch_water',500)]).superheated()
     event.recipes.createMixing([
+      Item.of('create:experience_nugget'),
         Item.of('create:experience_nugget').withChance(0.8),
         Item.of('create:experience_nugget').withChance(0.6),
         'rainbowcompound:rainbow_compound'
     ],['rainbowcompound:rainbow_compound',Fluid.of('water',500),Fluid.of('exnihilosequentia:sea_water',500)]).superheated()
     event.recipes.createMixing([
+      Item.of('phantom_membrane'),
         Item.of('phantom_membrane').withChance(0.8),
         Item.of('phantom_membrane').withChance(0.6),
         'rainbowcompound:rainbow_compound'

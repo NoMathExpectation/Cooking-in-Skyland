@@ -105,6 +105,11 @@
 				type: "item"
 				item: "minecraft:mycelium"
 			}]
+			rewards: [{
+				id: "7049F79E2DF254FC"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 2.0d
@@ -210,6 +215,11 @@
 				type: "item"
 				item: "create:blaze_cake"
 			}]
+			rewards: [{
+				id: "1FA13ADF234ED8AC"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 0.5d
@@ -278,6 +288,11 @@
 				id: "130A65F77A840339"
 				type: "item"
 				item: "farmersdelight:honey_glazed_ham_block"
+			}]
+			rewards: [{
+				id: "600C09477236BDCA"
+				type: "item"
+				item: "chancecubes:compact_giant_chance_cube"
 			}]
 		}
 		{
@@ -507,6 +522,19 @@
 				id: "39C4F0A6BD55055A"
 				type: "item"
 				item: "farmersdelight:hot_cocoa"
+			}]
+		}
+		{
+			title: "达瓦里氏，快乐，吨吨吨！"
+			x: -2.5d
+			y: 0.5d
+			subtitle: "显然你喝不了，只能泼在身上"
+			dependencies: ["4811EB49D6612083"]
+			id: "3306AA0099EDF72C"
+			tasks: [{
+				id: "5718C6AFA2D855E4"
+				type: "item"
+				item: "minecraft:experience_bottle"
 			}]
 		}
 	]

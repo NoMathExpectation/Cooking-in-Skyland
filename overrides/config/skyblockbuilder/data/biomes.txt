@@ -1,3 +1,12 @@
+atmospheric:dunes
+atmospheric:flourishing_dunes
+atmospheric:hot_springs
+atmospheric:petrified_dunes
+atmospheric:rainforest
+atmospheric:rainforest_basin
+atmospheric:rocky_dunes
+atmospheric:sparse_rainforest
+atmospheric:sparse_rainforest_basin
 blueprint:original_source_marker
 minecraft:badlands
 minecraft:bamboo_jungle

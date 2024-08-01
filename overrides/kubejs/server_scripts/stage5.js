@@ -9,6 +9,10 @@ onEvent('recipes',event=>{
         'minecraft:horn_coral',
         'minecraft:cobblestone'
     ]).heated()
+    //event.replaceInput({output:'create:cinder_flour'},'netherrack','exnihilosequentia:crushed_netherrack')
+    event.remove({output:'create:cinder_flour'})
+    event.recipes.createMilling('create:cinder_flour','exnihilosequentia:crushed_netherrack')
+    event.recipes.createCrushing(['create:cinder_flour',Item.of('create:cinder_flour').withChance(0.5)],'exnihilosequentia:crushed_netherrack')
     event.recipes.createCompacting('netherrack',['deepslate',Fluid.of('lava',200)]).superheated()
     event.remove({output:'exnihilosequentia:witch_water'})
     event.remove({type:'exnihilosequentia:fluid_item'})
@@ -49,6 +53,7 @@ onEvent('recipes',event=>{
             Item.of('minecraft:nether_wart').withChance(0.8)
         ],'minecraft:nether_wart')
     //烈焰蛋糕
+    event.recipes.createFilling('experience_bottle',['glass_bottle',Fluid.of('kubejs:happywater',50)])
     event.remove({input:'exnihilosequentia:crushed_netherrack'})
     event.remove({output:'create:blaze_cake_base'})
     event.recipes.createMixing('create:blaze_cake_base',[

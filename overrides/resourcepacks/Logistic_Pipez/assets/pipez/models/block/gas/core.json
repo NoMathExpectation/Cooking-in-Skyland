@@ -1,0 +1,7 @@
+{
+	"parent": "pipez:block/_template/pipe_core",
+	"textures": {
+		"type": "pipez:block/gas_pipe",
+		"particle": "pipez:block/gas_pipe"
+	}
+}

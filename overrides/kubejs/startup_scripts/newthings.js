@@ -64,7 +64,7 @@ onEvent('item.registry',event=>{
     event.create('expensive_sushi').maxStackSize(1)
         .texture('kubejs:item/expensive_sushi')
         .displayName('§e“§6天§c才§4の§b便§9当§2”')
-        .tooltip('§7————大师の作 ￥32888')
+        .tooltip('§7大师の作 ￥32888')
         .glow(true)
         .rarity('uncommon')
 
@@ -169,6 +169,16 @@ onEvent('item.registry',event=>{
         .displayName('§m面包')
         .tooltip('§7只是三个小麦而已，诶嘿')
         .rarity('common')
+
+    event.create('gardenpot1')
+        .displayName('培养盆')
+
+    event.create('gardenpot2')
+        .displayName('富营养的培养盆')
+
+    event.create('gardenpot3','create:sequenced_assembly')
+        .texture('kubejs:item/gardenpot1')
+        .displayName('加工中的培养盆')
 })
 onEvent('block.registry',event=>{
     event.create('infinity_block')

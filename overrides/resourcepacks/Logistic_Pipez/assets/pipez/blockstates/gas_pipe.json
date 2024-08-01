@@ -1,0 +1,108 @@
+{
+  "multipart": [
+      {
+          "when": {
+              "north": "true",
+      "south": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node"
+          }
+      },
+      {
+          "when": {
+              "south": "true",
+      "north": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node",
+              "y": 180
+          }
+      },
+      {
+          "when": {
+              "east": "true",
+      "west": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node",
+              "y": 90
+          }
+      },
+      {
+          "when": {
+              "west": "true",
+      "east": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node",
+              "y": 270
+          }
+      },
+      {
+          "when": {
+              "down": "true",
+      "up": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node",
+              "x": 90
+          }
+      },
+      {
+          "when": {
+              "up": "true",
+      "down": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/node",
+              "x": 270
+          }
+      },
+  
+  {
+          "when": {
+              "north": "true",
+      "south": "true"
+          },
+          "apply": {
+              "model": "pipez:block/gas/line"
+          }
+      },
+      {
+          "when": {
+              "east": "true",
+      "west": "true"
+          },
+          "apply": {
+              "model": "pipez:block/gas/line",
+              "y": 90
+          }
+      },
+      {
+          "when": {
+              "down": "true",
+      "up": "true"
+          },
+          "apply": {
+              "model": "pipez:block/gas/line",
+              "x": 90
+          }
+      },
+      {
+          "when": {
+              "up": "false",
+      "down": "false",
+              "west": "false",
+      "east": "false",
+      "south": "false",
+      "north": "false"
+          },
+          "apply": {
+              "model": "pipez:block/gas/core"
+          }
+      }
+  
+  
+  ]
+}

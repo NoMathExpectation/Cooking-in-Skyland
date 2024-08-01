@@ -11,6 +11,7 @@
 		{
 			x: -6.0d
 			y: -0.5d
+			subtitle: "潮水啊，我已归来"
 			description: ["这里是一些鱼类与海产品，通称“海鲜”的美食"]
 			dependencies: ["389F231819AAA1BF"]
 			size: 2.0d

@@ -21,7 +21,7 @@ onEvent('recipes',event => {
         'A A',
         'AAA'
     ],{
-        A:'cobbled_deepslate'
+        A:'deepslate'
     })
         //修改泥土 沙子 沙砾 尘土 筛网配方
     event.remove({input:'minecraft:dirt',type:'exnihilosequentia:sieve'})
@@ -156,6 +156,11 @@ onEvent('recipes',event => {
     event.remove({input:'andesite',type:'create:milling'})
     event.recipes.createMilling(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
     event.recipes.createCrushing(['exnihilosequentia:crushed_andesite',Item.of('exnihilosequentia:crushed_andesite').withChance(0.7),Item.of('exnihilosequentia:crushed_andesite').withChance(0.4)],'andesite')
+
+    event.recipes.createMilling(['exnihilosequentia:dust',Item.of('exnihilosequentia:dust').withChance(0.4)],'sand')
+    event.recipes.createCrushing(['exnihilosequentia:dust',Item.of('exnihilosequentia:dust').withChance(0.7),Item.of('exnihilosequentia:dust').withChance(0.4)],'sand')
+
+    event.recipes.createSplashing(Item.of('clay_ball').withChance(0.4),'exnihilosequentia:dust')
     event.remove({output:'create:goggles'})
     event.shaped('create:goggles',[
         'AAA'

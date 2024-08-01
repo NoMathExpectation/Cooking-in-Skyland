@@ -166,6 +166,11 @@
 				type: "item"
 				item: "minecraft:dirt"
 			}]
+			rewards: [{
+				id: "04323E5460B5A312"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			title: "这是？工作台！"
@@ -332,6 +337,11 @@
 				id: "1D9354C5D1EA5A98"
 				type: "item"
 				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "25C33803A8404E93"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -551,6 +561,11 @@
 				id: "4829737AB07CCB57"
 				type: "item"
 				item: "farmersdelight:fried_egg"
+			}]
+			rewards: [{
+				id: "060CC2FCB1809D9D"
+				type: "item"
+				item: "chancecubes:compact_giant_chance_cube"
 			}]
 		}
 		{

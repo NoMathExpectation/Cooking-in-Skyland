@@ -144,7 +144,7 @@
 		}
 		{
 			x: -8.0d
-			y: 0.5d
+			y: -1.0d
 			subtitle: "翻个面就能当法杖用"
 			dependencies: ["47DA6B9E393B93EB"]
 			id: "41DF32D7B3C6C34A"
@@ -162,7 +162,7 @@
 		}
 		{
 			x: -5.0d
-			y: 0.5d
+			y: -1.0d
 			subtitle: "别忘了它还是一把刀"
 			dependencies: ["47DA6B9E393B93EB"]
 			id: "6AA0CF775AEA4AB3"
@@ -225,7 +225,7 @@
 		{
 			x: -8.0d
 			y: 8.0d
-			dependencies: ["4D28B7D665B06863"]
+			dependencies: ["121F89B4E6E438EE"]
 			id: "6EB718BA2FBB1B3F"
 			tasks: [{
 				id: "300BC75EB8B20903"
@@ -234,7 +234,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -6.5d
 			y: 8.0d
 			dependencies: ["4D28B7D665B06863"]
 			id: "121F89B4E6E438EE"
@@ -260,10 +260,7 @@
 			x: -6.5d
 			y: 9.5d
 			subtitle: "我听说建筑大佬需要这个？"
-			dependencies: [
-				"121F89B4E6E438EE"
-				"6EB718BA2FBB1B3F"
-			]
+			dependencies: ["121F89B4E6E438EE"]
 			id: "7ACB427DD7619094"
 			tasks: [{
 				id: "5585CC30864CC737"

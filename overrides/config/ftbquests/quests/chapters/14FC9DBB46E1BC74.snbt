@@ -280,6 +280,11 @@
 					player_command: true
 					silent: true
 				}
+				{
+					id: "2316A8021E587108"
+					type: "item"
+					item: "chancecubes:compact_giant_chance_cube"
+				}
 			]
 		}
 		{
@@ -367,9 +372,10 @@
 			}]
 		}
 		{
+			title: "冰淇淋！冰淇淋！"
 			x: -3.0d
 			y: -6.0d
-			subtitle: "我喜欢吃冰淇淋"
+			subtitle: "我喜欢吃冰淇淋！"
 			description: ["把奶油和牛奶混合冰冻就可以了"]
 			hide_dependency_lines: true
 			dependencies: ["702E11E9752CC0FB"]
@@ -463,6 +469,7 @@
 			dependencies: ["47C40B8B1D26D756"]
 			hide: true
 			dependency_requirement: "all_started"
+			optional: true
 			id: "12C51142D8E07C34"
 			tasks: [{
 				id: "0BDBA5ECBAAD8876"

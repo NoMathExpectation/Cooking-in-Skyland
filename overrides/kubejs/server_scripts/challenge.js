@@ -20,9 +20,20 @@ onEvent('recipes',event=>{
     event.replaceInput({},'croptopia:noodle','#forge:pasta/raw_pasta')
     event.replaceInput({},'croptopia:dough','create:dough')
     
+    event.remove({output:'farmersdelight:cooked_bacon'})
+    event.smoking('farmersdelight:cooked_bacon','farmersdelight:bacon')
+    event.remove({output:'croptopia:cooked_bacon'})
+    event.smoking('croptopia:cooked_bacon','croptopia:bacon')
     
-    
-    
+    event.remove({output:'croptopia:knife'})
+    event.shaped('croptopia:knife',[
+        'A',
+        'B'
+    ],{
+        A:'iron_ingot',
+        B:'stick'
+    })
+    event.recipes.createDeploying('quark:slime_in_a_bucket',['bucket','slime_ball'])
     event.remove({input:'croptopia:noodle'})
     event.remove({input:'croptopia:dough'})
     event.remove({output:'cacao:manual_food_grinder'})
@@ -70,7 +81,8 @@ onEvent('recipes',event=>{
         Item.of('croptopia:ginger_seed').withChance(0.05),Item.of('croptopia:basil_seed').withChance(0.05),Item.of('croptopia:oat_seed').withChance(0.05),
         Item.of('croptopia:barley_seed').withChance(0.05),Item.of('croptopia:vanilla_seeds').withChance(0.05),Item.of('croptopia:pepper_seed').withChance(0.05),
         Item.of('croptopia:tea_seed').withChance(0.05),Item.of("croptopia:soybean_seed").withChance(0.05),Item.of('neapolitan:adzuki_beans').withChance(0.05),
-        Item.of('neapolitan:vanilla_pods').withChance(0.05),Item.of('neapolitan:mint_sprout').withChance(0.05)
+        Item.of('neapolitan:vanilla_pods').withChance(0.05),Item.of('neapolitan:mint_sprout').withChance(0.05),
+        Item.of('atmospheric:aloe_kernels').withChance(0.05),Item.of('atmospheric:passion_vine').withChance(0.05)
     ],['farmersdelight:organic_compost','createsifter:brass_mesh'])
     event.shapeless('2x rooted_dirt',['2x dirt','2x stick'])
     event.recipes.createsifterSifting([    
@@ -115,7 +127,7 @@ onEvent('recipes',event=>{
         Item.of('babyfat:ranchu').withChance(0.15),Item.of('babyfat:water_lettuce').withChance(0.15),
         Item.of('oceansdelight:guardian').withChance(0.15),Item.of('oceansdelight:elder_guardian_slab').withChance(0.15),
         Item.of('croptopia:sea_lettuce').withChance(0.15),Item.of('croptopia:frog_legs').withChance(0.15),
-        Item.of('quark:frog_leg').withChance(0.15),
+        Item.of('quark:frog_leg').withChance(0.15),Item.of('atmospheric:yucca_branch').withChance(0.15)
     ],[Item.of('exnihilosequentia:sea_water_bucket'),Item.of('exnihilosequentia:emerald_mesh')]).keepHeldItem()
     event.custom({    
     "type":"farmersdelight:cutting",
@@ -339,4 +351,20 @@ event.custom({
         C:'createdeco:cast_iron_sheet'
     })
     event.recipes.createFilling('casualness_delight:deep_frying_pan',['farmersdelight:cooking_pot',Fluid.of('kubejs:oil',1000)])
+
+    event.remove({output:'enchanted_golden_apple',type:'create:mechanical_crafting'})
+
+    event.remove({output:'neapolitan:strawberry_pips'})
+    event.shapeless('neapolitan:strawberry_pips','croptopia:strawberry_seed')
+    event.shapeless('croptopia:strawberry_seed','neapolitan:strawberry_pips')
+    //atmos
+    event.custom({    
+        "type":"farmersdelight:cutting",
+        "ingredients": [{"item": "atmospheric:yellow_blossoms"}],
+        "tool":{"tag":"forge:tools/knives"},
+        "result":[
+        {"item":"atmospheric:aloe_leaves","count":1},
+        {"item":"atmospheric:aloe_leaves","count":1,"chance":0.5}
+    ]})
+    event.recipes.createHaunting('atmospheric:barrel_cactus','cactus')
 })

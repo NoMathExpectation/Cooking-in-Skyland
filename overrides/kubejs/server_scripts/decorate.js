@@ -8,7 +8,7 @@ onEvent('recipes',event=>{/*
     event.recipes.createFilling('flowering_azalea',['azalea',Fluid.of('water',100)])
     event.recipes.createFilling('oak_sapling',['flowering_azalea',Fluid.of('water',100)])
 */  event.recipes.createFilling('moss_block',['cobblestone',Fluid.of('water',250)])
-    event.shapeless('2x create:tree_fertilizer',['2x bone_meal',['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral'],['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral']])
+    event.shapeless('4x create:tree_fertilizer',['2x bone_meal',['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral'],['tube_coral','bubble_coral','brain_coral','fire_coral','horn_coral']])
     
     event.remove({output:'globe_banner_pattern'})
     event.remove({output:'skull_banner_pattern'})
@@ -62,7 +62,7 @@ onEvent('recipes',event=>{/*
     event.recipes.createHaunting('quark:dusky_myalite','quark:myalite')
     event.recipes.createHaunting('quark:myalite','quark:dusky_myalite')
     event.shapeless('quark:permafrost',['#forge:cobblestone','4x neapolitan:ice_cubes'])
-    event.recipes.createFilling('4x pointed_dripstone',['create:powdered_obsidian',Fluid.of('lava',200)])
+    event.recipes.createFilling('4x pointed_dripstone',['create:powdered_obsidian',Fluid.of('exnihilosequentia:sea_water',200)])
 
     event.recipes.createMechanicalCrafting('supplementaries:globe',[
         '   AK',
@@ -101,105 +101,105 @@ onEvent('recipes',event=>{/*
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x magenta_dye',[
         ' A ',
         ' A ',
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x light_blue_dye',[
         '  A',
         ' A ',
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x yellow_dye',[
         '   ',
         ' AA',
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x lime_dye',[
         '   ',
         ' A ',
         '  A'
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x pink_dye',[
         '   ',
         ' A ',
         ' A '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x gray_dye',[
         '   ',
         ' A ',
         'A  '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x light_gray_dye',[
         '   ',
         'AA ',
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x cyan_dye',[
         'A  ',
         '   ',
         '  A'
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x purple_dye',[
         ' A ',
         '   ',
         '  A'
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x blue_dye',[
         '  A',
         '   ',
         'A  '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x brown_dye',[
         ' A ',
         '   ',
         'A  '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x green_dye',[
         'A  ',
         '   ',
         ' A '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x red_dye',[
         '  A',
         '   ',
         ' A '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
     event.shaped('2x black_dye',[
         '   ',
         'A A',
         '   '
     ],{
         A:'bone_meal'
-    }).noMirror()
+    }).noMirror().noShrink()
 
     event.shapeless('createdeco:cast_iron_coin','createdeco:cast_iron_nugget')
     event.shapeless('createdeco:netherite_coin','createdeco:netherite_nugget')
@@ -209,7 +209,13 @@ onEvent('recipes',event=>{/*
     event.shapeless('createdeco:copper_coin','create:copper_nugget')
     event.shapeless('createdeco:zinc_coin','create:zinc_nugget')
 
-    //event.shaped('dripstone_block',['AA','AA'],{A:'pointed_dripstone'})
+    event.recipes.createFilling('atmospheric:arid_sand',['sand',Fluid.of('lava',50)])
+    event.recipes.createFilling('atmospheric:red_arid_sand',['red_sand',Fluid.of('lava',50)])
+
+    event.recipes.createHaunting('atmospheric:ivory_travertine','quartz_block')
+    event.recipes.createFilling('atmospheric:peach_travertine',['atmospheric:ivory_travertine',Fluid.of('create_central_kitchen:tomato_sauce',250)])
+    event.recipes.createFilling('atmospheric:persimmon_travertine',['atmospheric:peach_travertine',Fluid.of('create_central_kitchen:tomato_sauce',250)])
+    event.recipes.createFilling('atmospheric:saffron_travertine',['atmospheric:persimmon_travertine',Fluid.of('create_central_kitchen:tomato_sauce',250)])
 })
 onEvent('lootjs',event=>{
     event.addBlockLootModifier('coal_ore').removeLoot('coal').addLoot('coal_ore').dropExperience(0)

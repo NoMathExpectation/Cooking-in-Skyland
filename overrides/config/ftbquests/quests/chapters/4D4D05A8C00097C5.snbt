@@ -106,6 +106,7 @@
 				"（我按模组给他们分了个类"
 			]
 			dependencies: ["6D3EC08B948ED057"]
+			hide: true
 			size: 2.0d
 			id: "70C600E5EC9F8895"
 			tasks: [{

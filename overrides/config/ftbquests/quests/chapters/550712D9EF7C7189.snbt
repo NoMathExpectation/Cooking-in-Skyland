@@ -140,6 +140,11 @@
 				type: "item"
 				item: "rainbowcompound:strange_colored_ingot"
 			}]
+			rewards: [{
+				id: "016E11AB13E33F9C"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			title: "世界尽头的石头"
@@ -304,6 +309,11 @@
 				type: "item"
 				item: "rainbowcompound:rainbow_compound"
 			}]
+			rewards: [{
+				id: "58E086610E6DBDB8"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: -1.0d
@@ -383,10 +393,6 @@
 			x: -13.0d
 			y: -0.5d
 			subtitle: "我同意并遵守用户协议"
-			description: [
-				"你不会真的想看这种又长又无聊的协议吧？"
-				"不过这一章做不了食物，会挺无聊的，要不去挑战章节看看？"
-			]
 			dependencies: ["258E9C8D0D0BE775"]
 			hide: true
 			dependency_requirement: "one_completed"
@@ -453,6 +459,11 @@
 				id: "4F8663D900E170C1"
 				type: "item"
 				item: "rainbowcompound:netherstar_ingot"
+			}]
+			rewards: [{
+				id: "23EEFC116A302683"
+				type: "item"
+				item: "chancecubes:compact_giant_chance_cube"
 			}]
 		}
 		{
@@ -546,11 +557,6 @@
 			optional: true
 			id: "12C759D89B6E53AC"
 			tasks: [
-				{
-					id: "49431D6F09AE62E4"
-					type: "item"
-					item: "pipez:wrench"
-				}
 				{
 					id: "0E583F0100C26331"
 					type: "item"

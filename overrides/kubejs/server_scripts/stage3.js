@@ -128,8 +128,8 @@ onEvent('recipes',event=>{
     event.recipes.createMixing('rabbit',[
         Fluid.of('kubejs:protein',100),'rabbit_hide'
     ]).heated()
-    event.recipes.createMixing(Fluid.of('minecraft:milk',500),[
-        Fluid.of('minecraft:water',250),Fluid.of('kubejs:protein',250),Fluid.of('kubejs:oil',100)
+    event.recipes.createCompacting(Fluid.of('minecraft:milk',500),[
+        Fluid.of('minecraft:water',250),Fluid.of('kubejs:protein',250),'minecraft:leather'
     ]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',200),[['mutton','beef','porkchop']]).heated()
     event.recipes.createCompacting(Fluid.of('kubejs:protein',50),['chicken']).heated()
@@ -255,6 +255,7 @@ onEvent('recipes',event=>{
     event.remove({output:'create:dough'})
     event.replaceInput({},'create:dough','farmersdelight:wheat_dough')
     event.recipes.createMixing('9x slime_ball',[Fluid.of('milk',500),'4x sea_pickle','4x seagrass']).superheated()
+    event.recipes.createMixing('9x slime_ball',[Fluid.of('milk',500),'4x sea_pickle','4x kelp']).superheated()
     //event.shapeless('minecraft:slime_ball',['create:wheat_flour','minecraft:water_bucket','minecraft:lime_dye']).replaceIngredient({item:Item.of('minecraft:potion',{potion:'minecraft:water'})},'minecraft:bucket')
     //event.recipes.createMixing('minecraft:flint',['minecraft:gravel',Fluid.of('minecraft:water',100)])
     //机械手
@@ -295,23 +296,13 @@ onEvent('recipes',event=>{
         A:'create:brass_ingot',
         B:'dried_kelp'
     })
-    event.remove({output:'create:smart_fluid_pipe'})
     event.shaped('create:smart_fluid_pipe',[
         'AAA',
         'ABA',
-        'AAA'
+        'ABA'
     ],{
         A:"create:brass_sheet",
         B:'create:fluid_pipe'
     })
-    event.shaped('2x create:smart_fluid_pipe',[
-        ' C ',
-        'ABA',
-    ],{
-        A:"create:brass_sheet",
-        B:'create:fluid_pipe',
-        C:'create:electron_tube'
-    })
-    
 })
 

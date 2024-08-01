@@ -98,7 +98,7 @@
 			}]
 		}
 		{
-			title: "不是pvp大佬"
+			title: "刀他，刀他，刀刀刀！"
 			x: 1.0d
 			y: -4.0d
 			subtitle: "苇名抖刀术"
@@ -136,7 +136,7 @@
 		}
 		{
 			x: -0.5d
-			y: -2.5d
+			y: -4.0d
 			description: ["经过打磨的玫瑰石英，是各种零件的原材料"]
 			dependencies: ["5ADAE759FEA8676A"]
 			id: "5B09DE829B32B8C8"
@@ -152,7 +152,7 @@
 			y: -1.0d
 			subtitle: "烈焰人可以喝岩浆"
 			description: ["玫瑰石英还具有优良的导热性质，所以我们拿来做成燃烧炉"]
-			dependencies: ["5B09DE829B32B8C8"]
+			dependencies: ["086522766212231E"]
 			id: "337F25053FA6397E"
 			tasks: [{
 				id: "155F62C8B97BDB81"
@@ -170,8 +170,9 @@
 				"——周喆（流浪地球2）"
 			]
 			dependencies: [
-				"67D2CADE37F04EE4"
 				"0ED6318FB1489BBE"
+				"337F25053FA6397E"
+				"5A75C07C9FC4F92B"
 			]
 			size: 2.0d
 			id: "33A142C102B29D21"
@@ -179,6 +180,11 @@
 				id: "2D5C6F41A4670FBC"
 				type: "item"
 				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "485523F0E0FB4170"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -213,10 +219,10 @@
 		}
 		{
 			x: -0.5d
-			y: 0.5d
+			y: -2.5d
 			subtitle: "烈焰人喜欢快乐水"
 			description: ["给烈焰人燃烧室点火时用的，不过以后燃烧室可以用固体或者是液体燃料"]
-			dependencies: ["337F25053FA6397E"]
+			dependencies: ["5B09DE829B32B8C8"]
 			id: "67D2CADE37F04EE4"
 			tasks: [{
 				id: "620C0A4E5174025C"
@@ -230,6 +236,7 @@
 			subtitle: "瓦特改良蒸汽机，不是他发明蒸汽机"
 			description: ["只要烧水就能获得大量应力的机器，如果应力短缺就试试这个"]
 			dependencies: ["50ED9E6DA6A87724"]
+			optional: true
 			id: "75921ECFE765D422"
 			tasks: [{
 				id: "67C5F4E08137F19A"
@@ -387,6 +394,11 @@
 				type: "item"
 				item: "minecraft:podzol"
 			}]
+			rewards: [{
+				id: "24F81EAB259EF555"
+				type: "item"
+				item: "chancecubes:chance_cube"
+			}]
 		}
 		{
 			x: 5.5d
@@ -486,6 +498,11 @@
 				type: "item"
 				item: "farmersdelight:hamburger"
 			}]
+			rewards: [{
+				id: "09C83B9395F37559"
+				type: "item"
+				item: "chancecubes:compact_giant_chance_cube"
+			}]
 		}
 		{
 			x: 4.0d
@@ -541,10 +558,11 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -4.0d
+			x: 1.0d
+			y: -2.5d
 			description: ["往砧板里面掺点玫瑰石英，这样砧板就能撑得住菜刀的切（zhe）割（mo）了"]
 			dependencies: ["763230580B9AFB30"]
+			optional: true
 			id: "51F43D2369EF7A92"
 			tasks: [{
 				id: "47CA87EBFA3CE74E"
@@ -554,7 +572,7 @@
 		}
 		{
 			x: 2.5d
-			y: -1.0d
+			y: 0.5d
 			description: ["为什么会从土里面清洗出锌矿呢？"]
 			dependencies: ["25C2BE51892F50CD"]
 			id: "61BB95E3AB7B1384"
@@ -566,7 +584,7 @@
 		}
 		{
 			x: 2.5d
-			y: 0.5d
+			y: -1.0d
 			description: ["这是最后一种基础金属，也是黄铜的必需材料"]
 			dependencies: ["61BB95E3AB7B1384"]
 			id: "0A38B93E781BDE6D"
@@ -603,8 +621,8 @@
 		}
 		{
 			title: "用手指着"
-			x: 1.0d
-			y: -2.5d
+			x: -0.5d
+			y: 0.5d
 			subtitle: "给我玩天空厨房.jpg"
 			dependencies: ["086522766212231E"]
 			id: "5A75C07C9FC4F92B"
@@ -620,8 +638,8 @@
 			y: 0.5d
 			subtitle: "兄弟，借个火"
 			description: [
-				"煤气泄露了怎么办？不要紧张，抽根烟冷静一下"
-				"（危险动作请勿模仿）"
+				"燃气泄露了怎么办？不要紧张，抽根烟冷静一下"
+				"（综合《读卖新闻》、《朝日新闻》等多家日媒报道，2024年7月18日晚，日本埼玉县一住宅楼发生强烈爆炸。据警方消息，发生爆炸的房间由一名40余岁中国籍男子居住。该男子在供述中称，他拔开燃气栓让燃气充满室内，一度试图自杀，但中途回过神来，打消了自杀念头。不过，他开窗后点了一根烟，随后发生强烈爆炸。）"
 			]
 			dependencies: ["0ED6318FB1489BBE"]
 			id: "538AB19B1076086E"
@@ -681,6 +699,7 @@
 				"嫌太贵？下一章有更“便宜”的配方"
 			]
 			dependencies: ["086522766212231E"]
+			optional: true
 			id: "23648B752317F08D"
 			tasks: [
 				{
@@ -704,7 +723,7 @@
 			x: -5.0d
 			y: 2.0d
 			description: [
-				"什么？你不会用机器手实现筛子自动化？那我们有得忙了..."
+				"什么？你不会实现筛子自动化？那我们有得忙了..."
 				"试试这个动力筛子，这玩意的自动化就简单了"
 			]
 			dependencies: ["4C949EE85C9DB3EB"]

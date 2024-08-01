@@ -131,7 +131,7 @@
 			title: "《最强大脑》"
 			x: 3.0d
 			y: -1.0d
-			subtitle: "——中国的最强大脑在哪里？"
+			subtitle: "中国的最强大脑在哪里？"
 			dependencies: ["3E496D9E7BF4401A"]
 			id: "4CB5F662E12F4FF4"
 			tasks: [{
@@ -160,6 +160,11 @@
 				id: "1ACCD7EB98230CE8"
 				type: "item"
 				item: "minecraft:zombie_head"
+			}]
+			rewards: [{
+				id: "1A4BEF49801AAAB5"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -227,6 +232,11 @@
 				id: "506B24815B106F7B"
 				type: "item"
 				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "68C60B305077F368"
+				type: "item"
+				item: "chancecubes:chance_cube"
 			}]
 		}
 		{
@@ -340,6 +350,11 @@
 				id: "3ECB216AAC1938F2"
 				type: "item"
 				item: "farmersdelight:rice_roll_medley_block"
+			}]
+			rewards: [{
+				id: "6E3EEF5799DFE287"
+				type: "item"
+				item: "chancecubes:compact_giant_chance_cube"
 			}]
 		}
 		{
@@ -473,10 +488,10 @@
 		{
 			title: "还记得你的过滤器不"
 			icon: "create:filter"
-			x: -3.0d
+			x: 1.5d
 			y: -0.5d
 			description: ["如果捞不到想要的鱼，记得用过滤器选择配方"]
-			dependencies: ["7C0A9BB29F07E1E5"]
+			dependencies: ["4601A5E03C7BA855"]
 			id: "3EC30D2B9BB00D32"
 			tasks: [{
 				id: "2D41566DD924F085"
@@ -530,6 +545,28 @@
 				id: "367D64BE5E55323A"
 				type: "item"
 				item: "create:stockpile_switch"
+			}]
+		}
+		{
+			title: "工\"僵\"精神"
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["6F5C11614F18867F"]
+			optional: true
+			id: "6F72A9865CCE6ED6"
+			tasks: [{
+				id: "267465EDDE15BFA9"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
 			}]
 		}
 	]

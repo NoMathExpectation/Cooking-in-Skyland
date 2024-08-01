@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1719735381141
+  last_edited_time = 1720665615026
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:efa68265-7c55-4c1e-a6ce-d39b5ef1db13-1719735373787] = [groups:][instances:]
+  [loading_requirement_container_meta:0377c45f-6436-4819-a563-f93440d13b81-1720665602120] = [groups:][instances:]
 }
 
 customization {
@@ -37,7 +37,7 @@ element {
   audio_instance_7 = [source:local]/config/fancymenu/assets/tothefield.ogg
   play_mode = shuffle
   looping = true
-  volume = 0.35
+  volume = 0.25
   sound_source = music
   element_type = audio_v2
   instance_identifier = cbeffd78-09de-42c5-9870-7833ecd7c74d-1719735102531

@@ -235,20 +235,26 @@ onEvent('recipes',event=>{
         E:'kubejs:endest_pearl'
     })
     event.recipes.createMechanicalCrafting('create:creative_crate',[
-        'CCCCABBBB',
-        'CBBCABCCB',
-        'CBBCABCCB',
-        'CCCCABBBB',
-        'AAAAAAAAA',
-        'BBBBACCCC',
-        'BCCBACBBC',
-        'BCCBACBBC',
-        'BBBBACCCC',
+        'BBBBABBBB',
+        'BCCBDBCCB',
+        'BCCBEBCCB',
+        'BBBBFBBBB',
+        'ADEF FEDA',
+        'BBBBFBBBB',
+        'BCCBEBCCB',
+        'BCCBDBCCB',
+        'BBBBABBBB',
     ],{
         A:'storagedrawers:creative_storage_upgrade',
         B:'kubejs:infinity_ingot',
-        C:'kubejs:infinity_catalyst'
+        C:'kubejs:infinity_catalyst',
+        D:'create:creative_motor',
+        E:'create:creative_blaze_cake',
+        F:'create:creative_fluid_tank'
     })
+    event.shapeless('create:creative_crate','storagedrawers:creative_vending_upgrade')
+    event.shapeless('storagedrawers:creative_vending_upgrade','create:creative_crate')
+    /*
     event.recipes.createMechanicalCrafting('storagedrawers:creative_vending_upgrade',[
         'CCCCABBBB',
         'CBBCABCCB',
@@ -263,7 +269,7 @@ onEvent('recipes',event=>{
         A:'storagedrawers:creative_storage_upgrade',
         C:'kubejs:infinity_ingot',
         B:'kubejs:infinity_catalyst'
-    })
+    })*/
     event.recipes.createDeploying('kubejs:protein_bucket',['kubejs:oil_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])
     event.recipes.createDeploying('milk_bucket',['kubejs:protein_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])
     event.recipes.createDeploying('kubejs:fluid1_bucket',['milk_bucket',Item.of('kubejs:infinity_cake_shovel').ignoreNBT()])

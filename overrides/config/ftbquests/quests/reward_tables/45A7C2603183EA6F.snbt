@@ -22,5 +22,11 @@
 		{ item: "minecraft:lilac" }
 		{ item: "minecraft:rose_bush" }
 		{ item: "minecraft:peony" }
+		{ item: "atmospheric:water_hyacinth" }
+		{ item: "atmospheric:warm_monkey_brush" }
+		{ item: "atmospheric:hot_monkey_brush" }
+		{ item: "atmospheric:scalding_monkey_brush" }
+		{ item: "atmospheric:yucca_flower" }
+		{ item: "atmospheric:gilia" }
 	]
 }

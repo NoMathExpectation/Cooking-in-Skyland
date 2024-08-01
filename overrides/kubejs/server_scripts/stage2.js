@@ -214,6 +214,16 @@ onEvent("recipes",event=>{
     //event.remove({})
     event.remove({input:'sugar_cane',type:'create:crushing'})
     event.recipes.createCrushing(['4x sugar',Item.of('sugar').withChance(0.6),Item.of('sugar').withChance(0.3)],'sugar_cane')
+
+    event.remove({output:'supplementaries:faucet'})
+    event.shaped('supplementaries:faucet',[
+        ' A ',
+        'BBB',
+        '  B'
+    ],{
+        A:'copper_ingot',
+        B:'deepslate'
+    })
 })
     //吃冷米饭返回碗
 onEvent('item.food_eaten',event=>{

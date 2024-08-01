@@ -15,16 +15,16 @@
 			subtitle: "怀黍离喂——"
 			description: [
 				"主线那点农作物根本不够我们玩的！"
-				"所以是时候搞亿些作物了！"
+				"所以是时候搞亿些新作物了！"
 			]
 			dependencies: ["389F231819AAA1BF"]
 			hide: true
 			size: 2.0d
 			id: "7C98302FD945A189"
 			tasks: [{
-				id: "2DE0F3941A76D127"
+				id: "401C3FFCB13651D2"
 				type: "checkmark"
-				title: "赴大荒"
+				title: "赴大荒诶——"
 			}]
 		}
 		{

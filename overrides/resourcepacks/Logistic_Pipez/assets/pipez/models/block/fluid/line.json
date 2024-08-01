@@ -1,0 +1,7 @@
+{
+	"parent": "pipez:block/_template/pipe_line",
+	"textures": {
+		"type": "pipez:block/fluid_pipe",
+		"particle": "pipez:block/fluid_pipe"
+	}
+}

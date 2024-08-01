@@ -20,6 +20,10 @@ onEvent('jei.hide.items',event=>{
     event.hide('cacao:manual_food_grinder')
     event.hide('croptopia:dough')
     event.hide('croptopia:noodle')
+    event.hide('exnihilosequentia:basalt_pebble')
+    event.hide('exnihilosequentia:blackstone_pebble')
+    event.hide('exnihilosequentia:diorite_pebble')
+    event.hide('exnihilosequentia:granite_pebble')
 })
 onEvent('jei.remove.recipes',event=>{
     event.remove('create:mystery_conversion','create:conversion_0')

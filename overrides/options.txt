@@ -1,3 +1,3 @@
 lang:zh_cn
 difficulty:2
-guiScale:6
+
