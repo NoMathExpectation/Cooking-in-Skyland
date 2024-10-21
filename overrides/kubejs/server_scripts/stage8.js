@@ -288,7 +288,28 @@ onEvent('recipes',event=>{
         Item.of('kubejs:step10').withChance(9),
         Item.of('kubejs:step11').withChance(9)
     ],'kubejs:step1',[
+        event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:double_cake_ingot')]).keepHeldItem()
+    ]).transitionalItem('kubejs:proc1').loops(1)
+    event.recipes.createSequencedAssembly([
+        Item.of('cake').withChance(45),
+        Item.of('kubejs:step2').withChance(5),
+        Item.of('kubejs:step4').withChance(5),
+        Item.of('kubejs:step5').withChance(5),
+        Item.of('kubejs:step6').withChance(5),
+        Item.of('kubejs:step7').withChance(5),
+        Item.of('kubejs:step8-1').withChance(5),
+        Item.of('kubejs:step8-2').withChance(5),
+        Item.of('kubejs:step8-3').withChance(5),
+        Item.of('kubejs:step9').withChance(5),
+        Item.of('kubejs:step10').withChance(5),
+        Item.of('kubejs:step11').withChance(5)
+    ],'kubejs:step1',[
         event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:singularity')]).keepHeldItem()
+    ]).transitionalItem('kubejs:proc1').loops(1)
+    event.recipes.createSequencedAssembly([
+        Item.of('cake')
+    ],'kubejs:step1',[
+        event.recipes.createDeploying('kubejs:proc1',['kubejs:proc1',Item.of('kubejs:endest_pearl')]).keepHeldItem()
     ]).transitionalItem('kubejs:proc1').loops(1)
 
     event.recipes.createMechanicalCrafting('create:handheld_worldshaper',[

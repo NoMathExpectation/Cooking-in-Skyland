@@ -37,6 +37,7 @@
 			}]
 		}
 		{
+			icon: "create:cogwheel"
 			x: 2.5d
 			y: 0.5d
 			description: [
@@ -52,6 +53,7 @@
 			}]
 		}
 		{
+			icon: "farmersdelight:cooking_pot"
 			x: -0.5d
 			y: 0.5d
 			description: [
@@ -68,6 +70,7 @@
 		}
 		{
 			title: "极乐净土"
+			icon: "minecraft:totem_of_undying"
 			x: 2.5d
 			y: 2.0d
 			description: [
@@ -82,6 +85,7 @@
 			}]
 		}
 		{
+			icon: "minecraft:egg"
 			x: 2.5d
 			y: 3.5d
 			description: [
@@ -97,6 +101,7 @@
 			}]
 		}
 		{
+			icon: "createdeco:white_decal"
 			x: 4.0d
 			y: 2.0d
 			subtitle: "嘿，你小子，你坐传送门到处溜达的日子结束了！"
@@ -114,6 +119,13 @@
 			}]
 		}
 		{
+			icon: {
+				id: "minecraft:netherite_hoe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -0.5d
 			y: -1.0d
 			description: [
@@ -130,6 +142,13 @@
 			}]
 		}
 		{
+			icon: {
+				id: "supplementaries:wrench"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: 2.5d
 			y: -1.0d
 			description: [
@@ -146,6 +165,27 @@
 			}]
 		}
 		{
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							351463215
+							865617184
+							-1276840574
+							1695249763
+						]
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTcyOTA4Njg4NjIzMywKICAicHJvZmlsZUlkIiA6ICIxNGYyZTcyZjMzOTg0NTIwYjNlNGY1ODI2NTBiNzU2MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJDaGluZXNlbHVsaWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VjNTQ2MGUyNzE2MWJhN2RkZDVjMTU5YmQ4YmZhMjQzZTEyMTMxZjEyYTVkZjAzMDUzYzc5NGI4ZTA2MGRiMCIKICAgIH0KICB9Cn0="
+								Signature: "s9ZaGxtq4Sw6aIVy7YYLyI+Kb06+OtRzK+Wz4nrhYAlj5J+UscY6QT98SP94Nx1+8MsdXOZ76I9Yprrq4PctZhXH5U9v8EJ1Fy1mWGSnKFeT56Sp2FbHl0TSRnDIR6TA7jKvYA/qWvn3tY7vn2SkXb4Z6GrQmRLx3NABuZbtuiH9LULLpt9LCItWlOcSY4rJOP/khr3JHLhemD4G0ec3XMMZc9Kt4A0HyOxLhQcxWe+fyCr1rnHMFJFTo2bENGj9zaq5FF1lBO89m71sdwHT0wuV1roU8Beqg0udxAc9fIO+w5lbLDPcj0mXcM70q7ucuGw1oerTNdLr/zw3upd8ce0b54l5o8tViVuSEiB1FLh+nTgoJzHC+s7B536uE+O+xzkrLTzSCRMdq82fOZWfWrgZHysOkRApHY5azav5Qlk5Dybgynfqax7FYpsZCEHaoa9yLWCWCoczeH7qrlO0pdv/r0hiGHJVdWCIw0KsyNVm69N2mL0cRCo7Es76dv20y7qxEE0dtBe+NOqmZQpVEgFEj+jje+QTwSeFqcWgst/XOBXmn+eJoZ0f7Qn124CYTM8zUaFexVGoHzVWaxD1VmxKkG2xveK8j1MaUaavhGGNCmgQobKWs1puaoK1fIEvRBM2OBYOg6f4IuU5+79aPPLFer/Od040YkM4D2DmFzw="
+							}]
+						}
+						Name: "Chineselulil"
+					}
+				}
+			}
 			x: 1.0d
 			y: -1.0d
 			subtitle: "作者大大们"
@@ -162,6 +202,7 @@
 			}]
 		}
 		{
+			icon: "minecraft:zombie_head"
 			x: 4.0d
 			y: 3.5d
 			subtitle: "困难？非常困难？"
@@ -175,6 +216,7 @@
 			}]
 		}
 		{
+			icon: "croptopia:doughnut"
 			x: -2.0d
 			y: 3.5d
 			description: [
@@ -190,6 +232,7 @@
 			}]
 		}
 		{
+			icon: "pipez:wrench"
 			x: -2.0d
 			y: 2.0d
 			description: ["工具章节会给你提供许多你可能用得上的东西，记得时不时去看看你能搞到哪些趁手的好把式"]
@@ -202,6 +245,7 @@
 			}]
 		}
 		{
+			icon: "create:goggles"
 			x: 1.0d
 			y: 6.0d
 			shape: "gear"
@@ -229,6 +273,7 @@
 			}]
 		}
 		{
+			icon: "solcarrot:food_book"
 			x: -2.0d
 			y: 0.5d
 			description: [
@@ -246,6 +291,7 @@
 		}
 		{
 			title: "不是，我锅呢？"
+			icon: "create:basin"
 			x: 4.0d
 			y: 0.5d
 			subtitle: "它们将如闪电般归来！"
@@ -262,6 +308,7 @@
 			}]
 		}
 		{
+			icon: "minecraft:book"
 			x: -0.5d
 			y: 2.0d
 			subtitle: "不，只是个附录"
@@ -276,6 +323,7 @@
 		}
 		{
 			title: "我爱我家"
+			icon: "rainbowoaks:rainbow_sapling"
 			x: -0.5d
 			y: 3.5d
 			description: ["装饰章节给你提供了一些装饰方块，这些方块除了好看以外没啥用了（好看还不够吗）"]
@@ -287,6 +335,7 @@
 			}]
 		}
 		{
+			icon: "design_decor:creeper_sign"
 			x: 1.0d
 			y: 2.0d
 			description: ["在任务书右上角准备了应急物品，如果你非常不幸地失去了树苗或泥土，那么每分钟就可以去获取一次救援物资"]
@@ -299,6 +348,7 @@
 			}]
 		}
 		{
+			icon: "chancecubes:chance_cube"
 			x: 1.0d
 			y: 3.5d
 			subtitle: "梭哈是一种智慧！"

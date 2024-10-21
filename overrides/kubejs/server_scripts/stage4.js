@@ -152,6 +152,10 @@ onEvent('recipes',event=>{
         Item.of('minecraft:packed_ice').withChance(0.1),
         Item.of('minecraft:ice').withChance(0.05)
     ],'blue_ice')
+
+    event.recipes.createDeploying(['blue_ice','bucket'],[Item.of('exnihilosequentia:sea_water_bucket'),'pufferfish'])
+    event.recipes.createDeploying(['packed_ice','bucket'],['water_bucket','pufferfish'])
+
     event.remove({output:'farmersdelight:rice_roll_medley_block'})
     event.recipes.createMechanicalCrafting('kubejs:expensive_sushi',[
         'MMFFFFFMM',

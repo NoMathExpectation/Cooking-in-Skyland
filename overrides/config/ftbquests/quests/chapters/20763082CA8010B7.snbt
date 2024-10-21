@@ -107,7 +107,7 @@
 			x: 2.0d
 			y: 2.5d
 			subtitle: "电子拧螺丝 赛博搓零件"
-			description: ["全自动生产在主线中出现的中间产品和最终产品，达到每分钟至少一个"]
+			description: ["全自动生产在主线中出现的中间产品和最终产品"]
 			dependencies: ["77A988BB468C67D4"]
 			id: "221BED3D43DC1EE0"
 			tasks: [{

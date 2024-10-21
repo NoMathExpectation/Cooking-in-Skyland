@@ -117,7 +117,7 @@ onEvent('recipes',event=>{
         Fluid.of('kubejs:protein',200),'2x minecraft:egg'
     ]).heated()
     event.recipes.createMixing('farmersdelight:ham',[
-        'bone',Fluid.of('kubejs:protein',400),Fluid.of('kubejs:oil',100)
+        'bone',Fluid.of('kubejs:protein',500),Fluid.of('kubejs:oil',100)
     ]).heated()
     event.recipes.createCompacting('minecraft:leather',
         Fluid.of('kubejs:protein',100)).heated()
@@ -270,14 +270,25 @@ onEvent('recipes',event=>{
         B:'create:andesite_casing',
         C:'create:brass_hand'
     })
-    event.recipes.createMechanicalCrafting('elytra',[
-        '  A  ',
-        ' AAA ',
-        'AA AA',
-        ' B B ',
+    event.shaped('elytra',[
+        'AAA',
+        'A A',
+        'B B',
     ],{
         A:'leather',
         B:'create:propeller'
+    })
+    event.remove({output:'create_jetpack:jetpack'})
+    event.shaped('create_jetpack:jetpack',[
+        'ABA',
+        'CDC',
+        'CEC'
+    ],{
+        A:'create:brass_sheet',
+        B:'create:copper_backtank',
+        C:'create:chute',
+        D:'elytra',
+        E:'create:shaft'
     })
     event.remove({output:'painting',input:'#minecraft:wool'})
     event.shaped('create:brass_tunnel',[
@@ -304,5 +315,6 @@ onEvent('recipes',event=>{
         A:"create:brass_sheet",
         B:'create:fluid_pipe'
     })
+
 })
 

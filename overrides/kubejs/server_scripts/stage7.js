@@ -10,11 +10,11 @@ onEvent('recipes',event=>{
     //整形
     event.recipes.createCompacting([
         Item.of('kubejs:step1').withChance(0.6),
-        Item.of('kubejs:item1-1').withChance(0.3),
+        Item.of('2x kubejs:item1-1').withChance(0.3),
         Item.of('kubejs:item1-2').withChance(0.8),
-        Item.of('kubejs:item1-2').withChance(0.7),
-        Item.of('kubejs:item1-2').withChance(0.6),
-        Item.of('kubejs:item1-2').withChance(0.5)
+        Item.of('2x kubejs:item1-2').withChance(0.7),
+        Item.of('4x kubejs:item1-2').withChance(0.6),
+        Item.of('8x kubejs:item1-2').withChance(0.5)
     ],Fluid.of('kubejs:fluid6',1000)).heated()
     event.recipes.createSequencedAssembly([
         Item.of('kubejs:step2').withChance(90),
@@ -172,20 +172,20 @@ onEvent('recipes',event=>{
         'potato','#forge:onions','farmersdelight:cabbage_leaf'
     ])
     event.recipes.createDeploying([
+        Item.of('kubejs:item2').withChance(0.95),
         Item.of('kubejs:item2').withChance(0.9),
         Item.of('kubejs:item2').withChance(0.85),
-        Item.of('kubejs:item2').withChance(0.8),
-        Item.of('kubejs:item2').withChance(0.75)
+        Item.of('kubejs:item2').withChance(0.8)
     ],['#forge:bars/chocolate',Ingredient.of("#kubejs:cake_knives")])
-    event.recipes.createMixing(Item.of('kubejs:item3').withChance(0.8),[
-        Fluid.of('milk',300),
+    event.recipes.createMixing('kubejs:item3',[
+        Fluid.of('milk',250),
         Fluid.of('kubejs:fluid1',100),
         '3x kubejs:ice_cube'
     ])
     //废物回收
     event.recipes.createSequencedAssembly([
-        Item.of('kubejs:step1').withChance(75),
-        Item.of('kubejs:fail1').withChance(20),
+        Item.of('kubejs:step1').withChance(80),
+        Item.of('kubejs:fail1').withChance(15),
         Item.of('4x create:sweet_roll').withChance(5)
     ],'kubejs:item1-1',[
         event.recipes.createDeploying('kubejs:procitem1-1',['kubejs:procitem1-1','kubejs:item1-1']),
@@ -195,12 +195,12 @@ onEvent('recipes',event=>{
         event.recipes.createPressing('kubejs:procitem1-1','kubejs:procitem1-1')
     ]).transitionalItem('kubejs:procitem1-1').loops(1)
     event.recipes.createCompacting([
-        Item.of('kubejs:item1-1').withChance(0.9),
-        Item.of('create:sweet_roll').withChance(0.1)
+        Item.of('kubejs:item1-1').withChance(0.95),
+        Item.of('create:sweet_roll').withChance(0.05)
     ],['4x kubejs:item1-2',Fluid.of('kubejs:fluid1',50)])
     event.recipes.createSequencedAssembly([
-        Item.of('kubejs:step1').withChance(0.85),
-        Item.of('4x kubejs:item1-1').withChance(0.15)
+        Item.of('kubejs:step1').withChance(0.9),
+        Item.of('4x kubejs:item1-1').withChance(0.1)
     ],'kubejs:fail1',[
         event.recipes.createDeploying('kubejs:procfail1',['kubejs:procfail1',Ingredient.of("#kubejs:cake_knives")]),
         event.recipes.createPressing('kubejs:procfail1','kubejs:procfail1')

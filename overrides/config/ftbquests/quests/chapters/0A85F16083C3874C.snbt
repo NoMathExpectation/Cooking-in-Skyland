@@ -464,7 +464,8 @@
 		{
 			x: 6.0d
 			y: -8.0d
-			subtitle: "所以钻石挖出来了没"
+			subtitle: "钻石出率正好是1%"
+			description: ["所以钻石挖出来没（"]
 			dependencies: ["087FC9EF15A60751"]
 			id: "248DDB18907EA27D"
 			tasks: [{

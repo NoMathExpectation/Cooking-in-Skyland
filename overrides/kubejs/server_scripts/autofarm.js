@@ -99,4 +99,19 @@ onEvent('recipes',event=>{
     ],[
         'kubejs:gardenpot2','sugar_cane'
     ])
+
+    event.recipes.createDeploying([
+        'kubejs:gardenpot1',
+        '16x nether_wart',
+        Item.of('6x nether_wart').withChance(0.5),
+    ],[
+        'kubejs:gardenpot2','nether_wart'
+    ])
+
+    event.recipes.createDeploying([
+        'kubejs:gardenpot1',
+        '16x apple',
+    ],[
+        'kubejs:gardenpot2','apple'
+    ])
 })

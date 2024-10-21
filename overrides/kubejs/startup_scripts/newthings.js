@@ -65,7 +65,7 @@ onEvent('item.registry',event=>{
         .texture('kubejs:item/expensive_sushi')
         .displayName('§e“§6天§c才§4の§b便§9当§2”')
         .tooltip('§7大师の作 ￥32888')
-        .glow(true)
+        //.glow(true)
         .rarity('uncommon')
 
     event.create('incomplete_ham','create:sequenced_assembly')
@@ -86,19 +86,20 @@ onEvent('item.registry',event=>{
         .glow(true)
 
     event.create('super_driller')
-        .modelJson({parent:'create:block/mechanical_drill/item'})
+        //.modelJson({parent:'create:block/mechanical_drill/item'})
         .displayName('突破天际的钻头!')
-        .glow(true)
+        .tooltip('§6§l+15攻击力 §a§l+250生命值')
+        //.glow(true)
         .rarity('uncommon')
 
     event.create('cake_shovel','shovel')
-        .tier('iron')
+        .tier('diamond')
         .glow(true)
         .texture('rainbowcompound:item/rainbow_shovel')
         .displayName('奶油刮刀')
 
     event.create('cake_knife','sword')
-        .tier('iron')
+        .tier('diamond')
         .glow(true)
         .texture('rainbowcompound:item/rainbow_knife')
         .displayName('蛋糕切刀')

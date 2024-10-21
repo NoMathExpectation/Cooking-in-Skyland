@@ -291,12 +291,12 @@ quark:deferred_feature_underground_decoration
 quark:deferred_feature_fluid_springs
 quark:deferred_feature_vegetal_decoration
 quark:deferred_feature_top_layer_modification
+minecraft:chorus_succulent
 croptopia:random_crop
 croptopia:disk_salt
+nethersdelight:patch_propelplant_cane
 neapolitan:patch_strawberry_bush
 neapolitan:patch_vanilla_vine
 neapolitan:patch_adzuki_sprouts
 neapolitan:mint_pond
 neapolitan:banana_plant
-nethersdelight:patch_propelplant_cane
-minecraft:chorus_succulent

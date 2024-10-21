@@ -308,9 +308,9 @@
 			can_repeat: true
 			id: "143A4043DCD6949D"
 			tasks: [{
-				id: "6CB5F24FC88B55D4"
+				id: "24A578331AEBAF98"
 				type: "item"
-				item: "rainbowcompound:netherstar_ingot"
+				item: "kubejs:smart_zombie"
 				count: 4L
 				consume_items: true
 			}]
@@ -356,6 +356,28 @@
 				type: "choice"
 				exclude_from_claim_all: true
 				table_id: 1556574414295741083L
+			}]
+		}
+		{
+			title: "“猛”牛"
+			icon: "minecraft:milk_bucket"
+			x: 2.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["18418DDA29CA772E"]
+			id: "33796C4C137218CE"
+			tasks: [{
+				id: "1D97034770F9E141"
+				type: "item"
+				item: "rainbowcompound:netherstar_ingot"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "34C7137A53AD8D90"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8833820611742064497L
 			}]
 		}
 	]

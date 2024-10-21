@@ -118,7 +118,7 @@
 			description: [
 				""
 				"你想往锅里放多少米，就放多少，然后倒水，“要放多少水？”你用指尖探到大米的顶部，然后往里加水直到水碰到这根该死的线，完美的米饭"
-				"——JOKER脱口秀"
+				"——JOKOY脱口秀"
 			]
 			dependencies: [
 				"24D35E429A63A257"
@@ -557,6 +557,7 @@
 			description: [
 				"首先摆个无限水出来（这不用教吧？俩水源摆成1x3或者2x2）"
 				"然后用一个管道从无限水格子里抽水，这样你就给你的管道准备好无限水了"
+				"（用水龙头从无限水取水更方便）"
 			]
 			dependencies: ["6EE74CDC6D292549"]
 			id: "39C1D3612E40F30C"
@@ -579,6 +580,19 @@
 				id: "68041D0206583572"
 				type: "item"
 				item: "supplementaries:faucet"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			subtitle: "无限岩浆？启动！"
+			description: ["只有水和岩浆才能无限噢"]
+			dependencies: ["00706BA6E9598D7E"]
+			id: "2A31E9C81508C4E3"
+			tasks: [{
+				id: "26C75DAD40A1FAE6"
+				type: "item"
+				item: "create:hose_pulley"
 			}]
 		}
 	]

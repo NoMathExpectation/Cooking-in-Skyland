@@ -246,6 +246,7 @@
 		{
 			x: -11.5d
 			y: -2.0d
+			subtitle: "要掉小珍珠了！"
 			description: ["由于没有恶魂，我们只能手动提纯"]
 			dependencies: ["46C3B015BFC3CB61"]
 			id: "659BAD92D4990592"
@@ -350,7 +351,6 @@
 		{
 			x: 0.5d
 			y: -0.5d
-			subtitle: "...中二病其实挺朴实的"
 			description: ["一个是刚睡醒，另一个是刚准备睡觉"]
 			dependencies: [
 				"067BAE2DA5C8F766"
@@ -418,6 +418,7 @@
 		{
 			x: -2.5d
 			y: -2.0d
+			subtitle: "level UP!"
 			description: ["海水中似乎有着奇妙的经验颗粒，利用异彩化合物就能分离出来"]
 			dependencies: ["1E1D8BE5F0754957"]
 			id: "31B56F6C1322A888"
@@ -552,7 +553,10 @@
 			icon: "pipez:wrench"
 			x: -13.0d
 			y: 1.0d
-			description: ["这些东西能让你的pipez更好地运行，包括提速、过滤等功能"]
+			description: [
+				"这些东西能让你的pipez更好地运行，包括提速、过滤等功能"
+				"（扳手可以用机械动力的）"
+			]
 			dependencies: ["46C3B015BFC3CB61"]
 			optional: true
 			id: "12C759D89B6E53AC"
@@ -576,6 +580,11 @@
 					id: "060E867D93CC6162"
 					type: "item"
 					item: "pipez:ultimate_upgrade"
+				}
+				{
+					id: "7D4A8623E4C1BD59"
+					type: "item"
+					item: "pipez:filter_destination_tool"
 				}
 			]
 		}

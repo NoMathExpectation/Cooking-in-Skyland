@@ -600,7 +600,7 @@
 			x: 1.0d
 			y: -1.0d
 			subtitle: "铜锌合金"
-			description: ["一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药好像也可以..."]
+			description: ["一般来说冶炼黄铜需要加热，但是使劲摩擦铜粒、锌粒和火药就可以搓出黄铜了"]
 			dependencies: [
 				"0A38B93E781BDE6D"
 				"67D2CADE37F04EE4"

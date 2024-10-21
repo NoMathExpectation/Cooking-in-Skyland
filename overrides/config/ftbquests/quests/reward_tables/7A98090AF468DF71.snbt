@@ -1,0 +1,10 @@
+{
+	id: "7A98090AF468DF71"
+	order_index: 13
+	title: "牛"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:cow_spawn_egg" }
+		{ item: "minecraft:mooshroom_spawn_egg" }
+	]
+}

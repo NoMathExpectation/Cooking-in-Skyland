@@ -1,11 +1,14 @@
 onEvent('recipes',event=>{
     //event.recipes.createFilling('minecraft:cobblestone',['minecraft:dirt',Fluid.of('create:potion',100).withNBT({Potion:'minecraft:fire_resistance'})])
     //材料
+    event.remove({output:'slime_ball',input:'farmersdelight:wheat_dough'})
+    event.shapeless('4x slime_ball',['farmersdelight:wheat_dough','lime_dye'])
     event.blasting('minecraft:lime_dye','minecraft:seagrass')
-    event.recipes.createMixing('minecraft:ghast_tear',['minecraft:magma_cream',Fluid.of('minecraft:lava',200)]).superheated()
+    event.recipes.createMixing('2x minecraft:ghast_tear',['minecraft:magma_cream',Fluid.of('minecraft:lava',200)]).superheated()
     event.recipes.createMixing('2x minecraft:spider_eye',['minecraft:magma_cream',Fluid.of('exnihilosequentia:witch_water',200)]).superheated()
     event.remove({output:'fermented_spider_eye'})
-    event.recipes.createMixing('fermented_spider_eye',['spider_eye','red_mushroom','brown_mushroom','minecraft:sugar']).heated()
+    event.recipes.createMixing('fermented_spider_eye',['spider_eye','brown_mushroom','minecraft:sugar']).heated()
+    event.recipes.createMixing('fermented_spider_eye',['spider_eye','red_mushroom','minecraft:sugar']).heated()
     event.remove({output:"nether_wart_block"})
     event.recipes.createCompacting('nether_wart_block',['4x nether_wart','fermented_spider_eye']).heated()
     event.recipes.createCompacting('warped_wart_block',['2x twisting_vines','2x weeping_vines','ghast_tear']).heated()
@@ -20,6 +23,8 @@ onEvent('recipes',event=>{
       Item.of('ender_pearl').withChance(0.8),
       Item.of('ender_pearl').withChance(0.6),
     ],['exnihilosequentia:crushed_end_stone',Fluid.of('water',250)])
+    event.recipes.createFilling('8x ender_pearl',['exnihilosequentia:crushed_end_stone',Fluid.of('create_central_kitchen:dragon_breath',50)])
+
     event.recipes.createMixing([
       'chorus_fruit',
       Item.of('chorus_fruit').withChance(0.8),
@@ -68,28 +73,28 @@ onEvent('recipes',event=>{
     event.remove({output:'rainbowcompound:chorusite_ingot'})
     event.remove({output:'rainbowcompound:obsidianite_ingot'})
     event.recipes.createCompacting('rainbowcompound:blazeite_ingot',[
-        'minecraft:netherite_ingot','4x blaze_powder','4x blaze_rod',Fluid.of('lava',500)
+        'minecraft:netherite_ingot','2x blaze_powder','2x blaze_rod',Fluid.of('lava',250)
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:chorusite_ingot',[
-        'minecraft:netherite_ingot','4x chorus_fruit',Fluid.of('create_central_kitchen:dragon_breath',500)
+        'minecraft:netherite_ingot','2x chorus_fruit',Fluid.of('create_central_kitchen:dragon_breath',250)
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:warpedite_ingot',[
-        'minecraft:netherite_ingot','4x warped_wart_block','4x twisting_vines','4x weeping_vines'
+        'minecraft:netherite_ingot','warped_wart_block','2x twisting_vines','2x weeping_vines'
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:netherwartite_ingot',[
-        'minecraft:netherite_ingot','4x nether_wart_block','4x nether_wart'
+        'minecraft:netherite_ingot','nether_wart_block','4x nether_wart'
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:slimeite_ingot',[
-        'minecraft:netherite_ingot','4x slime_ball','4x slime_block'
+        'minecraft:netherite_ingot','4x slime_ball','slime_block'
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:glowstoneite_ingot',[
-        'minecraft:netherite_ingot','4x glowstone','4x glowstone_dust',Fluid.of('lava',500)
+        'minecraft:netherite_ingot','4x glowstone','4x glowstone_dust',Fluid.of('lava',250)
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:frostite_ingot',[
-        'minecraft:netherite_ingot','4x ice','4x packed_ice','4x blue_ice'
+        'minecraft:netherite_ingot','4x ice','2x packed_ice','blue_ice'
     ]).superheated()
     event.recipes.createCompacting('rainbowcompound:enderite_ingot',[
-        'minecraft:netherite_ingot','4x rainbowcompound:polished_ender_quartz','4x ender_eye'
+        'minecraft:netherite_ingot','rainbowcompound:polished_ender_quartz','2x ender_eye'
     ]).superheated()
     //剩下的
     event.remove({output:'create:experience_nugget',type:'create:crushing'})

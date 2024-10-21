@@ -63,6 +63,14 @@ onEvent('recipes',event=>{/*
     event.recipes.createHaunting('quark:myalite','quark:dusky_myalite')
     event.shapeless('quark:permafrost',['#forge:cobblestone','4x neapolitan:ice_cubes'])
     event.recipes.createFilling('4x pointed_dripstone',['create:powdered_obsidian',Fluid.of('exnihilosequentia:sea_water',200)])
+    event.remove({output:'createdeco:brass_trapdoor'})
+    event.shaped('createdeco:brass_trapdoor',[
+        'A A',
+        '   ',
+        'A A'
+    ],{
+        A:'create:brass_ingot'
+    })
 
     event.recipes.createMechanicalCrafting('supplementaries:globe',[
         '   AK',

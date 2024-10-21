@@ -82,7 +82,8 @@ onEvent('recipes',event=>{
         Item.of('croptopia:barley_seed').withChance(0.05),Item.of('croptopia:vanilla_seeds').withChance(0.05),Item.of('croptopia:pepper_seed').withChance(0.05),
         Item.of('croptopia:tea_seed').withChance(0.05),Item.of("croptopia:soybean_seed").withChance(0.05),Item.of('neapolitan:adzuki_beans').withChance(0.05),
         Item.of('neapolitan:vanilla_pods').withChance(0.05),Item.of('neapolitan:mint_sprout').withChance(0.05),
-        Item.of('atmospheric:aloe_kernels').withChance(0.05),Item.of('atmospheric:passion_vine').withChance(0.05)
+        Item.of('atmospheric:aloe_kernels').withChance(0.05),Item.of('atmospheric:passion_vine').withChance(0.05),
+        Item.of('createcafe:cassava_seeds').withChance(0.05)
     ],['farmersdelight:organic_compost','createsifter:brass_mesh'])
     event.shapeless('2x rooted_dirt',['2x dirt','2x stick'])
     event.recipes.createsifterSifting([    
@@ -367,4 +368,8 @@ event.custom({
         {"item":"atmospheric:aloe_leaves","count":1,"chance":0.5}
     ]})
     event.recipes.createHaunting('atmospheric:barrel_cactus','cactus')
+
+    event.recipes.createSplashing('createcafe:coffee_fruit','croptopia:coffee_beans')
+    event.recipes.createHaunting('createcafe:blood_orange','croptopia:orange')
+    event.recipes.createHaunting('createcafe:mana_berries','glow_berries')
 })
